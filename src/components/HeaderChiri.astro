@@ -2,104 +2,52 @@
 import IconMoon from "@/assets/icons/IconMoon.svg";
 import IconSunHigh from "@/assets/icons/IconSunHigh.svg";
 import { SITE } from "@/config";
-
-const { pathname } = Astro.url;
-const currentPath = pathname.endsWith("/") && pathname !== "/" ? pathname.slice(0, -1) : pathname;
-
-const isActive = (path: string) => {
-  const currentPathArray = currentPath.split("/").filter(p => p.trim());
-  const pathArray = path.split("/").filter(p => p.trim());
-  return currentPath === path || currentPathArray[0] === pathArray[0];
-};
 ---
 
-<header class="chiri-header">
-  <div class="header-content">
-    <a href="/" class="site-title">
-      {SITE.title}
-    </a>
-    <nav class="nav-links">
-      <a href="/posts" class:list={{ active: isActive("/posts") }}>
-        Posts
-      </a>
-      <a href="/tags" class:list={{ active: isActive("/tags") }}>
-        Tags
-      </a>
-      <a href="/search" class:list={{ active: isActive("/search") }}>
-        Search
-      </a>
-      <a href="/about" class:list={{ active: isActive("/about") }}>
-        About
-      </a>
-      <button
-        id="theme-btn"
-        class="theme-toggle"
-        aria-label="auto"
-        title="Toggle theme"
-      >
-        <IconMoon id="moon-icon" class="icon" />
-        <IconSunHigh id="sun-icon" class="icon hidden" />
-      </button>
-    </nav>
-  </div>
+<header>
+  <nav>
+    <a href="/">{SITE.title}</a>
+    <button
+      id="theme-btn"
+      class="theme-toggle"
+      aria-label="auto"
+      title="Toggle theme"
+    >
+      <IconMoon id="moon-icon" class="icon" />
+      <IconSunHigh id="sun-icon" class="icon hidden" />
+    </button>
+  </nav>
 </header>
 
 <style>
-  .chiri-header {
-    width: 100%;
-    padding: 2rem 0;
+  /* Exact Chiri header styles */
+  header {
+    margin: 0;
   }
-
-  .header-content {
-    max-width: 48rem;
-    margin: 0 auto;
-    padding: 0 1rem;
+  
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
-  .site-title {
-    font-size: 1.125rem;
-    font-weight: 500;
-    color: var(--foreground);
+  
+  header a {
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
     text-decoration: none;
-    transition: opacity 0.15s ease-out;
-  }
-
-  .site-title:hover {
-    opacity: 0.7;
-  }
-
-  .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .nav-links a {
-    font-size: 0.9375rem;
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: color 0.15s ease-out;
-  }
-
-  .nav-links a:hover,
-  .nav-links a.active {
-    color: var(--foreground);
+    min-width: 3rem;
+    display: inline-block;
   }
 
   .theme-toggle {
-    padding: 0.25rem;
+    padding: 0;
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--text-secondary);
-    transition: color 0.15s ease-out;
-  }
-
-  .theme-toggle:hover {
-    color: var(--foreground);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .icon {
@@ -109,16 +57,6 @@ const isActive = (path: string) => {
 
   .hidden {
     display: none;
-  }
-
-  @media (max-width: 640px) {
-    .nav-links {
-      gap: 1rem;
-    }
-
-    .nav-links a {
-      font-size: 0.875rem;
-    }
   }
 </style>
 

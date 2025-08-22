@@ -16,108 +16,75 @@ const slug = id.replace(/\.md$/, "");
 const href = `/posts/${slug}/`;
 ---
 
-<li class="post-item">
-  <a href={href} class="post-link">
-    <div class="post-content">
-      <span class="post-title">{title}</span>
-      <div class="divider"></div>
-      <div class="post-date">
+<li>
+  <a href={href}>
+    <div class="post-item">
+      <p class="title">{title}</p>
+      <div class="dotted-divider"></div>
+      <p class="date">
         <Datetime 
           pubDatetime={pubDatetime} 
           modDatetime={modDatetime}
           timezone={timezone}
         />
-      </div>
+      </p>
     </div>
   </a>
 </li>
 
 <style>
-  .post-item {
-    list-style: none;
+  /* Exact Chiri PostList styles */
+  li {
+    list-style-type: none;
   }
 
-  .post-link {
+  a {
+    color: var(--text-primary);
     display: block;
     text-decoration: none;
-    color: var(--foreground);
     transition: opacity 0.15s ease-out;
   }
 
-  .post-content {
+  .post-item {
     height: 2.75rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 0.75rem;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid transparent;
   }
 
-  .post-title {
-    font-size: 0.9375rem;
+  .title {
+    margin: 0;
+    flex-shrink: 1;
+    min-width: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    flex-shrink: 1;
-    min-width: 0;
   }
 
-  .divider {
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(
-      to right,
-      var(--text-tertiary) 0%,
-      var(--text-tertiary) 50%,
-      transparent 50%,
-      transparent 100%
-    );
-    background-size: 8px 1px;
-    opacity: 0.5;
-  }
-
-  .post-date {
-    font-size: 0.8125rem;
+  .date {
+    margin: 0;
     color: var(--text-secondary);
-    white-space: nowrap;
+    opacity: 0.75;
+    letter-spacing: var(--spacing-s);
     flex-shrink: 0;
+    white-space: nowrap;
   }
 
-  /* Hover effect on parent list */
-  .post-list:hover .post-link {
-    opacity: 0.4;
-  }
-
-  .post-list:hover .post-link:hover {
-    opacity: 1;
-  }
-
-  .post-list:hover .post-link:hover .divider {
+  .dotted-divider {
+    flex: 1 1 3rem;
+    min-width: 3rem;
+    max-width: 100%;
+    text-align: end;
+    letter-spacing: 5px;
+    height: 1.675rem;
+    overflow: hidden;
+    color: var(--text-tertiary);
     opacity: 0.75;
   }
 
-  .post-list:hover .post-link:hover .post-date {
-    color: var(--text-secondary);
-  }
-
-  @media (max-width: 640px) {
-    .post-content {
-      height: auto;
-      min-height: 2.75rem;
-      flex-wrap: wrap;
-    }
-
-    .post-title {
-      flex: 1 1 100%;
-    }
-
-    .divider {
-      display: none;
-    }
-
-    .post-date {
-      font-size: 0.75rem;
-      opacity: 0.7;
-    }
+  .dotted-divider::after {
+    content: '·····························································································································································';
+    pointer-events: none;
   }
 </style>

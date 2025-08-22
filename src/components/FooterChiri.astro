@@ -1,75 +1,22 @@
 ---
-import { SITE } from "@/config";
-const today = new Date();
+const currentYear = new Date().getFullYear();
 ---
 
-<footer class="chiri-footer">
-  <div class="footer-content">
-    <div class="copyright">
-      <span class="year">© {today.getFullYear()}</span>
-      {SITE.author}
-    </div>
-    <div class="powered">
-      <a href="/rss.xml" aria-label="RSS Feed">RSS</a>
-      <span class="separator">·</span>
-      <a href="https://homing.li" target="_blank" rel="noopener noreferrer">CV</a>
-      <span class="separator">·</span>
-      <a href="https://github.com/terry-li-hm" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </div>
-  </div>
+<footer>
+  <p>© {currentYear} Terry Li</p>
 </footer>
 
 <style>
-  .chiri-footer {
-    width: 100%;
-    margin-top: 4rem;
-    padding: 2rem 0;
-    border-top: 1px solid var(--border);
+  /* Exact Chiri footer styles */
+  footer {
+    margin-top: auto;
+    padding-top: 3rem;
   }
 
-  .footer-content {
-    max-width: 48rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.8125rem;
+  footer p {
+    margin: 0;
+    font-size: var(--font-size-s);
     color: var(--text-secondary);
-  }
-
-  .copyright {
-    white-space: nowrap;
-  }
-
-  .year {
-    opacity: 0.6;
-  }
-
-  .powered {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .powered a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: color 0.15s ease-out;
-  }
-
-  .powered a:hover {
-    color: var(--foreground);
-  }
-
-  .separator {
-    opacity: 0.3;
-  }
-
-  @media (max-width: 640px) {
-    .footer-content {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
+    opacity: 0.75;
   }
 </style>
