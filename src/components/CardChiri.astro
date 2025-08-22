@@ -9,7 +9,7 @@ export interface Props {
 
 const { data } = Astro.props;
 const { data: postData, id } = data;
-const { title, pubDatetime, modDatetime } = postData;
+const { title, pubDatetime, modDatetime, timezone } = postData;
 
 // Extract slug from id (format: "filename.md" or "folder/filename.md")
 const slug = id.replace(/\.md$/, "");
@@ -25,6 +25,7 @@ const href = `/posts/${slug}/`;
         <Datetime 
           pubDatetime={pubDatetime} 
           modDatetime={modDatetime}
+          timezone={timezone}
         />
       </div>
     </div>
