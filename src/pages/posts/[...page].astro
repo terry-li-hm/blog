@@ -1,11 +1,10 @@
 ---
 import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
-import Main from "@/layouts/Main.astro";
-import Layout from "@/layouts/Layout.astro";
-import Header from "@/components/Header.astro";
-import Footer from "@/components/Footer.astro";
-import Card from "@/components/Card.astro";
+import LayoutChiri from "@/layouts/LayoutChiri.astro";
+import HeaderChiri from "@/components/HeaderChiri.astro";
+import FooterChiri from "@/components/FooterChiri.astro";
+import CardChiri from "@/components/CardChiri.astro";
 import Pagination from "@/components/Pagination.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
 import { SITE } from "@/config";
@@ -18,15 +17,61 @@ export const getStaticPaths = (async ({ paginate }) => {
 const { page } = Astro.props;
 ---
 
-<Layout title={`Posts | ${SITE.title}`}>
-  <Header />
-  <Main pageTitle="Posts" pageDesc="All the articles I've posted.">
-    <ul>
-      {page.data.map(data => <Card {...data} />)}
+<LayoutChiri title={`Posts | ${SITE.title}`}>
+  <HeaderChiri />
+  <main class="main-content">
+    <section class="posts-header">
+      <h1>Posts</h1>
+      <p class="posts-desc">All the articles I've posted.</p>
+    </section>
+    
+    <ul class="post-list">
+      {page.data.map(data => <CardChiri data={data} />)}
     </ul>
-  </Main>
 
-  <Pagination {page} />
+    <Pagination {page} />
+  </main>
+  <FooterChiri />
+</LayoutChiri>
 
-  <Footer noMarginTop={page.lastPage > 1} />
-</Layout>
+<style>
+  .main-content {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    min-height: calc(100vh - 12rem);
+  }
+
+  .posts-header {
+    margin-bottom: 3rem;
+  }
+
+  .posts-header h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--foreground);
+  }
+
+  .posts-desc {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 3rem 0;
+  }
+
+  @media (max-width: 640px) {
+    .posts-header h1 {
+      font-size: 1.5rem;
+    }
+
+    .posts-desc {
+      font-size: 0.875rem;
+    }
+  }
+</style>

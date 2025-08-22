@@ -1,116 +1,158 @@
 ---
 import { getCollection } from "astro:content";
-import Layout from "@/layouts/Layout.astro";
-import Header from "@/components/Header.astro";
-import Footer from "@/components/Footer.astro";
-import Socials from "@/components/Socials.astro";
+import LayoutChiri from "@/layouts/LayoutChiri.astro";
+import HeaderChiri from "@/components/HeaderChiri.astro";
+import FooterChiri from "@/components/FooterChiri.astro";
+import CardChiri from "@/components/CardChiri.astro";
 import LinkButton from "@/components/LinkButton.astro";
-import Card from "@/components/Card.astro";
-import Hr from "@/components/Hr.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
-import IconRss from "@/assets/icons/IconRss.svg";
-import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
-import { SOCIALS } from "@/constants";
 
 const posts = await getCollection("blog");
-
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 ---
 
-<Layout>
-  <Header />
-  <main id="main-content" data-layout="index">
-    <section id="hero" class="pt-8 pb-6">
-      <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Welcome
-      </h1>
-      <a
-        target="_blank"
-        href="/rss.xml"
-        class="inline-block"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <IconRss
-          width={20}
-          height={20}
-          class="scale-125 stroke-accent stroke-3 rtl:-rotate-90"
-        />
-        <span class="sr-only">RSS Feed</span>
-      </a>
-
-      <p>
+<LayoutChiri>
+  <HeaderChiri />
+  <main class="main-content">
+    <section class="hero">
+      <h1>Welcome</h1>
+      <p class="intro">
         I'm Terry Li Ho Ming, sharing thoughts on technology, development, and ideas. 
         This is my personal blog where I explore various topics that interest me.
       </p>
-      <p class="mt-2">
-        Feel free to explore the posts below or visit my
-        <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://homing.li"
-        >
-          CV
-        </LinkButton> for professional details.
+      <p class="intro-links">
+        Feel free to explore the posts below or visit my 
+        <a href="https://homing.li" target="_blank" rel="noopener noreferrer">CV</a> 
+        for professional details.
       </p>
-      {
-        // only display if at least one social link is enabled
-        SOCIALS.length > 0 && (
-          <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
     </section>
 
-    <Hr />
+    {featuredPosts.length > 0 && (
+      <section class="post-section">
+        <h2>Featured</h2>
+        <ul class="post-list">
+          {featuredPosts.map(data => (
+            <CardChiri data={data} />
+          ))}
+        </ul>
+      </section>
+    )}
 
-    {
-      featuredPosts.length > 0 && (
-        <>
-          <section id="featured" class="pt-12 pb-6">
-            <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>
-            <ul>
-              {featuredPosts.map(data => (
-                <Card variant="h3" {...data} />
-              ))}
-            </ul>
-          </section>
-          {recentPosts.length > 0 && <Hr />}
-        </>
-      )
-    }
+    {recentPosts.length > 0 && (
+      <section class="post-section">
+        <h2>Recent Posts</h2>
+        <ul class="post-list">
+          {recentPosts.slice(0, SITE.postPerIndex).map(data => (
+            <CardChiri data={data} />
+          ))}
+        </ul>
+      </section>
+    )}
 
-    {
-      recentPosts.length > 0 && (
-        <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
-          <ul>
-            {recentPosts.map(
-              (data, index) =>
-                index < SITE.postPerIndex && <Card variant="h3" {...data} />
-            )}
-          </ul>
-        </section>
-      )
-    }
-
-    <div class="my-8 text-center">
+    <div class="all-posts">
       <LinkButton href="/posts/">
-        All Posts
-        <IconArrowRight class="inline-block rtl:-rotate-180" />
+        View all posts →
       </LinkButton>
     </div>
   </main>
-  <Footer />
-</Layout>
+  <FooterChiri />
+</LayoutChiri>
+
+<style>
+  .main-content {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    min-height: calc(100vh - 12rem);
+  }
+
+  .hero {
+    margin-bottom: 4rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--foreground);
+  }
+
+  .intro {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+
+  .intro-links {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+
+  .intro-links a {
+    color: var(--foreground);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+  }
+
+  .intro-links a:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  .post-section {
+    margin-bottom: 3rem;
+  }
+
+  .post-section h2 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--foreground);
+  }
+
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .all-posts {
+    text-align: center;
+    margin: 3rem 0;
+  }
+
+  .all-posts :global(a) {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.15s ease-out;
+  }
+
+  .all-posts :global(a:hover) {
+    color: var(--foreground);
+  }
+
+  @media (max-width: 640px) {
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+
+    .intro,
+    .intro-links {
+      font-size: 0.875rem;
+    }
+  }
+</style>
 
 <script>
+  // Initialize theme
   document.addEventListener("astro:page-load", () => {
-    const indexLayout = (document.querySelector("#main-content") as HTMLElement)
+    const indexLayout = (document.querySelector(".main-content") as HTMLElement)
       ?.dataset?.layout;
     if (indexLayout) {
       sessionStorage.setItem("backUrl", "/");
