@@ -5,11 +5,11 @@ export const SITE = {
   desc: "Personal blog by Terry Li Ho Ming - thoughts on technology, development, and ideas.",
   title: "Terry Li's Blog",
   ogImage: "astropaper-og.jpg",
-  lightAndDarkMode: true,
+  lightAndDarkMode: false,
   postPerIndex: 4,
   postPerPage: 4,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
-  showArchives: true,
+  showArchives: false,
   showBackButton: true, // show back button in post detail
   editPost: {
     enabled: false,

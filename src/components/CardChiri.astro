@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import Datetime from "./Datetime.astro";
+import DateChiri from "./DateChiri.astro";
 
 export interface Props {
   data: CollectionEntry<"blog">;
@@ -9,7 +9,7 @@ export interface Props {
 
 const { data } = Astro.props;
 const { data: postData, id } = data;
-const { title, pubDatetime, modDatetime, timezone } = postData;
+const { title, pubDatetime, modDatetime } = postData;
 
 // Extract slug from id (format: "filename.md" or "folder/filename.md")
 const slug = id.replace(/\.md$/, "");
@@ -21,13 +21,10 @@ const href = `/posts/${slug}/`;
     <div class="post-item">
       <p class="title">{title}</p>
       <div class="divider"></div>
-      <p class="date">
-        <Datetime 
-          pubDatetime={pubDatetime} 
-          modDatetime={modDatetime}
-          timezone={timezone}
-        />
-      </p>
+      <DateChiri 
+        pubDatetime={pubDatetime} 
+        modDatetime={modDatetime}
+      />
     </div>
   </a>
 </li>
@@ -60,15 +57,6 @@ const href = `/posts/${slug}/`;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-
-  .date {
-    margin: 0;
-    color: var(--text-secondary);
-    opacity: 0.75;
-    letter-spacing: var(--spacing-s);
-    flex-shrink: 0;
-    white-space: nowrap;
   }
 
   .divider {
