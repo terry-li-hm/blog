@@ -1,17 +1,18 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import Datetime from "./Datetime.astro";
-import { SITE } from "@/config";
 
 export interface Props {
   data: CollectionEntry<"blog">;
   index?: number;
 }
 
-const { data, index } = Astro.props;
-const { data: postData, slug } = data;
-const { title, pubDatetime, modDatetime, description } = postData;
+const { data } = Astro.props;
+const { data: postData, id } = data;
+const { title, pubDatetime, modDatetime } = postData;
 
+// Extract slug from id (format: "filename.md" or "folder/filename.md")
+const slug = id.replace(/\.md$/, "");
 const href = `/posts/${slug}/`;
 ---
 
@@ -20,11 +21,12 @@ const href = `/posts/${slug}/`;
     <div class="post-content">
       <span class="post-title">{title}</span>
       <div class="divider"></div>
-      <Datetime 
-        pubDatetime={pubDatetime} 
-        modDatetime={modDatetime}
-        className="post-date"
-      />
+      <div class="post-date">
+        <Datetime 
+          pubDatetime={pubDatetime} 
+          modDatetime={modDatetime}
+        />
+      </div>
     </div>
   </a>
 </li>
