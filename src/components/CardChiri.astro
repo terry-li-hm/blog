@@ -20,7 +20,7 @@ const href = `/posts/${slug}/`;
   <a href={href}>
     <div class="post-item">
       <p class="title">{title}</p>
-      <div class="dotted-divider"></div>
+      <div class="divider"></div>
       <p class="date">
         <Datetime 
           pubDatetime={pubDatetime} 
@@ -71,20 +71,11 @@ const href = `/posts/${slug}/`;
     white-space: nowrap;
   }
 
-  .dotted-divider {
-    flex: 1 1 3rem;
+  .divider {
+    flex: 1 1 auto;
     min-width: 3rem;
-    max-width: 100%;
-    text-align: end;
-    letter-spacing: 5px;
-    height: 1.675rem;
-    overflow: hidden;
-    color: var(--text-tertiary);
-    opacity: 0.75;
-  }
-
-  .dotted-divider::after {
-    content: '·····························································································································································';
-    pointer-events: none;
+    margin: 0 0.25rem;
+    height: 0.5px;
+    background-color: var(--border);
   }
 </style>

@@ -37,11 +37,6 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     </ul>
     <div class="placeholder"></div>
 
-    <div class="all-posts">
-      <LinkButton href="/posts/">
-        View all posts →
-      </LinkButton>
-    </div>
   </main>
   <FooterChiri />
 </LayoutChiri>
@@ -97,8 +92,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       opacity: 1;
     }
 
-    .post-list:hover a:hover .dotted-divider {
-      color: var(--text-secondary);
+    .post-list:hover a:hover .divider {
+      background-color: var(--text-tertiary);
+      opacity: 0.75;
     }
 
     .post-list:hover a:hover .date {
@@ -109,16 +105,6 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
   .placeholder {
     height: 3rem;
-  }
-
-  .all-posts {
-    margin-top: 1rem;
-  }
-
-  .all-posts :global(a) {
-    color: var(--text-primary);
-    text-decoration: underline;
-    text-underline-offset: 2px;
   }
 
   @media (max-width: 640px) {
