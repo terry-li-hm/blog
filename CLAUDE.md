@@ -6,51 +6,39 @@ This blog bridges technical and philosophical thinking. Articles should feel lik
 ## Writing Style
 
 ### Prose Structure
-- **Primary mode**: Continuous intellectual prose that develops ideas narratively
-- **Strategic lists**: Use bullets/numbers only when they serve the rhythm or argument
-  - Process breakdowns (e.g., "The Oracle Pattern")
-  - Concrete examples that benefit from parallel structure
-  - Punchline delivery that needs emphasis
-- **Never use lists for**:
-  - Lazy organization of unrelated points
-  - Content that could flow as natural paragraphs
-  - Padding or making articles look longer
+**Default to pure narrative prose.** Every idea should flow into the next through logical or poetic connection. Think of articles as continuous thought streams, not outlined presentations.
+
+**Lists are rare exceptions**, used only when:
+- The list structure itself makes an argument (e.g., showing parallel compilation targets)
+- Breaking prose would create genuine clarity, not just convenience
+- The visual rhythm serves a specific rhetorical purpose
+
+**Before any list, ask:** Could this be woven into the narrative? Usually, yes. The constraint of prose forces deeper thinking about connections between ideas. A paragraph explaining why three things matter often teaches more than three bullet points listing what they are.
+
+**The test:** If you can read the article aloud and it sounds like natural speech, you've succeeded. Lists break that flow - use them like you'd use silence in conversation: rarely, but powerfully.
 
 ### Voice & Tone
-- Conversational but precise - like explaining to a smart friend
-- Mix technical depth with accessible metaphors
-- Personal experiences as evidence, not autobiography
-- Contrarian positions welcomed when supported
+Write like you're explaining something fascinating to a smart friend over coffee. The precision of technical writing but the warmth of conversation. When technical depth is needed, anchor it with accessible metaphors. Personal experiences should illuminate principles, not dominate the narrative. Contrarian positions are valuable when they're earned through reasoning, not just for effect.
 
 ### Article Structure
-- **Opening**: Hook with unexpected angle or cognitive dissonance
-- **Development**: Build argument through narrative, not sections
-- **Evidence**: Blend personal experience, technical details, philosophical frameworks
-- **Conclusion**: Synthesis, not summary - where does this lead?
+Open with cognitive dissonance - something that makes readers pause and reconsider. Develop ideas through narrative flow rather than sectioned arguments. Evidence should emerge naturally: a personal experience leading to a technical insight, which reveals a philosophical principle. Conclusions synthesize rather than summarize - they ask "where does this lead?" not "what did I just say?"
 
 ### Technical Details
-- Code blocks for actual dialogue/interaction examples
-- Avoid code for code's sake - only when it advances the narrative
-- Technical terms explained through context, not definitions
+Code blocks should capture actual dialogue or interaction, not demonstrate programming. Include code only when it advances the narrative, never for its own sake. Technical terms gain meaning through context and usage rather than explicit definitions.
 
 ### Signature Elements
-- "ultrathink" - thoughts that continue beyond message boundaries
-- Meta-commentary on the writing process itself
-- P.S. sections that subvert or extend the main argument
-- Chinese philosophical frameworks where they add depth
+The blog has evolved certain recurring patterns. "Ultrathink" captures thoughts that continue beyond message boundaries. Meta-commentary on the writing process itself creates additional layers of meaning. P.S. sections subvert or extend arguments, preventing neat closure. Chinese philosophical frameworks appear where they add genuine depth, not exotic decoration.
 
 ## Content Themes
-- Claude Code as cognitive compiler, not coding tool
-- Technology as thought partner, not replacement
-- Workflows that emerge from constraints
-- Hidden capabilities in familiar tools
+The recurring exploration is technology as cognitive partner rather than replacement. Claude Code as cognitive compiler, not coding tool. Workflows that emerge from constraints rather than features. The hidden capabilities in familiar tools that only appear through creative misuse.
 
 ## Quality Checks
 Before publishing, ask:
-1. Could this be written as bullet points? If yes, rewrite as prose
-2. Do lists (if any) create rhythm or just organize?
-3. Is there a surprising insight that changes perspective?
-4. Does it sound like me thinking out loud, not presenting?
+1. Read it aloud - does it flow like natural speech or feel choppy?
+2. For any list - could this be a paragraph instead? (Usually yes)
+3. Do ideas connect through logic or just proximity?
+4. Is there a moment where the reader's perspective shifts?
+5. Does it sound like thinking-in-progress, not conclusions?
 
 ## Technical Setup
 - Platform: Astro with Chiri design
