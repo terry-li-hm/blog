@@ -143,6 +143,17 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
     color: var(--text-primary);
   }
 
+  /* Drop cap for first paragraph */
+  .post-content > p:first-of-type::first-letter {
+    float: left;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    padding-right: 0.5rem;
+    margin-top: -0.1rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+  }
+
   .post-content :global(h1),
   .post-content :global(h2),
   .post-content :global(h3),
@@ -161,6 +172,9 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
 
   .post-content :global(h2) {
     font-size: 1.25rem;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    font-weight: var(--font-weight-regular);
   }
 
   .post-content :global(h3) {
@@ -197,11 +211,35 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
   }
 
   .post-content :global(blockquote) {
-    border-left: 2px solid var(--border);
-    padding-left: 1rem;
-    margin: 1.5rem 0;
+    border-left: 2px solid var(--text-tertiary);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
     color: var(--text-secondary);
     font-style: italic;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    position: relative;
+  }
+
+  .post-content :global(blockquote)::before {
+    content: """;
+    position: absolute;
+    left: -0.5rem;
+    top: -0.5rem;
+    font-size: 3rem;
+    color: var(--text-tertiary);
+    font-family: var(--serif);
+  }
+
+  /* Better emphasis styles */
+  .post-content :global(strong) {
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.01em;
+  }
+
+  .post-content :global(em) {
+    font-style: italic;
+    font-family: var(--serif);
   }
 
   .post-content :global(code) {
@@ -228,8 +266,26 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
 
   .post-content :global(hr) {
     border: none;
-    border-top: 1px solid var(--border);
-    margin: 2rem 0;
+    margin: 3rem 0;
+    text-align: center;
+    position: relative;
+  }
+
+  .post-content :global(hr)::after {
+    content: "◆ ◆ ◆";
+    color: var(--text-tertiary);
+    font-size: 0.75rem;
+    letter-spacing: 0.5em;
+    position: relative;
+    top: -0.5rem;
+  }
+
+  /* Style P.S. sections differently */
+  .post-content :global(hr + p) {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    line-height: 1.65;
   }
 
   @media (max-width: 640px) {
