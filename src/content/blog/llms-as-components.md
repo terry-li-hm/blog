@@ -1,7 +1,8 @@
 ---
 title: "When Intelligence Becomes Infrastructure"
 description: "What changes when LLM agents stop being special and become just another software component? Everything, as it turns out."
-publishDate: "23 Aug 2025"
+pubDatetime: 2025-08-24T00:00:00Z
+draft: true
 tags: ["llm", "architecture", "cognitive-computing", "software-design"]
 ---
 
