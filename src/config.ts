@@ -3,7 +3,7 @@ export const SITE = {
   author: "Terry Li",
   profile: "https://homing.li/",
   desc: "Personal blog by Terry Li Ho Ming - thoughts on technology, development, and ideas.",
-  title: "Terry Li's Blog",
+  title: "TL;HM",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: false,
   postPerIndex: 4,
