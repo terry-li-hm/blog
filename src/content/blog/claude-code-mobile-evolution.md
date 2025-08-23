@@ -34,12 +34,7 @@ The `--resume` flag transforms interruption from bug to feature. Desktop develop
 
 Walking meetings with Claude Code via voice dictation unlock a different kind of thinking:
 
-```
-"Claude, I'm walking to lunch thinking about the payment 
-flow architecture. The user uploads invoice, we extract 
-vendor info, match against approved vendors, route for 
-approval. What edge cases am I missing?"
-```
+> "Claude, I'm walking to lunch thinking about the payment flow architecture. The user uploads invoice, we extract vendor info, match against approved vendors, route for approval. What edge cases am I missing?"
 
 Voice input forces higher-level problem articulation. No keyboard means no immediate diving into implementation details. The constraint creates better architectural thinking.
 
@@ -49,16 +44,13 @@ Let me share some real mobile moments that changed how I think about development
 
 Payment processing crashed during a family dinner. The gathering couldn't be abandoned. My phone appeared, tmux session reconnected, Claude Code analyzed the logs:
 
-```
-"Database connection pool exhausted. Check connection 
-timeout configuration in production.yml"
-```
+> "Database connection pool exhausted. Check connection timeout configuration in production.yml"
 
 Fix deployed in 8 minutes. Family never knew production was burning.
 
 Flight delayed 3 hours at the airport. Instead of doom-scrolling, I reviewed pull requests:
 
-```
+```bash
 claude --diff "Compare authentication approaches in these 
 three PRs and recommend the most secure pattern"
 ```
@@ -67,7 +59,7 @@ By boarding time, security review complete with detailed feedback for the team.
 
 Between Hong Kong client meetings, sitting in a coffee shop, I maintained my Obsidian vault:
 
-```
+```bash
 claude --vault "Synthesize today's client feedback into 
 actionable insights for next quarter's roadmap"
 ```
