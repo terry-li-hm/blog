@@ -1,9 +1,9 @@
 ---
 title: "Claude Code is Not a Coding Agent"
 description: "How I use Claude Code for everything except coding: Obsidian copilot, executive ghostwriter, decision oracle, and existential thought partner"
-pubDate: "2025-08-22"
+pubDatetime: 2025-08-22T00:00:00Z
+draft: false
 tags: [ai, productivity, tools, obsidian]
-heroImage: ""
 ---
 
 Everyone thinks Claude Code is for coding. The name certainly doesn't help. But after three months of daily use, I've written maybe 20% code and 80% everything else. 

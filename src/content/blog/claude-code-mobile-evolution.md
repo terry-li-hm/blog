@@ -1,9 +1,9 @@
 ---
 title: "Claude Code Mobile: From Cognitive Compiler to Pocket Development Environment"
 description: "Moving beyond tmux basics to discover mobile-first workflows, geo tracking, and voice-driven development that desktop can't replicate"
-pubDate: "2025-08-23"
+pubDatetime: 2025-08-23T00:00:00Z
+draft: false
 tags: [ai, mobile, development, workflow, productivity]
-heroImage: ""
 ---
 
 Yesterday I wrote about [Claude Code as a cognitive compiler](/blog/claude-code-not-coding-agent) - a tool that transforms scattered thoughts into coherent strategy. Today: how I carry that compiler in my pocket, and why mobile Claude Code unlocks capabilities that desktop simply can't match.
