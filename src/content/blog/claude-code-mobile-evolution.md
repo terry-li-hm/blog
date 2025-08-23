@@ -14,21 +14,11 @@ Everyone knows the basic mobile setup. Ten articles cover tmux persistence and T
 
 Here's what nobody else is documenting: location-aware development.
 
-I discovered this accidentally during a Hong Kong business trip. Working across timezones, I started adding location context to my commits:
-
-```bash
-# My custom alias that emerged from timezone confusion
-alias claude-geo='claude --context "Location: $(curl -s ipinfo.io/city), Local time: $(date)"'
-```
+I discovered this accidentally during a Hong Kong business trip. Working across timezones, I started adding location context to my commits. My custom alias that emerged from timezone confusion: `alias claude-geo='claude --context "Location: $(curl -s ipinfo.io/city), Local time: $(date)"'`.
 
 What started as timezone debugging became something more valuable. The physical location primes different cognitive modes. Mobile Claude Code captures this environmental context automatically. Hong Kong office triggers financial compliance mindset, conservative architecture decisions. Coffee shop environments spark creative experimentation, rapid prototyping. Home office enables deep focus, complex system design. Airport lounges naturally lead to documentation, cleanup, preparing handoffs.
 
-Mobile sessions fragment naturally - subway tunnels, elevators, meetings. Rather than fighting this, I learned to design around it:
-
-```bash
-claude --resume --context "Last thought: implementing user auth"
-# Claude immediately reconstructs where we left off
-```
+Mobile sessions fragment naturally - subway tunnels, elevators, meetings. Rather than fighting this, I learned to design around it. Running `claude --resume --context "Last thought: implementing user auth"` immediately reconstructs where we left off.
 
 The `--resume` flag transforms interruption from bug to feature. Desktop developers lose this forcing function for clean context handoffs.
 
@@ -48,21 +38,11 @@ Payment processing crashed during a family dinner. The gathering couldn't be aba
 
 Fix deployed in 8 minutes. Family never knew production was burning.
 
-Flight delayed 3 hours at the airport. Instead of doom-scrolling, I reviewed pull requests:
-
-```bash
-claude --diff "Compare authentication approaches in these 
-three PRs and recommend the most secure pattern"
-```
+Flight delayed 3 hours at the airport. Instead of doom-scrolling, I reviewed pull requests with a simple command: `claude --diff "Compare authentication approaches in these three PRs and recommend the most secure pattern"`.
 
 By boarding time, security review complete with detailed feedback for the team.
 
-Between Hong Kong client meetings, sitting in a coffee shop, I maintained my Obsidian vault:
-
-```bash
-claude --vault "Synthesize today's client feedback into 
-actionable insights for next quarter's roadmap"
-```
+Between Hong Kong client meetings, sitting in a coffee shop, I maintained my Obsidian vault: `claude --vault "Synthesize today's client feedback into actionable insights for next quarter's roadmap"`.
 
 The location change triggered different thinking. Coffee shop energy creates strategic synthesis impossible in corporate conference rooms.
 
@@ -70,13 +50,7 @@ Technical challenges emerged and got solved along the way. Mobile keyboards hide
 
 Desktop assumptions break on mobile. Working Copy handles git operations. Secure ShellFish mounts file systems. iCloud Drive enables desktop handoff. Each tool fills a gap desktop developers never encounter.
 
-Mobile networks drop constantly. Mosh handles roaming better than SSH:
-
-```bash
-mosh server -- tmux a -t claude-session
-```
-
-Connection persistence becomes invisible. Subway tunnels, elevator rides, network switches - none interrupt the conversation.
+Mobile networks drop constantly. Mosh handles roaming better than SSH. The command `mosh server -- tmux a -t claude-session` creates connection persistence that becomes invisible. Subway tunnels, elevator rides, network switches - none interrupt the conversation.
 
 Performance surprised me. A 4-hour continuous Claude Code session drains 30% battery - comparable to video streaming. Manageable for most use cases. Data usage stays minimal at 2MB/hour for text-based interactions. Even international roaming won't break the bank. Response times feel instant over cellular. The bottleneck is typing, not network latency.
 
