@@ -41,7 +41,8 @@ if (typeof initOgImage === "string") {
 
 // Use dynamic OG image if enabled and no remote|local ogImage
 if (!ogImageUrl && SITE.dynamicOgImage) {
-  ogImageUrl = await getPath(post.id, post.filePath) + ".png";
+  const slug = post.id.replace(/\.md$/, "");
+  ogImageUrl = `/posts/${slug}/index.png`;
 }
 
 const ogImage = ogImageUrl ?? SITE.ogImage ?? "og.png";
