@@ -27,6 +27,9 @@ const sortedPosts = getSortedPosts(posts);
           Directed by Terry Li. Written with Claude Code. Every word is co-thought.
           <a href="https://homing.li" target="_blank" rel="noopener noreferrer">Context</a>.
         </p>
+        <p>
+          Side projects: <a href="https://github.com/terry-li-hm/black-iris" target="_blank" rel="noopener noreferrer">black-iris</a> (MCP server for Obsidian).
+        </p>
       </div>
       <ul class="post-list">
         {sortedPosts.map(data => (
@@ -71,7 +74,7 @@ const sortedPosts = getSortedPosts(posts);
   }
 
   .about p:not(:last-child) {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.375rem;
   }
 
   .about a {
