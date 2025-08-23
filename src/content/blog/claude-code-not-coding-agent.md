@@ -28,26 +28,26 @@ This isn't coding. This is **knowledge archaeology**.
 
 ## The Executive Communication Compiler
 
-My direct manager wants bullet points. The regional VP wants narrative with philosophical frameworks. The board wants metrics.
+Different audiences need different formats. Engineers want technical specs. Business stakeholders want narratives with strategic frameworks. Finance wants metrics.
 
 Same information, three compilation targets:
 
 ```
-Me: "GenAI platform needs significant GPU investment. Write for my manager."
+Me: "AI infrastructure proposal. Write for technical audience."
 
 Claude Code:
-• Enterprise GPU cluster required
-• Multi-million quarterly investment
+• High-performance compute cluster required
+• Significant capital investment
 • Supports enterprise-scale concurrent users
-• ROI positive within two quarters
+• ROI positive within quarters
 
-Me: "Now for the regional VP"
+Me: "Now for strategic stakeholders"
 
 Claude Code:
 "The platform architecture follows modularization principles (模块化),
-requiring enterprise GPU infrastructure as the foundational layer. This
-investment enables parametric scaling (参数化) across business units,
-ultimately achieving platform effects (平台化) by year-end..."
+requiring foundational compute infrastructure. This investment 
+enables parametric scaling (参数化) across business units,
+ultimately achieving platform effects (平台化)..."
 ```
 
 I'm not asking it to code. I'm asking it to **compile human protocols**.
