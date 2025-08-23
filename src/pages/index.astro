@@ -52,6 +52,14 @@ const sortedPosts = getSortedPosts(posts);
     flex: 1;
   }
 
+  main {
+    max-width: 35rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .about:not(:empty) {
     margin-top: 2rem;
     margin-bottom: 1.25rem;
@@ -104,5 +112,17 @@ const sortedPosts = getSortedPosts(posts);
 
   .placeholder {
     height: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      padding: 0 1.25rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    main {
+      padding: 0 1rem;
+    }
   }
 </style>
