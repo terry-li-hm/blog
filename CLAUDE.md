@@ -1,5 +1,9 @@
 # Blog Writing Style Guide
 
+## Context
+- Current year: 2025
+- When searching for latest trends, designs, or information, use 2025 as the reference year
+
 ## Core Philosophy
 This blog bridges technical and philosophical thinking. Articles should feel like conversations with a thoughtful colleague, not documentation or tutorials.
 

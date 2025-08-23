@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import DateChiri from "./DateChiri.astro";
+import { getReadingTime } from "@/utils/readingTime";
 
 export interface Props {
   data: CollectionEntry<"blog">;
@@ -8,8 +9,11 @@ export interface Props {
 }
 
 const { data } = Astro.props;
-const { data: postData, id } = data;
-const { title, pubDatetime, modDatetime } = postData;
+const { data: postData, id, body } = data;
+const { title, description, pubDatetime, modDatetime } = postData;
+
+// Calculate reading time from the post body
+const readingTime = getReadingTime(body);
 
 // Extract slug from id (format: "filename.md" or "folder/filename.md")
 const slug = id.replace(/\.md$/, "");
@@ -19,11 +23,15 @@ const href = `/posts/${slug}/`;
 <li>
   <a href={href}>
     <div class="post-item">
-      <p class="title">{title}</p>
+      <div class="post-content">
+        <p class="title">{title}</p>
+        {description && <p class="description">{description}</p>}
+      </div>
       <div class="divider"></div>
       <DateChiri 
         pubDatetime={pubDatetime} 
         modDatetime={modDatetime}
+        readingTime={readingTime}
       />
     </div>
   </a>
@@ -50,23 +58,40 @@ const href = `/posts/${slug}/`;
     min-height: 2.75rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.75rem;
-    padding: 0.5rem 0;
+    padding: 0.75rem 0;
+  }
+
+  .post-content {
+    flex-shrink: 1;
+    min-width: 0;
   }
 
   .title {
     margin: 0;
-    flex-shrink: 1;
-    min-width: 0;
     line-height: 1.4;
+    font-weight: var(--font-weight-regular);
+  }
+
+  .description {
+    margin: 0.25rem 0 0 0;
+    font-size: var(--font-size-s);
+    color: var(--text-secondary);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .divider {
     flex: 1 1 auto;
-    min-width: 3rem;
-    margin: 0 0.25rem;
+    min-width: 2rem;
+    margin: 0.5rem 0.5rem 0 0.5rem;
     height: 0.5px;
     background-color: var(--border);
+    align-self: flex-start;
   }
 </style>

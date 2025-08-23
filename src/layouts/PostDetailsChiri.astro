@@ -6,6 +6,7 @@ import FooterChiri from "@/components/FooterChiri.astro";
 import DateChiri from "@/components/DateChiri.astro";
 import { getPath } from "@/utils/getPath";
 import { slugifyStr } from "@/utils/slugify";
+import { getReadingTime } from "@/utils/readingTime";
 import { SITE } from "@/config";
 
 export interface Props {
@@ -29,6 +30,9 @@ const {
 } = post.data;
 
 const { Content } = await render(post);
+
+// Calculate reading time from the post body
+const readingTime = getReadingTime(post.body);
 
 let ogImageUrl: string | undefined;
 
@@ -79,7 +83,7 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
     <article class="post-article">
       <header class="post-header">
         <h1 class="post-title">{title}</h1>
-        <DateChiri {pubDatetime} {modDatetime} />
+        <DateChiri {pubDatetime} {modDatetime} {readingTime} />
       </header>
 
       <div class="post-content prose">
@@ -96,6 +100,8 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
     margin: 0 auto;
     padding: 2rem 1rem;
     min-height: calc(100vh - 12rem);
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .back-link {
@@ -288,6 +294,13 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
     line-height: 1.65;
   }
 
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 2rem 1.35rem;
+      max-width: 100%;
+    }
+  }
+  
   @media (max-width: 640px) {
     .post-title {
       font-size: 1.25rem;
