@@ -1,7 +1,8 @@
 ---
 title: "Claude Code, Analyze My Spending"
 description: "When AI coding assistants become workflow orchestrators, the most powerful compiler isn't processing code—it's processing reality."
-publishDate: 2025-01-23
+pubDatetime: 2025-08-23T00:00:00Z
+draft: false
 tags: ["claude-code", "automation", "ai", "workflows", "browser-automation"]
 ---
 
