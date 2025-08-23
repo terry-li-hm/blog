@@ -40,9 +40,35 @@ const structuredData = {
     {
       "@type": "Person",
       name: `${author}`,
-      ...(profile && { url: profile }),
+      url: "https://homing.li/",
+      sameAs: [
+        "https://www.linkedin.com/in/terrylihm/",
+        "https://github.com/terry-li-hm"
+      ],
+      knowsAbout: [
+        "Software Development",
+        "Artificial Intelligence", 
+        "Claude Code",
+        "Technology",
+        "Workflow Automation"
+      ],
+      jobTitle: "Software Engineer",
+      email: "hello@homing.li"
     },
   ],
+  publisher: {
+    "@type": "Person",
+    name: `${author}`,
+    url: "https://homing.li/",
+    sameAs: [
+      "https://www.linkedin.com/in/terrylihm/",
+      "https://github.com/terry-li-hm"
+    ]
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": `${canonicalURL}`
+  }
 };
 ---
 
@@ -74,6 +100,7 @@ const structuredData = {
     <!-- LinkedIn specific -->
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="627" />
+    <meta property="profile:username" content="terrylihm" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />

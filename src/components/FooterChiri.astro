@@ -1,15 +1,27 @@
 ---
+import { SOCIALS } from "@/constants";
+
 const today = new Date()
 ---
 
 <footer>
   <div class="footer-content">
-    <div class="copyright">
-      <span class="date">
-        &copy;
-        {today.getFullYear()}
-      </span>
-      Terry Li
+    <div class="footer-left">
+      <div class="copyright">
+        <span class="date">
+          &copy;
+          {today.getFullYear()}
+        </span>
+        Terry Li
+      </div>
+      <div class="contact">
+        {SOCIALS.map(social => (
+          <a href={social.href} title={social.linkTitle} class="social-link">
+            <social.icon />
+            <span>{social.name}</span>
+          </a>
+        ))}
+      </div>
     </div>
     <div class="powered-by">
       Powered by{' '}
@@ -32,19 +44,57 @@ const today = new Date()
   .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
+    gap: 1rem;
   }
 
-  .copyright,
-  .powered-by {
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+  }
+
+  .copyright {
     white-space: nowrap;
   }
 
   .copyright .date {
     opacity: 1;
+  }
+
+  .contact {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+    font-size: 0.875rem;
+  }
+
+  .social-link:hover {
+    color: var(--text-primary);
+  }
+
+  .social-link svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+
+  .powered-by {
+    white-space: nowrap;
+    align-self: flex-end;
   }
 
   footer a {
@@ -55,5 +105,26 @@ const today = new Date()
 
   footer a:hover {
     color: var(--text-primary);
+  }
+
+  @media (max-width: 640px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+
+    .footer-left {
+      width: 100%;
+    }
+
+    .contact {
+      gap: 0.75rem;
+    }
+
+    .powered-by {
+      align-self: flex-start;
+      margin-top: 0.5rem;
+    }
   }
 </style>

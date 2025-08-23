@@ -17,26 +17,20 @@ interface Social {
 
 export const SOCIALS: Social[] = [
   {
-    name: "GitHub",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on GitHub`,
-    icon: IconGitHub,
-  },
-  {
-    name: "X",
-    href: "https://x.com/username",
-    linkTitle: `${SITE.title} on X`,
-    icon: IconBrandX,
-  },
-  {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/username/",
+    href: "https://www.linkedin.com/in/terrylihm/",
     linkTitle: `${SITE.title} on LinkedIn`,
     icon: IconLinkedin,
   },
   {
+    name: "GitHub",
+    href: "https://github.com/terry-li-hm",
+    linkTitle: `${SITE.title} on GitHub`,
+    icon: IconGitHub,
+  },
+  {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:hello@homing.li",
     linkTitle: `Send an email to ${SITE.title}`,
     icon: IconMail,
   },

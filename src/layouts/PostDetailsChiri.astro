@@ -3,6 +3,7 @@ import { render, type CollectionEntry } from "astro:content";
 import LayoutChiri from "@/layouts/LayoutChiri.astro";
 import FooterChiri from "@/components/FooterChiri.astro";
 import DateChiri from "@/components/DateChiri.astro";
+import SocialShare from "@/components/SocialShare.astro";
 import { getReadingTime } from "@/utils/readingTime";
 import { SITE } from "@/config";
 
@@ -82,6 +83,11 @@ const layoutProps = {
       <div class="post-content prose">
         <Content />
       </div>
+      
+      <SocialShare 
+        title={title} 
+        url={canonicalURL || `${SITE.website}posts/${post.id.replace(/\.md$/, '')}/`} 
+      />
     </article>
   </main>
   <FooterChiri />
