@@ -7,6 +7,31 @@
 ## Core Philosophy
 This blog bridges technical and philosophical thinking. Articles should feel like conversations with a thoughtful colleague, not documentation or tutorials.
 
+## Privacy and Security Principles
+
+**Never reveal internal information:**
+- No real names of colleagues or supervisors
+- No specific project names or codenames
+- No exact financial figures or metrics
+- No organizational hierarchies or reporting structures
+
+**Keep examples powerful but generic:**
+- Use role descriptions, not titles (e.g., "technical audience" not "my manager")
+- Use ranges, not specifics (e.g., "multi-million" not "$3.2M")
+- Use categories, not counts (e.g., "thousands of notes" not "1,847")
+- Focus on patterns, not identifying details
+
+**Protect workplace dynamics:**
+- No mentions of specific companies or clients
+- No revealing team structures or relationships
+- No details that could identify workplace or location
+- Keep cultural references universal, not organization-specific
+
+**Maintain authenticity without exposure:**
+- Real insights, generic framing
+- True patterns, sanitized examples
+- Genuine experiences, protected identities
+
 ## Writing Style
 
 ### Prose Structure
