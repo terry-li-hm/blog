@@ -138,6 +138,7 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
   }
 
   .post-content {
+    font-family: var(--serif);
     font-size: 1.0625rem;
     line-height: 1.75;
     color: var(--text-primary);
@@ -160,6 +161,7 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
   .post-content :global(h4),
   .post-content :global(h5),
   .post-content :global(h6) {
+    font-family: var(--sans);
     font-weight: var(--font-weight-bold);
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -215,6 +217,7 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
     padding-left: 1.5rem;
     margin: 2rem 0;
     color: var(--text-secondary);
+    font-family: var(--serif);
     font-style: italic;
     font-size: 1.125rem;
     line-height: 1.8;
@@ -239,7 +242,6 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
 
   .post-content :global(em) {
     font-style: italic;
-    font-family: var(--serif);
   }
 
   .post-content :global(code) {
