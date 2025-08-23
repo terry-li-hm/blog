@@ -9,7 +9,7 @@ export default {
   trailingComma: "es5",
   bracketSpacing: true,
   endOfLine: "lf",
-  plugins: ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+  plugins: ["prettier-plugin-organize-imports", "prettier-plugin-astro", "prettier-plugin-tailwindcss"],
   tailwindStylesheet: "./src/styles/global.css",
   overrides: [
     {

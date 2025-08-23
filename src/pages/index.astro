@@ -4,7 +4,7 @@ import LayoutChiri from "@/layouts/LayoutChiri.astro";
 import HeaderChiri from "@/components/HeaderChiri.astro";
 import FooterChiri from "@/components/FooterChiri.astro";
 import CardChiri from "@/components/CardChiri.astro";
-import GradientMask from "@/components/GradientMask.astro";
+import GradientMaskChiri from "@/components/GradientMaskChiri.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
 
 const posts = await getCollection("blog");
@@ -13,7 +13,7 @@ const sortedPosts = getSortedPosts(posts);
 
 <LayoutChiri>
   <div class="page-content">
-    <GradientMask />
+    <GradientMaskChiri />
     <div>
       <HeaderChiri />
     </div>

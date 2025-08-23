@@ -1,21 +1,22 @@
 ---
 import "@pagefind/default-ui/css/ui.css";
-import Main from "@/layouts/Main.astro";
-import Layout from "@/layouts/Layout.astro";
-import Header from "@/components/Header.astro";
-import Footer from "@/components/Footer.astro";
+import LayoutChiri from "@/layouts/LayoutChiri.astro";
+import HeaderChiri from "@/components/HeaderChiri.astro";
+import FooterChiri from "@/components/FooterChiri.astro";
 import { SITE } from "@/config";
 
 const backUrl = SITE.showBackButton ? `${Astro.url.pathname}` : "/";
 ---
 
-<Layout title={`Search | ${SITE.title}`}>
-  <Header />
-  <Main pageTitle="Search" pageDesc="Search any article ...">
+<LayoutChiri title={`Search | ${SITE.title}`}>
+  <HeaderChiri />
+  <main class="main-content">
+    <h1>Search</h1>
+    <p class="search-desc">Search any article...</p>
     <div id="pagefind-search" transition:persist data-backurl={backUrl}></div>
-  </Main>
-  <Footer />
-</Layout>
+  </main>
+  <FooterChiri />
+</LayoutChiri>
 
 <script>
   function initSearch() {

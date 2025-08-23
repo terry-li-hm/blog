@@ -2,6 +2,8 @@ import { defineConfig, envField } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import vercel from "@astrojs/vercel";
+import partytown from "@astrojs/partytown";
+import compress from "astro-compress";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import {
@@ -16,6 +18,10 @@ import { SITE } from "./src/config";
 export default defineConfig({
   site: SITE.website,
   output: "static",
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: 'viewport'
+  },
   adapter: vercel({
     isr: {
       // Cache all pages for 1 day, revalidate in background
@@ -25,6 +31,23 @@ export default defineConfig({
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
+    }),
+    partytown({
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
+    compress({
+      CSS: true,
+      HTML: {
+        "html-minifier-terser": {
+          removeAttributeQuotes: false,
+        },
+      },
+      Image: false,
+      JavaScript: true,
+      SVG: true,
+      Logger: 1,
     }),
   ],
   markdown: {

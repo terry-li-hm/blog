@@ -5,7 +5,7 @@ export const SITE = {
   desc: "Personal blog by Terry Li Ho Ming - thoughts on technology, development, and ideas.",
   title: "TL;HM",
   ogImage: "astropaper-og.jpg",
-  lightAndDarkMode: false,
+  lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes

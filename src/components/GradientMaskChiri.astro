@@ -1,0 +1,62 @@
+---
+// Gradient mask component for Chiri design
+---
+
+<div class="gradient-mask">
+  <div class="gradient-mask-content"></div>
+</div>
+
+<style>
+  .gradient-mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .gradient-mask-content {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    background: radial-gradient(
+      ellipse at center,
+      transparent 0%,
+      transparent 20%,
+      rgba(var(--bg-rgb), 0.05) 30%,
+      rgba(var(--bg-rgb), 0.15) 40%,
+      rgba(var(--bg-rgb), 0.35) 50%,
+      rgba(var(--bg-rgb), 0.6) 60%,
+      rgba(var(--bg-rgb), 0.8) 70%,
+      rgba(var(--bg-rgb), 0.92) 80%,
+      rgba(var(--bg-rgb), 0.97) 90%,
+      var(--bg) 100%
+    );
+    animation: subtle-pulse 20s ease-in-out infinite;
+  }
+
+  @keyframes subtle-pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.02); opacity: 0.98; }
+  }
+
+  @media (max-width: 768px) {
+    .gradient-mask-content {
+      background: radial-gradient(
+        ellipse at center,
+        transparent 0%,
+        transparent 15%,
+        rgba(var(--bg-rgb), 0.2) 30%,
+        rgba(var(--bg-rgb), 0.5) 45%,
+        rgba(var(--bg-rgb), 0.75) 60%,
+        rgba(var(--bg-rgb), 0.9) 75%,
+        rgba(var(--bg-rgb), 0.97) 85%,
+        var(--bg) 95%
+      );
+    }
+  }
+</style>

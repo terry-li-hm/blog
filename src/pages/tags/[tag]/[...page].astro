@@ -1,12 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 import type { GetStaticPathsOptions } from "astro";
-import Main from "@/layouts/Main.astro";
-import Layout from "@/layouts/Layout.astro";
-import Header from "@/components/Header.astro";
-import Footer from "@/components/Footer.astro";
-import Card from "@/components/Card.astro";
-import Pagination from "@/components/Pagination.astro";
+import LayoutChiri from "@/layouts/LayoutChiri.astro";
+import HeaderChiri from "@/components/HeaderChiri.astro";
+import FooterChiri from "@/components/FooterChiri.astro";
+import CardChiri from "@/components/CardChiri.astro";
 import getUniqueTags from "@/utils/getUniqueTags";
 import getPostsByTag from "@/utils/getPostsByTag";
 import { SITE } from "@/config";
@@ -26,25 +24,24 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   });
 }
 
-const params = Astro.params;
-const { tag } = params;
 const { page, tagName } = Astro.props;
 ---
 
-<Layout title={`Tag: ${tagName} | ${SITE.title}`}>
-  <Header />
-  <Main
-    pageTitle={[`Tag:`, `${tagName}`]}
-    titleTransition={tag}
-    pageDesc={`All the articles with the tag "${tagName}".`}
-  >
-    <h1 slot="title" transition:name={tag}>{`Tag:${tag}`}</h1>
-    <ul>
-      {page.data.map(data => <Card {...data} />)}
-    </ul>
-  </Main>
-
-  <Pagination {page} />
-
-  <Footer noMarginTop={page.lastPage > 1} />
-</Layout>
+<LayoutChiri title={`Tag: ${tagName} | ${SITE.title}`}>
+  <HeaderChiri />
+  <main class="main-content">
+    <h1>Tag: {tagName}</h1>
+    <p class="tag-desc">All the articles with the tag "{tagName}".</p>
+    <div class="posts-list">
+      {page.data.map(post => <CardChiri data={post} />)}
+    </div>
+    {page.lastPage > 1 && (
+      <nav class="pagination">
+        {page.url.prev && <a href={page.url.prev}>← Previous</a>}
+        <span>Page {page.currentPage} of {page.lastPage}</span>
+        {page.url.next && <a href={page.url.next}>Next →</a>}
+      </nav>
+    )}
+  </main>
+  <FooterChiri />
+</LayoutChiri>

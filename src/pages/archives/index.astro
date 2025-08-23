@@ -1,10 +1,9 @@
 ---
 import { getCollection } from "astro:content";
-import Main from "@/layouts/Main.astro";
-import Layout from "@/layouts/Layout.astro";
-import Header from "@/components/Header.astro";
-import Footer from "@/components/Footer.astro";
-import Card from "@/components/Card.astro";
+import LayoutChiri from "@/layouts/LayoutChiri.astro";
+import HeaderChiri from "@/components/HeaderChiri.astro";
+import FooterChiri from "@/components/FooterChiri.astro";
+import CardChiri from "@/components/CardChiri.astro";
 import getPostsByGroupCondition from "@/utils/getPostsByGroupCondition";
 import { SITE } from "@/config";
 
@@ -31,9 +30,11 @@ const months = [
 ];
 ---
 
-<Layout title={`Archives | ${SITE.title}`}>
-  <Header />
-  <Main pageTitle="Archives" pageDesc="All the articles I've archived.">
+<LayoutChiri title={`Archives | ${SITE.title}`}>
+  <HeaderChiri />
+  <main class="main-content">
+    <h1>Archives</h1>
+    <p class="archives-desc">All the articles I've archived.</p>
     {
       Object.entries(
         getPostsByGroupCondition(posts, post =>
@@ -69,8 +70,8 @@ const months = [
                             new Date(a.data.pubDatetime).getTime() / 1000
                           )
                       )
-                      .map(data => (
-                        <Card {...data} />
+                      .map(post => (
+                        <CardChiri data={post} />
                       ))}
                   </ul>
                 </div>
@@ -78,6 +79,6 @@ const months = [
           </div>
         ))
     }
-  </Main>
-  <Footer />
-</Layout>
+  </main>
+  <FooterChiri />
+</LayoutChiri>
