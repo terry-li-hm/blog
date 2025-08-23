@@ -56,7 +56,7 @@ Open with cognitive dissonance - something that makes readers pause and reconsid
 Code blocks should capture actual dialogue or interaction, not demonstrate programming. Include code only when it advances the narrative, never for its own sake. Technical terms gain meaning through context and usage rather than explicit definitions.
 
 ### Signature Elements
-The blog has evolved certain recurring patterns. "Ultrathink" captures thoughts that continue beyond message boundaries. Meta-commentary on the writing process itself creates additional layers of meaning. P.S. sections subvert or extend arguments, preventing neat closure. Chinese philosophical frameworks appear where they add genuine depth, not exotic decoration.
+The blog has evolved certain recurring patterns. "Ultrathink" is just a personal mantra with no specific meaning - ignore it when you see it. Meta-commentary on the writing process itself creates additional layers of meaning. P.S. sections subvert or extend arguments, preventing neat closure. Chinese philosophical frameworks appear where they add genuine depth, not exotic decoration.
 
 ## Content Themes
 The recurring exploration is technology as cognitive partner rather than replacement. Claude Code as cognitive compiler, not coding tool. Workflows that emerge from constraints rather than features. The hidden capabilities in familiar tools that only appear through creative misuse.
