@@ -13,7 +13,7 @@ const { data: postData, id, body } = data;
 const { title, description, pubDatetime, modDatetime } = postData;
 
 // Calculate reading time from the post body
-const readingTime = getReadingTime(body);
+const readingTime = body ? getReadingTime(body) : 1;
 
 // Extract slug from id (format: "filename.md" or "folder/filename.md")
 const slug = id.replace(/\.md$/, "");

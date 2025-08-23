@@ -32,7 +32,7 @@ const {
 const { Content } = await render(post);
 
 // Calculate reading time from the post body
-const readingTime = getReadingTime(post.body);
+const readingTime = post.body ? getReadingTime(post.body) : 1;
 
 let ogImageUrl: string | undefined;
 
