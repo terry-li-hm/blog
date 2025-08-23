@@ -412,16 +412,18 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
       display: block;
       white-space: pre-wrap;
       word-wrap: break-word;
-      word-break: break-word;
+      /* Force break even within words for very long strings */
+      word-break: break-all;
       hyphens: none;
-      /* Preserve code structure while allowing wrapping */
-      overflow-wrap: break-word;
+      overflow-wrap: anywhere;
     }
     
-    /* Compact syntax for better mobile fit */
-    .post-content :global(pre code .comment),
-    .post-content :global(pre code .string) {
-      word-break: break-word;
+    /* For bash/shell commands, be even more aggressive */
+    .post-content :global(pre code.language-bash),
+    .post-content :global(pre code.language-shell),
+    .post-content :global(pre code.language-sh) {
+      word-break: break-all;
+      overflow-wrap: anywhere;
     }
     
     /* Even smaller font for very small screens */
