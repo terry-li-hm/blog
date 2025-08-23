@@ -12,42 +12,42 @@ Claude Code is my Obsidian copilot, my executive translator, my decision framewo
 
 ## The Obsidian Revolution Nobody's Talking About
 
-My Obsidian vault has 1,847 notes. Pre-Claude Code, finding connections between ideas meant manual searching, tagging, and hoping I remembered that brilliant insight from three months ago. Now?
+My Obsidian vault has thousands of notes. Pre-Claude Code, finding connections between ideas meant manual searching, tagging, and hoping I remembered that brilliant insight from three months ago. Now?
 
 ```
 Me: "Find all mentions of technical debt in my meeting notes 
      and correlate with project delays"
 
-Claude Code: *searches 400 files in 3 seconds*
-"Found 17 instances. Pattern: technical debt discussions 
-spike 2-3 weeks before deadline extensions. Notable correlation 
-in Project Phoenix (delayed 6 weeks) and Project Athena (delayed 4 weeks)."
+Claude Code: *searches hundreds of files in seconds*
+"Found multiple instances. Pattern: technical debt discussions 
+spike 2-3 weeks before deadline extensions. Strong correlation 
+across major projects with multi-week delays."
 ```
 
 This isn't coding. This is **knowledge archaeology**.
 
 ## The Executive Communication Compiler
 
-My boss Joel wants bullet points. My boss's boss Tang Zong wants narrative with Chinese philosophical frameworks. The board wants metrics.
+My direct manager wants bullet points. The regional VP wants narrative with philosophical frameworks. The board wants metrics.
 
 Same information, three compilation targets:
 
 ```
-Me: "GenAI platform needs 400 H100 GPUs. Write for Joel."
+Me: "GenAI platform needs significant GPU investment. Write for my manager."
 
 Claude Code:
-• 400 H100 GPUs required
-• $3.2M quarterly spend
-• Supports 10K concurrent users
-• ROI positive in Q3
+• Enterprise GPU cluster required
+• Multi-million quarterly investment
+• Supports enterprise-scale concurrent users
+• ROI positive within two quarters
 
-Me: "Now for Tang Zong"
+Me: "Now for the regional VP"
 
 Claude Code:
 "The platform architecture follows modularization principles (模块化),
-requiring 400 H100 GPUs as the foundational compute layer. This
+requiring enterprise GPU infrastructure as the foundational layer. This
 investment enables parametric scaling (参数化) across business units,
-ultimately achieving platform effects (平台化) by Q3..."
+ultimately achieving platform effects (平台化) by year-end..."
 ```
 
 I'm not asking it to code. I'm asking it to **compile human protocols**.
