@@ -10,19 +10,7 @@ Yesterday I wrote about [Claude Code as a cognitive compiler](/blog/claude-code-
 
 This isn't about "tolerating" a limited workflow or emergency access. It's about discovering workflow patterns that only emerge when your development environment is truly location-independent.
 
-## Beyond the Obvious: tmux + Tailscale
-
-Yes, everyone knows the basic mobile setup. Ten articles cover tmux persistence and Tailscale connectivity. But after 6 months of daily mobile Claude Code usage, the real insights live beyond that foundation.
-
-The basic stack works:
-- Blink Shell as your iOS terminal
-- tmux for session persistence  
-- Tailscale for secure connectivity
-- Claude Code running in persistent sessions
-
-But that's table stakes. The transformative patterns emerge from mobile-specific affordances that desktop workflows can't replicate.
-
-## The Geo Tracking Discovery
+Everyone knows the basic mobile setup. Ten articles cover tmux persistence and Tailscale connectivity. But after 6 months of daily mobile Claude Code usage, the real insights live beyond that foundation. The basic stack works: Blink Shell as your iOS terminal, tmux for session persistence, Tailscale for secure connectivity, Claude Code running in persistent sessions. But that's table stakes. The transformative patterns emerge from mobile-specific affordances that desktop workflows can't replicate.
 
 Here's what nobody else is documenting: location-aware development.
 
@@ -33,19 +21,8 @@ I discovered this accidentally during a Hong Kong business trip. Working across 
 alias claude-geo='claude --context "Location: $(curl -s ipinfo.io/city), Local time: $(date)"'
 ```
 
-What started as timezone debugging became something more valuable:
+What started as timezone debugging became something more valuable. The physical location primes different cognitive modes. Mobile Claude Code captures this environmental context automatically. Hong Kong office triggers financial compliance mindset, conservative architecture decisions. Coffee shop environments spark creative experimentation, rapid prototyping. Home office enables deep focus, complex system design. Airport lounges naturally lead to documentation, cleanup, preparing handoffs.
 
-**Location-Triggered Context Switching**
-- Hong Kong office: Financial compliance mindset, conservative architecture decisions
-- Coffee shop: Creative experimentation, rapid prototyping
-- Home office: Deep focus, complex system design
-- Airport: Documentation, cleanup, preparing handoffs
-
-The physical location primes different cognitive modes. Mobile Claude Code captures this environmental context automatically.
-
-## Mobile-First Workflow Patterns
-
-**The Interruption Recovery Pattern**
 Mobile sessions fragment naturally - subway tunnels, elevators, meetings. Rather than fighting this, I learned to design around it:
 
 ```bash
@@ -55,7 +32,6 @@ claude --resume --context "Last thought: implementing user auth"
 
 The `--resume` flag transforms interruption from bug to feature. Desktop developers lose this forcing function for clean context handoffs.
 
-**The Voice-First Exploration Pattern**
 Walking meetings with Claude Code via voice dictation unlock a different kind of thinking:
 
 ```
@@ -67,19 +43,11 @@ approval. What edge cases am I missing?"
 
 Voice input forces higher-level problem articulation. No keyboard means no immediate diving into implementation details. The constraint creates better architectural thinking.
 
-**The Split-Screen Context Pattern**
-iOS split-screen with documentation while coding creates cognitive bandwidth impossible on desktop:
+iOS split-screen with documentation while coding creates cognitive bandwidth impossible on desktop. Claude Code session on the left, API documentation or design mockups on the right, both visible simultaneously without window switching. This isn't just convenience - it's cognitive load reduction. Context switching costs disappear.
 
-- Left: Claude Code session
-- Right: API documentation, Slack, or design mockups
-- Both visible simultaneously without window switching
+Let me share some real mobile moments that changed how I think about development environments.
 
-This isn't just convenience - it's cognitive load reduction. Context switching costs disappear.
-
-## Real Mobile Moments
-
-**Production Crisis at Family Dinner**
-Payment processing down. Family gathering can't be abandoned. Phone appears, tmux session reconnects, Claude Code analyzes logs:
+Payment processing crashed during a family dinner. The gathering couldn't be abandoned. My phone appeared, tmux session reconnected, Claude Code analyzed the logs:
 
 ```
 "Database connection pool exhausted. Check connection 
@@ -88,8 +56,7 @@ timeout configuration in production.yml"
 
 Fix deployed in 8 minutes. Family never knew production was burning.
 
-**Airport Architecture Review**
-Flight delayed 3 hours. Instead of doom-scrolling, I review pull requests:
+Flight delayed 3 hours at the airport. Instead of doom-scrolling, I reviewed pull requests:
 
 ```
 claude --diff "Compare authentication approaches in these 
@@ -98,90 +65,40 @@ three PRs and recommend the most secure pattern"
 
 By boarding time, security review complete with detailed feedback for the team.
 
-**Coffee Shop Context Switch**
-Between Hong Kong client meetings, I maintain my Obsidian vault:
+Between Hong Kong client meetings, sitting in a coffee shop, I maintained my Obsidian vault:
 
 ```
 claude --vault "Synthesize today's client feedback into 
 actionable insights for next quarter's roadmap"
 ```
 
-The location change triggers different thinking. Coffee shop energy creates strategic synthesis impossible in corporate conference rooms.
+The location change triggered different thinking. Coffee shop energy creates strategic synthesis impossible in corporate conference rooms.
 
-## Technical Gotchas Solved
+Technical challenges emerged and got solved along the way. Mobile keyboards hide programming symbols, so I created iOS Text Replacements: `;;` becomes `{{`, double quotes become `}}`, two dots become `->`, double underscore becomes `===`. Simple adaptations that make mobile coding fluid.
 
-**The Special Character Problem**
-Mobile keyboards hide programming symbols. My solution:
+Desktop assumptions break on mobile. Working Copy handles git operations. Secure ShellFish mounts file systems. iCloud Drive enables desktop handoff. Each tool fills a gap desktop developers never encounter.
 
-iOS Text Replacements:
-- `;;` → `{{` 
-- `''` → `}}`
-- `..` → `->`
-- `__` → `===`
-
-**The File Transfer Reality**
-Desktop assumptions break on mobile:
-- Working Copy for git operations
-- Secure ShellFish for file system mounting  
-- iCloud Drive for desktop handoff
-
-**The Connection Stability Solution**
-Mobile networks drop. Mosh handles roaming better than SSH:
+Mobile networks drop constantly. Mosh handles roaming better than SSH:
 
 ```bash
 mosh server -- tmux a -t claude-session
 ```
 
-## Performance Reality Check
+Connection persistence becomes invisible. Subway tunnels, elevator rides, network switches - none interrupt the conversation.
 
-**Battery Impact: Moderate**
-4-hour continuous Claude Code session: 30% battery drain. Comparable to video streaming. Manageable for most use cases.
-
-**Data Usage: Minimal**  
-Text-based interactions average 2MB/hour. Even international roaming won't break the bank.
-
-**Responsiveness: Excellent**
-Claude responses feel instant over cellular. The bottleneck is typing, not network latency.
-
-## Why This Matters: The Paradigm Shift
+Performance surprised me. A 4-hour continuous Claude Code session drains 30% battery - comparable to video streaming. Manageable for most use cases. Data usage stays minimal at 2MB/hour for text-based interactions. Even international roaming won't break the bank. Response times feel instant over cellular. The bottleneck is typing, not network latency.
 
 We've built development workflows around the assumption of desk-bound productivity. Mobile Claude Code breaks this assumption.
 
-The artificial boundary between "real work" (desktop) and "quick fixes" (mobile) dissolves when your entire development environment travels in your pocket.
+The artificial boundary between "real work" (desktop) and "quick fixes" (mobile) dissolves when your entire development environment travels in your pocket. This isn't about coding on your phone - it's about being able to think with your AI partner anywhere inspiration strikes.
 
-This isn't about coding on your phone - it's about being able to think with your AI partner anywhere inspiration strikes.
+The killer feature isn't mobile coding - it's seamless context transfer. Morning commute becomes architectural exploration via voice. Office arrival transitions to implementation on desktop. Lunch walk enables code review and feedback via phone. Afternoon brings desktop execution with mobile insights integrated. Each environment contributes its cognitive strengths to a unified development process.
 
-## The Mobile-Desktop Handoff
+My next experiments explore even deeper integration. Location-based prompt libraries adapt to different contexts, recognizing that coffee shops need different prompts than conference rooms. Voice-driven documentation transforms walking meetings into architecture documents, where voice input forces clarity impossible when typing. Collaborative mobile sessions share Claude Code conversations across team members during mobile-first pair programming.
 
-The killer feature isn't mobile coding - it's seamless context transfer:
+Here's the uncomfortable truth: Mobile Claude Code is better for certain kinds of thinking than desktop Claude Code.
 
-1. Morning commute: Architectural exploration via voice
-2. Office arrival: Implementation begins on desktop
-3. Lunch walk: Code review and feedback via phone
-4. Afternoon: Desktop execution with mobile insights integrated
-
-Each environment contributes its cognitive strengths to a unified development process.
-
-## Next Experiments
-
-**Location-Based Prompt Libraries**
-Different contexts need different prompt patterns. Building location-aware prompt suggestions.
-
-**Voice-Driven Documentation**
-Walking meetings for architecture documentation. Voice input forces clarity impossible when typing.
-
-**Collaborative Mobile Sessions**
-Sharing Claude Code sessions across team members during mobile-first pair programming.
-
-## The Uncomfortable Truth
-
-Mobile Claude Code is better for certain kinds of thinking than desktop Claude Code.
-
-Voice input forces higher-level articulation. Location changes trigger different cognitive modes. Physical movement unlocks creative connections that sitting at a desk doesn't.
-
-Yet we keep treating mobile as "desktop, but worse" instead of recognizing its unique cognitive advantages.
-
-## The Call to Action (Or Not)
+Voice input forces higher-level articulation. Location changes trigger different cognitive modes. Physical movement unlocks creative connections that sitting at a desk doesn't. Yet we keep treating mobile as "desktop, but worse" instead of recognizing its unique cognitive advantages.
 
 I'm not telling you to abandon your desktop setup. I'm telling you that if you're not exploring mobile Claude Code, you're missing half the conversation.
 

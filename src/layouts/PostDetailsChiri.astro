@@ -254,6 +254,8 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
     border-radius: 0.125rem;
     font-size: 0.9375rem;
     font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .post-content :global(pre) {
@@ -262,6 +264,8 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
     border-radius: 0.25rem;
     overflow-x: auto;
     margin: 1.5rem 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
   }
 
   .post-content :global(pre code) {
