@@ -1,5 +1,5 @@
 ---
-title: "Claude Code is a Cognitive Compiler"
+title: "Claude Code is Not a Coding Agent"
 description: "Why I use Claude Code for everything except coding: transforming scattered thoughts into strategy, decisions into clarity, and conversations into understanding"
 pubDatetime: 2025-08-22T00:00:00Z
 draft: false
@@ -38,11 +38,11 @@ Every major decision gets documented in our conversation, creating decision logs
 
 The code editor? Haven't opened it in weeks. The real IDE is the conversation itself.
 
-We're naming these tools wrong. "Claude Code" implies coding. "Copilot" implies assistance. What we actually have are cognitive compilers - systems that transform human thought into different representations.
+We're naming these tools wrong. "Claude Code" implies coding. "Copilot" implies assistance. But Claude Code is not a coding agent - it's a thought partner that happens to also write code.
 
-When I "prompt" Claude Code, I'm not asking it to write code. I'm asking it to compile my scattered thoughts into coherent strategy. Transform my implicit knowledge into explicit frameworks. Translate between different human protocols - technical to executive to philosophical. Debug my decision-making process.
+When I "prompt" Claude Code, I'm not asking it to write code. I'm asking it to transform my scattered thoughts into coherent strategy. Convert my implicit knowledge into explicit frameworks. Translate between different human protocols - technical to executive to philosophical. Debug my decision-making process.
 
-The code generation capability? That's just one compilation target among many.
+The code generation capability? That's just one feature among many.
 
 Here's what nobody wants to admit: Claude Code is better at being a thought partner than a coding partner. When it writes code, I have to review every line. When it helps me think, it surfaces blindspots I didn't know existed. The ROI on augmented thinking dwarfs the ROI on generated code.
 
