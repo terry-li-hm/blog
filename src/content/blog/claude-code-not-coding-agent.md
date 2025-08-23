@@ -10,7 +10,7 @@ Everyone thinks Claude Code is for coding. The name certainly doesn't help. But 
 
 Claude Code is my Obsidian copilot, my executive translator, my decision framework, and occasionally, yes, my code generator. Treating it as just a "coding agent" is like using a Swiss Army knife only for its blade.
 
-My Obsidian vault has thousands of notes. Pre-Claude Code, finding connections between ideas meant manual searching, tagging, and hoping I remembered that brilliant insight from three months ago. Now I ask Claude Code to find all mentions of technical debt in my meeting notes and correlate with project delays. It searches hundreds of files in seconds, finding patterns I'd never see: technical debt discussions spike 2-3 weeks before deadline extensions, consistently across major projects.
+My Obsidian vault has thousands of notes. Pre-Claude Code, finding connections between ideas meant manual searching, tagging, and hoping I remembered that brilliant insight from three months ago. Now, through the black-iris MCP integration, I ask Claude Code to find all mentions of technical debt in my meeting notes and correlate with project delays. It searches hundreds of files in seconds, finding patterns I'd never see: technical debt discussions spike 2-3 weeks before deadline extensions, consistently across major projects.
 
 This isn't coding. This is knowledge archaeology.
 
@@ -32,7 +32,7 @@ The real power isn't in the impressive demos. It's in the mundane, daily augment
 
 None of this is coding. All of it is invaluable. The magic isn't that Claude Code can do these things, but that we don't think to ask until we stop seeing it as a coding tool.
 
-My Claude Code workflow has nothing to do with npm or git. It starts with context injection - feeding my entire Obsidian vault structure at session start so it understands my knowledge landscape. Throughout our conversations, it maintains memory patterns about my projects, stakeholders, and communication styles. Each interaction becomes more precise than the last. 
+My Claude Code workflow has nothing to do with npm or git. It starts with context injection - the black-iris MCP server exposes my entire Obsidian vault structure at session start so Claude Code understands my knowledge landscape. Throughout our conversations, it maintains memory patterns about my projects, stakeholders, and communication styles. Each interaction becomes more precise than the last. 
 
 Every major decision gets documented in our conversation, creating decision logs I can search months later to understand not just what I chose but why. The most powerful tool might be synthesis triggers. Simply asking "What patterns do you see?" yields insights I'd never surface alone. I'm too close to my own thinking.
 

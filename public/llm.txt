@@ -1,0 +1,27 @@
+# TL;HM (Too Long; Had Machine)
+
+A blog about cognitive compilation - transforming scattered thoughts into coherent strategy through human-AI collaboration.
+
+## Purpose
+This blog documents the evolution of thought partnership between humans and AI, specifically exploring Claude Code as a "cognitive compiler" rather than just a coding tool.
+
+## Key Themes
+- Cognitive compilation: AI as thought partner, not just code generator
+- Mobile-first AI workflows: Development anywhere, thinking everywhere  
+- Prose-focused writing: Flowing intellectual discourse without excessive structure
+- Executive translation: Converting technical insights into strategic frameworks
+
+## Technical Stack
+- Built with Astro and styled with Chiri theme
+- Deployed on Vercel with ISR for performance
+- Written collaboratively with Claude Code
+- Integrated with Obsidian via black-iris MCP server
+
+## Content Philosophy
+Every article is co-thought, not just AI-assisted. The writing process itself demonstrates the cognitive compilation principle - human intent compiled through AI collaboration into refined prose.
+
+## Author
+Terry Li - Using AI to augment thinking, not replace it.
+
+## Context
+This blog serves as both demonstration and documentation of advanced AI partnership patterns. It's not about what AI can do for us, but what we can think together.
