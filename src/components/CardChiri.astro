@@ -93,4 +93,16 @@ const href = `/posts/${slug}/`;
     background-color: var(--border);
     align-self: flex-start;
   }
+
+  @media (max-width: 768px) {
+    .divider {
+      display: none;
+    }
+    
+    .post-item {
+      flex-direction: column;
+      gap: 0.375rem;
+      align-items: stretch;
+    }
+  }
 </style>
