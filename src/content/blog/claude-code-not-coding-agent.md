@@ -1,6 +1,6 @@
 ---
-title: "Claude Code is Not a Coding Agent"
-description: "How I use Claude Code for everything except coding: Obsidian copilot, executive ghostwriter, decision oracle, and existential thought partner"
+title: "Claude Code is a Cognitive Compiler"
+description: "Why I use Claude Code for everything except coding: transforming scattered thoughts into strategy, decisions into clarity, and conversations into understanding"
 pubDatetime: 2025-08-22T00:00:00Z
 draft: false
 tags: [ai, productivity, tools, obsidian]

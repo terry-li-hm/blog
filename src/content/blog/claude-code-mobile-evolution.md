@@ -1,6 +1,6 @@
 ---
-title: "Claude Code Mobile: From Cognitive Compiler to Pocket Development Environment"
-description: "Moving beyond tmux basics to discover mobile-first workflows, geo tracking, and voice-driven development that desktop can't replicate"
+title: "Claude Code Mobile is Better Than Desktop"
+description: "Why walking meetings produce better architecture, voice input forces clearer thinking, and location changes unlock cognitive modes desktop can't access"
 pubDatetime: 2025-08-23T00:00:00Z
 draft: false
 tags: [ai, mobile, development, workflow, productivity]
