@@ -1,0 +1,239 @@
+---
+import { render, type CollectionEntry } from "astro:content";
+import LayoutChiri from "@/layouts/LayoutChiri.astro";
+import HeaderChiri from "@/components/HeaderChiri.astro";
+import FooterChiri from "@/components/FooterChiri.astro";
+import DateChiri from "@/components/DateChiri.astro";
+import { getPath } from "@/utils/getPath";
+import { slugifyStr } from "@/utils/slugify";
+import { SITE } from "@/config";
+
+export interface Props {
+  post: CollectionEntry<"blog">;
+  posts: CollectionEntry<"blog">[];
+}
+
+const { post, posts } = Astro.props;
+
+const {
+  title,
+  author,
+  description,
+  ogImage: initOgImage,
+  canonicalURL,
+  pubDatetime,
+  modDatetime,
+  timezone,
+  tags,
+  hideEditPost,
+} = post.data;
+
+const { Content } = await render(post);
+
+let ogImageUrl: string | undefined;
+
+// Determine OG image source
+if (typeof initOgImage === "string") {
+  ogImageUrl = initOgImage; // Remote OG image (absolute URL)
+} else if (initOgImage?.src) {
+  ogImageUrl = initOgImage.src; // Local asset
+}
+
+// Use dynamic OG image if enabled and no remote|local ogImage
+if (!ogImageUrl && SITE.dynamicOgImage) {
+  ogImageUrl = await getPath(post.id, post.filePath) + ".png";
+}
+
+const ogImage = ogImageUrl ?? SITE.ogImage ?? "og.png";
+
+const layoutProps = {
+  title: `${title} | ${SITE.title}`,
+  author,
+  description,
+  pubDatetime,
+  modDatetime,
+  canonicalURL,
+  ogImage,
+  scrollSmooth: true,
+};
+
+// Find previous and next posts
+const currentIndex = posts.findIndex(p => p.id === post.id);
+const prevPost = currentIndex > 0 ? posts[currentIndex - 1] : null;
+const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null;
+---
+
+<LayoutChiri {...layoutProps}>
+  <main class="main-content">
+    <div class="back-link">
+      <a href="/">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 3L2 8L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 8H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>index</span>
+      </a>
+    </div>
+
+    <article class="post-article">
+      <header class="post-header">
+        <h1 class="post-title">{title}</h1>
+        <DateChiri {pubDatetime} {modDatetime} />
+      </header>
+
+      <div class="post-content prose">
+        <Content />
+      </div>
+    </article>
+  </main>
+  <FooterChiri />
+</LayoutChiri>
+
+<style>
+  .main-content {
+    max-width: 35rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    min-height: calc(100vh - 12rem);
+  }
+
+  .back-link {
+    margin-bottom: 2rem;
+  }
+
+  .back-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    transition: color 0.15s;
+  }
+
+  .back-link a:hover {
+    color: var(--text-primary);
+  }
+
+  .back-link svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .post-article {
+    margin-bottom: 4rem;
+  }
+
+  .post-header {
+    margin-bottom: 2rem;
+  }
+
+  .post-title {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+
+  .post-content {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+  }
+
+  .post-content :global(h1),
+  .post-content :global(h2),
+  .post-content :global(h3),
+  .post-content :global(h4),
+  .post-content :global(h5),
+  .post-content :global(h6) {
+    font-weight: var(--font-weight-bold);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+
+  .post-content :global(h1) {
+    font-size: 1.5rem;
+  }
+
+  .post-content :global(h2) {
+    font-size: 1.25rem;
+  }
+
+  .post-content :global(h3) {
+    font-size: 1.125rem;
+  }
+
+  .post-content :global(p) {
+    margin-bottom: 1.5rem;
+  }
+
+  .post-content :global(a) {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+  }
+
+  .post-content :global(a:hover) {
+    opacity: 0.7;
+  }
+
+  .post-content :global(ul),
+  .post-content :global(ol) {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .post-content :global(li) {
+    margin-bottom: 0.5rem;
+  }
+
+  .post-content :global(blockquote) {
+    border-left: 2px solid var(--border);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: var(--text-secondary);
+    font-style: italic;
+  }
+
+  .post-content :global(code) {
+    background: var(--code-bg);
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.125rem;
+    font-size: 0.875rem;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+  }
+
+  .post-content :global(pre) {
+    background: var(--code-bg);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+
+  .post-content :global(pre code) {
+    background: none;
+    padding: 0;
+    font-size: 0.8125rem;
+  }
+
+  .post-content :global(hr) {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2rem 0;
+  }
+
+  @media (max-width: 640px) {
+    .post-title {
+      font-size: 1.25rem;
+    }
+
+    .post-content {
+      font-size: 0.875rem;
+    }
+  }
+</style>

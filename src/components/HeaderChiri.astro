@@ -1,0 +1,29 @@
+---
+import { SITE } from "@/config";
+---
+
+<header>
+  <nav>
+    <a href="/">{SITE.title}</a>
+  </nav>
+</header>
+
+<style>
+  /* Exact Chiri header styles */
+  header {
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  header a {
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+    text-decoration: none;
+    min-width: 3rem;
+    display: inline-block;
+  }
+</style>

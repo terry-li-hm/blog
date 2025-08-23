@@ -1,0 +1,161 @@
+---
+import { getCollection } from "astro:content";
+import LayoutChiri from "@/layouts/LayoutChiri.astro";
+import HeaderChiri from "@/components/HeaderChiri.astro";
+import FooterChiri from "@/components/FooterChiri.astro";
+import CardChiri from "@/components/CardChiri.astro";
+import LinkButton from "@/components/LinkButton.astro";
+import getSortedPosts from "@/utils/getSortedPosts";
+import { SITE } from "@/config";
+
+const posts = await getCollection("blog");
+const sortedPosts = getSortedPosts(posts);
+const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
+const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+---
+
+<LayoutChiri>
+  <HeaderChiri />
+  <main class="main-content">
+    <section class="hero">
+      <h1>Welcome</h1>
+      <p class="intro">
+        I'm Terry Li Ho Ming, sharing thoughts on technology, development, and ideas. 
+        This is my personal blog where I explore various topics that interest me.
+      </p>
+      <p class="intro-links">
+        Feel free to explore the posts below or visit my 
+        <a href="https://homing.li" target="_blank" rel="noopener noreferrer">CV</a> 
+        for professional details.
+      </p>
+    </section>
+
+    {featuredPosts.length > 0 && (
+      <section class="post-section">
+        <h2>Featured</h2>
+        <ul class="post-list">
+          {featuredPosts.map(data => (
+            <CardChiri data={data} />
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {recentPosts.length > 0 && (
+      <section class="post-section">
+        <h2>Recent Posts</h2>
+        <ul class="post-list">
+          {recentPosts.slice(0, SITE.postPerIndex).map(data => (
+            <CardChiri data={data} />
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <div class="all-posts">
+      <LinkButton href="/posts/">
+        View all posts →
+      </LinkButton>
+    </div>
+  </main>
+  <FooterChiri />
+</LayoutChiri>
+
+<style>
+  .main-content {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    min-height: calc(100vh - 12rem);
+  }
+
+  .hero {
+    margin-bottom: 4rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--foreground);
+  }
+
+  .intro {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+
+  .intro-links {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+
+  .intro-links a {
+    color: var(--foreground);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+  }
+
+  .intro-links a:hover {
+    text-decoration-thickness: 2px;
+  }
+
+  .post-section {
+    margin-bottom: 3rem;
+  }
+
+  .post-section h2 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: var(--foreground);
+  }
+
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .all-posts {
+    text-align: center;
+    margin: 3rem 0;
+  }
+
+  .all-posts :global(a) {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.15s ease-out;
+  }
+
+  .all-posts :global(a:hover) {
+    color: var(--foreground);
+  }
+
+  @media (max-width: 640px) {
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+
+    .intro,
+    .intro-links {
+      font-size: 0.875rem;
+    }
+  }
+</style>
+
+<script>
+  // Initialize theme
+  document.addEventListener("astro:page-load", () => {
+    const indexLayout = (document.querySelector(".main-content") as HTMLElement)
+      ?.dataset?.layout;
+    if (indexLayout) {
+      sessionStorage.setItem("backUrl", "/");
+    }
+  });
+</script>
