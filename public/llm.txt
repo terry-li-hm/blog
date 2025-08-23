@@ -15,8 +15,8 @@ This blog documents the evolution of thought partnership between humans and AI, 
 - Built with Astro and styled with Chiri theme
 - Deployed on Vercel with ISR for performance
 - Written collaboratively with Claude Code
-- Obsidian integration via black-iris MCP server for knowledge management
-- black-iris enables Claude Code to search, analyze, and synthesize thousands of notes
+- Integrated with Obsidian for knowledge management
+- MCP integration enables searching and analyzing thousands of notes
 
 ## Content Philosophy
 Every article is co-thought, not just AI-assisted. The writing process itself demonstrates the cognitive compilation principle - human intent compiled through AI collaboration into refined prose.
