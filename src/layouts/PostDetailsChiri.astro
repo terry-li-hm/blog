@@ -185,7 +185,11 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
   .post-content :global(ul),
   .post-content :global(ol) {
     margin-bottom: 1.5rem;
-    padding-left: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    list-style-position: inside;
   }
 
   .post-content :global(li) {
