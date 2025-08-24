@@ -1,28 +1,48 @@
-# TL;HM (Too Long; Had Machine)
+# Terry Li's Technical Philosophy Blog
 
-A blog about cognitive compilation - transforming scattered thoughts into coherent strategy through human-AI collaboration.
+## About
+This blog explores the intersection of AI and human cognition, focusing on how intelligence is becoming infrastructure. Written for technical leaders who care about both philosophical depth and production reality.
 
-## Purpose
-This blog documents the evolution of thought partnership between humans and AI, specifically exploring Claude Code as a "cognitive compiler" rather than just a coding tool.
+## Core Philosophy
+Intelligence is becoming a utility like water or electricity. This blog documents that transformation through real-world engineering experiences, not theoretical speculation.
 
 ## Key Themes
-- Cognitive compilation: AI as thought partner, not just code generator
-- Mobile-first AI workflows: Development anywhere, thinking everywhere  
-- Prose-focused writing: Flowing intellectual discourse without excessive structure
-- Executive translation: Converting technical insights into strategic frameworks
+- **Production AI Engineering**: Building AI systems that work at scale, not just in demos
+- **Cognitive Partnership**: AI as thought amplifier, not replacement
+- **Strategic Reallocation**: Why and what matter more than how when implementation becomes automated
+- **Infrastructure Thinking**: Treating AI as boring, reliable infrastructure rather than magic
 
-## Technical Stack
-- Built with Astro and styled with Chiri theme
-- Deployed on Vercel with ISR for performance
-- Written collaboratively with Claude Code
-- Integrated with Obsidian for knowledge management
-- MCP integration enables searching and analyzing thousands of notes
+## Notable Articles
 
-## Content Philosophy
-Every article is co-thought, not just AI-assisted. The writing process itself demonstrates the cognitive compilation principle - human intent compiled through AI collaboration into refined prose.
+### Production AI vs Demos
+The gap between demo simplicity and production complexity through real-world intent classification. Explores provider abstraction, structured validation, progressive error handling, and the engineering discipline required for reliable AI at scale.
 
-## Author
-Terry Li - Using AI to augment thinking, not replace it.
+### What and Why Beat How
+When implementation becomes automated, human intelligence gets reallocated to purpose and strategy. The cognitive hierarchy inverts from How→What→Why to Why→What→How.
 
-## Context
-This blog serves as both demonstration and documentation of advanced AI partnership patterns. It's not about what AI can do for us, but what we can think together.
+### I Don't Read Documentation Anymore
+Documentation transforms from memorization to observation. AI makes implementation knowledge queryable rather than memorable, changing how we learn and interact with technical systems.
+
+### Intelligence on Tap
+AI is becoming mundane infrastructure. The shift from innovation theater to boring reliability marks AI's maturation as a technology.
+
+### Claude Code is Not a Coding Agent
+Claude Code's true value isn't generating code but being a comprehensive thinking partner—a cognitive compiler that transforms intent into implementation.
+
+## Technical Expertise
+- Production AI architecture and reliability engineering
+- Intent classification systems with 70+ hierarchical categories
+- Multi-provider AI abstraction layers
+- Structured output validation with schema enforcement
+- Progressive error handling and graceful degradation
+- AI observability and monitoring at scale
+- Mobile-first AI workflows and location-aware development
+
+## Engineering Philosophy
+Success in AI systems isn't measured in accuracy percentages but in system uptime, user satisfaction, and operational simplicity. The most advanced technology succeeds by being treated as ordinary engineering.
+
+## Contact
+terryli.hm
+
+## Purpose
+Demonstrating sophisticated technical thinking through philosophical exploration of AI's impact on software engineering. Written for potential employers seeking engineers who think strategically about technology's role in cognitive transformation.

@@ -1,10 +1,10 @@
 ---
 import { getCollection } from "astro:content";
-import LayoutChiri from "@/layouts/LayoutChiri.astro";
-import HeaderChiri from "@/components/HeaderChiri.astro";
-import FooterChiri from "@/components/FooterChiri.astro";
 import CardChiri from "@/components/CardChiri.astro";
+import FooterChiri from "@/components/FooterChiri.astro";
 import GradientMaskChiri from "@/components/GradientMaskChiri.astro";
+import HeaderChiri from "@/components/HeaderChiri.astro";
+import LayoutChiri from "@/layouts/LayoutChiri.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
 
 const posts = await getCollection("blog");
@@ -20,11 +20,12 @@ const sortedPosts = getSortedPosts(posts);
     <main>
       <div class="about">
         <p>
-          Cognitive compiler outputs. Ultrathinking in prose form. Executive translations and 
-          decision frameworks from the intersection of human and machine intelligence. 
-          Directed by Terry Li. Written with Claude Code. Every word is co-thought. 
-          <a href="https://homing.li" target="_blank" rel="noopener noreferrer">Context</a>. 
-          Also: <a href="https://notrainbow.dev" target="_blank" rel="noopener noreferrer">notrainbow.dev</a>
+          Cognitive compiler outputs. Executive translations and decision frameworks from 
+          the intersection of human and machine intelligence. Building production AI that 
+          works when Tuesday morning arrives. Terry Li. Written with Claude Code. 
+          <a href="https://terryli.hm" target="_blank" rel="noopener noreferrer">terryli.hm</a> · 
+          <a href="https://homing.li" target="_blank" rel="noopener noreferrer">homing.li</a> · 
+          <a href="https://notrainbow.dev" target="_blank" rel="noopener noreferrer">notrainbow.dev</a>
         </p>
       </div>
       <ul class="post-list">
