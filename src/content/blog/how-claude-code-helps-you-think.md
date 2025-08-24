@@ -1,7 +1,7 @@
 ---
 title: "How Claude Code Helps You Think"
 description: "AI becomes most powerful not when it executes your ideas, but when it helps you discover what your ideas actually are. Cognitive partnership over cognitive replacement."
-pubDatetime: 2025-08-24T02:00:00Z
+pubDatetime: 2025-08-01T10:00:00Z
 draft: false
 tags: ["thinking", "cognition", "ai", "claude-code", "collaboration", "ideation"]
 ---

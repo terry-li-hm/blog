@@ -1,7 +1,7 @@
 ---
 title: "I Don't Read Documentation Anymore"
 description: "When AI can execute complex setups through conversation, documentation becomes something you observe rather than study. Learning happens through watching, not reading."
-pubDatetime: 2025-08-24T01:00:00Z
+pubDatetime: 2025-08-20T10:00:00Z
 draft: false
 tags: ["learning", "documentation", "ai", "claude-code", "observation"]
 ---

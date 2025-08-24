@@ -1,7 +1,7 @@
 ---
 title: "Intelligence on Tap"
 description: "When artificial intelligence becomes as mundane as running water, what changes about how we think?"
-pubDatetime: 2025-08-23T00:00:00Z
+pubDatetime: 2025-07-15T10:00:00Z
 draft: false
 tags: [ai, infrastructure, cognition, utilities]
 ---

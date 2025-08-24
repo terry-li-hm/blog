@@ -1,7 +1,7 @@
 export const SITE = {
-  website: "https://blog.homing.li/", // replace this with your deployed domain
+  website: "https://terryli.hm/", // replace this with your deployed domain
   author: "Terry Li",
-  profile: "https://homing.li/",
+  profile: "",
   desc: "Personal blog by Terry Li Ho Ming - thoughts on technology, development, and ideas.",
   title: "TL;HM",
   ogImage: "astropaper-og.jpg",

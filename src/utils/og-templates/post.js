@@ -93,7 +93,7 @@ import loadGoogleFonts from "../loadGoogleFont";
 //       </div>
 //     </div>`;
 
-export default async post => {
+export default async (post) => {
   return satori(
     {
       type: "div",
@@ -221,9 +221,7 @@ export default async post => {
       width: 1200,
       height: 630,
       embedFont: true,
-      fonts: await loadGoogleFonts(
-        post.data.title + post.data.author + SITE.title + "by"
-      ),
-    }
+      fonts: await loadGoogleFonts(post.data.title + post.data.author + SITE.title + "by"),
+    },
   );
 };

@@ -1,7 +1,7 @@
 ---
 title: "Claude Code Mobile is Better Than Desktop"
 description: "Why walking meetings produce better architecture, voice input forces clearer thinking, and location changes unlock cognitive modes desktop can't access"
-pubDatetime: 2025-08-23T00:00:00Z
+pubDatetime: 2025-08-07T10:00:00Z
 draft: false
 tags: [ai, mobile, development, workflow, productivity]
 ---

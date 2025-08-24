@@ -1,18 +1,18 @@
+import { type CollectionEntry, getCollection } from "astro:content";
 import type { APIRoute } from "astro";
-import { getCollection, type CollectionEntry } from "astro:content";
-import { generateOgImageForPost } from "@/utils/generateOgImages";
 import { SITE } from "@/config";
+import { generateOgImageForPost } from "@/utils/generateOgImages";
 
 export async function getStaticPaths() {
   if (!SITE.dynamicOgImage) {
     return [];
   }
 
-  const posts = await getCollection("blog").then(p =>
-    p.filter(({ data }) => !data.draft && !data.ogImage)
+  const posts = await getCollection("blog").then((p) =>
+    p.filter(({ data }) => !data.draft && !data.ogImage),
   );
 
-  return posts.map(post => ({
+  return posts.map((post) => ({
     params: { slug: post.id.replace(/\.md$/, "") },
     props: post,
   }));

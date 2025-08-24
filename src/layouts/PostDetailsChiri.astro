@@ -1,11 +1,11 @@
 ---
-import { render, type CollectionEntry } from "astro:content";
-import LayoutChiri from "@/layouts/LayoutChiri.astro";
-import FooterChiri from "@/components/FooterChiri.astro";
+import { type CollectionEntry, render } from "astro:content";
 import DateChiri from "@/components/DateChiri.astro";
+import FooterChiri from "@/components/FooterChiri.astro";
 import SocialShare from "@/components/SocialShare.astro";
-import { getReadingTime } from "@/utils/readingTime";
 import { SITE } from "@/config";
+import LayoutChiri from "@/layouts/LayoutChiri.astro";
+import { getReadingTime } from "@/utils/readingTime";
 
 export interface Props {
   post: CollectionEntry<"blog">;

@@ -1,15 +1,15 @@
 ---
 import { getCollection } from "astro:content";
-import LayoutChiri from "@/layouts/LayoutChiri.astro";
-import TagChiri from "@/components/TagChiri.astro";
-import HeaderChiri from "@/components/HeaderChiri.astro";
 import FooterChiri from "@/components/FooterChiri.astro";
-import getUniqueTags from "@/utils/getUniqueTags";
+import HeaderChiri from "@/components/HeaderChiri.astro";
+import TagChiri from "@/components/TagChiri.astro";
 import { SITE } from "@/config";
+import LayoutChiri from "@/layouts/LayoutChiri.astro";
+import getUniqueTags from "@/utils/getUniqueTags";
 
 const posts = await getCollection("blog");
 
-let tags = getUniqueTags(posts);
+const tags = getUniqueTags(posts);
 ---
 
 <LayoutChiri title={`Tags | ${SITE.title}`}>

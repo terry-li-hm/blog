@@ -1,13 +1,13 @@
 ---
 import { getCollection } from "astro:content";
 import type { GetStaticPathsOptions } from "astro";
-import LayoutChiri from "@/layouts/LayoutChiri.astro";
-import HeaderChiri from "@/components/HeaderChiri.astro";
-import FooterChiri from "@/components/FooterChiri.astro";
 import CardChiri from "@/components/CardChiri.astro";
-import getUniqueTags from "@/utils/getUniqueTags";
-import getPostsByTag from "@/utils/getPostsByTag";
+import FooterChiri from "@/components/FooterChiri.astro";
+import HeaderChiri from "@/components/HeaderChiri.astro";
 import { SITE } from "@/config";
+import LayoutChiri from "@/layouts/LayoutChiri.astro";
+import getPostsByTag from "@/utils/getPostsByTag";
+import getUniqueTags from "@/utils/getUniqueTags";
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const posts = await getCollection("blog");
