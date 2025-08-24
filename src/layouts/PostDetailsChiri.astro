@@ -1,11 +1,13 @@
 ---
-import { type CollectionEntry, render } from "astro:content";
+import { type CollectionEntry, render, getCollection } from "astro:content";
 import DateChiri from "@/components/DateChiri.astro";
 import FooterChiri from "@/components/FooterChiri.astro";
+import RelatedPosts from "@/components/RelatedPosts.astro";
 import SocialShare from "@/components/SocialShare.astro";
 import { SITE } from "@/config";
 import LayoutChiri from "@/layouts/LayoutChiri.astro";
 import { getReadingTime } from "@/utils/readingTime";
+import { getRelatedPosts } from "@/utils/getRelatedPosts";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -56,10 +58,9 @@ const layoutProps = {
   scrollSmooth: true,
 };
 
-// Find previous and next posts (for future navigation)
-// const currentIndex = posts.findIndex(p => p.id === post.id);
-// const prevPost = currentIndex > 0 ? posts[currentIndex - 1] : null;
-// const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null;
+// Get related posts
+const allPosts = await getCollection("blog");
+const relatedPosts = getRelatedPosts(post, allPosts, 3);
 ---
 
 <LayoutChiri {...layoutProps}>
@@ -83,6 +84,8 @@ const layoutProps = {
       <div class="post-content prose">
         <Content />
       </div>
+      
+      <RelatedPosts posts={relatedPosts} />
       
       <SocialShare 
         title={title} 

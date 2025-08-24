@@ -1,0 +1,120 @@
+---
+import { type CollectionEntry } from "astro:content";
+import DateChiri from "./DateChiri.astro";
+import { getReadingTime } from "@/utils/readingTime";
+
+export interface Props {
+  posts: CollectionEntry<"blog">[];
+}
+
+const { posts } = Astro.props;
+
+if (!posts || posts.length === 0) return null;
+---
+
+<section class="related-posts">
+  <h3>Related Articles</h3>
+  <div class="related-posts-list">
+    {posts.map(post => {
+      const readingTime = post.body ? getReadingTime(post.body) : 1;
+      const slug = post.id.replace(/\.md$/, "");
+      return (
+        <article class="related-post">
+          <a href={`/posts/${slug}/`} class="related-post-link">
+            <h4 class="related-post-title">{post.data.title}</h4>
+            <p class="related-post-description">{post.data.description}</p>
+            <DateChiri 
+              pubDatetime={post.data.pubDatetime} 
+              modDatetime={post.data.modDatetime}
+              readingTime={readingTime}
+            />
+          </a>
+        </article>
+      );
+    })}
+  </div>
+</section>
+
+<style>
+  .related-posts {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .related-posts h3 {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    font-family: var(--sans);
+  }
+
+  .related-posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .related-post {
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+
+  .related-post:hover {
+    background-color: var(--code-bg);
+  }
+
+  .related-post-link {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 0.5rem;
+  }
+
+  .related-post-title {
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    line-height: 1.3;
+  }
+
+  .related-post-description {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+  }
+
+  @media (max-width: 640px) {
+    .related-posts {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+    }
+
+    .related-posts h3 {
+      font-size: 1.125rem;
+      margin-bottom: 1rem;
+    }
+
+    .related-posts-list {
+      gap: 1rem;
+    }
+
+    .related-post-link {
+      padding: 0.75rem;
+    }
+
+    .related-post-title {
+      font-size: 0.9375rem;
+    }
+
+    .related-post-description {
+      font-size: 0.8125rem;
+    }
+  }
+</style>

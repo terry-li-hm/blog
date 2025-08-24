@@ -43,9 +43,9 @@ const months = [
       )
         .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA))
         .map(([year, yearGroup]) => (
-          <div>
-            <span class="text-2xl font-bold">{year}</span>
-            <sup class="text-sm">{yearGroup.length}</sup>
+          <div class="year-group">
+            <span class="year-title">{year}</span>
+            <sup class="count">{yearGroup.length}</sup>
             {Object.entries(
               getPostsByGroupCondition(
                 yearGroup,
@@ -54,12 +54,12 @@ const months = [
             )
               .sort(([monthA], [monthB]) => Number(monthB) - Number(monthA))
               .map(([month, monthGroup]) => (
-                <div class="flex flex-col sm:flex-row">
-                  <div class="mt-6 min-w-36 text-lg sm:my-6">
-                    <span class="font-bold">{months[Number(month) - 1]}</span>
-                    <sup class="text-xs">{monthGroup.length}</sup>
+                <div class="month-group">
+                  <div class="month-header">
+                    <span class="month-title">{months[Number(month) - 1]}</span>
+                    <sup class="count">{monthGroup.length}</sup>
                   </div>
-                  <ul>
+                  <ul class="posts-list">
                     {monthGroup
                       .sort(
                         (a, b) =>
@@ -82,3 +82,126 @@ const months = [
   </main>
   <FooterChiri />
 </LayoutChiri>
+
+<style>
+  .main-content {
+    max-width: 35rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+  }
+
+  .archives-desc {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .year-group {
+    margin-bottom: 3rem;
+  }
+
+  .year-title {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+  }
+
+  .month-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+
+  .month-header {
+    min-width: 9rem;
+    margin-bottom: 1rem;
+  }
+
+  .month-title {
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+  }
+
+  .count {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    margin-left: 0.25rem;
+  }
+
+  .posts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* Exact Chiri hover effects */
+  @media (hover: hover) and (pointer: fine) {
+    .posts-list:hover a {
+      opacity: 0.4;
+    }
+
+    .posts-list:hover a:hover {
+      opacity: 1;
+    }
+
+    .posts-list:hover a:hover .divider {
+      background-color: var(--text-tertiary);
+      opacity: 0.75;
+    }
+
+    .posts-list:hover a:hover .date {
+      color: var(--text-secondary);
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .month-group {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .month-header {
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+      margin-right: 2rem;
+    }
+
+    .posts-list {
+      flex: 1;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .main-content {
+      padding: 1.5rem 1rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    .year-title {
+      font-size: 1.375rem;
+    }
+
+    .month-title {
+      font-size: 1rem;
+    }
+  }
+</style>
