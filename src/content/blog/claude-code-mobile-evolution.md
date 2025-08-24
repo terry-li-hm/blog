@@ -6,7 +6,7 @@ draft: false
 tags: [ai, mobile, development, workflow, productivity]
 ---
 
-Yesterday I wrote about [Claude Code as a cognitive compiler](/blog/claude-code-not-coding-agent) - a tool that transforms scattered thoughts into coherent strategy. Today: how I carry that compiler in my pocket, and why mobile Claude Code unlocks capabilities that desktop simply can't match.
+Yesterday I wrote about [Claude Code as a cognitive compiler](/blog/claude-code-not-coding-agent) - a tool that transforms scattered thoughts into coherent strategy. Today: how I carry that compiler in my pocket, and why mobile Claude Code unlocks capabilities that desktop simply can't match. When [intelligence becomes as mundane as running water](/blog/intelligence-on-tap), mobility transforms from convenience into cognitive advantage.
 
 This isn't about "tolerating" a limited workflow or emergency access. It's about discovering workflow patterns that only emerge when your development environment is truly location-independent.
 
@@ -26,7 +26,7 @@ Walking meetings with Claude Code via voice dictation unlock a different kind of
 
 > "Claude, I'm walking to lunch thinking about the payment flow architecture. The user uploads invoice, we extract vendor info, match against approved vendors, route for approval. What edge cases am I missing?"
 
-Voice input forces higher-level problem articulation. No keyboard means no immediate diving into implementation details. The constraint creates better architectural thinking.
+Voice input forces higher-level problem articulation. No keyboard means no immediate diving into implementation details. The constraint creates better architectural thinking. This embodied approach to problem-solving exemplifies [how Claude Code helps you think](/blog/how-claude-code-helps-you-think) - physical constraints shape cognitive outcomes in unexpected ways.
 
 iOS split-screen with documentation while coding creates cognitive bandwidth impossible on desktop. Claude Code session on the left, API documentation or design mockups on the right, both visible simultaneously without window switching. This isn't just convenience - it's cognitive load reduction. Context switching costs disappear.
 
