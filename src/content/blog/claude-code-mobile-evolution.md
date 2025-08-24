@@ -14,9 +14,9 @@ Everyone knows the basic mobile setup. Ten articles cover tmux persistence and T
 
 Here's what nobody else is documenting: location-aware development.
 
-I discovered this accidentally during a Hong Kong business trip. Working across timezones, I started adding location context to my commits. My custom alias that emerged from timezone confusion: `alias claude-geo='claude --context "Location: $(curl -s ipinfo.io/city), Local time: $(date)"'`.
+I discovered this accidentally during international business travel. Working across timezones, I started adding location context to my commits. My custom alias that emerged from timezone confusion: `alias claude-geo='claude --context "Location: $(curl -s ipinfo.io/city), Local time: $(date)"'`.
 
-What started as timezone debugging became something more valuable. The physical location primes different cognitive modes. Mobile Claude Code captures this environmental context automatically. Hong Kong office triggers financial compliance mindset, conservative architecture decisions. Coffee shop environments spark creative experimentation, rapid prototyping. Home office enables deep focus, complex system design. Airport lounges naturally lead to documentation, cleanup, preparing handoffs.
+What started as timezone debugging became something more valuable. The physical location primes different cognitive modes. Mobile Claude Code captures this environmental context automatically. Corporate offices trigger compliance mindset, conservative architecture decisions. Coffee shop environments spark creative experimentation, rapid prototyping. Home office enables deep focus, complex system design. Airport lounges naturally lead to documentation, cleanup, preparing handoffs.
 
 Mobile sessions fragment naturally - subway tunnels, elevators, meetings. Rather than fighting this, I learned to design around it. Running `claude --resume --context "Last thought: implementing user auth"` immediately reconstructs where we left off.
 
@@ -32,17 +32,17 @@ iOS split-screen with documentation while coding creates cognitive bandwidth imp
 
 Let me share some real mobile moments that changed how I think about development environments.
 
-Payment processing crashed during a family dinner. The gathering couldn't be abandoned. My phone appeared, tmux session reconnected, Claude Code analyzed the logs:
+A production issue emerged during an evening social commitment. Rather than abandoning the gathering, my phone appeared, tmux session reconnected, Claude Code analyzed the logs:
 
 > "Database connection pool exhausted. Check connection timeout configuration in production.yml"
 
-Fix deployed in 8 minutes. Family never knew production was burning.
+Issue resolved in 8 minutes without disrupting the evening.
 
 Flight delayed 3 hours at the airport. Instead of doom-scrolling, I reviewed pull requests with a simple command: `claude --diff "Compare authentication approaches in these three PRs and recommend the most secure pattern"`.
 
 By boarding time, security review complete with detailed feedback for the team.
 
-Between Hong Kong client meetings, sitting in a coffee shop, I maintained my Obsidian vault: `claude --vault "Synthesize today's client feedback into actionable insights for next quarter's roadmap"`.
+Between client meetings, sitting in a coffee shop, I maintained my Obsidian vault: `claude --vault "Synthesize today's feedback into actionable insights for next quarter's roadmap"`.
 
 The location change triggered different thinking. Coffee shop energy creates strategic synthesis impossible in corporate conference rooms.
 
