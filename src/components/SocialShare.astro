@@ -20,6 +20,10 @@ const encodedUrl = encodeURIComponent(url);
         href = `${social.href}${encodedUrl}`;
       } else if (social.name === "X") {
         href = `${social.href}${encodedUrl}&text=${encodedTitle}`;
+      } else if (social.name === "Reddit") {
+        href = `${social.href}${encodedUrl}&title=${encodedTitle}`;
+      } else if (social.name === "HackerNews") {
+        href = `${social.href}${encodedUrl}&t=${encodedTitle}`;
       } else if (social.name === "WhatsApp") {
         href = `${social.href}${encodedTitle}%20${encodedUrl}`;
       } else if (social.name === "Facebook") {

@@ -2,9 +2,8 @@ export const SITE = {
   website: "https://terryli.hm/", // replace this with your deployed domain
   author: "Terry Li",
   profile: "",
-  desc: "Personal blog by Terry Li Ho Ming - thoughts on technology, development, and ideas.",
+  desc: "Terry Li thinks. Claude Code writes. Exploring the intersection of human creativity and AI capability.",
   title: "TL;HM",
-  ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,

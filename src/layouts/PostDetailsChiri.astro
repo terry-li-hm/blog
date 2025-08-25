@@ -23,6 +23,7 @@ const {
   canonicalURL,
   pubDatetime,
   modDatetime,
+  tags,
 } = post.data;
 
 const { Content } = await render(post);
@@ -45,7 +46,7 @@ if (!ogImageUrl && SITE.dynamicOgImage) {
   ogImageUrl = `/posts/${slug}/index.png`;
 }
 
-const ogImage = ogImageUrl ?? SITE.ogImage ?? "og.png";
+const ogImage = ogImageUrl ?? "/og.png";
 
 const layoutProps = {
   title: `${title} | ${SITE.title}`,
@@ -56,6 +57,7 @@ const layoutProps = {
   canonicalURL,
   ogImage,
   scrollSmooth: true,
+  tags,
 };
 
 // Get related posts
