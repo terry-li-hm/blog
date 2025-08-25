@@ -7,6 +7,18 @@
     {
       "source": "/cv/(.*)",
       "destination": "https://cv-terry-li-hm.vercel.app/$1"
+    },
+    {
+      "source": "/_next/:path*",
+      "destination": "https://cv-terry-li-hm.vercel.app/_next/:path*"
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "https://cv-terry-li-hm.vercel.app/favicon.ico"
+    },
+    {
+      "source": "/favicon.svg",
+      "destination": "https://cv-terry-li-hm.vercel.app/favicon.svg"
     }
   ]
 }
