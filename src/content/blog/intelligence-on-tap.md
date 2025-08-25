@@ -1,6 +1,6 @@
 ---
 title: "Intelligence on Tap"
-description: "When artificial intelligence becomes as mundane as running water, what changes about how we think?"
+description: "When artificial intelligence becomes as mundane as running water, how does thinking itself change?"
 pubDatetime: 2025-07-15T10:00:00Z
 draft: false
 tags: [ai, infrastructure, cognition, utilities]
