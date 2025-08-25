@@ -1,9 +1,12 @@
 {
-  "redirects": [
+  "rewrites": [
     {
       "source": "/cv",
-      "destination": "https://cv-terry-li-hm.vercel.app",
-      "permanent": false
+      "destination": "https://cv-terry-li-hm.vercel.app"
+    },
+    {
+      "source": "/cv/(.*)",
+      "destination": "https://cv-terry-li-hm.vercel.app/$1"
     }
   ]
 }
