@@ -26,10 +26,6 @@ const encodedUrl = encodeURIComponent(url);
         href = `${social.href}${encodedUrl}&t=${encodedTitle}`;
       } else if (social.name === "WhatsApp") {
         href = `${social.href}${encodedTitle}%20${encodedUrl}`;
-      } else if (social.name === "Facebook") {
-        href = `${social.href}${encodedUrl}`;
-      } else if (social.name === "Telegram") {
-        href = `${social.href}${encodedUrl}&text=${encodedTitle}`;
       } else if (social.name === "Mail") {
         href = `${social.href}${encodedTitle}&body=Check%20out%20this%20article:%20${encodedUrl}`;
       }
