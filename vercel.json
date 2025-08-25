@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/cv",
+      "destination": "https://cv-terry-li-hm.vercel.app"
+    }
+  ]
+}
