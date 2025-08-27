@@ -1,7 +1,7 @@
 ---
 title: AI Agents Need Passports, Not Passwords
 description: The authentication systems we're building assume AI agents are tools. What happens when they become economic actors with their own accounts, credentials, and legal standing?
-publishDate: 2025-01-27
+pubDatetime: 2025-01-27
 tags: ["AI", "Systems Design", "Authentication", "Future of Work"]
 draft: false
 ---
