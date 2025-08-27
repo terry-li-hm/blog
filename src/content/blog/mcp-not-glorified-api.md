@@ -45,3 +45,6 @@ We're still early in understanding what this means. Every week, someone publishe
 The comparison to APIs will persist because it's the closest mental model we have. But MCP isn't an evolution of APIs any more than HTTP was an evolution of FTP. It's a different thing entirely, solving a different problem, enabling different futures. The engineers who grasp this early will build systems that seem like magic to those still thinking in endpoints and parameters.
 
 P.S. The best evidence that MCP isn't just an API? Try explaining an API integration to a non-technical person. Now watch them immediately understand when Claude Code uses MCP to automate their workflow. The simplicity isn't abstraction - it's the natural outcome when tools stop requiring imperative instructions and start accepting declarative intentions.
+
+---
+*Updated: Testing vault-to-blog sync workflow (2025-08-28)*

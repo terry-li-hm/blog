@@ -6,7 +6,7 @@ draft: false
 tags: [ai, productivity, tools, obsidian]
 ---
 
-Everyone thinks Claude Code is for coding. The name certainly doesn't help. But after three months of daily use, I've written maybe 20% code and 80% everything else. 
+Everyone thinks Claude Code is for coding. The name certainly doesn't help. But after three months of daily use, I've written maybe 20% code and 80% everything else.
 
 Claude Code is my Obsidian copilot, my executive translator, my decision framework, and occasionally, yes, my code generator. Treating it as just a "coding agent" is like using a Swiss Army knife only for its blade.
 
@@ -24,7 +24,7 @@ Last week I asked whether to optimize for startup equity or enterprise stability
 
 This isn't coding. It's cognitive partnership.
 
-Here's where it gets interesting. I'm writing this article about Claude Code with Claude Code itself. Every paragraph has been a conversation. When I proposed the title, Claude Code noted how the contrarian position creates cognitive dissonance - while everyone writes "I built an app with AI," I'm demonstrating systems thinking and tool transcendence. It suggested the structure, challenged my examples, and even pointed out that mentioning the meta-layer would strengthen the argument. 
+Here's where it gets interesting. I'm writing this article about Claude Code with Claude Code itself. Every paragraph has been a conversation. When I proposed the title, Claude Code noted how the contrarian position creates cognitive dissonance - while everyone writes "I built an app with AI," I'm demonstrating systems thinking and tool transcendence. It suggested the structure, challenged my examples, and even pointed out that mentioning the meta-layer would strengthen the argument.
 
 We're not coding. We're co-thinking.
 
@@ -32,7 +32,7 @@ The real power isn't in the impressive demos. It's in the mundane, daily augment
 
 None of this is coding. All of it is invaluable. The magic isn't that Claude Code can do these things, but that we don't think to ask until we stop seeing it as a coding tool.
 
-My Claude Code workflow has nothing to do with npm or git. It starts with context injection - feeding my entire Obsidian vault structure at session start so Claude Code understands my knowledge landscape. Throughout our conversations, it maintains memory patterns about my projects, stakeholders, and communication styles. Each interaction becomes more precise than the last. 
+My Claude Code workflow has nothing to do with npm or git. It starts with context injection - feeding my entire Obsidian vault structure at session start so Claude Code understands my knowledge landscape. Throughout our conversations, it maintains memory patterns about my projects, stakeholders, and communication styles. Each interaction becomes more precise than the last.
 
 Every major decision gets documented in our conversation, creating decision logs I can search months later to understand not just what I chose but why. The most powerful tool might be synthesis triggers. Simply asking "What patterns do you see?" yields insights I'd never surface alone. I'm too close to my own thinking.
 
@@ -44,7 +44,7 @@ When I "prompt" Claude Code, I'm not asking it to write code. I'm asking it to t
 
 The code generation capability? That's just one feature among many.
 
-Here's what nobody wants to admit: Claude Code is better at being a thought partner than a coding partner. When it writes code, I have to review every line. When it helps me think, it surfaces blindspots I didn't know existed. The ROI on augmented thinking dwarfs the ROI on generated code. This shift from implementation focus to strategic thinking represents a fundamental reordering of cognitive priorities—[what and why are becoming more important than how](/blog/what-and-why-beat-how).
+Here's what nobody wants to admit: Claude Code is better at being a thought partner than a coding partner. When it writes code, I have to review every line. When it helps me think, it surfaces blindspots I didn't know existed. The ROI on augmented thinking dwarfs the ROI on generated code. This shift from implementation focus to strategic thinking represents a fundamental reordering of cognitive priorities —[what and why are becoming more important than how](/blog/what-and-why-beat-how).
 
 Yet we keep calling it a "coding agent" because that's safer. It's easier to say "AI writes my code" than "AI shapes my thoughts." One threatens developers. The other threatens everyone.
 
@@ -54,6 +54,6 @@ The future isn't AI that codes for us. It's AI that thinks with us. And despite 
 
 ---
 
-*P.S. - Yes, I used Claude Code to build this entire blog site in 90 minutes. But that's the least interesting thing it did this week. The most interesting? It helped me realize I was solving the wrong problem in my career strategy. That conversation saved me two years of misaligned effort. This kind of strategic insight emerges when [you stop reading documentation and start observing AI work](/blog/i-dont-read-documentation-anymore)—the learning paradigm shifts from memorization to pattern recognition. Try billing that as "coding assistance."*
+*P.S. - Yes, I used Claude Code to build this entire blog site in 90 minutes. But that's the least interesting thing it did this week. The most interesting? It helped me realize I was solving the wrong problem in my career strategy. That conversation saved me two years of misaligned effort. This kind of strategic insight emerges when [you stop reading documentation and start observing AI work](/blog/i-dont-read-documentation-anymore)— the learning paradigm shifts from memorization to pattern recognition. Try billing that as "coding assistance."*
 
 *P.P.S - "ultrathink" isn't a typo. It's what happens when your thoughts continue beyond the message boundary. Claude Code understands this. Does your coding agent?*

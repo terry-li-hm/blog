@@ -38,7 +38,7 @@ This changes what we can build. Not just applications that use AI, but applicati
 
 The senior engineer's whiteboard drawing was wrong, but not in the way he thought. The dotted line to the AI service wasn't the problem. The problem was thinking there should be a line at all. When intelligence becomes infrastructure, the boundaries dissolve. The system doesn't have AI; the system is AI. Every component can think. Every function can reason. Every object can understand.
 
-We're not adding intelligence to software. We're recognizing that software was always capable of intelligence; we just hadn't given it permission to think. Now that we have, the architecture of everything changes. Not because we're doing something new, but because we're finally doing what we should have been doing all along: building systems that think the way systems compute—naturally, natively, without ceremony.
+We're not adding intelligence to software. We're recognizing that software was always capable of intelligence; we just hadn't given it permission to think. Now that we have, the architecture of everything changes. Not because we're doing something new, but because we're finally doing what we should have been doing all along: building systems that think the way systems compute — naturally, natively, without ceremony.
 
 The next time you architect a system, try this: instead of drawing boxes for services and databases and caches, draw boxes for capabilities. Don't ask "what does this component do?" Ask "what does this component understand?" The answers might surprise you. They surprised me. They're still surprising me.
 
