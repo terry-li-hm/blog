@@ -1,9 +1,16 @@
 ---
-title: "What and Why Beat How"
-description: "When implementation becomes automated, human intelligence reallocates to purpose and strategy. The cognitive hierarchy inverts."
-pubDatetime: 2025-07-10T10:00:00Z
+title: What and Why Beat How
+description: >-
+  When implementation becomes automated, human intelligence reallocates to
+  purpose and strategy. The cognitive hierarchy inverts.
+pubDatetime: 2025-07-10T10:00:00.000Z
 draft: false
-tags: ["ai", "cognition", "claude-code", "philosophy", "automation"]
+tags:
+  - ai
+  - cognition
+  - claude-code
+  - philosophy
+  - automation
 ---
 
 "Claude Code, set up error tracking for this application."

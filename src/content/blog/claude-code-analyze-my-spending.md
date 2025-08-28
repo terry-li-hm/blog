@@ -1,9 +1,16 @@
 ---
-title: "Claude Code, Analyze My Spending"
-description: "When AI coding assistants become workflow orchestrators, the most powerful compiler processes reality, not code."
-pubDatetime: 2025-08-14T10:00:00Z
+title: 'Claude Code, Analyze My Spending'
+description: >-
+  When AI coding assistants become workflow orchestrators, the most powerful
+  compiler processes reality, not code.
+pubDatetime: 2025-08-14T10:00:00.000Z
 draft: false
-tags: ["claude-code", "automation", "ai", "workflows", "browser-automation"]
+tags:
+  - claude-code
+  - automation
+  - ai
+  - workflows
+  - browser-automation
 ---
 
 "Claude Code, analyze my credit card statements and note the key findings in Obsidian."

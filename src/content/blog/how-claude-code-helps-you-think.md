@@ -1,9 +1,17 @@
 ---
-title: "How Claude Code Helps You Think"
-description: "AI becomes most powerful when it helps you discover what your ideas actually are. Cognitive partnership over replacement."
-pubDatetime: 2025-08-01T10:00:00Z
+title: How Claude Code Helps You Think
+description: >-
+  AI becomes most powerful when it helps you discover what your ideas actually
+  are. Cognitive partnership over replacement.
+pubDatetime: 2025-08-01T10:00:00.000Z
 draft: false
-tags: ["thinking", "cognition", "ai", "claude-code", "collaboration", "ideation"]
+tags:
+  - thinking
+  - cognition
+  - ai
+  - claude-code
+  - collaboration
+  - ideation
 ---
 
 "Should there be three articles, interlinked?"

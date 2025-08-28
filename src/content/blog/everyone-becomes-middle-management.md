@@ -1,9 +1,13 @@
 ---
-title: "Everyone Becomes Middle Management"
-description: "The automation tool that creates more coordination work"
-pubDatetime: 2025-01-27T10:00:00Z
+title: Everyone Becomes Middle Management
+description: The automation tool that creates more coordination work
+pubDatetime: 2025-01-27T10:00:00.000Z
 draft: false
-tags: [ai, automation, work, management]
+tags:
+  - ai
+  - automation
+  - work
+  - management
 ---
 
 I keep reading about the future of AI agents - specialized models for research, copywriting, design, each requiring its own prompt, its own review cycle, its own corrections. The demos show people orchestrating three different agents to produce a single PowerPoint slide. Twenty minutes of coordination for ten minutes of direct work.

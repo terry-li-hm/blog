@@ -1,8 +1,8 @@
 ---
-title: "Ambient Agents: When AI Disappears Into Capability"
-pubDatetime: 2025-08-27
-description: "The real revolution isn't making AI smarter - it's making it invisible"
-author: "Terry Li"
+title: 'Ambient Agents: When AI Disappears Into Capability'
+pubDatetime: 2025-08-27T00:00:00.000Z
+description: The real revolution isn't making AI smarter - it's making it invisible
+author: Terry Li
 permalink: ambient-agents
 ---
 

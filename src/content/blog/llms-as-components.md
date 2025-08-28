@@ -1,9 +1,15 @@
 ---
-title: "When Intelligence Becomes Infrastructure"
-description: "What changes when LLMs stop being special and become just another software component? Everything."
-pubDatetime: 2025-07-05T10:00:00Z
+title: When Intelligence Becomes Infrastructure
+description: >-
+  What changes when LLMs stop being special and become just another software
+  component? Everything.
+pubDatetime: 2025-07-05T10:00:00.000Z
 draft: true
-tags: ["llm", "architecture", "cognitive-computing", "software-design"]
+tags:
+  - llm
+  - architecture
+  - cognitive-computing
+  - software-design
 ---
 
 Yesterday I watched a senior engineer architect an entire microservices system on a whiteboard, carefully separating concerns, defining interfaces, considering failure modes. Then he drew a box labeled "AI Service" connected by a dotted line to everything else, as if intelligence was something that happened elsewhere, in some other realm, accessible only through the mystical portal of an API endpoint.

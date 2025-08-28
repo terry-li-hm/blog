@@ -1,9 +1,15 @@
 ---
-title: "Claude Code is Not a Coding Agent"
-description: "Why I use Claude Code for everything except coding: cognitive compiler for strategy, decisions, and understanding."
-pubDatetime: 2025-07-26T10:00:00Z
+title: Claude Code is Not a Coding Agent
+description: >-
+  Why I use Claude Code for everything except coding: cognitive compiler for
+  strategy, decisions, and understanding.
+pubDatetime: 2025-07-26T10:00:00.000Z
 draft: false
-tags: [ai, productivity, tools, obsidian]
+tags:
+  - ai
+  - productivity
+  - tools
+  - obsidian
 ---
 
 Everyone thinks Claude Code is for coding. The name certainly doesn't help. But after three months of daily use, I've written maybe 20% code and 80% everything else.

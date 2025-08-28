@@ -49,6 +49,8 @@ This blog bridges technical and philosophical thinking. Articles should feel lik
 ### Voice & Tone
 Write like you're explaining something fascinating to a smart friend over coffee. The precision of technical writing but the warmth of conversation. When technical depth is needed, anchor it with accessible metaphors. Personal experiences should illuminate principles, not dominate the narrative. Contrarian positions are valuable when they're earned through reasoning, not just for effect.
 
+Strong opinions, loosely held. Write with conviction but not authority. When building on others' ideas, acknowledge the intellectual lineage - we're all figuring this out together. The goal is exploration alongside the reader, not proclamation from above.
+
 ### Article Structure
 Open with cognitive dissonance - something that makes readers pause and reconsider. Develop ideas through narrative flow rather than sectioned arguments. Evidence should emerge naturally: a personal experience leading to a technical insight, which reveals a philosophical principle. Conclusions synthesize rather than summarize - they ask "where does this lead?" not "what did I just say?"
 

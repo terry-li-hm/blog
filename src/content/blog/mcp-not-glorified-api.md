@@ -1,8 +1,10 @@
 ---
-title: "MCP is Not a Glorified API"
-pubDatetime: 2025-08-27
-description: "The protocol that looks like plumbing but acts like philosophy - how MCP fundamentally changes the agent-tool relationship"
-author: "Terry Li"
+title: MCP is Not a Glorified API
+pubDatetime: 2025-08-27T00:00:00.000Z
+description: >-
+  The protocol that looks like plumbing but acts like philosophy - how MCP
+  fundamentally changes the agent-tool relationship
+author: Terry Li
 permalink: mcp-not-glorified-api
 ---
 

@@ -1,9 +1,15 @@
 ---
-title: "Intelligence on Tap"
-description: "When artificial intelligence becomes as mundane as running water, how does thinking itself change?"
-pubDatetime: 2025-07-15T10:00:00Z
+title: Intelligence on Tap
+description: >-
+  When artificial intelligence becomes as mundane as running water, how does
+  thinking itself change?
+pubDatetime: 2025-07-15T10:00:00.000Z
 draft: false
-tags: [ai, infrastructure, cognition, utilities]
+tags:
+  - ai
+  - infrastructure
+  - cognition
+  - utilities
 ---
 
 I turned on the faucet this morning and water came out. I didn't marvel at the municipal engineering, the pressure systems, or the treatment facilities. I just filled my coffee maker and started my day. Intelligence, I'm beginning to realize, is following the same trajectory.

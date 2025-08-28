@@ -1,9 +1,16 @@
 ---
-title: "I Don't Read Documentation Anymore"
-description: "When AI can execute complex setups through conversation, learning shifts from reading documentation to observing execution."
-pubDatetime: 2025-08-20T10:00:00Z
+title: I Don't Read Documentation Anymore
+description: >-
+  When AI can execute complex setups through conversation, learning shifts from
+  reading documentation to observing execution.
+pubDatetime: 2025-08-20T10:00:00.000Z
 draft: false
-tags: ["learning", "documentation", "ai", "claude-code", "observation"]
+tags:
+  - learning
+  - documentation
+  - ai
+  - claude-code
+  - observation
 ---
 
 I haven't read documentation in three weeks. Not because I stopped building things, but because I stopped needing to read about building things.

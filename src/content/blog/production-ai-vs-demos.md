@@ -1,9 +1,16 @@
 ---
-title: "Production AI vs Demos: The Intent Classification Reality Check"
-description: "Building AI systems that work in the real world requires thinking beyond the demo. What actually matters when users depend on your models."
-pubDatetime: 2025-07-20T10:00:00Z
+title: 'Production AI vs Demos: The Intent Classification Reality Check'
+description: >-
+  Building AI systems that work in the real world requires thinking beyond the
+  demo. What actually matters when users depend on your models.
+pubDatetime: 2025-07-20T10:00:00.000Z
 draft: false
-tags: ["ai", "production", "intent-classification", "architecture", "observability"]
+tags:
+  - ai
+  - production
+  - intent-classification
+  - architecture
+  - observability
 ---
 
 "Can you build an intent classifier for customer support?"

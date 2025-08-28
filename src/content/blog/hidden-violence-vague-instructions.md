@@ -1,8 +1,10 @@
 ---
-title: "The Hidden Violence of Vague Instructions"
-pubDatetime: 2025-08-27
-description: "LLMs aren't just tools we prompt - they're forcing functions for human linguistic evolution"
-author: "Terry Li"
+title: The Hidden Violence of Vague Instructions
+pubDatetime: 2025-08-27T00:00:00.000Z
+description: >-
+  LLMs aren't just tools we prompt - they're forcing functions for human
+  linguistic evolution
+author: Terry Li
 permalink: hidden-violence-vague-instructions
 ---
 
