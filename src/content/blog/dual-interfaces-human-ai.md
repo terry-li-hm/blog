@@ -34,10 +34,14 @@ What fascinates me is where these interfaces diverge. Humans want confirmation; 
 
 The MCP protocol isn't just another API standard. It's acknowledgment that AI agents deserve their own ergonomics. Not anthropomorphized interfaces that pretend machines think like us, but genuinely alien interfaces optimized for genuinely alien cognition.
 
-I'm writing this essay on a tool that bridges both worlds. Claude Code provides me a terminal interface while orchestrating MCP calls beneath. I see what I need to see. It sees what it needs to see. We're collaborating through parallel realities, each optimized for our respective phenomenologies.
+But here's the twist: MCP servers could theoretically serve humans too. Imagine a terminal that translates MCP's structured responses into human-readable output. Or a GUI that wraps MCP functions in buttons and forms. The same server, multiple clients. The protocol becomes the source of truth, with adapters for different kinds of consciousness.
 
-The future isn't "AI-first" or "human-centered" design. It's building for a world where every tool serves two masters with fundamentally different ways of knowing. Where every function has two signatures. Where every action has two representations.
+Maybe the future isn't parallel interfaces but unified backends with species-specific frontends. MCP as the universal protocol, with CLIs, GUIs, and AI agents all consuming the same structured functionality through their own lenses. The tool doesn't need two faces - it needs one protocol and multiple masks.
 
-We're not replacing human interfaces with machine ones. We're discovering that reality itself needs multiple interfaces, each revealing different aspects of the same underlying truth. The CLI and MCP aren't competing standards - they're complementary lenses for a world becoming too complex for any single way of seeing.
+Yet something resists this convergence. When I build for humans, I embed assumptions about patience, context, error recovery. When I build for AI, I assume infinite memory, perfect recall, no emotional state. These aren't just interface differences - they're architectural choices that cascade through the entire system.
 
-P.S. Yesterday I caught myself explaining to Claude how to use a tool I built. Then I realized - I wasn't teaching it the CLI commands. I was describing the MCP schema. We've crossed a threshold where tools need documentation in two languages, for two kinds of mind. The manual has evolved into the manual and the schema. Both necessary. Neither sufficient alone.
+We're discovering that human-optimized and AI-optimized systems diverge at levels deeper than presentation. Different error handling philosophies. Different concepts of session state. Different assumptions about what constitutes "done." The split isn't cosmetic - it's ontological.
+
+The future isn't "AI-first" or "human-centered" design. It's building for a world where every tool serves two masters with fundamentally different ways of knowing. Where convergence and divergence happen simultaneously. Where the same function exists in quantum superposition until observed by human or machine.
+
+P.S. Yesterday I caught myself explaining to Claude how to use a tool I built. Then I realized - I wasn't teaching it the CLI commands. I was describing the MCP schema. We've crossed a threshold where tools need documentation in two languages, for two kinds of mind. Whether these converge or diverge further remains an open question - one we're answering in production, one integration at a time.
