@@ -26,7 +26,7 @@ I watched myself building this duality into my blog publisher without planning i
 
 This isn't about backwards compatibility. We're not maintaining legacy human interfaces while building for an AI future. We're recognizing that both interfaces are primary, serving constituents who inhabit the same systems through fundamentally different phenomenologies.
 
-When GitHub Copilot reads my code, it doesn't see syntax highlighting. When I read the same code, the colors are load-bearing. The code hasn't changed, but it exists differently for each of us. We're building Schrödinger's interfaces - simultaneously optimized for observers who collapse different aspects of the wave function.
+When GitHub Copilot reads my code, it doesn't see syntax highlighting. When I read the same code, the colors are load-bearing. The code hasn't changed, but it exists differently for each of us. We're building Schr ö dinger's interfaces - simultaneously optimized for observers who collapse different aspects of the wave function.
 
 The pattern extends beyond developer tools. Notion has an API for agents and a canvas for humans. Stripe has a dashboard for humans and webhooks for machines. Every service sprouting dual interfaces, not as redundancy but as recognition that we're serving two species of user who parse reality through different grammars.
 
