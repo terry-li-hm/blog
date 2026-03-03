@@ -1,7 +1,7 @@
 ---
 title: "The Invisible Puppeteer"
 description: "When algorithms shape decisions we think are ours"
-pubDate: "Jan 31 2025"
+pubDatetime: 2025-01-31T00:00:00.000Z
 ---
 
 A colleague recently described watching their friend navigate a creative block. The friend, a designer working on interface mockups, kept asking their AI assistant increasingly specific questions about color theory, user psychology, typography choices. Each answer shaped the next question, which shaped the next answer, creating a narrowing spiral of possibility. By the end of the session, the designer had produced exactly what the AI's responses had incrementally guided them toward, while feeling they'd maintained complete creative control.
