@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import { getReadingTime } from "@/utils/readingTime";
 import DateChiri from "./DateChiri.astro";
+import { SITE } from "@/config";
 
 export interface Props {
   data: CollectionEntry<"blog">;
@@ -27,12 +28,14 @@ const href = `/posts/${slug}/`;
         <p class="title">{title}</p>
         {description && <p class="description">{description}</p>}
       </div>
-      <div class="divider"></div>
-      <DateChiri 
-        pubDatetime={pubDatetime} 
-        modDatetime={modDatetime}
-        readingTime={readingTime}
-      />
+      {SITE.showDate && <div class="divider"></div>}
+      {SITE.showDate && (
+        <DateChiri
+          pubDatetime={pubDatetime}
+          modDatetime={modDatetime}
+          readingTime={readingTime}
+        />
+      )}
     </div>
   </a>
 </li>

@@ -15,6 +15,7 @@ export const SITE = {
     text: "Edit page",
     url: "https://github.com/terry-li-hm/blog/edit/main/",
   },
+  showDate: false,
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
   lang: "en", // html lang code. Set this empty and default will be "en"

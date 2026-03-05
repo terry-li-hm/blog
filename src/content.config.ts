@@ -23,6 +23,7 @@ const blog = defineCollection({
       ogImage: z.string().optional(),
       featured: z.boolean().optional().default(false),
       hideEditPost: z.boolean().optional().default(false),
+      vault_notes: z.array(z.string()).optional(),
     }),
 });
 
