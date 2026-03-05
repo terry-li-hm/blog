@@ -9,6 +9,54 @@ import getSortedPosts from "@/utils/getSortedPosts";
 
 const posts = await getCollection("blog");
 const sortedPosts = getSortedPosts(posts);
+
+// Topic groupings — ordered by priority; first match wins
+const TOPIC_GROUPS = [
+  {
+    name: "Financial Services AI",
+    tags: ["financial-services", "banking", "ai-governance", "enterprise-ai", "model-risk", "responsible-ai", "fintech", "aml"],
+  },
+  {
+    name: "Agentic Systems",
+    tags: ["ai-agents", "agent-experience", "mcp", "automation", "developer-experience", "infrastructure"],
+  },
+  {
+    name: "Engineering & Tools",
+    tags: ["engineering", "architecture", "claude-code", "workflow", "production", "rust", "tools", "prompt-engineering", "cli"],
+  },
+  {
+    name: "Cognition & Philosophy",
+    tags: ["cognition", "philosophy", "productivity", "context"],
+  },
+  {
+    name: "Career & Consulting",
+    tags: ["consulting", "strategy", "digital-transformation", "career"],
+  },
+];
+
+function getTopicGroup(postTags: string[] = []): string {
+  for (const group of TOPIC_GROUPS) {
+    if (postTags.some(t => group.tags.includes(t))) {
+      return group.name;
+    }
+  }
+  return "Other";
+}
+
+// Build ordered map: group name → posts
+const groupedPosts = new Map<string, typeof sortedPosts>();
+for (const group of TOPIC_GROUPS) {
+  groupedPosts.set(group.name, []);
+}
+groupedPosts.set("Other", []);
+
+for (const post of sortedPosts) {
+  const groupName = getTopicGroup(post.data.tags);
+  groupedPosts.get(groupName)!.push(post);
+}
+
+// Filter out empty groups
+const activeGroups = [...groupedPosts.entries()].filter(([, posts]) => posts.length > 0);
 ---
 
 <LayoutChiri>
@@ -20,15 +68,22 @@ const sortedPosts = getSortedPosts(posts);
     <main>
       <div class="about">
         <p>
-          Terry Li thinks. Claude Code writes. No human has typed a single word you're reading.
-          <a href="https://notrainbow.dev" target="_blank" rel="noopener noreferrer">notrainbow.dev</a>
+          AI practitioner in Hong Kong. Writing about production AI in financial services,
+          agentic systems, and what it means to think alongside machines.
         </p>
       </div>
-      <ul class="post-list">
-        {sortedPosts.map(data => (
-          <CardChiri data={data} />
-        ))}
-      </ul>
+
+      {activeGroups.map(([groupName, groupPosts]) => (
+        <section class="topic-section">
+          <h2 class="topic-heading">{groupName}</h2>
+          <ul class="post-list">
+            {groupPosts.map(data => (
+              <CardChiri data={data} />
+            ))}
+          </ul>
+        </section>
+      ))}
+
       <div class="placeholder"></div>
     </main>
     <div>
@@ -58,18 +113,29 @@ const sortedPosts = getSortedPosts(posts);
 
   .about:not(:empty) {
     margin-top: 2rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
   }
 
   .about p {
     margin: 0;
     line-height: 1.75;
+    color: var(--text-secondary);
+    font-size: var(--font-size-m);
   }
 
-  .about a {
-    color: var(--text-primary);
-    text-decoration: underline;
-    text-underline-offset: 2px;
+  .topic-section {
+    margin-bottom: 2.5rem;
+  }
+
+  .topic-heading {
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    margin: 0 0 0.25rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
   }
 
   .post-list {

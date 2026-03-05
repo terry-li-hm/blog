@@ -2,6 +2,7 @@
 import { type CollectionEntry } from "astro:content";
 import DateChiri from "./DateChiri.astro";
 import { getReadingTime } from "@/utils/readingTime";
+import { SITE } from "@/config";
 
 export interface Props {
   posts: CollectionEntry<"blog">[];
@@ -23,11 +24,13 @@ if (!posts || posts.length === 0) return null;
           <a href={`/posts/${slug}/`} class="related-post-link">
             <h4 class="related-post-title">{post.data.title}</h4>
             <p class="related-post-description">{post.data.description}</p>
-            <DateChiri 
-              pubDatetime={post.data.pubDatetime} 
-              modDatetime={post.data.modDatetime}
-              readingTime={readingTime}
-            />
+            {SITE.showDate && (
+              <DateChiri
+                pubDatetime={post.data.pubDatetime}
+                modDatetime={post.data.modDatetime}
+                readingTime={readingTime}
+              />
+            )}
           </a>
         </article>
       );

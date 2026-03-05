@@ -1,53 +1,35 @@
 #!/bin/bash
 # Sync blog posts from Obsidian vault to blog repository
+# Source: ~/notes/Writing/Blog/Published/
+# Runs via LaunchAgent (com.terry.blog-sync) every 5 minutes
 
-set -e  # Exit on error
+set -e
 
-VAULT_PATH="/Users/terry/ideaverse-zero-2"
-BLOG_PATH="/Users/terry/conductor/blog"
-VAULT_BLOG_DIR="Efforts/Essays/Published"
-BLOG_CONTENT_DIR="src/content/blog"
+VAULT_BLOG_DIR="/Users/terry/notes/Writing/Blog/Published"
+BLOG_PATH="/Users/terry/code/blog"
+BLOG_CONTENT_DIR="$BLOG_PATH/src/content/blog"
 
-echo "🔄 Syncing essays from vault..."
-
-# Navigate to blog repository
-cd "$BLOG_PATH"
-
-# Ensure we have the latest vault remote
-git fetch vault main --quiet
-
-# Use rsync to sync files (preserves timestamps, handles deletions)
-rsync -av --delete \
-  "$VAULT_PATH/$VAULT_BLOG_DIR/" \
-  "$BLOG_PATH/$BLOG_CONTENT_DIR/" \
+# Sync files from vault to blog content dir
+rsync -a --delete \
+  "$VAULT_BLOG_DIR/" \
+  "$BLOG_CONTENT_DIR/" \
   --exclude=".DS_Store" \
   --exclude="*.swp"
 
-# Process markdown files to convert wiki-links to standard markdown links
-find "$BLOG_PATH/$BLOG_CONTENT_DIR" -name "*.md" -type f | while read -r file; do
-  # Convert [[wiki links]] to [wiki links](wiki-links)
-  # This preserves the link text and creates a URL-friendly slug
+# Convert [[wiki links]] to standard markdown
+find "$BLOG_CONTENT_DIR" -name "*.md" -type f | while read -r file; do
   sed -i '' 's/\[\[\([^]|]*\)\]\]/[\1](\1)/g' "$file"
-  
-  # Handle aliased links [[link|alias]] -> [alias](link)
   sed -i '' 's/\[\[\([^]|]*\)|\([^]]*\)\]\]/[\2](\1)/g' "$file"
 done
 
-# Check if there are changes to commit
-if git diff --quiet "$BLOG_CONTENT_DIR"; then
-  echo "✅ No changes to sync"
-else
-  # Show what changed
-  echo "📝 Changes detected:"
-  git diff --stat "$BLOG_CONTENT_DIR"
-  
-  # Stage changes
+# Commit and push if anything changed
+cd "$BLOG_PATH"
+if ! git diff --quiet "$BLOG_CONTENT_DIR" || git ls-files --others --exclude-standard "$BLOG_CONTENT_DIR" | grep -q .; then
   git add "$BLOG_CONTENT_DIR"
-  
-  # Commit with timestamp
-  TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
-  git commit -m "Sync essays from vault - $TIMESTAMP" -m "Synced from $VAULT_PATH/$VAULT_BLOG_DIR"
-  
-  echo "✨ Essays synced successfully!"
-  echo "📌 Remember to push changes to deploy: git push origin main"
+  TIMESTAMP=$(date +"%Y-%m-%d %H:%M")
+  git commit -m "Sync from vault — $TIMESTAMP"
+  git push origin main
+  echo "[$TIMESTAMP] Synced and pushed"
+else
+  echo "[$(date +"%Y-%m-%d %H:%M")] No changes"
 fi

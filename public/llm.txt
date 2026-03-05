@@ -1,7 +1,7 @@
 # TL;HM — Terry Li's Thinking Garden
 
 ## About
-Terry Li is a data scientist and AI practitioner transitioning from building the data science function at a Hong Kong bank (first ML model in production, first GenAI deployment, HKMA GenAI Sandbox participant) to principal consulting at Capco as AI Solution Lead.
+Terry Li is a data scientist and AI practitioner based in Hong Kong. Former AGM & Head of Data Science at CITIC Bank International — built the bank's first ML model in production, first GenAI deployment, and was selected for the HKMA GenAI Sandbox (1 of 10 banks). Now Principal Consultant and AI Solution Lead at Capco.
 
 This site is a public thinking garden — ideas in progress before they're LinkedIn posts. Writing spans AI in financial services, agentic systems, responsible AI governance, and the operational realities of production AI.
 
@@ -16,6 +16,11 @@ This site is a public thinking garden — ideas in progress before they're Linke
 - AI governance category error: routing frameworks ≠ compliance programmes
 - What makes a great AI consultant (beyond technical skills)
 - GARP Responsible AI in Finance exam: what the governance sections taught
+- Banks have an AX problem: APIs designed for human callers break under agent use
+- AI era business archetypes: where defensibility sits when models commoditize
+- The upstream constraint pattern: Mox and digital transformation bottlenecks
+- Three AI governance blind spots most frameworks miss
+- Backtest vs operational validation: why models that pass reviews fail in production
 
 **Agentic Systems**
 - AX: Agent Experience is the new DX
@@ -23,7 +28,10 @@ This site is a public thinking garden — ideas in progress before they're Linke
 - Agent-first CLI design: TTY detection as philosophy
 - Don't ask your AI to find problems (sycophancy as architecture issue)
 - Skills as behavioral nudges — the lightweight alternative to fine-tuning
-- Three layers enterprises actually need for AI agents
+- Agentic engineering: less is more — context pollution degrades performance
+- The failure mode of AI advice isn't hallucination, it's agreement
+- CLI enforces structure, saves tokens: thin wrappers eliminate agent roundtrips
+- I made an AI to remind me of my own blind spots (judex pattern)
 
 **Production AI Engineering**
 - Production AI vs demos: intent classification reality check
@@ -31,6 +39,10 @@ This site is a public thinking garden — ideas in progress before they're Linke
 - MCP is not a glorified API
 - Why every tool needs two interfaces: CLI for humans, MCP for AI
 - When to build vs wait: the recurrence rule for AI tooling
+- Software engineering for AI instructions
+- AI evals: metrics before diagnosis — the three-layer failure pattern
+- Per-token pricing is the megapixels of AI
+- Three crates before lunch: the bottleneck moved
 
 **Cognition and Philosophy**
 - Claude Code is not a coding agent — it's a cognitive compiler
@@ -41,17 +53,18 @@ This site is a public thinking garden — ideas in progress before they're Linke
 - The Kutta condition of AI: engineering ships before theory catches up
 - Everyone becomes middle management in the age of agents
 - The hidden violence of vague instructions
+- The AGI question: Sequoia vs Shipper, and Sholto Douglas's nines of reliability
+- The AI displacement loop nobody models
+- AI vendor values decision: the contract you sign with a lab
 
 **Career and Consulting**
 - Banking DS to AI consulting: what the transition actually teaches you
 - Building my own consulting toolkit before day one
 - The AI job title illusion
 - The real reason Mox won (upstream constraint pattern)
-- Per-token pricing is the megapixels of AI
-- AI succeeds, economy breaks: the displacement loop nobody models
 
 ## Full Post Index
-All posts: https://terryli.hm/posts/
+All posts: https://terryli.hm/
 
 ## Contact
 terryli.hm@gmail.com | LinkedIn: linkedin.com/in/terrylihm
