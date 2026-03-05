@@ -62,4 +62,3 @@ The future isn't AI that codes for us. It's AI that thinks with us. And despite 
 
 *P.S. - Yes, I used Claude Code to build this entire blog site in 90 minutes. But that's the least interesting thing it did this week. The most interesting? It helped me realize I was solving the wrong problem in my career strategy. That conversation saved me two years of misaligned effort. This kind of strategic insight emerges when [you stop reading documentation and start observing AI work](/blog/i-dont-read-documentation-anymore)— the learning paradigm shifts from memorization to pattern recognition. Try billing that as "coding assistance."*
 
-*P.P.S - "ultrathink" isn't a typo. It's what happens when your thoughts continue beyond the message boundary. Claude Code understands this. Does your coding agent?*
