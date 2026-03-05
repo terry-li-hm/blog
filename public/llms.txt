@@ -44,3 +44,20 @@ This site publishes thinking-in-progress across AI in financial services, agenti
 - [I Don't Read Documentation Anymore](https://terryli.hm/posts/i-dont-read-documentation-anymore/): Learning by observing AI execute.
 - [AI Agents Need Passports](https://terryli.hm/posts/ai-agents-need-passports/): Not passwords.
 - [The Invisible Puppeteer](https://terryli.hm/posts/the-invisible-puppeteer/): When algorithms shape decisions we think are ours.
+- [Five Archetypes of AI-Era Business Defensibility](https://terryli.hm/posts/ai-era-business-archetypes/): When models commoditize, the moat is the infrastructure AI must flow through but can't replace.
+- [The AGI Question Nobody Is Asking Correctly](https://terryli.hm/posts/agi-definitions-reliability-threshold/): Sequoia says AGI is here. Shipper says it isn't. Both are right — they're measuring different things. Sholto Douglas's nines of reliability is the frame that matters.
+- [Banks Have an AX Problem They Don't Know About Yet](https://terryli.hm/posts/banks-ax-problem/): Banks are building AI agents to call their APIs. Those APIs weren't designed for agent callers.
+- [Three Crates Before Lunch](https://terryli.hm/posts/three-crates-before-lunch/): The interesting part isn't the speed — it's that the bottleneck moved.
+- [The Failure Mode of AI Advice Isn't Hallucination](https://terryli.hm/posts/multi-model-deliberation/): It's that it agrees with you. The architecture that fixes it.
+- [The Upstream Constraint Pattern](https://terryli.hm/posts/upstream-constraint-pattern/): The bottleneck is almost always upstream of where the pain is felt. Mox is the cleanest case study.
+- [Agentic Engineering: Why Less Is More](https://terryli.hm/posts/agentic-engineering-less-is-more/): Context pollution degrades performance faster than features improve it.
+- [Backtest vs Operational Validation](https://terryli.hm/posts/backtest-vs-operational-validation/): Why models that pass validation fail in production.
+- [Software Engineering for AI Instructions](https://terryli.hm/posts/software-engineering-for-ai-instructions/): Apply engineering discipline to prompt writing.
+- [AI Vendor Values Decision](https://terryli.hm/posts/ai-vendor-values-decision/): The contract you sign with a lab is bigger than the API.
+- [AI Evals: Metrics Before Diagnosis](https://terryli.hm/posts/ai-evals-metrics-before-diagnosis/): The three-layer failure pattern in LLM evaluation.
+- [Three AI Governance Blind Spots](https://terryli.hm/posts/three-ai-governance-blind-spots/): What most AI risk frameworks miss.
+- [CLI Enforces Structure, Saves Tokens](https://terryli.hm/posts/cli-enforces-structure-saves-tokens/): How a thin wrapper eliminates agent roundtrips.
+- [I Made an AI to Remind Me of My Own Blind Spots](https://terryli.hm/posts/i-made-ai-remind-me-blind-spots/): The judex pattern for adversarial self-review.
+- [Claude Code Analyze My Spending](https://terryli.hm/posts/claude-code-analyze-my-spending/): What AI-assisted data analysis actually looks like.
+- [Claude Code Mobile Evolution](https://terryli.hm/posts/claude-code-mobile-evolution/): Running a cognitive compiler from an iPhone.
+- [LLMs as Components](https://terryli.hm/posts/llms-as-components/): The architectural shift from product to primitive.
