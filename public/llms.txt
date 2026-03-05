@@ -1,0 +1,46 @@
+# TL;HM
+
+> Terry Li's public thinking garden. AI practitioner writing about production AI, financial services AI governance, and agentic systems.
+
+Terry Li is a data scientist and AI practitioner based in Hong Kong. Former AGM & Head of Data Science at CITIC Bank International — built the bank's first ML model in production, first GenAI deployment, and was selected for the HKMA GenAI Sandbox (1 of 10 banks). Now Principal Consultant and AI Solution Lead at Capco.
+
+This site publishes thinking-in-progress across AI in financial services, agentic systems design, responsible AI governance, and the cognitive implications of intelligence-as-infrastructure.
+
+## Posts
+
+- [Most Banks Don't Need an AI Strategy](https://terryli.hm/posts/banks-dont-need-ai-strategy/): The real project is data infrastructure, not AI strategy.
+- [Banking DS to AI Consulting](https://terryli.hm/posts/banking-ds-to-ai-consulting/): What production banking teaches that no framework captures.
+- [RAG for Compliance: The Hard Problem Is Chunking](https://terryli.hm/posts/rag-compliance-chunking/): Regulatory documents don't chunk cleanly.
+- [AI Agent Frameworks for Enterprise FS](https://terryli.hm/posts/ai-agent-frameworks-enterprise-fs/): Why most pilots fail at the second tool call.
+- [HK/APAC as an AI Hub for Financial Services](https://terryli.hm/posts/hk-apac-ai-hub-financial-services/): The story the global AI conversation is missing.
+- [What Makes a Great AI Consultant](https://terryli.hm/posts/what-makes-great-ai-consultant/): Beyond technical skills.
+- [Three Things AML AI Gets Wrong](https://terryli.hm/posts/three-things-aml-ai-gets-wrong/): Structural failures, not model failures.
+- [GARP RAI Exam Surprises](https://terryli.hm/posts/garp-rai-exam-surprises/): The governance sections were harder than the technical ones.
+- [AI Governance: Routing vs Compliance](https://terryli.hm/posts/ai-governance-routing-vs-compliance/): A common category error in bank AI frameworks.
+- [The Real Reason Mox Won](https://terryli.hm/posts/mox-and-ai-transformation/): The upstream constraint pattern in digital transformation.
+- [AX: Agent Experience Is the New DX](https://terryli.hm/posts/agent-experience-ax/): Most tools aren't designed for AI agent callers.
+- [Don't Ask Your AI to Find Problems](https://terryli.hm/posts/dont-ask-ai-to-find-problems/): Sycophancy as an architecture problem.
+- [The Contract Pattern](https://terryli.hm/posts/contract-pattern-hard-gates/): Hard gates for AI agent completion.
+- [Skills as Behavioral Nudges](https://terryli.hm/posts/skills-as-behavioral-nudges/): The lightweight alternative to fine-tuning.
+- [Agent-First CLI Design](https://terryli.hm/posts/agent-first-cli-design/): TTY detection as philosophy.
+- [Per-Token Pricing Is the Megapixels of AI](https://terryli.hm/posts/per-token-pricing-megapixels/): Optimising for the wrong number.
+- [The AI Job Title Illusion](https://terryli.hm/posts/ai-job-title-illusion/): Same bank, same week, completely different jobs.
+- [When to Build vs Wait](https://terryli.hm/posts/when-to-build-vs-wait/): The recurrence rule for AI tooling.
+- [Taste Requires Stakes](https://terryli.hm/posts/taste-requires-stakes/): What AI can simulate but can't feel.
+- [The Kutta Condition of AI](https://terryli.hm/posts/kutta-condition-of-ai/): Engineering ships before theory catches up.
+- [Why AI Makes Us Dumber](https://terryli.hm/posts/why-ai-makes-us-dumber/): The governance response to cognitive offloading.
+- [AI Displacement Loop](https://terryli.hm/posts/ai-displacement-loop/): The feedback loop nobody models.
+- [Building My Consulting Toolkit Before Day One](https://terryli.hm/posts/building-consulting-toolkit-day-one/): Carrying expertise across a role transition.
+- [Claude Code Is Not a Coding Agent](https://terryli.hm/posts/claude-code-not-coding-agent/): It's a cognitive compiler.
+- [Intelligence on Tap](https://terryli.hm/posts/intelligence-on-tap/): AI as utility infrastructure.
+- [Ambient Agents](https://terryli.hm/posts/ambient-agents/): When AI disappears into capability.
+- [Production AI vs Demos](https://terryli.hm/posts/production-ai-vs-demos/): Intent classification reality check.
+- [Everyone Becomes Middle Management](https://terryli.hm/posts/everyone-becomes-middle-management/): The coordination overhead of AI agents.
+- [The Hidden Violence of Vague Instructions](https://terryli.hm/posts/hidden-violence-vague-instructions/): LLMs as forcing functions for linguistic precision.
+- [What and Why Beat How](https://terryli.hm/posts/what-and-why-beat-how/): The cognitive hierarchy inverts when implementation is automated.
+- [How Claude Code Helps You Think](https://terryli.hm/posts/how-claude-code-helps-you-think/): Cognitive partnership over replacement.
+- [MCP Is Not a Glorified API](https://terryli.hm/posts/mcp-not-glorified-api/): The protocol that acts like philosophy.
+- [Why Every Tool Needs Two Faces](https://terryli.hm/posts/dual-interfaces-human-ai/): CLI for humans, MCP for AI.
+- [I Don't Read Documentation Anymore](https://terryli.hm/posts/i-dont-read-documentation-anymore/): Learning by observing AI execute.
+- [AI Agents Need Passports](https://terryli.hm/posts/ai-agents-need-passports/): Not passwords.
+- [The Invisible Puppeteer](https://terryli.hm/posts/the-invisible-puppeteer/): When algorithms shape decisions we think are ours.

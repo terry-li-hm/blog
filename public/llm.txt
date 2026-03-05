@@ -1,48 +1,57 @@
-# Terry Li's Technical Philosophy Blog
+# TL;HM — Terry Li's Thinking Garden
 
 ## About
-This blog explores the intersection of AI and human cognition, focusing on how intelligence is becoming infrastructure. Written for technical leaders who care about both philosophical depth and production reality.
+Terry Li is a data scientist and AI practitioner transitioning from building the data science function at a Hong Kong bank (first ML model in production, first GenAI deployment, HKMA GenAI Sandbox participant) to principal consulting at Capco as AI Solution Lead.
 
-## Core Philosophy
-Intelligence is becoming a utility like water or electricity. This blog documents that transformation through real-world engineering experiences, not theoretical speculation.
+This site is a public thinking garden — ideas in progress before they're LinkedIn posts. Writing spans AI in financial services, agentic systems, responsible AI governance, and the operational realities of production AI.
 
-## Key Themes
-- **Production AI Engineering**: Building AI systems that work at scale, not just in demos
-- **Cognitive Partnership**: AI as thought amplifier, not replacement
-- **Strategic Reallocation**: Why and what matter more than how when implementation becomes automated
-- **Infrastructure Thinking**: Treating AI as boring, reliable infrastructure rather than magic
+## Themes
 
-## Notable Articles
+**Financial Services AI**
+- Why most banks don't need an AI strategy — they need a data strategy they're willing to fund
+- RAG for compliance: chunking is harder than retrieval
+- AI agent frameworks for enterprise FS: the second tool call is where pilots fail
+- AML AI: three structural failures (explainability gap, label quality, population drift)
+- HK/APAC as an underappreciated hub for FS AI governance
+- AI governance category error: routing frameworks ≠ compliance programmes
+- What makes a great AI consultant (beyond technical skills)
+- GARP Responsible AI in Finance exam: what the governance sections taught
 
-### Production AI vs Demos
-The gap between demo simplicity and production complexity through real-world intent classification. Explores provider abstraction, structured validation, progressive error handling, and the engineering discipline required for reliable AI at scale.
+**Agentic Systems**
+- AX: Agent Experience is the new DX
+- The contract pattern: hard gates for AI agent completion
+- Agent-first CLI design: TTY detection as philosophy
+- Don't ask your AI to find problems (sycophancy as architecture issue)
+- Skills as behavioral nudges — the lightweight alternative to fine-tuning
+- Three layers enterprises actually need for AI agents
 
-### What and Why Beat How
-When implementation becomes automated, human intelligence gets reallocated to purpose and strategy. The cognitive hierarchy inverts from How→What→Why to Why→What→How.
+**Production AI Engineering**
+- Production AI vs demos: intent classification reality check
+- LLMs as components in reliability systems
+- MCP is not a glorified API
+- Why every tool needs two interfaces: CLI for humans, MCP for AI
+- When to build vs wait: the recurrence rule for AI tooling
 
-### I Don't Read Documentation Anymore
-Documentation transforms from memorization to observation. AI makes implementation knowledge queryable rather than memorable, changing how we learn and interact with technical systems.
+**Cognition and Philosophy**
+- Claude Code is not a coding agent — it's a cognitive compiler
+- Intelligence on tap: AI as utility infrastructure
+- Ambient agents: when AI disappears into capability
+- Taste requires stakes: what AI can simulate but can't feel
+- Why AI assistants make us dumber (and what governance should do about it)
+- The Kutta condition of AI: engineering ships before theory catches up
+- Everyone becomes middle management in the age of agents
+- The hidden violence of vague instructions
 
-### Intelligence on Tap
-AI is becoming mundane infrastructure. The shift from innovation theater to boring reliability marks AI's maturation as a technology.
+**Career and Consulting**
+- Banking DS to AI consulting: what the transition actually teaches you
+- Building my own consulting toolkit before day one
+- The AI job title illusion
+- The real reason Mox won (upstream constraint pattern)
+- Per-token pricing is the megapixels of AI
+- AI succeeds, economy breaks: the displacement loop nobody models
 
-### Claude Code is Not a Coding Agent
-Claude Code's true value isn't generating code but being a comprehensive thinking partner—a cognitive compiler that transforms intent into implementation.
-
-## Technical Expertise
-- Production AI architecture and reliability engineering
-- Intent classification systems with 70+ hierarchical categories
-- Multi-provider AI abstraction layers
-- Structured output validation with schema enforcement
-- Progressive error handling and graceful degradation
-- AI observability and monitoring at scale
-- Mobile-first AI workflows and location-aware development
-
-## Engineering Philosophy
-Success in AI systems isn't measured in accuracy percentages but in system uptime, user satisfaction, and operational simplicity. The most advanced technology succeeds by being treated as ordinary engineering.
+## Full Post Index
+All posts: https://terryli.hm/posts/
 
 ## Contact
-terryli.hm
-
-## Purpose
-Demonstrating sophisticated technical thinking through philosophical exploration of AI's impact on software engineering. Written for potential employers seeking engineers who think strategically about technology's role in cognitive transformation.
+terryli.hm@gmail.com | LinkedIn: linkedin.com/in/terrylihm
