@@ -2,6 +2,7 @@
 import { PUBLIC_GOOGLE_SITE_VERIFICATION } from "astro:env/client";
 import { SITE } from "@/config";
 import "@/styles/global.css";
+import Analytics from "@vercel/analytics/astro";
 
 export interface Props {
   title?: string;
@@ -164,10 +165,7 @@ const structuredData = {
   </head>
   <body>
     <slot />
-    <script>
-      import { inject } from "@vercel/analytics";
-      inject();
-    </script>
+    <Analytics />
   </body>
 </html>
 
