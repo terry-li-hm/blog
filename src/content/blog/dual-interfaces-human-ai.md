@@ -6,10 +6,11 @@ description: >-
   future isn't human OR machine interfaces - it's both, simultaneously.
 pubDatetime: 2025-08-28T00:00:00.000Z
 tags:
-  - mcp
-  - engineering
-  - ai-agents
-  - developer-experience
+  - AI
+  - Developer Tools
+  - MCP
+  - Interface Design
+  - Human-AI Collaboration
 draft: false
 ---
 

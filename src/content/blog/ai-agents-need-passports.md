@@ -6,9 +6,10 @@ description: >-
   and legal standing?
 pubDatetime: 2025-01-27T00:00:00.000Z
 tags:
-  - ai-agents
-  - infrastructure
-  - architecture
+  - AI
+  - Systems Design
+  - Authentication
+  - Future of Work
 draft: false
 ---
 
