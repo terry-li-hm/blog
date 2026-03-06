@@ -3,11 +3,13 @@ export interface Props {
   pubDatetime: string | Date;
   modDatetime?: string | Date | null;
   readingTime?: number;
+  revisionNote?: string;
 }
 
-const { pubDatetime, modDatetime, readingTime } = Astro.props;
+const { pubDatetime, modDatetime, readingTime, revisionNote } = Astro.props;
 
-const displayDate = modDatetime && modDatetime > pubDatetime ? modDatetime : pubDatetime;
+const isRevised = modDatetime && new Date(modDatetime) > new Date(pubDatetime);
+const displayDate = isRevised ? modDatetime! : pubDatetime;
 const date = new Date(displayDate);
 
 // Format as YYYY.MM.DD like Chiri
@@ -19,8 +21,12 @@ const formattedDate = `${year}.${month}.${day}`;
 
 <p class="date">
   <time datetime={date.toISOString()}>{formattedDate}</time>
+  {isRevised && <span class="revised-marker"> · revised</span>}
   {readingTime && <span class="reading-time"> · {readingTime} min read</span>}
 </p>
+{isRevised && revisionNote && (
+  <p class="revision-note">{revisionNote}</p>
+)}
 
 <style>
   .date {
@@ -30,5 +36,15 @@ const formattedDate = `${year}.${month}.${day}`;
     letter-spacing: var(--spacing-s);
     flex-shrink: 0;
     white-space: nowrap;
+  }
+  .revised-marker {
+    font-style: italic;
+  }
+  .revision-note {
+    margin: 0.25rem 0 0;
+    color: var(--text-secondary);
+    opacity: 0.65;
+    font-size: 0.85em;
+    font-style: italic;
   }
 </style>

@@ -14,6 +14,7 @@ const blog = defineCollection({
       // Transform string to Date object
       pubDatetime: z.coerce.date(),
       modDatetime: z.coerce.date().optional(),
+      revisionNote: z.string().optional(),
       draft: z.boolean().optional().default(false),
       tags: z.array(z.string()).optional(),
       timezone: z.string().optional(),
