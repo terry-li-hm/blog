@@ -15,6 +15,7 @@ export interface Props {
   modDatetime?: Date | null;
   scrollSmooth?: boolean;
   tags?: string[];
+  personPage?: boolean;
 }
 
 const {
@@ -28,6 +29,7 @@ const {
   modDatetime,
   scrollSmooth = false,
   tags = [],
+  personPage = false,
 } = Astro.props;
 
 const socialImageURL = new URL(ogImage, Astro.url);
@@ -70,6 +72,13 @@ const structuredData = pubDatetime
         "@type": "WebPage",
         "@id": `${canonicalURL}`,
       },
+    }
+  : personPage
+  ? {
+      "@context": "https://schema.org",
+      ...personSchema,
+      url: `${canonicalURL}`,
+      description: `${description}`,
     }
   : {
       "@context": "https://schema.org",
