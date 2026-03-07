@@ -31,6 +31,10 @@ This site publishes thinking-in-progress across AI in financial services, agenti
 
 ${postLines}
 
+## Full content
+
+For the complete text of all posts, see /llms-full.txt
+
 ## Contact
 
 terryli.hm@gmail.com | LinkedIn: linkedin.com/in/terrylihm
