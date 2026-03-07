@@ -2,6 +2,8 @@
 title: "The Experiment Loop Without the GPU"
 description: "Andrej Karpathy's autoresearch project is being read as a demo of what H100s can do overnight. It's actually a discipline for doing rigorous work on anything measurable."
 pubDatetime: 2026-03-08T06:54:45.000Z
+modDatetime: 2026-03-07T23:10:37.000Z
+revisionNote: "Added P.S.: peira used to correct its own experiment design before campaign started"
 draft: false
 tags: ["ai", "tools", "systems"]
 ---
@@ -35,3 +37,7 @@ I built a small skill called `peira` — Greek for trial or experiment — that 
 The insight from Karpathy's project isn't that you can do AI research without a human in the loop. It's that rigorous iteration requires structure that most people don't impose on themselves, and that structure can be written down and reused. The H100 just makes the feedback loop fast enough to see results before breakfast.
 
 Without the GPU, you just set your alarm for later.
+
+---
+
+*P.S. The first thing I did after building peira was use it to design an experiment for testing whether a change to my own workflow actually worked. Before running a single experiment, I searched my chat history to establish a proper baseline — and found that the baseline I'd assumed was wrong. The failure mode I was testing for only appeared in a specific edge case, not generally. The experiment loop corrected the experiment's own design before the campaign started. I'm not sure Karpathy planned for that use case, but it's the most recursive thing I've built in a while.*
