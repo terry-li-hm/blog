@@ -2,6 +2,8 @@
 title: "Expansion, Not Speedup"
 description: "The real ROI of AI coding isn't doing the same work faster. It's doing work that wasn't worth doing before."
 pubDatetime: 2026-03-07T00:46:57.000Z
+modDatetime: 2026-03-07T01:12:16.000Z
+revisionNote: "Cut appended cross-link paragraph; strengthened original conclusion"
 draft: false
 tags: ["ai-agents", "engineering", "claude-code", "developer-experience", "production"]
 ---
@@ -18,6 +20,4 @@ There's a second form of expansion Karpathy points to: approaching code in domai
 
 For financial services, this has specific implications. The compliance analyst who can now explore data directly. The risk manager who can prototype a model validation before handing off to engineering. The audit team that can run a quick analysis without opening a ticket. None of this is faster — it's newly possible. And newly possible things don't show up in time-saved calculations.
 
-The productivity conversation in most organisations is still framed as efficiency: same outputs, lower cost. That framing misses most of the value. The harder question to ask — and to answer — is what would we now build that we wouldn't have touched before? That's where the real number lives.
-
-The flip side of this: as more gets built, the accountability question sharpens. Expansion means more AI-generated output entering consequential systems. How much oversight each one warrants is a different calculation — covered in [The Trust Spectrum](/posts/the-trust-spectrum/).
+The productivity conversation in most organisations is still framed as efficiency: same outputs, lower cost. That framing misses most of the value. The harder question to ask — and to answer — is what would we now build that we wouldn't have touched before? That's where the real number lives. And it's a harder number to measure, because the counterfactual — the project that never got proposed, the analysis that never got run — is invisible by definition.

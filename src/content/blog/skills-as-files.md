@@ -2,6 +2,8 @@
 title: "Skills as Files"
 description: "The simplest agent architecture might already be the right one: give the agent a file explaining how to do something, and let it read when needed."
 pubDatetime: 2026-03-07T00:46:57.000Z
+modDatetime: 2026-03-07T01:12:16.000Z
+revisionNote: "Added concrete MCP-vs-file decision example (calendar vs LinkedIn)"
 draft: false
 tags: ["ai-agents", "mcp", "infrastructure", "developer-experience", "claude-code"]
 ---
@@ -14,7 +16,9 @@ Then I read a piece from LlamaIndex arguing that files may be the central abstra
 
 What struck me was that this is exactly what CLAUDE.md files are — the convention Boris Cherny describes for teams using Claude Code. A shared file checked into git, containing every mistake and correction the team wants remembered. Context engineering, not prompt engineering. The file is the institutional memory.
 
-There's a practical argument here against reflexively reaching for MCP for every capability. MCP is powerful when you need structured, typed tool calls with clear schemas — reading calendar events, writing to a database, calling an API with specific parameters. But for *how to behave* and *what to consider* in a given situation, a well-written file often does the same job with far less infrastructure overhead. The agent already knows how to read and reason over text. Give it good text.
+There's a practical argument here against reflexively reaching for MCP for every capability. I have an MCP server for Google Calendar — it makes sense there because reading and writing calendar events is a structured, typed operation with a clear schema, and the server handles auth, pagination, and error formatting. But when I needed the agent to handle LinkedIn correctly — knowing to use persistent cookies, knowing to wait with fixed milliseconds instead of waiting for network idle, knowing to escape the notification loop a specific way — none of that fit a tool schema. It was knowledge about how to behave. So it's a skill file. The agent reads it when the task involves LinkedIn and reasons over it. No server, no schema, no infrastructure. Just good text.
+
+MCP is powerful for structured API calls. But for *how to behave* and *what to consider*, a well-written file often does the same job with far less overhead. The agent already knows how to read and reason over text. Give it good text.
 
 The scaling limitation is real: files don't work for knowledge bases with thousands of documents — you need proper retrieval infrastructure for that. But for a personal workflow with dozens of skills, or a team with shared practices encoded in markdown, the file is a surprisingly complete solution. The overhead of building and maintaining a server that serves one file is rarely worth it.
 
