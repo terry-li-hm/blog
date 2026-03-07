@@ -1,0 +1,197 @@
+---
+import FooterChiri from "@/components/FooterChiri.astro";
+import HeaderChiri from "@/components/HeaderChiri.astro";
+import { SITE } from "@/config";
+import LayoutChiri from "@/layouts/LayoutChiri.astro";
+
+const description =
+  "Terry Li — AI practitioner and data scientist based in Hong Kong. Principal Consultant and AI Solution Lead at Capco. Writing about production AI in financial services and agentic systems.";
+---
+
+<LayoutChiri
+  title={`About | ${SITE.title}`}
+  description={description}
+>
+  <div class="page-content">
+    <HeaderChiri />
+    <main>
+      <h1>Terry Li</h1>
+
+      <section class="bio">
+        <p>
+          AI practitioner and data scientist based in Hong Kong. Currently Principal Consultant
+          and AI Solution Lead at <a href="https://www.capco.com/" target="_blank" rel="noopener noreferrer">Capco</a>,
+          focused on AI strategy and implementation for financial services clients across Asia-Pacific.
+        </p>
+        <p>
+          Previously AGM and Head of Data Science at CITIC Bank International, where I built the
+          bank's first ML model in production, led its first GenAI deployment, and was selected for
+          the <a href="https://www.hkma.gov.hk/" target="_blank" rel="noopener noreferrer">HKMA</a> GenAI Sandbox —
+          one of ten banks chosen to pilot generative AI in regulated financial services in Hong Kong.
+        </p>
+        <p>
+          I write about what it actually takes to deploy AI in production at financial institutions:
+          the data infrastructure problems that precede model problems, the governance gaps that
+          frameworks miss, and the operational realities that demos never show.
+        </p>
+      </section>
+
+      <section class="themes">
+        <h2>What I write about</h2>
+        <dl>
+          <dt>Financial Services AI</dt>
+          <dd>
+            Production deployment, model risk, AML, RAG for compliance, AI governance in regulated
+            environments, and what APAC gets right that the global conversation misses.
+          </dd>
+          <dt>Agentic Systems</dt>
+          <dd>
+            Agent experience design, the contract pattern, sycophancy as an architecture problem,
+            and why less context usually means better performance.
+          </dd>
+          <dt>Engineering &amp; Tools</dt>
+          <dd>
+            AI instruction files as software engineering artifacts, evaluation methodology,
+            CLI design for agent callers, and the operational discipline that separates production
+            AI from demos.
+          </dd>
+          <dt>Cognition &amp; Philosophy</dt>
+          <dd>
+            What happens to thinking when implementation is automated. Intelligence as
+            infrastructure. The stakes that separate taste from simulation.
+          </dd>
+        </dl>
+      </section>
+
+      <section class="credentials">
+        <h2>Background</h2>
+        <ul>
+          <li>Principal Consultant, AI Solution Lead — Capco (2025–present)</li>
+          <li>AGM &amp; Head of Data Science — CITIC Bank International (2019–2025)</li>
+          <li>HKMA GenAI Sandbox participant — 1 of 10 banks selected in Hong Kong</li>
+          <li>GARP Responsible AI in Finance (RAI) — <a href="https://www.garp.org/" target="_blank" rel="noopener noreferrer">GARP</a></li>
+          <li>Based in Hong Kong</li>
+        </ul>
+      </section>
+
+      <section class="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/terrylihm/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/terry-li-hm" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+          <li><a href="mailto:terryli.hm@gmail.com">terryli.hm@gmail.com</a></li>
+        </ul>
+      </section>
+    </main>
+    <FooterChiri />
+  </div>
+</LayoutChiri>
+
+<style>
+  .page-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+    max-width: 35rem;
+    margin: 0 auto;
+    padding: 2rem 1rem 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
+    margin: 0 0 2rem 0;
+  }
+
+  h2 {
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    margin: 0 0 0.75rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section {
+    margin-bottom: 2.5rem;
+  }
+
+  p {
+    font-size: var(--font-size-m);
+    line-height: 1.75;
+    color: var(--text-secondary);
+    margin: 0 0 1rem 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  dl {
+    margin: 0;
+  }
+
+  dt {
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-primary);
+    margin: 1rem 0 0.25rem 0;
+  }
+
+  dt:first-child {
+    margin-top: 0;
+  }
+
+  dd {
+    font-size: var(--font-size-m);
+    line-height: 1.75;
+    color: var(--text-secondary);
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    font-size: var(--font-size-m);
+    line-height: 1.75;
+    color: var(--text-secondary);
+  }
+
+  a {
+    color: var(--text-primary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.15s;
+  }
+
+  a:hover {
+    border-bottom-color: var(--text-primary);
+  }
+
+  @media (max-width: 768px) {
+    main {
+      padding: 2rem 1.25rem 0;
+    }
+  }
+
+  @media (max-width: 640px) {
+    main {
+      padding: 2rem 1rem 0;
+    }
+  }
+</style>
