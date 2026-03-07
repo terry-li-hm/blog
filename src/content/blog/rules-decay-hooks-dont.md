@@ -29,7 +29,7 @@ Fifteen lines. Fires after every skill invocation. Every single time a skill loa
 
 The practical effect is small. But the structural difference is large. A rule in a memory file requires me to remember the rule exists, remember it applies, remember to act on it. A hook requires nothing — it fires regardless of context, fatigue, or how many other things are in flight. The discipline is built into the mechanism, not into the operator.
 
-This is what Karpathy means when he talks about programming the org. The org here is a personal AI workflow, but the principle generalises: an org whose rules live in documents is an org that depends on discipline. An org whose rules live in executable code depends only on the code running. Documents are prompts. Code is enforcement.
+Karpathy frames building AI workflows as programming an org — prompts, skills, tools, and processes are the source code. If that framing holds, then rules written in documents are comments: readable, but not executed. A hook is an assertion. The org here is a personal AI workflow, but the principle generalises: an org whose rules live in documents is an org that depends on discipline. An org whose rules live in executable code depends only on the code running.
 
 The recursive part is what I find most interesting: the hook is itself an application of the correctness signal principle. The principle says *encode verifiable signals as automation*. The hook encodes the verifiable signal of a mismatched skill. It's not just illustrating the idea — it's an instance of it.
 
