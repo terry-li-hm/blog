@@ -12,8 +12,8 @@ Not for lack of ideas — I have plenty. The problem is the gap between "idea" a
 
 Something shifted when I started using AI heavily in my work. The blank page stopped being the hard part. I'd sketch a thought, the AI would flesh it out, and suddenly I was editing rather than originating. The ego stake dropped. If the draft was rough, it wasn't quite *my* roughness.
 
-The irony is that this isn't really about quality — AI output is often mediocre on its own. It's about removing the freeze. Perfectionism isn't a quality standard; it's a fear response. The AI doesn't care about my reputation, so neither does the draft.
+The irony is that this isn't really about quality — AI output is often mediocre on its own. It's about removing the freeze. Perfectionism isn't a quality standard; it's a fear response. The AI doesn't care about my reputation, so neither does the draft. I had a post about leaving banking that I'd started four times over two years. With AI, I had a working draft in an afternoon. The post itself wasn't the hard part — the starting was.
 
 There's a second effect too: iteration speed collapses the feedback loop. When you can rewrite in seconds, you actually discover that the 80% version is fine. Most perfectionism runs on untested fear. Speed tests it.
 
-I'm not sure this is a great development, philosophically. But the garden is getting posts now, so.
+I'm not sure this is a great development, philosophically. But the garden is getting posts now. And this post — the one you're reading — was drafted in a single conversation, published the same day. Which is either proof the method works, or proof I've given up on standards. Possibly both.
