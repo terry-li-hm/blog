@@ -22,6 +22,9 @@ find "$BLOG_CONTENT_DIR" -name "*.md" -type f | while read -r file; do
   sed -i '' 's/\[\[\([^]|]*\)|\([^]]*\)\]\]/[\2](\1)/g' "$file"
 done
 
+# Regenerate vault garden index (terryli.hm.md)
+python3 "$BLOG_PATH/generate-garden-index.py"
+
 # Commit and push if anything changed
 cd "$BLOG_PATH"
 if ! git diff --quiet "$BLOG_CONTENT_DIR" || git ls-files --others --exclude-standard "$BLOG_CONTENT_DIR" | grep -q .; then
