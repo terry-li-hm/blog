@@ -19,3 +19,5 @@ There's a practical argument here against reflexively reaching for MCP for every
 The scaling limitation is real: files don't work for knowledge bases with thousands of documents — you need proper retrieval infrastructure for that. But for a personal workflow with dozens of skills, or a team with shared practices encoded in markdown, the file is a surprisingly complete solution. The overhead of building and maintaining a server that serves one file is rarely worth it.
 
 The broader principle: prefer the simplest architecture that the agent can actually use. Files are things agents understand natively. Start there. Add infrastructure only when files genuinely can't do the job.
+
+There's a related argument about enforcement: files explain how to behave, but hooks *enforce* it. The distinction between writing a rule and making the system assert it is covered in [Rules Decay, Hooks Don't](/posts/rules-decay-hooks-dont/).

@@ -21,3 +21,5 @@ For financial services AI this lands with particular force. Model risk managemen
 The practical implication: before you deploy an agent to anything consequential, instrument it first. Capture the full execution context at each step. Not because you expect it to fail — because when it does something surprising, and it will, you need to be able to explain what happened. That explanation lives in the trace.
 
 Tools like LangSmith and Langfuse exist precisely for this. They're not debugging conveniences. For agentic systems in production, they're the equivalent of the debugger itself.
+
+This connects to the broader accountability question in [The Trust Spectrum](/posts/the-trust-spectrum/) — how much oversight a system requires depends on who notices when it fails. Traces are what make oversight possible once the system is running.

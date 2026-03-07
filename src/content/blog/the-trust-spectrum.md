@@ -25,3 +25,5 @@ For a production model that feeds credit decisions: failure is a systematic bias
 Most organisations working with AI are operating somewhere in the middle of this spectrum without having explicitly mapped where they sit. The Steinberger approach is seductive because it's fast and it works — for his context. The skill is recognising your context isn't his. Not because AI is less capable, but because the accountability structure around your output is different.
 
 The useful question to ask on any AI-assisted project: if this produces a wrong output, who finds out, how quickly, and what are the consequences? Let that answer calibrate how much process you layer around the model. Not less than necessary. Not more than warranted.
+
+When agents are involved in that process, the oversight question extends further — you need the execution record, not just the output. That's the argument in [Traces Are the New Debugger](/posts/traces-are-the-new-debugger/).
