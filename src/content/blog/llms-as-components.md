@@ -4,7 +4,7 @@ description: >-
   What changes when LLMs stop being special and become just another software
   component? Everything.
 pubDatetime: 2025-07-05T10:00:00.000Z
-draft: false
+draft: true
 tags:
   - llm
   - architecture
