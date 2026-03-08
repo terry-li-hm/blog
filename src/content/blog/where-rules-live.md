@@ -2,7 +2,7 @@
 title: "Where Rules Live"
 description: "The difference between a rule that works and a rule that doesn't is usually not the content of the rule — it's where it lives."
 pubDatetime: 2026-03-08T15:26:00.000Z
-draft: true
+draft: false
 tags: ["ai", "workflows", "systems"]
 ---
 
@@ -24,7 +24,7 @@ The practical implication is a routing question: when you capture a lesson, ask 
 
 The lesson about OpenRice ended up in three places: the research skill's tool selection table (fires when choosing search tools), the Cloudflare bypass documentation (explains why, for future reference), and a routing gate in the skill that manages knowledge capture (reminds me to check whether a skill already owns a rule before dumping it into memory). That last one is the most recursive: a skill that enforces the principle of routing rules to skills.
 
-I'm not sure that's elegant. But it works.
+The routing question is the whole thing: not *what is this lesson?* but *when does this need to fire?* Get that right and the rule enforces itself. Get it wrong and you have a very well-documented mistake.
 
 ---
 
