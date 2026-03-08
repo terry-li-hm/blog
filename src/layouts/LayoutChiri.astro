@@ -148,6 +148,16 @@ const structuredData = pubDatetime
 
     <meta name="theme-color" content="" />
     <meta name="view-transition" content="same-origin" />
+
+    <!-- Theme init: run before paint to prevent flash -->
+    <script is:inline>
+      (function () {
+        const stored = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = stored || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
     
     <style is:global>
       /* Elegant fade transitions */
