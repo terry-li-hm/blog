@@ -2,7 +2,7 @@
 title: "When Better Is Worse"
 description: "Upgrading to a more capable model made my tool sixty times slower. The lesson isn't about models — it's about the difference between capability and fit."
 pubDatetime: 2026-03-08T13:40:35.000Z
-draft: true
+draft: false
 tags: ["ai", "tooling", "engineering"]
 ---
 
