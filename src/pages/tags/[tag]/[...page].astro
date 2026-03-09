@@ -27,7 +27,7 @@ export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
 const { page, tagName } = Astro.props;
 ---
 
-<LayoutChiri title={`Tag: ${tagName} | ${SITE.title}`}>
+<LayoutChiri title={`Tag: ${tagName} | ${SITE.title}`} noindex={true}>
   <HeaderChiri />
   <main class="main-content">
     <h1>Tag: {tagName}</h1>

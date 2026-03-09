@@ -16,6 +16,7 @@ export interface Props {
   scrollSmooth?: boolean;
   tags?: string[];
   personPage?: boolean;
+  noindex?: boolean;
 }
 
 const {
@@ -30,6 +31,7 @@ const {
   scrollSmooth = false,
   tags = [],
   personPage = false,
+  noindex = false,
 } = Astro.props;
 
 const socialImageURL = new URL(ogImage, Astro.url);
@@ -142,6 +144,7 @@ const structuredData = pubDatetime
       )
     }
     <meta name="msvalidate.01" content="0C71875EB8F531B1622CE41E3DEC6910" />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
 
     <!-- JSON LD -->
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />

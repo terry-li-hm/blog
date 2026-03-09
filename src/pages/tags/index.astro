@@ -12,7 +12,7 @@ const posts = await getCollection("blog");
 const tags = getUniqueTags(posts);
 ---
 
-<LayoutChiri title={`Tags | ${SITE.title}`}>
+<LayoutChiri title={`Tags | ${SITE.title}`} noindex={true}>
   <HeaderChiri />
   <main class="main-content">
     <h1>Tags</h1>
