@@ -1,8 +1,8 @@
 ---
 title: "The Queue Should Live Where Your Thoughts Live"
-description: "AI agent results should be push not pull. The queue should live where your thoughts live. The feedback loop should close on mobile. Three principles that most tools violate simultaneously."
+description: "AI agent results should be push, not pull. The feedback loop should close on mobile. Most tools miss all three — not from ignorance, but because dashboards photograph better."
 pubDatetime: 2026-03-09T19:00:00+08:00
-draft: true
+draft: false
 tags:
   - ai-tools
   - workflow
