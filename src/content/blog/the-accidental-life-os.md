@@ -2,7 +2,7 @@
 title: "The Accidental Life OS"
 description: "I spent an afternoon researching AI tools for personal life management. The conclusion was that I should stop looking."
 pubDatetime: 2026-03-11T09:27:09.000Z
-draft: true
+draft: false
 tags: ["ai", "tools", "productivity", "systems"]
 ---
 
