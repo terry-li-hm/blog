@@ -1,6 +1,6 @@
 ---
 title: "Benchmark Your Research Stack"
-pubDate: 2026-03-10
+pubDatetime: 2026-03-10T00:00:00+08:00
 description: "Running 10 real queries through 5 tools revealed that theoretical routing rules have systematic gaps — and the surprises were more useful than the confirmations."
 tags: ["ai", "tooling", "workflow"]
 draft: false
