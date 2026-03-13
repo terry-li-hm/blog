@@ -21,3 +21,5 @@ Karpathy's framing makes this explicit. He doesn't position autoresearch as a pr
 This inverts how most people think about AI tooling. We design elaborate frameworks, argue about LangChain vs CrewAI vs AutoGen, and optimise the code. But the frameworks are commodity. The feedback loop — run, measure, learn, repeat — is what separates a demo from a production system. And the loop doesn't require sophisticated code. It requires discipline: log everything, read the logs, update the routing.
 
 The best AI tools I've used are ugly scripts with rich logs. The worst are beautiful frameworks with no feedback mechanism. The loop is the product. Everything else is packaging.
+
+Of course, you need [the ugly script to exist first](/posts/the-bootstrap-problem-in-ai-tooling). That's a different problem — but the same principle: ship the dumb version, let it generate the data, let the data build what you actually wanted.

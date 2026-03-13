@@ -21,3 +21,5 @@ This isn't clever engineering. It's the oldest pattern in computing — write th
 The lesson isn't about AI specifically. It's about the paralysis that comes from wanting the perfect tool before you start. The dumb version that exists beats the smart version that doesn't. Ship the prototype, use it once, let it build what you actually wanted.
 
 Every tool I use daily started as something I'd be embarrassed to show anyone. The embarrassment is the point — it means you shipped instead of designed.
+
+What matters after the bootstrap is [the feedback loop](/posts/the-loop-is-the-product) — the dumb version generates data about what works, and that data is what makes the smart version smart.
