@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://terryli.hm/", // replace this with your deployed domain
   author: "Terry Li",
   profile: "",
-  desc: "AI practitioner in Hong Kong. Writing about production AI in financial services, agentic systems, and what it means to think alongside machines.",
+  desc: "An AI practitioner who uses these tools daily, sees the hype and the reality, and thinks honestly about what it all means.",
   title: "TL;HM",
   lightAndDarkMode: true,
   postPerIndex: 4,
