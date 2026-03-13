@@ -15,9 +15,11 @@ It feels right. It sounds authoritative. And according to a growing body of rese
 
 ## What the research says
 
-An EMNLP 2024 paper with the refreshingly direct title ["Personas in System Prompts Do Not Improve Performances of Large Language Models"](https://aclanthology.org/2024.findings-emnlp.888.pdf) tested exactly this. Their finding: for accuracy-based tasks — the kind that matter in production — persona prompting adds no measurable improvement. For newer, more capable models, the effect shrinks even further.
+An EMNLP 2024 paper — ["When 'A Helpful Assistant' Is Not Really Helpful"](https://aclanthology.org/2024.findings-emnlp.888.pdf) — tested 162 different persona roles across 2,410 factual questions on four LLM families. Their finding: persona prompting adds no measurable improvement on accuracy-based tasks. Automatically selecting the "best" persona per question performed no better than random selection.
 
-A [Vanderbilt study](https://www.dre.vanderbilt.edu/~schmidt/PDF/Evaluating_Personified_Expert_Effectiveness_Conference.pdf) testing across 4,000+ benchmark questions found the same pattern: expert personas help slightly on open-ended tasks (brainstorming, creative writing) but show no effect on factual or accuracy-driven work. Worse, adding irrelevant persona details — a name, a backstory, arbitrary preferences — degraded accuracy by up to 30 percentage points.
+A [Vanderbilt/William & Mary study](https://www.dre.vanderbilt.edu/~schmidt/PDF/Evaluating_Personified_Expert_Effectiveness_Conference.pdf) testing across 4,000+ benchmark questions on GPT-3.5 and GPT-4 found the same split: expert personas help slightly on open-ended tasks (brainstorming, creative writing, advice — gains of 0.3–0.9 on their scoring scale) but show no effect on closed or factual tasks. Multi-agent persona setups sometimes *increased* hallucinations.
+
+Separately, [Araujo et al. (2025)](https://arxiv.org/abs/2508.19764) showed that adding irrelevant persona details — a name, colour preferences, a backstory — degraded accuracy by up to 30 percentage points on objective benchmarks. The model latches onto the narrative noise instead of the task.
 
 The intuition makes sense once you think about it. When you tell a model "you are an expert Python developer," you're not giving it new knowledge. The model already has all the Python knowledge it was trained on. You're adding a narrative wrapper around the same capability. It's like putting a lab coat on a doctor who's already board-certified — it might impress the patient, but it doesn't change the diagnosis.
 
