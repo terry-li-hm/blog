@@ -5,7 +5,6 @@ description: >-
   after the stack is built and eighteen teams start making independent decisions
   on top of it.
 pubDatetime: 2026-03-11T00:00:00.000Z
-draft: false
 tags:
   - ai-architecture
   - enterprise

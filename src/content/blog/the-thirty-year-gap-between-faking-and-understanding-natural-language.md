@@ -2,7 +2,6 @@
 title: "The Thirty-Year Gap Between Faking and Understanding Natural Language"
 description: "From AppleScript's rigid English-like syntax to LLM tool-calling — what changes when the computer actually understands you."
 pubDatetime: 2026-03-13T08:55:40.000Z
-draft: false
 tags: [ai, programming]
 ---
 

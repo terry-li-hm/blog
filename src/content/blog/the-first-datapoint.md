@@ -4,7 +4,6 @@ description: >-
   An AI agent ran unsupervised for two days and found twenty improvements to
   another model's training. Not an AGI claim. A rate claim.
 pubDatetime: 2026-03-11T09:10:00.000Z
-draft: false
 tags:
   - ai
   - ai-research

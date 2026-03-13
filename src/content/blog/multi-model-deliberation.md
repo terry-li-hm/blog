@@ -4,7 +4,6 @@ description: >-
   The failure mode of AI advice isn't hallucination. It's that it agrees with
   you. Here's the architecture that fixes it.
 pubDatetime: 2026-03-06T18:00:00.000Z
-draft: false
 tags:
   - ai
   - decision-making

@@ -2,7 +2,6 @@
 title: "Shifting Priors Is Not Finding Truth"
 description: "An experiment with AI deliberation revealed something uncomfortable: accumulating confident opinions feels like convergence on truth, but isn't."
 pubDatetime: 2026-03-13T03:19:55.000Z
-draft: false
 tags:
   - thinking
   - ai-engineering

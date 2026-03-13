@@ -2,7 +2,6 @@
 title: "The Identification Problem"
 description: "Having great AI delegation tools and not using them isn't a tool problem — it's a pattern recognition problem, and that distinction changes everything."
 pubDatetime: 2026-03-13T03:28:00.000Z
-draft: false
 tags: ["ai-engineering", "personal-systems"]
 ---
 

@@ -4,7 +4,6 @@ description: >-
   When AI models commoditize, the moat isn't the model. It's the infrastructure
   AI must flow through but can't replace. Five archetypes of what that looks like.
 pubDatetime: 2026-03-06T14:00:00.000Z
-draft: false
 tags:
   - ai
   - business-models

@@ -4,7 +4,6 @@ description: >-
   The cognitive offloading problem is real. The governance response mostly isn't.
   There's a specific mechanism at work, and it has a specific fix.
 pubDatetime: 2026-03-06T18:30:00.000Z
-draft: false
 tags:
   - ai
   - cognition

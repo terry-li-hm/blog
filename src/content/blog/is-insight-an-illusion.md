@@ -2,7 +2,6 @@
 title: "Is Insight an Illusion"
 description: "When pattern-matching feels like wisdom, what are we actually experiencing?"
 pubDatetime: 2026-03-13T08:15:18.000Z
-draft: false
 tags: [philosophy, ai]
 ---
 

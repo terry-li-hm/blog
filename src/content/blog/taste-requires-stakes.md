@@ -4,7 +4,6 @@ description: >-
   AI can simulate aesthetic judgment with impressive fluency. What it
   cannot simulate is the consequence of being wrong.
 pubDatetime: 2026-03-06T16:30:00.000Z
-draft: false
 tags:
   - ai
   - creativity

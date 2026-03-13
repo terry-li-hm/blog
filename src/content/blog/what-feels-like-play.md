@@ -2,7 +2,6 @@
 title: "What Feels Like Play"
 description: "Naval's famous line is easy to nod at. The hard part is actually identifying yours — and being honest about what isn't."
 pubDatetime: 2026-03-13T11:31:56.000Z
-draft: false
 tags: [career, self-awareness]
 ---
 

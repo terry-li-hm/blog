@@ -2,7 +2,6 @@
 title: "Instructions Don't Enforce Behavior. Templates Do."
 description: "Why the structure of an output matters more than the instructions that produce it."
 pubDatetime: 2026-03-08T00:02:36.000Z
-draft: false
 tags: ["ai", "systems", "tooling"]
 ---
 

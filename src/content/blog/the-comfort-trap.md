@@ -2,7 +2,6 @@
 title: "The Comfort Trap"
 description: "The right test for any AI interaction isn't 'did it help me?' but 'am I more capable after it?'"
 pubDatetime: 2026-03-10T11:22:48.000Z
-draft: false
 tags: ["ai", "tools", "learning", "systems"]
 ---
 

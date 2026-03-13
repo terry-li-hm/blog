@@ -2,7 +2,6 @@
 title: "The Byproduct Trap"
 description: "When the paper becomes more interesting than the answer you set out to find"
 pubDatetime: 2026-03-13T06:08:29.000Z
-draft: false
 tags:
   - ai
   - thinking

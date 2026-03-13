@@ -4,7 +4,6 @@ description: >-
   The real project isn't artificial intelligence. It's the data infrastructure
   that AI exposes as broken.
 pubDatetime: 2026-03-06T08:00:00.000Z
-draft: false
 tags:
   - ai
   - banking

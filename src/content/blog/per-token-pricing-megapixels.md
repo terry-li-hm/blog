@@ -4,7 +4,6 @@ description: >-
   We're optimising for the wrong number — and the history of consumer
   electronics suggests we'll figure this out eventually.
 pubDatetime: 2026-03-06T14:00:00.000Z
-draft: false
 tags:
   - ai
   - pricing

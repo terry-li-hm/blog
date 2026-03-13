@@ -5,7 +5,6 @@ description: >-
   that token prediction can't reach real reasoning. Here's what he's proposing
   instead — and why it matters even if he's wrong.
 pubDatetime: 2026-03-11T09:20:00.000Z
-draft: false
 tags:
   - ai
   - llm

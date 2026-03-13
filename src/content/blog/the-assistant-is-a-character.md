@@ -2,7 +2,6 @@
 title: "The Assistant Is a Character"
 description: "People confuse the LLM with the helpful AI assistant. They're not the same thing. The LLM is a prediction engine. The assistant is a role it's playing. The distinction changes how you use it."
 pubDatetime: 2026-03-13T23:00:00.000Z
-draft: true
 tags: [ai, self-awareness]
 ---
 

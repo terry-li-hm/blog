@@ -2,7 +2,6 @@
 title: "Your Body Doesn't Care What You're Thinking About"
 description: "30 days of Oura data showed activity type doesn't predict stress. Meetings do."
 pubDatetime: 2026-03-13T09:12:17.000Z
-draft: false
 tags: [health, data, work]
 ---
 

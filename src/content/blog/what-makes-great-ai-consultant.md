@@ -4,7 +4,6 @@ description: >-
   The most dangerous person in an AI consulting engagement knows how the model
   works but has never sat in a credit committee.
 pubDatetime: 2026-03-06T10:30:00.000Z
-draft: false
 tags:
   - consulting
   - ai

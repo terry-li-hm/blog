@@ -4,7 +4,6 @@ description: >-
   Walking meetings, voice input, and location changes unlock cognitive
   advantages desktop workflows can't access.
 pubDatetime: 2025-08-07T10:00:00.000Z
-draft: false
 tags:
   - ai
   - mobile

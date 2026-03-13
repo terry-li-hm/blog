@@ -4,7 +4,6 @@ description: >-
   I published three Rust CLI tools to crates.io before noon — none existed at
   breakfast. The interesting part isn't the speed. It's that the bottleneck moved.
 pubDatetime: 2026-03-06T17:00:00.000Z
-draft: false
 tags:
   - ai
   - engineering

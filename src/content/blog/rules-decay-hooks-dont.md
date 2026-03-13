@@ -2,7 +2,6 @@
 title: "Rules Decay, Hooks Don't"
 description: "The difference between writing down a rule and making the system enforce it — illustrated by a 15-line hook."
 pubDatetime: 2026-03-07T00:40:13.000Z
-draft: false
 tags: ["ai-agents", "agent-experience", "workflow", "automation", "developer-experience"]
 ---
 

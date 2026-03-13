@@ -2,7 +2,6 @@
 title: Everyone Becomes Middle Management
 description: The automation tool that creates more coordination work
 pubDatetime: 2025-01-27T10:00:00.000Z
-draft: false
 tags:
   - ai
   - automation

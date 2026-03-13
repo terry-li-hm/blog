@@ -4,7 +4,6 @@ description: >-
   The primary user of my CLI tools isn't me anymore. Designing for that
   changes everything about how output should work.
 pubDatetime: 2026-03-06T17:30:00.000Z
-draft: false
 tags:
   - cli
   - ai-agents

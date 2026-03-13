@@ -4,7 +4,6 @@ description: >-
   Ask for bugs and you'll get bugs — whether they exist or not. Sycophancy
   is a design feature, and the fix isn't better prompting.
 pubDatetime: 2026-03-06T11:00:00.000Z
-draft: false
 tags:
   - ai
   - sycophancy

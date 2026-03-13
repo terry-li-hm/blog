@@ -4,7 +4,6 @@ description: "When behaviour emerges from both code and model responses, reading
 pubDatetime: 2026-03-07T00:46:57.000Z
 modDatetime: 2026-03-07T01:12:16.000Z
 revisionNote: "Added concrete delegation example; tightened closing cross-link"
-draft: false
 tags: ["ai-agents", "engineering", "architecture", "production", "infrastructure"]
 ---
 

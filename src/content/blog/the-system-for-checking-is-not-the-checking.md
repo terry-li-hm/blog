@@ -2,7 +2,6 @@
 title: "The System for Checking Is Not the Checking"
 description: "On the difference between eliminating friction and eliminating anxiety — and how to know when you've crossed the line."
 pubDatetime: 2026-03-13T01:18:33.000Z
-draft: false
 tags: [systems, productivity, philosophy]
 ---
 

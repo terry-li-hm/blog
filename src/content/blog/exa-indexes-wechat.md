@@ -2,7 +2,6 @@
 title: "Exa Indexes WeChat"
 description: "WeChat is supposed to be a walled garden. Exa didn't get the memo."
 pubDatetime: 2026-03-07T03:46:52.000Z
-draft: false
 tags: ["tools", "search", "chinese-internet"]
 ---
 

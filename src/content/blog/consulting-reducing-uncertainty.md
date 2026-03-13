@@ -4,7 +4,6 @@ description: >-
   Clients hire consultants to solve problems. What they're actually paying for
   is the reduction of a particular feeling. The distinction matters.
 pubDatetime: 2026-03-11T08:20:00.000Z
-draft: false
 tags:
   - consulting
   - communication

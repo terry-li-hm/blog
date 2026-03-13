@@ -2,7 +2,6 @@
 title: "Cross-Cutting Is Just Another Word for Optional"
 description: "In AI agent architecture, calling something a 'cross-cutting concern' without naming an owner and a gate is just a polite way of saying nobody owns it."
 pubDatetime: 2026-03-12T09:14:32.000Z
-draft: false
 tags: [ai, architecture, engineering]
 ---
 

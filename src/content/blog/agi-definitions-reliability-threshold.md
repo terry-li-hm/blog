@@ -5,7 +5,6 @@ description: >-
   right — they're measuring different things. The question that actually matters
   is Sholto Douglas's "nines of reliability."
 pubDatetime: 2026-03-06T15:00:00.000Z
-draft: false
 tags:
   - ai
   - agi

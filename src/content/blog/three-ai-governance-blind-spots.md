@@ -4,7 +4,6 @@ description: >-
   Most AI governance frameworks are technically-focused risk checklists.
   Three structural risks are missing from almost all of them.
 pubDatetime: 2026-03-06T21:30:00.000Z
-draft: false
 tags:
   - ai-governance
   - financial-services

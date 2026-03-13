@@ -4,7 +4,6 @@ description: >-
   Not productivity. Something stranger — the cognitive texture of days when
   the bottleneck shifts from execution to articulation.
 pubDatetime: 2026-03-11T08:00:00.000Z
-draft: false
 tags:
   - ai
   - productivity

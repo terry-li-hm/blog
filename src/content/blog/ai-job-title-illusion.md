@@ -4,7 +4,6 @@ description: >-
   Two job ads. Same bank. Same week. Same title pattern. Completely different
   jobs. The AI hiring market has a labelling problem.
 pubDatetime: 2026-03-06T14:30:00.000Z
-draft: false
 tags:
   - ai
   - careers

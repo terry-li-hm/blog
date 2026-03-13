@@ -4,7 +4,6 @@ description: >-
   When artificial intelligence becomes as mundane as running water, how does
   thinking itself change?
 pubDatetime: 2025-07-15T10:00:00.000Z
-draft: false
 tags:
   - ai
   - infrastructure

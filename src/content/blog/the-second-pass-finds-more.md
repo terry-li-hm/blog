@@ -2,7 +2,6 @@
 title: "The second pass finds more"
 description: "When red-teaming a document with multiple AI models, the second review — run on the edited version — consistently finds more than the first. Here's why, and what it means for how many rounds to run."
 pubDatetime: 2026-03-12T05:37:55.000Z
-draft: false
 tags: ["ai", "consilium", "workflow"]
 ---
 

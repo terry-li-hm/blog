@@ -4,7 +4,6 @@ description: >-
   AI agents know how to start a task. They don't always know when to stop.
   The contract pattern is the architectural fix.
 pubDatetime: 2026-03-06T13:00:00.000Z
-draft: false
 tags:
   - ai-agents
   - engineering

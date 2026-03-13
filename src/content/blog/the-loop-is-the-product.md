@@ -2,7 +2,6 @@
 title: "The Loop Is the Product"
 description: "Karpathy's autoresearch and every useful AI tool share the same pattern: the code is trivial, the feedback loop is the product."
 pubDatetime: 2026-03-13T08:27:47.000Z
-draft: false
 tags: [ai, agents, building]
 ---
 

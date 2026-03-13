@@ -2,7 +2,6 @@
 title: "AI Fixed My Perfectionism (Sort Of)"
 description: "On why the blank page stopped being the hard part."
 pubDatetime: 2026-03-07T04:53:00.000Z
-draft: false
 tags: ["ai", "writing", "productivity"]
 ---
 

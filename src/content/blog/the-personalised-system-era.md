@@ -2,7 +2,6 @@
 title: "The Personalised System Era"
 description: "AI coding agents didn't just make developers faster. They changed who gets to have a bespoke system."
 pubDatetime: 2026-03-10T01:06:00.000Z
-draft: false
 tags: ["ai", "systems", "tools", "agents"]
 ---
 

@@ -2,7 +2,6 @@
 title: "Your Tool Shouldn't Know What to Ignore"
 description: "Configuration that belongs to the data shouldn't live in the tool. .gitignore figured this out thirty years ago."
 pubDatetime: 2026-03-07T03:08:27.000Z
-draft: false
 tags: ["developer-experience", "workflow", "tooling", "automation"]
 ---
 

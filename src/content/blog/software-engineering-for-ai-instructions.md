@@ -4,7 +4,6 @@ description: >-
   LLM instruction files are code. They have the same failure modes — with
   one interesting twist that changes everything.
 pubDatetime: 2026-03-06T20:00:00.000Z
-draft: false
 tags:
   - prompt-engineering
   - ai-agents

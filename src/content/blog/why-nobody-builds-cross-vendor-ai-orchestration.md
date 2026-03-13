@@ -2,7 +2,6 @@
 title: "Why Nobody Builds Cross-Vendor AI Orchestration"
 description: "Every AI lab builds single-vendor orchestration. The cross-vendor layer is a gap — and it's a gap for a reason."
 pubDatetime: 2026-03-13T08:18:00.000Z
-draft: false
 tags: [ai, agents, strategy]
 ---
 

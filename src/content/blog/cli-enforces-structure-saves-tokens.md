@@ -4,7 +4,6 @@ description: >-
   The instinct to add a rule to a skill file is usually the wrong abstraction.
   A CLI wrapper enforces at the tool level: zero deliberation, zero token cost.
 pubDatetime: 2026-03-06T22:00:00.000Z
-draft: false
 tags:
   - cli
   - ai-agents

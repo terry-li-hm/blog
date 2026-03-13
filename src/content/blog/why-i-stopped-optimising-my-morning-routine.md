@@ -2,7 +2,6 @@
 title: "Why I stopped optimising my morning routine"
 description: ""
 pubDatetime: 2026-03-07T06:50:55.000Z
-draft: false
 tags: []
 ---
 

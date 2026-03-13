@@ -4,7 +4,6 @@ description: >-
   In digital transformation, the bottleneck is almost always upstream of where
   the pain is felt. Mox is the cleanest case study.
 pubDatetime: 2026-03-06T19:00:00.000Z
-draft: false
 tags:
   - consulting
   - digital-transformation

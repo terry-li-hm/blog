@@ -2,7 +2,6 @@
 title: "Why Nobody Benchmarks Memory"
 description: "The things that matter most in production are the things that get benchmarked least"
 pubDatetime: 2026-03-13T06:25:00.000Z
-draft: false
 tags:
   - ai
   - enterprise

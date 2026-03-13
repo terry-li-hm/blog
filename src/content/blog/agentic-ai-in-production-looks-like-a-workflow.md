@@ -2,7 +2,6 @@
 title: "Agentic AI in Production Looks Like a Workflow"
 description: "The gap between 'agentic AI' hype and what actually ships in production turns out to be a workflow — and that's a feature, not a failure."
 pubDatetime: 2026-03-13T03:27:55.000Z
-draft: false
 tags: [ai-engineering, workflows]
 ---
 

@@ -2,7 +2,6 @@
 title: "The Nag Tax"
 description: "When building automation around a third-party app, the first question to answer is: what's the one thing this app does that nothing else can replicate? That feature becomes the tax you pay on everything else."
 pubDatetime: 2026-03-10T00:00:00.000Z
-draft: false
 tags: ["tooling", "automation", "systems-thinking"]
 ---
 

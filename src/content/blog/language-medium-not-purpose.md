@@ -4,7 +4,6 @@ description: >-
   We called them language models and spent years confused about why they could
   reason. The name stuck to the interface, not the mechanism.
 pubDatetime: 2026-03-11T08:40:00.000Z
-draft: false
 tags:
   - ai
   - llm

@@ -2,7 +2,6 @@
 title: "The Deliberation Format Is the Product"
 description: "I ran an experiment to find where multi-model deliberation adds value. The answer surprised me: it's the structured format, not the model diversity."
 pubDatetime: 2026-03-13T03:06:52.000Z
-draft: false
 tags:
   - ai-engineering
   - decision-making

@@ -2,7 +2,6 @@
 title: "The Problem With Clever Browser Automation"
 description: "The most sophisticated solution to a problem is usually a sign you haven't found the right abstraction yet."
 pubDatetime: 2026-03-07T03:46:52.000Z
-draft: false
 tags: ["tools", "engineering", "automation"]
 ---
 

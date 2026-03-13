@@ -2,7 +2,6 @@
 title: "You Are the Bottleneck in Your Own Agentic Workflow"
 description: "Adding more AI tools doesn't help if you're still the bus between them."
 pubDatetime: 2026-03-09T01:54:41.000Z
-draft: false
 tags: ["ai", "workflows", "tooling"]
 ---
 

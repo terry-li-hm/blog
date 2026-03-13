@@ -11,7 +11,6 @@ tags:
   - MCP
   - Interface Design
   - Human-AI Collaboration
-draft: false
 ---
 
 My blog publisher has two faces. Through the CLI, I type `clio publish` and watch colorful output stream past, confirmation messages that make me feel in control. Through MCP, Claude calls `publish_essay()` and receives structured JSON, no colors needed. Same functionality. Different species of user. This isn't redundancy - it's evolution.

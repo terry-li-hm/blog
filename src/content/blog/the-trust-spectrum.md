@@ -2,7 +2,6 @@
 title: "The Trust Spectrum"
 description: "Peter Steinberger stopped reviewing AI-generated code entirely. That works for indie software. In regulated environments, it can't. Here's how to think about where you sit."
 pubDatetime: 2026-03-07T00:46:57.000Z
-draft: false
 tags: ["engineering", "production", "financial-services", "responsible-ai", "ai-agents"]
 ---
 

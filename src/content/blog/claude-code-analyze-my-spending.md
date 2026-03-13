@@ -4,7 +4,6 @@ description: >-
   When AI coding assistants become workflow orchestrators, the most powerful
   compiler processes reality, not code.
 pubDatetime: 2025-08-14T10:00:00.000Z
-draft: false
 tags:
   - claude-code
   - automation

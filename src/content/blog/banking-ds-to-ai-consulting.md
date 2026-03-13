@@ -4,7 +4,6 @@ description: >-
   The operational instincts built in production banking don't belong in the
   past. They're exactly what makes a practitioner-turned-consultant useful.
 pubDatetime: 2026-03-06T08:30:00.000Z
-draft: false
 tags:
   - consulting
   - banking

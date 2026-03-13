@@ -2,7 +2,6 @@
 title: "I Didn't Mean to Kill My Todo App"
 description: "A coding assistant quietly made three productivity apps redundant. Not by replacing them — by making context collapse the boundaries between them."
 pubDatetime: 2026-03-07T08:05:20.000Z
-draft: false
 tags: ["ai", "tools", "productivity"]
 ---
 

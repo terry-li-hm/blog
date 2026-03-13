@@ -5,7 +5,6 @@ description: >-
   The gap between validated-by-backtest and validated-in-production is invisible
   until someone asks.
 pubDatetime: 2026-03-06T19:30:00.000Z
-draft: false
 tags:
   - model-risk
   - banking

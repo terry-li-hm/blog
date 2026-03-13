@@ -2,7 +2,6 @@
 title: "The Silent Stall: Debugging GPT-5.4-Pro's Responses API"
 description: "Three hours of debugging revealed two non-obvious behaviours about GPT-5.4-Pro that aren't in the docs: a minimum token budget requirement and a wall-clock timeout gap in Rust async code."
 pubDatetime: 2026-03-07T14:00:00.000Z
-draft: false
 tags: ["rust", "llm", "openai", "debugging", "async"]
 ---
 

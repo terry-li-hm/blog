@@ -2,7 +2,6 @@
 title: "Progressive disclosure in MCP tools"
 description: "When building MCP servers, search should return scannable summaries — not full content. Let the model decide what to read."
 pubDatetime: 2026-03-11T10:33:19.000Z
-draft: false
 tags: ["ai-engineering", "mcp", "tooling"]
 ---
 

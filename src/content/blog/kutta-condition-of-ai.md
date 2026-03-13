@@ -4,7 +4,6 @@ description: >-
   Aeronautics flew for decades before anyone could explain why wings worked.
   AI is in the same position. The engineering is ahead of the theory.
 pubDatetime: 2026-03-06T18:00:00.000Z
-draft: false
 tags:
   - ai
   - theory

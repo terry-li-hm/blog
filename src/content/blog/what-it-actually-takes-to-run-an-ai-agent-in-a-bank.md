@@ -2,7 +2,6 @@
 title: "What it actually takes to run an AI agent in a bank"
 description: "The resistance to AI agents in banking isn't mostly cultural. It's infrastructure — and the gap is more interesting than the politics."
 pubDatetime: 2026-03-07T05:44:33.000Z
-draft: false
 tags: ["ai", "banking", "llm", "infrastructure"]
 ---
 

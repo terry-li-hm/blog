@@ -2,7 +2,6 @@
 title: "The Fluency Trap"
 description: "When AI conversations feel insightful because the language model is good at producing insight-shaped text"
 pubDatetime: 2026-03-13T06:26:00.000Z
-draft: false
 tags:
   - ai
   - thinking

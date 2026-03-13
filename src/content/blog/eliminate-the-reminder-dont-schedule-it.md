@@ -2,7 +2,6 @@
 title: "Eliminate the Reminder, Don't Schedule It"
 description: "When you catch yourself setting a reminder to check something later, that's usually a signal that a tool is failing to report what it should."
 pubDatetime: 2026-03-09T03:45:14.000Z
-draft: false
 tags: ["ai", "workflow", "tooling"]
 ---
 

@@ -2,7 +2,6 @@
 title: "AI Agents Need Notebooks, Not Just Memories"
 description: "The missing layer in enterprise AI isn't smarter models — it's structured memory that humans can actually review."
 pubDatetime: 2026-03-13T04:58:59.000Z
-draft: false
 tags:
   - ai
   - enterprise

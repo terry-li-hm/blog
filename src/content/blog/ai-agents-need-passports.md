@@ -10,7 +10,6 @@ tags:
   - Systems Design
   - Authentication
   - Future of Work
-draft: false
 ---
 
 A bank's AI agent just tried to open an account at another bank. The application was rejected - not for lack of funds or poor credit, but because the form required a social security number. This isn't a thought experiment. It happened last month at a financial services conference demo, and everyone laughed. Nobody's laughing now.

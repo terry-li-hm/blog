@@ -4,7 +4,6 @@ description: "The simplest agent architecture might already be the right one: gi
 pubDatetime: 2026-03-07T00:46:57.000Z
 modDatetime: 2026-03-07T01:12:16.000Z
 revisionNote: "Added concrete MCP-vs-file decision example (calendar vs LinkedIn)"
-draft: false
 tags: ["ai-agents", "mcp", "infrastructure", "developer-experience", "claude-code"]
 ---
 

@@ -4,7 +4,6 @@ description: >-
   Your AI governance framework is a routing spreadsheet pretending to be a
   compliance programme. Regulators will spot the difference.
 pubDatetime: 2026-03-06T12:00:00.000Z
-draft: false
 tags:
   - ai-governance
   - compliance

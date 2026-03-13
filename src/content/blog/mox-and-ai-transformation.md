@@ -4,7 +4,6 @@ description: >-
   Mox didn't win because they hired better designers. They won because they
   had no legacy to fight. The pattern applies directly to AI transformation.
 pubDatetime: 2026-03-06T12:30:00.000Z
-draft: false
 tags:
   - banking
   - digital-transformation

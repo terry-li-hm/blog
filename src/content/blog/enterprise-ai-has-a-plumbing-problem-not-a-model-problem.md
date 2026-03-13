@@ -2,7 +2,6 @@
 title: "Enterprise AI Has a Plumbing Problem, Not a Model Problem"
 description: "Most enterprises are optimising the wrong variable. The gap between 5% and 40% agent adoption won't be closed by better models."
 pubDatetime: 2026-03-11T09:29:28.000Z
-draft: false
 tags:
   - ai-agents
   - enterprise

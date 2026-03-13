@@ -2,7 +2,6 @@
 title: "The Grey Areas Are the Whole Thing"
 description: "Ethics isn't about knowing the answer — it's about feeling the tension"
 pubDatetime: 2026-03-13T08:10:35.000Z
-draft: false
 tags: [philosophy, parenting]
 ---
 

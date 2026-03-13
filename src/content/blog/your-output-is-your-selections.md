@@ -2,7 +2,6 @@
 title: "Your Output Is Your Selections"
 description: "AI commoditises execution. What remains is taste — the 'that's the one' reflex. And the only way to sharpen it is to ship and see what reality says back."
 pubDatetime: 2026-03-13T03:37:46.000Z
-draft: false
 tags:
   - thinking
   - ai-engineering

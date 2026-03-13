@@ -2,7 +2,6 @@
 title: "The Human Bus Problem"
 description: "Adding more AI tools doesn't make you faster if you're still the junction between every agent step."
 pubDatetime: 2026-03-13T03:28:00.000Z
-draft: false
 tags: ["ai-engineering", "workflows"]
 ---
 

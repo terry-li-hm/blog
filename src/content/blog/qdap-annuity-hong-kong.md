@@ -3,7 +3,6 @@ title: "The QDAP annuity trap: what the tax saving doesn't tell you"
 description: "Hong Kong's QDAP annuity is sold on a real tax benefit. But the HK$60K deduction cap is shared with MPF top-ups — and that changes everything."
 pubDatetime: 2026-03-08T10:00:00.000Z
 modDatetime: 2026-03-08T21:30:00.000Z
-draft: false
 tags:
   - finance
   - hong-kong

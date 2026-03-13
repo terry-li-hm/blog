@@ -4,7 +4,6 @@ description: >-
   Most PKM tools are procrastination with better aesthetics. The problem
   isn't the software — it's that filing a note feels like understanding it.
 pubDatetime: 2026-03-11T08:10:00.000Z
-draft: false
 tags:
   - productivity
   - tools

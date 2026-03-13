@@ -2,7 +2,6 @@
 title: "LLM evals aren't data science"
 description: "Evaluating LLM systems requires judgment, not statistics. That shifts who's qualified to do it — and where the gap is in most organisations."
 pubDatetime: 2026-03-11T14:00:00.000Z
-draft: false
 tags: ["ai-engineering", "evals", "consulting"]
 ---
 

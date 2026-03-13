@@ -4,7 +4,6 @@ description: >-
   Tool enthusiasm is often net-negative. Context pollution degrades performance
   faster than features improve it. The principles that actually work.
 pubDatetime: 2026-03-06T23:00:00.000Z
-draft: false
 tags:
   - ai-agents
   - engineering

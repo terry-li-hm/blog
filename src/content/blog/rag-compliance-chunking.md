@@ -4,7 +4,6 @@ description: >-
   Banks are deploying RAG for compliance and discovering the hard problem
   isn't retrieval. It's the pipeline before it.
 pubDatetime: 2026-03-06T09:00:00.000Z
-draft: false
 tags:
   - rag
   - compliance

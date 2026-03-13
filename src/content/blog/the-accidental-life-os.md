@@ -4,7 +4,6 @@ description: "I spent an afternoon researching AI tools for personal life manage
 pubDatetime: 2026-03-11T09:27:09.000Z
 modDatetime: 2026-03-11T09:32:43.000Z
 revisionNote: "Seeded 'life as repository' thesis earlier (para 4) per judge feedback; tightened final platform paragraph"
-draft: false
 tags: ["ai", "tools", "productivity", "systems"]
 ---
 

@@ -4,7 +4,6 @@ description: >-
   Most teams build evaluators before reading a single trace. The sequence
   that actually works is the opposite: observe, categorise, then measure.
 pubDatetime: 2026-03-06T21:00:00.000Z
-draft: false
 tags:
   - evals
   - ai

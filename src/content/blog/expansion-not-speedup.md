@@ -4,7 +4,6 @@ description: "The real ROI of AI coding isn't doing the same work faster. It's d
 pubDatetime: 2026-03-07T00:46:57.000Z
 modDatetime: 2026-03-07T01:12:16.000Z
 revisionNote: "Cut appended cross-link paragraph; strengthened original conclusion"
-draft: false
 tags: ["ai-agents", "engineering", "claude-code", "developer-experience", "production"]
 ---
 

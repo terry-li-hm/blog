@@ -2,7 +2,6 @@
 title: "The Calibration Trap"
 description: "The comfort trap is about effort. This one is about epistemics — and it's harder to see."
 pubDatetime: 2026-03-10T11:39:19.000Z
-draft: false
 tags: ["ai", "tools", "thinking", "epistemics"]
 ---
 

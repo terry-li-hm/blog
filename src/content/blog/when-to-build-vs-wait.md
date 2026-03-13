@@ -4,7 +4,6 @@ description: >-
   Most AI tooling debates are actually recurrence debates. The question
   isn't whether to build — it's how many times you'll need it.
 pubDatetime: 2026-03-06T16:00:00.000Z
-draft: false
 tags:
   - ai
   - engineering

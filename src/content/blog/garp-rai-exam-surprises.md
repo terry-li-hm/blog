@@ -4,7 +4,6 @@ description: >-
   I expected the hard parts to be the technical sections. They weren't.
   The governance sections were harder, and more useful.
 pubDatetime: 2026-03-06T15:30:00.000Z
-draft: false
 tags:
   - responsible-ai
   - ai-governance

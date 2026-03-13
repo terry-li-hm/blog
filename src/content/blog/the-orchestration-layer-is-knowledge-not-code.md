@@ -2,7 +2,6 @@
 title: "The Orchestration Layer Is Knowledge, Not Code"
 description: "Multi-agent AI orchestration frameworks are commodity. The competitive advantage is knowing which agent to use when, what breaks, and how to recover."
 pubDatetime: 2026-03-13T08:17:20.000Z
-draft: false
 tags: [ai, agents, tools]
 ---
 

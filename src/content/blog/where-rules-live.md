@@ -2,7 +2,6 @@
 title: "Where Rules Live"
 description: "The difference between a rule that works and a rule that doesn't is usually not the content of the rule — it's where it lives."
 pubDatetime: 2026-03-08T15:26:00.000Z
-draft: false
 tags: ["ai", "workflows", "systems"]
 ---
 

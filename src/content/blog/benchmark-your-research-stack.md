@@ -3,7 +3,6 @@ title: "Benchmark Your Research Stack"
 pubDatetime: 2026-03-10T00:00:00+08:00
 description: "Running 10 real queries through 5 tools revealed that theoretical routing rules have systematic gaps — and the surprises were more useful than the confirmations."
 tags: ["ai", "tooling", "workflow"]
-draft: false
 ---
 
 I use five research tools daily: a free built-in web search, two Perplexity-backed CLIs, an Exa semantic search CLI, and a grok/xAI wrapper for X/Twitter. I had a routing table — mental rules for which tool handles which query type. It was built from accumulated observation, not systematic testing.

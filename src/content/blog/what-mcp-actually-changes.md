@@ -5,7 +5,6 @@ description: >-
   any agent can compose any system freely. The heterogeneity problem becomes
   a configuration problem.
 pubDatetime: 2026-03-11T08:50:00.000Z
-draft: false
 tags:
   - ai
   - enterprise

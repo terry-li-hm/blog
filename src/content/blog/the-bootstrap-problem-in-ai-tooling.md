@@ -2,7 +2,6 @@
 title: "The Bootstrap Problem in AI Tooling"
 description: "You need the tool to build the tool. The answer is: build the dumb version first, use it once, then have it build its replacement."
 pubDatetime: 2026-03-13T08:25:52.000Z
-draft: false
 tags: [ai, tools, building]
 ---
 

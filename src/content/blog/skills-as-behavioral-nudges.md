@@ -4,7 +4,6 @@ description: >-
   We fine-tune models with gradient descent. We nudge agents with skill files.
   Same goal, radically different cost.
 pubDatetime: 2026-03-06T13:30:00.000Z
-draft: false
 tags:
   - ai-agents
   - prompt-engineering

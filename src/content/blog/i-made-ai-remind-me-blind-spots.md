@@ -4,7 +4,6 @@ description: >-
   I kept missing things at the end of AI sessions. So I stopped relying on
   willpower and systematised the nudge instead.
 pubDatetime: 2026-03-06T22:30:00.000Z
-draft: false
 tags:
   - ai
   - workflow

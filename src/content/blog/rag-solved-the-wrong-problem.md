@@ -4,7 +4,6 @@ description: >-
   The retrieval pipeline was built for systems that couldn't reason about their
   own information needs. Agents can.
 pubDatetime: 2026-03-11T10:00:00.000Z
-draft: false
 tags:
   - ai
   - architecture

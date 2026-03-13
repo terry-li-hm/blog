@@ -2,7 +2,6 @@
 title: "Why Be Nice"
 description: "The question I can't fully answer for my son"
 pubDatetime: 2026-03-13T07:47:50.000Z
-draft: false
 tags: [parenting, philosophy]
 ---
 

@@ -4,7 +4,6 @@ description: >-
   The models aren't the problem. The operating models are. Three structural
   failures in AML AI from years building these systems inside a bank.
 pubDatetime: 2026-03-06T15:00:00.000Z
-draft: false
 tags:
   - aml
   - banking

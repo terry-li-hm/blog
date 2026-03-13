@@ -2,7 +2,6 @@
 title: "The Black Box That Responds to Role Play"
 description: "An LLM can't feel accountability pressure. But structured role-play — simulated rejection, persona assignment, adversarial review — produces measurably better output. The mechanism is opaque; the effect is real."
 pubDatetime: 2026-03-13T22:45:00.000Z
-draft: true
 tags: [ai, workflow, self-awareness]
 ---
 

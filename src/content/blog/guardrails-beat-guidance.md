@@ -2,7 +2,6 @@
 title: "Guardrails Beat Guidance"
 description: "Prompt instructions are suggestions. Hooks are constraints. One survives a model swap."
 pubDatetime: 2026-03-13T04:19:14.000Z
-draft: false
 tags: [ai-engineering, workflow, agents]
 ---
 

@@ -5,7 +5,6 @@ description: >-
   Give it something rough and it amplifies what's already there. The
   workflow implications are significant.
 pubDatetime: 2026-03-11T08:30:00.000Z
-draft: false
 tags:
   - ai
   - writing

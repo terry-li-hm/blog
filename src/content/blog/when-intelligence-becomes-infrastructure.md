@@ -2,7 +2,6 @@
 title: "When Intelligence Becomes Infrastructure"
 description: "What changes when LLMs stop being the special thing and become just another software component? The answer is: everything about how you build."
 pubDatetime: 2026-03-07T03:26:38.000Z
-draft: true
 tags: ["ai-agents", "software-design", "developer-experience", "llms"]
 ---
 

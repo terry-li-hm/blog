@@ -5,7 +5,6 @@ description: >-
   GitHub history — mostly in China. The pattern is the same as last year.
   So is the security panic.
 pubDatetime: 2026-03-11T09:30:00.000Z
-draft: false
 tags:
   - ai
   - open-source

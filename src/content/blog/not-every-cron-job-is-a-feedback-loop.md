@@ -2,7 +2,6 @@
 title: "Not Every Cron Job Is a Feedback Loop"
 description: "Automation that collects without learning is just a cron job. The difference is a feedback signal — a number that goes up or down."
 pubDatetime: 2026-03-13T08:30:32.000Z
-draft: false
 tags: [ai, systems, building]
 ---
 

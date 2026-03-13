@@ -4,7 +4,6 @@ description: >-
   Hong Kong has quietly run one of the most sophisticated GenAI experiments in
   global banking. Almost no one outside the region is paying attention.
 pubDatetime: 2026-03-06T10:00:00.000Z
-draft: false
 tags:
   - apac
   - hong-kong

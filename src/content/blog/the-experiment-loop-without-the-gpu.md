@@ -4,7 +4,6 @@ description: "Andrej Karpathy's autoresearch project is being read as a demo of 
 pubDatetime: 2026-03-08T06:54:45.000Z
 modDatetime: 2026-03-07T23:10:37.000Z
 revisionNote: "Added P.S.: peira used to correct its own experiment design before campaign started"
-draft: false
 tags: ["ai", "tools", "systems"]
 ---
 

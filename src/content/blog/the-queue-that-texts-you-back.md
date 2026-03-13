@@ -2,7 +2,6 @@
 title: "The Queue That Texts You Back"
 description: "Personal AI infrastructure should report results to you, not wait for you to go looking. A small architecture shift changes the whole dynamic."
 pubDatetime: 2026-03-09T18:00:00+08:00
-draft: false
 tags:
   - ai-tools
   - workflow

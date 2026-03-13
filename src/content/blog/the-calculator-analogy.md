@@ -2,7 +2,6 @@
 title: "The Calculator Analogy"
 description: "Nobody practises arithmetic speed anymore. The same thing is happening to prose, research, and analysis — and it changes what humans should get good at."
 pubDatetime: 2026-03-13T11:34:54.000Z
-draft: false
 tags: [ai, career, self-awareness]
 ---
 

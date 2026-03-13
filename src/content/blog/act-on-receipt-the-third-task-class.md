@@ -2,7 +2,6 @@
 title: "Act-on-Receipt: The Third Task Class"
 description: "Most task systems are binary, but a third class exists — tasks triggered by external notifications — and managing them like a backlog item is the wrong move entirely."
 pubDatetime: 2026-03-13T03:28:00.000Z
-draft: false
 tags: ["personal-systems", "productivity"]
 ---
 

@@ -2,7 +2,6 @@
 title: "The Infra Trap"
 description: "Building tools to support your work can quietly become a substitute for the work itself."
 pubDatetime: 2026-03-09T10:45:36.000Z
-draft: false
 tags: [workflow, systems, productivity]
 ---
 

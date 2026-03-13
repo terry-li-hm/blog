@@ -2,7 +2,6 @@
 title: "The Last 10% Is the Feedback Loop"
 description: "The execution layer of an AI system is only half the infrastructure — the reporting layer is what determines whether anyone acts on the results."
 pubDatetime: 2026-03-13T03:28:00.000Z
-draft: false
 tags: ["ai-engineering", "personal-systems"]
 ---
 

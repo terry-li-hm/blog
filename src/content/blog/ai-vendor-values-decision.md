@@ -4,7 +4,6 @@ description: >-
   OpenAI took the Pentagon contract Anthropic refused. Your AI vendor
   just became a political statement — and enterprise procurement hasn't caught up.
 pubDatetime: 2026-03-06T20:30:00.000Z
-draft: false
 tags:
   - ai-governance
   - enterprise-ai

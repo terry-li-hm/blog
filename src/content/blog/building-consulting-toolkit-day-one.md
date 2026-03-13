@@ -4,7 +4,6 @@ description: >-
   Most consultants arrive at a new firm and learn their tools from
   colleagues. I tried something different.
 pubDatetime: 2026-03-06T17:00:00.000Z
-draft: false
 tags:
   - consulting
   - ai

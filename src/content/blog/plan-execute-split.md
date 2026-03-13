@@ -2,7 +2,6 @@
 title: "Stop Asking Which AI Model Is Better. Ask Which Phase."
 description: "The planning/execution split is more useful than any benchmark comparison."
 pubDatetime: 2026-03-12T09:12:28.000Z
-draft: false
 tags: [ai-engineering, workflow, tooling]
 ---
 

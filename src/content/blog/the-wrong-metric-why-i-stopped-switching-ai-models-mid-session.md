@@ -5,7 +5,6 @@ pubDatetime: 2026-03-12T18:00:00+08:00
 modDatetime: 2026-03-12T18:00:00+08:00
 slug: the-wrong-metric-why-i-stopped-switching-ai-models-mid-session
 featured: false
-draft: false
 tags:
   - ai-tools
   - workflow

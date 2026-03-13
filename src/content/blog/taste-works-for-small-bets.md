@@ -2,7 +2,6 @@
 title: "Taste Works for Small Bets"
 description: "The 'ship and calibrate' loop works beautifully for reversible decisions. For the big ones, you're mostly guessing and then making the guess true."
 pubDatetime: 2026-03-13T03:42:35.000Z
-draft: false
 tags:
   - thinking
   - decision-making

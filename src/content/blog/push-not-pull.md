@@ -2,7 +2,6 @@
 title: "Push Not Pull"
 description: "AI agents that require you to go looking for their results aren't agents — they're automation with better UX. The loop closes when results arrive, not when you remember to check."
 pubDatetime: 2026-03-13T03:28:00.000Z
-draft: false
 tags: ["ai-engineering", "personal-systems"]
 ---
 

@@ -2,7 +2,6 @@
 title: "The Skill Is Knowing What Matters"
 description: "The bottleneck in a world of AI tools isn't crafting the output — it's knowing which output is worth crafting."
 pubDatetime: 2026-03-13T03:34:45.000Z
-draft: false
 tags:
   - ai-engineering
   - thinking

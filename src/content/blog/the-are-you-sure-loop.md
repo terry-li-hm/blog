@@ -2,7 +2,6 @@
 title: "The 'Are You Sure?' Loop"
 description: "AI's first 'I'm done' is almost never its best work. Simulated accountability pressure — just asking 'are you sure?' — surfaces blind spots that self-review misses."
 pubDatetime: 2026-03-13T22:21:00.000Z
-draft: true
 tags: [ai, workflow, self-awareness]
 ---
 

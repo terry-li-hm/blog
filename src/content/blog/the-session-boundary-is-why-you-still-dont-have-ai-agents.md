@@ -2,7 +2,6 @@
 title: "The Session Boundary Is Why You Still Don't Have AI Agents"
 description: "The gap between AI assistants and AI agents isn't about reasoning capability — it's about whether the thing can survive your laptop closing."
 pubDatetime: 2026-03-13T03:28:00.000Z
-draft: false
 tags: ["ai-engineering", "consulting"]
 ---
 
