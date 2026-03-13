@@ -42,7 +42,8 @@ def collect_posts() -> list[dict]:
         title = fm.get("title", slug)
         date_str = fm.get("pubDatetime", "")
         try:
-            date = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+            dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+            date = dt.replace(tzinfo=None) if dt.tzinfo else dt
         except Exception:
             date = datetime.min
         tags = fm.get("tags", []) if isinstance(fm.get("tags"), list) else []

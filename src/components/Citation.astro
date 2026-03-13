@@ -1,0 +1,69 @@
+---
+interface Props {
+  href: string;
+  summary: string;
+  institution?: string;
+}
+
+const { href, summary, institution } = Astro.props;
+---
+
+<a
+  href={href}
+  class="citation-link"
+  data-tippy-content={institution ? `<strong>${institution}</strong><br/>${summary}` : summary}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <slot />
+</a>
+
+<script>
+  import tippy from "tippy.js";
+  import "tippy.js/dist/tippy.css";
+
+  tippy(".citation-link", {
+    allowHTML: true,
+    interactive: true,
+    placement: "top",
+    maxWidth: 320,
+    theme: "citation",
+    delay: [200, 0],
+    appendTo: document.body,
+  });
+</script>
+
+<style is:global>
+  .tippy-box[data-theme~="citation"] {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    border: 1px solid #313244;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    padding: 2px 4px;
+  }
+
+  .tippy-box[data-theme~="citation"] .tippy-content {
+    padding: 8px 12px;
+  }
+
+  .tippy-box[data-theme~="citation"] strong {
+    color: #89b4fa;
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .tippy-box[data-theme~="citation"][data-placement^="top"] > .tippy-arrow::before {
+    border-top-color: #313244;
+  }
+
+  .citation-link {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
+  }
+</style>

@@ -117,6 +117,78 @@ const relatedPosts = getRelatedPosts(post, allPosts, 3);
   initCodeExpand();
 </script>
 
+<script>
+  import tippy from "tippy.js";
+  import "tippy.js/dist/tippy.css";
+
+  const isTouchDevice = () =>
+    window.matchMedia("(hover: none)").matches;
+
+  function initCitations() {
+    const links = document.querySelectorAll<HTMLAnchorElement>(".citation-link");
+    if (!links.length) return;
+
+    if (isTouchDevice()) {
+      // Mobile: build a footnotes section at the bottom of the article
+      const article = document.querySelector("article") ?? document.querySelector("main");
+      if (!article) return;
+
+      const existing = document.getElementById("citation-footnotes");
+      if (existing) existing.remove();
+
+      const section = document.createElement("section");
+      section.id = "citation-footnotes";
+      section.innerHTML = "<hr/><ol></ol>";
+      const ol = section.querySelector("ol")!;
+
+      links.forEach(link => {
+        const idx = link.dataset.footnoteIndex ?? "";
+        const institution = link.dataset.institution ?? "";
+        const summary = link.dataset.summary ?? "";
+
+        // Replace link with link + superscript
+        const sup = document.createElement("sup");
+        const anchor = document.createElement("a");
+        anchor.href = `#fn-${idx}`;
+        anchor.textContent = idx;
+        sup.appendChild(anchor);
+        link.after(sup);
+
+        // Add footnote entry
+        const li = document.createElement("li");
+        li.id = `fn-${idx}`;
+        li.innerHTML = institution
+          ? `<strong>${institution}.</strong> ${summary} <a href="${link.href}" target="_blank" rel="noopener noreferrer">↗</a>`
+          : `${summary} <a href="${link.href}" target="_blank" rel="noopener noreferrer">↗</a>`;
+        ol.appendChild(li);
+      });
+
+      article.appendChild(section);
+    } else {
+      // Desktop: Tippy tooltips
+      links.forEach(link => {
+        const institution = link.dataset.institution ?? "";
+        const summary = link.dataset.summary ?? "";
+        const content = institution
+          ? `<strong>${institution}</strong><br/>${summary}`
+          : summary;
+
+        tippy(link, {
+          content,
+          allowHTML: true,
+          placement: "top",
+          maxWidth: 320,
+          theme: "citation",
+          delay: [200, 0],
+          appendTo: document.body,
+        });
+      });
+    }
+  }
+
+  initCitations();
+</script>
+
 <style>
   .main-content {
     max-width: 44rem;
@@ -125,6 +197,59 @@ const relatedPosts = getRelatedPosts(post, allPosts, 3);
     min-height: calc(100vh - 12rem);
     width: 100%;
     box-sizing: border-box;
+  }
+
+  /* Citation links */
+  :global(.citation-link) {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
+  }
+
+  /* Mobile footnotes */
+  :global(#citation-footnotes) {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  :global(#citation-footnotes ol) {
+    padding-left: 1.25rem;
+  }
+
+  :global(#citation-footnotes li) {
+    margin-bottom: 0.5rem;
+  }
+
+  :global(#citation-footnotes strong) {
+    display: inline;
+  }
+
+  /* Tippy citation theme */
+  :global(.tippy-box[data-theme~="citation"]) {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    border: 1px solid #313244;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  :global(.tippy-box[data-theme~="citation"] .tippy-content) {
+    padding: 8px 12px;
+  }
+
+  :global(.tippy-box[data-theme~="citation"] strong) {
+    color: #89b4fa;
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  :global(.tippy-box[data-theme~="citation"][data-placement^="top"] > .tippy-arrow::before) {
+    border-top-color: #313244;
   }
 
   .back-link {

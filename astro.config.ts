@@ -11,6 +11,7 @@ import { defineConfig, envField } from "astro/config";
 import compress from "astro-compress";
 import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
+import remarkCitation from "./src/utils/remark-citation";
 import { SITE } from "./src/config";
 import { transformerFileName } from "./src/utils/transformers/fileName";
 
@@ -51,7 +52,7 @@ export default defineConfig({
     }),
   ],
   markdown: {
-    remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
+    remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }], remarkCitation],
     shikiConfig: {
       // For more themes, visit https://shiki.style/themes
       themes: { light: "min-light", dark: "night-owl" },
