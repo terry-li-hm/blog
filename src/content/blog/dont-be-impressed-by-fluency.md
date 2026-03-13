@@ -1,7 +1,7 @@
 ---
 title: Don't Be Impressed by Fluency
 author: Terry Li
-description: AI can reproduce smart arguments on demand. That's not the same as thinking. And the difference matters more than we admit.
+description: AI can reproduce smart arguments on demand. I'm not sure that's different from thinking. But the uncertainty itself is worth sitting with.
 tags: [ai, philosophy, llm]
 pubDatetime: 2026-03-14
 ---
@@ -14,7 +14,9 @@ The model assembled those arguments from patterns in its training data. High-qua
 
 I arrived at the same questions from a different place — a decade of working in financial services, watching AI systems surprise and disappoint me, a real career transition, a real family to support. The outputs looked similar. But I generated my questions from lived experience. The model generated its answers from statistical patterns over text.
 
-This distinction is easy to dismiss. "Who cares where it comes from, if the output is good?" Fair enough — for practical purposes, a good answer is a good answer. But there's a subtle trap: when we mistake fluency for depth, we stop thinking for ourselves.
+This distinction is easy to dismiss. "Who cares where it comes from, if the output is good?" Fair enough — for practical purposes, a good answer is a good answer. And honestly, I'm not sure the distinction is even real. Maybe fluency at sufficient depth *is* thinking. Maybe the process doesn't matter if the output genuinely helps. I don't know.
+
+But there's a practical trap either way: when we treat fluency as a proxy for reliability, we stop verifying.
 
 I've watched it happen. Someone asks an LLM a hard question, gets a confident, well-written response, and accepts it. Not because they verified the reasoning, but because it *sounded* authoritative. Fluency pattern-matches to expertise in our brains. We're wired to trust people who speak well. And now we're extending that trust to machines that speak well by construction.
 
