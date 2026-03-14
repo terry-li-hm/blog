@@ -2,7 +2,7 @@
 title: "What AlphaSense Charges Ten Thousand Dollars For"
 description: "I built an AI landscape intelligence pipeline for zero marginal cost. Here's what it does and what it can't."
 pubDatetime: 2026-03-14T08:15:41.000Z
-draft: true
+draft: false
 tags: [ai, tools, consulting, banking]
 ---
 
