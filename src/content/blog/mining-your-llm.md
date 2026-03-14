@@ -24,8 +24,12 @@ There's a deeper point here about where knowledge should live in a human-AI syst
 
 A natural question: doesn't the knowledge go stale? Doesn't planning theory evolve? Here's the thing — distilled knowledge is far more stable than it appears. The fundamentals of planning haven't changed since Aristotle named it *bouleusis*. What changes is tooling and context, not the underlying cognitive structure. You update the skill file when it proves wrong in practice, not on a schedule. And when you do update it, you're refining an ingot, not re-mining ore.
 
+But single-model mining is only the first tier. The extracted knowledge has the model's blind spots baked in — it can't catch what it doesn't know it's missing. The second tier is adversarial refinement: feed the distilled skill to a multi-model council and ask them to attack it. What's missing from this framework? What failure modes aren't listed? What distinctions are false? Multiple models debating the same extracted theory will surface gaps that no single model would notice on its own. The ore gets refined once by extraction, and again by stress-testing.
+
+There's a third tier too, and it's the one that actually matters: field validation. Use the skill in real work and track where it helps and where it breaks. Theory mined from weights is still theory — it hasn't touched reality yet. The planning skill might list six failure modes but miss the one that actually bites you. The debugging theory might have the right taxonomy but the wrong emphasis for your domain. Tiers 1 and 2 happen in conversation. Tier 3 happens in practice, over weeks, and it's where the skill earns its keep or gets revised.
+
 The real leverage is compounding. Each skill file you extract makes the model better at the next conversation, which surfaces more knowledge worth extracting. Your first few mining sessions produce obvious insights. But as the skill library grows, the model starts operating at a higher baseline — and the insights that emerge from that higher baseline are the ones that are genuinely hard to get any other way.
 
 You're not just using an AI. You're building a flywheel where the model's implicit expertise becomes your explicit infrastructure, one conversation at a time.
 
-P.S. The irony isn't lost on me that this post was itself mined from a conversation with Claude about the nature of planning, which was itself mined into a skill file called *bouleusis*. Turtles all the way down.
+P.S. The irony isn't lost on me that this post was itself mined from a conversation with Claude about the nature of planning, which was itself mined into a skill file called *bouleusis*. Turtles all the way down — and each turtle gets battle-tested by the ones above it.
