@@ -27,9 +27,12 @@ find "$TEMP_DIR" -name "*.md" -type f | while read -r file; do
     continue
   fi
 
-  # Transform pubDate: YYYY-MM-DD → pubDatetime: YYYY-MM-DDT00:00:00+08:00
+  # Transform pubDate: or date: → pubDatetime: YYYY-MM-DDT00:00:00+08:00
   if grep -q "^pubDate:" "$file"; then
     sed -i '' 's/^pubDate: \([0-9-]*\)$/pubDatetime: \1T00:00:00+08:00/' "$file"
+  fi
+  if grep -q "^date:" "$file" && ! grep -q "^pubDatetime:" "$file"; then
+    sed -i '' 's/^date: \([0-9-]*\)$/pubDatetime: \1T00:00:00+08:00/' "$file"
   fi
 
   # Skip if still missing required schema fields
