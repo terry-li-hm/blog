@@ -37,4 +37,10 @@ Personas help when the task requires **simulating what a specific expert would p
 
 The practical implication: don't ask "should I use personas?" Ask "does this task require expert judgment or structural execution?" Use personas for judgment. Skip them for structure. And always blind-evaluate — our initial qualitative read of the first experiment was wrong until the judge scored it.
 
-Caveats: n=1 per condition, single judge model, CrewAI still injects prompt framing even with empty personas. The "institutional knowledge" the persona surfaced (naming specific HSBC systems) may be hallucinated. But the direction is clear enough to act on: **personas are task-dependent, not universally useful or useless.**
+Then I checked the facts. The persona run named specific institutional details — "Amy chatbot," "Group AI Governance Standard v2.1," "627 active use cases." The blind judge rewarded this as institutional depth. But when I verified: Amy chatbot is real (HSBC launched it in 2017). "Group AI Governance Standard v2.1"? No public trace — the model invented a plausible document name. "627 use cases"? False precision from the "600+" in the prompt.
+
+Personas make outputs **more convincingly wrong, not just more convincingly right.** The blind judge couldn't tell real institutional knowledge from plausible fabrication. It scored both as "depth."
+
+This is the real paradox. Personas activate real domain knowledge (the model does know about Amy) and generate confident fabrication (it doesn't know internal HSBC policy names, but it'll invent one that sounds right). For a consulting deliverable, that's dangerous — the output reads credibly, passes AI review, but contains claims that would embarrass you in front of the client.
+
+Updated rule: **use personas for judgment-heavy tasks, but always verify institutional claims before delivering.** The persona helps the model prioritise like an expert. It also helps the model fabricate like an expert. The verification pass is non-optional.
