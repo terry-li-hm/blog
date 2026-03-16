@@ -1,6 +1,6 @@
 ---
 title: "The Persona Paradox in AI Agent Teams"
-description: "'You are a senior compliance officer' doesn't help AI answer questions better. But it might help AI write better deliverables. The distinction matters."
+description: "Personas hurt for structured tasks, help for judgment-heavy tasks. Two experiments, blind evaluation, frontier models. The distinction is task-dependent, not binary."
 pubDatetime: 2026-03-16T11:08:14.000Z
 draft: false
 tags: [ai-agents, multi-agent, prompting, experiment]
@@ -22,6 +22,19 @@ The persona didn't add new knowledge. The models know about regulatory examinati
 
 This is the paradox: personas don't help models *think* better, but they may help models *write* better for a specific audience. For factual accuracy, "find all compliance gaps in this document" outperforms "you are a senior compliance reviewer." For professional deliverables where the format and framing matter as much as the content, the persona activates relevant professional judgment patterns that a task-only prompt leaves dormant.
 
-The practical implication for anyone building multi-agent systems: skip personas for analysis and detection tasks. Use them for deliverable production where the output needs to read like it was written by a specific professional role. And test it — this is n=1 with caveats. The alternative hypothesis (just add "format this as if it needs to survive regulatory examination" to the task prompt) might work equally well without the persona overhead.
+Then I ran a second experiment. Same models, same A/B design, but a different task: regulatory gap analysis across five jurisdictions. This is judgment-heavy — the model needs to assess current state against requirements, not follow a template.
 
-I'm running a second experiment with a different deliverable type to see if the pattern holds. If it does, the nuance is worth more than the original finding: not "personas don't help" but "personas help differently than you'd expect."
+The result flipped. **Run B (personas) scored 28/30 versus Run A's 25/30** in blind evaluation. The persona-equipped analyst named specific HSBC systems (Amy chatbot, Azure OpenAI pilot), cited internal document versions (Group AI Governance Standard v2.1), quantified current state (627 use cases, 85-110 estimated high-risk), and referenced specific technical standards for remediation. Run A had broader jurisdictional coverage but less institutional depth.
+
+Two experiments, opposite results. The pattern:
+
+| Task type | Persona effect | Why |
+|---|---|---|
+| **Structured output** (policy writing) | Hurts (29 vs 26) | Task prompt already specifies structure; persona adds noise |
+| **Judgment-heavy** (gap analysis) | Helps (25 vs 28) | Persona activates domain expertise simulation — what would this expert notice? |
+
+Personas help when the task requires **simulating what a specific expert would pay attention to** — their attention pattern, not their knowledge. Gap analysis needs the model to "think like a CMRO who's been through exams." Policy writing needs it to follow a template. The persona adds value for the former, overhead for the latter.
+
+The practical implication: don't ask "should I use personas?" Ask "does this task require expert judgment or structural execution?" Use personas for judgment. Skip them for structure. And always blind-evaluate — our initial qualitative read of the first experiment was wrong until the judge scored it.
+
+Caveats: n=1 per condition, single judge model, CrewAI still injects prompt framing even with empty personas. The "institutional knowledge" the persona surfaced (naming specific HSBC systems) may be hallucinated. But the direction is clear enough to act on: **personas are task-dependent, not universally useful or useless.**
