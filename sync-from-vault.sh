@@ -8,10 +8,11 @@ set -e
 VAULT_BLOG_DIR="/Users/terry/notes/Writing/Blog/Published"
 BLOG_PATH="/Users/terry/code/blog"
 BLOG_CONTENT_DIR="$BLOG_PATH/src/content/blog"
+SKIPPED_FILE=$(mktemp)
 
 # Stage: copy vault to temp dir for processing
 TEMP_DIR=$(mktemp -d)
-trap "rm -rf $TEMP_DIR" EXIT
+trap "rm -rf $TEMP_DIR $SKIPPED_FILE" EXIT
 
 rsync -a \
   "$VAULT_BLOG_DIR/" \
@@ -35,9 +36,10 @@ find "$TEMP_DIR" -name "*.md" -type f | while read -r file; do
     sed -i '' 's/^date: \([0-9-]*\)$/pubDatetime: \1T00:00:00+08:00/' "$file"
   fi
 
-  # Skip if still missing required schema fields
+  # Track posts missing required schema fields
   if ! grep -q "^pubDatetime:" "$file" || ! grep -q "^description:" "$file"; then
-    echo "[SKIP] $(basename $file) — missing pubDatetime or description"
+    echo "$(basename "$file")" >> "$SKIPPED_FILE"
+    echo "[ERROR] $(basename "$file") — missing pubDatetime or description" >&2
     rm "$file"
     continue
   fi
@@ -63,4 +65,12 @@ if ! git diff --quiet || git ls-files --others --exclude-standard src/content/bl
   echo "[$TIMESTAMP] Synced and pushed"
 else
   echo "[$(date +"%Y-%m-%d %H:%M")] No changes"
+fi
+
+# Fail loudly if any posts were skipped
+if [ -s "$SKIPPED_FILE" ]; then
+  COUNT=$(wc -l < "$SKIPPED_FILE" | tr -d ' ')
+  echo "[FAIL] $COUNT post(s) skipped — fix frontmatter:" >&2
+  cat "$SKIPPED_FILE" >&2
+  exit 1
 fi
