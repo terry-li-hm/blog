@@ -1,7 +1,8 @@
 ---
 title: "The MTEB Leader Barely Beats a Free Model on Agent Memory"
-description: "I benchmarked Google's top-ranked embedding model against a tiny local one on actual agent memory retrieval. The gap is smaller than the leaderboard suggests."
+description: "I benchmarked 10 memory backends and multiple embedding models on actual agent memory retrieval. The results challenge common assumptions about what matters."
 pubDatetime: 2026-03-14T10:43:26.000Z
+modDatetime: 2026-03-17T08:00:00.000Z
 draft: false
 tags:
   - ai
@@ -10,26 +11,30 @@ tags:
   - memory
 ---
 
-I've been building a benchmark harness for AI agent memory backends — the systems that let agents remember things across sessions. Along the way I got curious about a simpler question: does the embedding model matter?
+I built a benchmark harness that tests AI agent memory backends — the systems that let agents remember things across sessions. Ten backends, from a plain markdown file to knowledge graph frameworks. Along the way I got curious about a simpler question: does the embedding model matter? Does the backend matter? What actually drives retrieval quality for agent memory?
 
-The MTEB leaderboard ranks hundreds of embedding models on retrieval quality. Google's Gemini Embedding 001 currently sits at the top with a score of 68.32, a meaningful gap over everything else. At the bottom of the rankings you'll find models like `all-MiniLM-L6-v2` — a tiny 384-dimension model that runs locally on a laptop in milliseconds. The leaderboard implies these are in different leagues.
+The test corpus is 53 facts an AI coding assistant might accumulate over weeks of work: who owns what project, which regulator requires what, team preferences, technical decisions, dates, metrics. Twenty queries ranging from simple lookups to multi-hop reasoning to temporal questions. Ground truth labels for every query.
 
-So I tested both on actual agent memory retrieval. Not academic benchmarks — a real corpus of 53 facts that an AI coding assistant might accumulate over weeks of work: who owns what project, which regulator requires what, team preferences, technical decisions, dates, metrics. Twenty queries ranging from simple lookups ("What is Terry's role?") to multi-hop reasoning ("What framework does the person leading data science prefer?") to temporal questions ("What changed about the AML model after March 2026?").
+Here's what happened.
 
-The results, using the same vector store backend (SQLite with cosine similarity):
+The raw vector databases — SQLite with vec extension, PostgreSQL with pgvector, Neo4j with vector index — all hit 100% recall. Every expected fact retrieved across all twenty queries. The backend architecture made no difference. If you give three different databases the same embeddings, they return the same results. The embedding model is doing all the work; the database is just cosine similarity on stored vectors.
 
-Gemini Embedding 001 (MTEB #1, 3072 dimensions, API): 100% recall, 422ms per query. Every expected fact retrieved across all twenty queries.
+LangMem, a lightweight framework built on LangGraph's InMemoryStore, scored 89% recall at 13ms per query. It missed three facts on the hardest queries — temporal reasoning and cross-referencing. But it ingested 53 facts in 400 milliseconds, versus 28 seconds for the raw vector databases. For agent memory, where you're adding facts on every interaction, that ingest speed matters.
 
-all-MiniLM-L6-v2 (local, 384 dimensions, free): 89% recall, 8ms per query. Missed three expected facts, all on the hardest queries — the ones requiring temporal reasoning or cross-referencing multiple facts.
+The keyword baseline — plain word matching against a markdown file, no machine learning whatsoever — scored 79% recall at 0.3ms. No embeddings, no vectors, no API calls, no dependencies.
 
-The keyword baseline — plain word matching, no embeddings at all — scored 79% recall at 0.3ms. No model, no vectors, no API calls.
+Mem0, a popular memory framework that uses an LLM to extract and consolidate facts during ingestion, consolidated 53 facts down to 32 and scored 57% recall. Each fact took about 13 seconds to ingest because the LLM processes every addition. The total ingest time for 53 facts was nearly 12 minutes, versus half a second for LangMem.
 
-There are a few things worth noting here. The MTEB leader does win. 100% versus 89% is a real gap, and on the hard queries it genuinely matters. If your agent needs to answer "what changed after date X" by connecting two separate facts, the better embedding model finds both where the cheap one misses one.
+Three backends didn't produce usable scores. Graphiti stores knowledge as graph edges between entities rather than retrievable text, so the benchmark's retrieval pattern doesn't match its architecture — it's designed for conversation-length inputs, not single facts. Cognee hit a Python 3.13 compatibility bug in its SQLAlchemy layer. Letta's hosted embedding endpoint was down during testing.
 
-But the gap only shows up on the hard queries. For straightforward retrieval — "who owns AML validation?", "when does Capco start?" — every model including the keyword baseline hits 100%. For an agent memory store with fewer than a hundred entries, most queries are straightforward.
+On embedding models: I tested the MTEB leaderboard leader (Google's Gemini Embedding 001, 3072 dimensions) against a tiny local model (all-MiniLM-L6-v2, 384 dimensions, free). Using the same SQLite backend, the MTEB leader scored 100% recall versus 89% for the local model. The gap is real but only appears on the hard queries — temporal reasoning and multi-hop. For straightforward retrieval, both score identically. The latency difference is 50x: 474ms per query for the API model versus 8ms for the local one.
 
-The latency difference is 50x. For an interactive agent that queries memory on every turn, 422ms versus 8ms is the difference between feeling responsive and feeling sluggish. And that's before you factor in cost, privacy (API calls send your memory contents to a third party), and offline capability.
+A few things surprised me. Framework backends that add intelligence during ingestion — LLM-powered entity extraction, fact consolidation, knowledge graph construction — performed worse than raw vector databases that just store and retrieve embeddings. The "smart" processing during ingestion either loses information (Mem0's consolidation dropped recall by 43 points) or doesn't match the retrieval pattern (Graphiti's graph edges aren't directly queryable as text).
 
-This is early data — four backends, two embedding models, one corpus. I'll update this as I bring more backends online and test additional models. But the directional finding already challenges a common assumption in enterprise AI architecture: that you need a top-tier embedding model for agent memory. For small stores — and most agent memory stores are small — you probably don't. The model that runs locally for free gets you 89% of the way there, at a fiftieth of the latency.
+The ingest cost of framework backends is staggering. Mem0 took 703 seconds to ingest 53 facts. Graphiti took 781 seconds. Raw vector databases took 28 seconds. LangMem took 0.4 seconds. If your agent adds memories on every interaction, the framework overhead makes the agent feel slow or requires background processing that introduces latency between learning and recall.
 
-The question worth asking before specifying an embedding model for your agent architecture isn't "what's best on MTEB?" It's "how many memories will this agent actually have, and how hard are the queries?" For most current deployments, the honest answer is: not many, and not very.
+The keyword baseline being competitive at 79% is the most uncomfortable finding. It suggests that for small agent memory stores — under a hundred entries — a curated text file with word matching gets you most of the way there. The marginal value of embeddings is the 10-20% recall improvement on harder queries. Whether that justifies the infrastructure depends on your use case.
+
+The question worth asking before specifying a memory architecture for your agent isn't "which framework should we use?" It's "how many memories will this agent have, how hard are the queries, and how fast does it need to learn?" For most current deployments, the honest answer points toward the simplest option that clears the bar.
+
+*Updated March 17, 2026 with full 10-backend results and embedding model comparison. Earlier version had 4 backends and 2 embedding models.*
