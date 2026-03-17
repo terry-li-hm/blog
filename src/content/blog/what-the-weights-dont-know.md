@@ -9,7 +9,7 @@ tags:
   - career
 ---
 
-I can now [extract a structured decision framework](/posts/the-knowledge-mining-gap) from an LLM in two minutes that would have taken me a day of reading to assemble myself. Five distinct mechanisms for a problem, failure modes, key distinctions, a developmental timeline — the kind of thing a subject matter expert carries in their head after years in the field.
+I can now [extract a structured decision framework](/posts/good-enough-parrots) from an LLM in two minutes that would have taken me a day of reading to assemble myself. Five distinct mechanisms for a problem, failure modes, key distinctions, a developmental timeline — the kind of thing a subject matter expert carries in their head after years in the field.
 
 This is genuinely useful. It's also a problem for anyone whose job is "I know things you don't."
 
@@ -34,3 +34,5 @@ The part that isn't in the weights is the scar tissue. The pattern recognition f
 That's the human job description going forward. Not "I know things." The model knows things. Not "I can structure thinking." The model structures thinking. But "I've been wrong enough times in enough contexts to know when the structured thinking doesn't apply."
 
 The uncomfortable corollary: if you've spent your career accumulating knowledge without accumulating judgment — reading without doing, studying without deciding, advising without owning — the weights already have everything you've got.
+
+This changes what's worth learning. Stop optimising for recall — the model recalls better than you. Optimise for the ability to *reconstruct* a framework from the problem it solves. Memorising "AI governance has six dimensions" is retrieval. Understanding why a bank needs those six answers, so you can rebuild the framework in context and adapt it when challenged — that's reconstruction. The model has the bullet points. You need the understanding that tells you which bullets matter here.
