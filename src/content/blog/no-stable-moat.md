@@ -12,7 +12,7 @@ tags:
 
 This started with my two-year-old refusing to go to school.
 
-I [mined an LLM](/posts/the-knowledge-mining-gap) for developmental psychology frameworks, got a structured decision guide in two minutes, and realised the [output was good enough](/posts/good-enough-parrots) to act on. Then I noticed that most knowledge workers [aren't doing this](/posts/the-knowledge-mining-gap) — and that the ones who are will have a significant edge over the ones who aren't. Then I asked [what's left for humans](/posts/what-the-weights-dont-know) when the knowledge layer is commoditised, and landed on field experience, judgment, accountability, taste.
+I [mined an LLM](/posts/good-enough-parrots) for developmental psychology frameworks, got a structured decision guide in two minutes, and realised the output was good enough to act on. Then I asked [what's left for humans](/posts/what-the-weights-dont-know) when the knowledge layer is commoditised, and landed on field experience, judgment, accountability, taste.
 
 Reassuring. For about ten minutes.
 
