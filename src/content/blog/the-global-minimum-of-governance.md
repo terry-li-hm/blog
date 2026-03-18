@@ -34,4 +34,4 @@ There's an uncomfortable truth underneath this: a lot of governance is theatre. 
 
 The skill that matters isn't building better theatre. It's knowing which parts aren't theatre and making those sharper. Any consultant can recommend more controls. The one who can say "these three matter, these seven are costing you attention without reducing risk" — that person is actually helping.
 
-Nobody gets fired for adding a checkbox. Arguing against one requires you to articulate the trade-off explicitly. That's where judgment lives.
+Adding a control is always safe. Nobody gets fired for adding a checkbox. But every control costs attention, not just money — and attention is finite. Arguing *against* a control requires you to articulate the trade-off explicitly. That's where judgment lives.
