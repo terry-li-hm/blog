@@ -2,7 +2,7 @@
 title: Every Control Has an Attention Budget
 author: Terry Li
 pubDatetime: 2026-03-18T12:15:00+08:00
-modDatetime: 2026-03-18T12:15:00+08:00
+modDatetime: 2026-03-18T12:20:00+08:00
 slug: every-control-has-an-attention-budget
 featured: false
 draft: false
@@ -22,7 +22,7 @@ The result: mature organisations have monitoring frameworks where half the metri
 
 Doctors figured this out. A diagnostic panel isn't "test everything the lab can measure." It's the minimum set of tests where each one covers a distinct failure mode and removing any single test would leave a real gap. Over-testing produces false positives, unnecessary follow-ups, and patient anxiety — all of which consume clinical attention that should go to actual problems.
 
-The same principle applies to any monitoring system. For an AML model I was monitoring, the "right" panel turned out to be three numbers: weekly alert volume (catches upstream changes), high-risk STR conversion rate (catches model degradation), and low-risk STR conversion rate (catches the hibernation mechanism leaking). Everything else we considered — AUC, score distributions, customer concentration patterns — was either derivable from these three or not actionable on a weekly cadence.
+The same principle applies to any model monitoring system. When I've worked through this exercise, the "right" panel usually turns out to be three or four numbers — each covering a distinct failure mode, none redundant. Everything beyond that is either derivable from the core metrics or not actionable on a weekly cadence.
 
 Three metrics that someone reads and acts on beats twenty metrics that generate a PDF nobody opens.
 

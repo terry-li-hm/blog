@@ -2,7 +2,7 @@
 title: The Global Minimum of Governance
 author: Terry Li
 pubDatetime: 2026-03-18T12:00:00+08:00
-modDatetime: 2026-03-18T12:00:00+08:00
+modDatetime: 2026-03-18T12:20:00+08:00
 slug: the-global-minimum-of-governance
 featured: false
 draft: false
@@ -13,13 +13,11 @@ tags:
 description: Governance isn't about catching every failure — it's about proving your process was reasonable when one happens. The real skill is knowing what to deliberately not monitor.
 ---
 
-I spent this week building a monitoring script for an AML model. The model hibernates low-risk alerts — sets them aside so investigators can focus on the cases that matter. My job was to design the weekly report that proves hibernation is still safe.
-
-The naive approach is to monitor everything: STR rates, AUC, score distributions, customer accumulation, alert coverage, typology breakdowns. More metrics feels more responsible. But a team checking fifteen metrics weekly starts ignoring all of them. A team checking three actually reads them.
+I was recently thinking about how to design a monitoring framework for a machine learning model in production. The naive approach is to monitor everything: accuracy metrics, score distributions, input drift, coverage rates, concentration patterns. More metrics feels more responsible. But a team checking fifteen metrics weekly starts ignoring all of them. A team checking three actually reads them.
 
 So the question isn't "what should we monitor?" It's the harder one: **what should we deliberately choose not to monitor, and can we defend that choice?**
 
-This is the same question in every governance framework I've seen — AML, credit risk, model risk, AI governance. The skeleton is always identical:
+This is the same question in every governance framework I've seen — financial crime, credit risk, model risk, AI governance. The skeleton is always identical:
 
 1. Define criteria upfront
 2. Monitor consistently
@@ -30,9 +28,9 @@ The domain changes. The logic doesn't. And the value isn't in making the skeleto
 
 I think of it like a doctor choosing a diagnostic panel. Blood pressure, cholesterol, heart rate — none of them *is* health. But each covers a distinct failure mode, and over-testing produces false positives that waste resources and dilute attention. The skill is the minimum panel where removing any single test would leave a real gap.
 
-For the hibernation monitor, that turned out to be three numbers: weekly alert volume, high-risk STR conversion rate, and low-risk STR conversion rate. Volume catches upstream changes. High-risk rate catches model degradation. Low-risk rate catches hibernation leaking. Each covers a different failure mode. None is redundant. Everything else we considered — AUC, score distributions, customer concentration — was either derivable from these three or not actionable on a weekly cadence.
+For the model I was thinking about, the "right" panel turned out to be three numbers. One caught upstream data changes. One caught model degradation. One caught the specific mechanism that mattered most to stakeholders. Each covered a different failure mode. None was redundant. Everything else we considered — aggregate accuracy metrics, distribution statistics, concentration patterns — was either derivable from these three or not actionable on a weekly cadence.
 
-There's an uncomfortable truth underneath this: a lot of governance is theatre. Controls that exist to satisfy an auditor, not to prevent harm. But theatre serves a function — the act of checking forces a rhythm of attention. The person running the script has to look at the numbers. If something is wildly off, they'll notice.
+There's an uncomfortable truth underneath this: a lot of governance is theatre. Controls that exist to satisfy an auditor, not to prevent harm. But theatre serves a function — the act of checking forces a rhythm of attention. The person running the report has to look at the numbers. If something is wildly off, they'll notice.
 
 The skill that matters isn't building better theatre. It's knowing which parts aren't theatre and making those sharper. Any consultant can recommend more controls. The one who can say "these three matter, these seven are costing you attention without reducing risk" — that person is actually helping.
 
