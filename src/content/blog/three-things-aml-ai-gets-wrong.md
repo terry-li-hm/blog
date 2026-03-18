@@ -14,7 +14,7 @@ tags:
 
 The models aren't the problem. The operating models are.
 
-After years building AML AI in production at a bank — including the bank's first ML model for alert prioritisation and participation in the HKMA's GenAI Sandbox — the failures I've seen aren't primarily about model capability. They're structural. The same three problems appear across deployments with sufficient regularity that they're starting to look less like implementation mistakes and more like design assumptions that need to change.
+After years building AML AI in production — including work on alert prioritisation models and participation in the HKMA's GenAI Sandbox — the structural failures that recur across deployments aren't primarily about model capability. They're operational. The same three problems appear with sufficient regularity that they're starting to look less like implementation mistakes and more like design assumptions that need to change.
 
 The first is the explainability gap. AML models are good at scoring. They're not good at generating the kind of reasoning that a SAR narrative requires. A model that flags a transaction with a high risk score and a list of contributing features has done the detection work. But the compliance officer writing the SAR needs to describe, in plain language, why this transaction is suspicious in a way that a financial intelligence unit analyst can act on. "Feature importance scores" is not that description.
 

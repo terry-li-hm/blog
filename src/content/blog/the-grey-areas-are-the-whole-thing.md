@@ -9,9 +9,9 @@ I wrote recently about [why we're nice to people](/posts/why-be-nice) — a ques
 
 But here's the problem with that answer. It still sounds clean. And the moment I started living inside it — actually making decisions with competing obligations pulling in different directions — the cleanness evaporated.
 
-Here's what I mean. Imagine you're leaving a job. Not on your terms — you were pushed. You still have a few weeks. There's unfinished work. Do you sprint to complete it for the people who pushed you out? Do you do the minimum? Do you follow processes you previously cut corners on, knowing the process itself will create delay?
+Here's what I mean. Take a hypothetical: someone leaves a job. Not on their terms — they were pushed. They still have a few weeks. There's unfinished work. Do they sprint to complete it for the people who pushed them out? Do the minimum? Follow processes they previously cut corners on, knowing the process itself will create delay?
 
-Each of those choices lives in grey. The sprint is arguably noble but also arguably self-defeating — you're subsidising the people who wronged you. The minimum is arguably fair but also arguably petty. The process-following is arguably correct but also arguably strategic. Every option has an ethical reading and a cynical reading, and the honest truth is that your real motivation is probably some mixture of both that you can't fully untangle even from the inside.
+Each of those choices lives in grey. The sprint is arguably noble but also arguably self-defeating — subsidising the people who wronged you. The minimum is arguably fair but also arguably petty. The process-following is arguably correct but also arguably strategic. Every option has an ethical reading and a cynical reading, and the honest truth is that real motivation is probably some mixture of both that can't be fully untangled even from the inside.
 
 This is where the philosophical frameworks are supposed to help. They don't.
 

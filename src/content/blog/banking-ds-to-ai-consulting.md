@@ -12,7 +12,7 @@ tags:
   - financial-services
 ---
 
-Three years building a data science function inside a bank taught me things no consulting framework captures. Not because the frameworks are wrong, but because they describe the world from the outside — and the inside is where the actual blockers live.
+Several years building a data science function inside a bank taught me things no consulting framework captures. Not because the frameworks are wrong, but because they describe the world from the outside — and the inside is where the actual blockers live.
 
 The transition into consulting is often described as moving from practitioner to advisor. I've come to think that's the wrong framing. It's better understood as moving from one operational context to many. The job isn't to leave the instincts behind — it's to carry them across.
 
