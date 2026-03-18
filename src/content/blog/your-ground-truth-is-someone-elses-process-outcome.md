@@ -17,7 +17,7 @@ In financial crime compliance, a suspicious activity report means someone decide
 
 This sounds obvious when stated directly. But watch what happens when you build a model on these labels.
 
-The model learns to predict filing decisions — human process outcomes — not criminal activity. When we say "the model has a low miss rate," we mean few *filed reports* fell below the threshold. We have no idea how many actual criminals the model scored as low-risk, because "actual criminal" isn't in the dataset. It never was.
+The model learns to predict filing decisions — human process outcomes — not criminal activity. When someone says "the model has a low miss rate," we mean few *filed reports* fell below the threshold. We have no idea how many actual criminals the model scored as low-risk, because "actual criminal" isn't in the dataset. It never was.
 
 This isn't specific to financial crime. It's everywhere supervised learning touches human institutions:
 
