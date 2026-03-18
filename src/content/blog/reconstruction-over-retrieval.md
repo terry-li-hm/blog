@@ -2,7 +2,7 @@
 title: "Reconstruction Over Retrieval"
 description: "In a world where AI has perfect recall, the skill that matters is rebuilding frameworks from first principles — not memorising them."
 pubDatetime: 2026-03-17T07:02:13.000Z
-draft: true
+draft: false
 tags:
   - ai
   - learning

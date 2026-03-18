@@ -3,7 +3,7 @@ title: "Skills Are Collapsed Recursion"
 description: "Humans handle about three layers of abstraction before working memory fills up. Skills, rules, and frameworks exist to flatten the fourth layer into something you can hold."
 pubDatetime: 2026-03-18T14:45:00.000Z
 tags: ["mental-models", "cognition", "systems-thinking", "automation"]
-draft: true
+draft: false
 ---
 
 Working memory holds about four items. Each layer of recursion consumes one slot just to hold the frame. Three levels deep and you're reasoning. Four and you're juggling.

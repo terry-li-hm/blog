@@ -1,9 +1,9 @@
 ---
 title: "Legibility Is the Bottleneck"
-description: "Knowledge compounds in your head only while you're paying attention. The moment you context-switch, the interest rate drops to zero."
+description: "An insight in your head is illegible — only you can access it, and only while you remember it. Compound interest requires a ledger."
 pubDatetime: 2026-03-18T14:50:00.000Z
 tags: ["knowledge-management", "ai-workflow", "compound-interest", "systems-thinking"]
-draft: true
+draft: false
 ---
 
 Everyone knows compound interest. Fewer people notice that most knowledge work doesn't compound at all.

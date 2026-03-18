@@ -2,7 +2,7 @@
 title: "The Knowledge Mining Gap"
 description: "Most knowledge workers use LLMs as search engines. The real unlock is using them as subject matter experts you debrief."
 pubDatetime: 2026-03-17T06:19:39.000Z
-draft: true
+draft: false
 tags:
   - ai
   - knowledge-work

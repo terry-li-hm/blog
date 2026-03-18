@@ -3,7 +3,7 @@ title: "Supply-Driven Compute"
 description: "Most people use AI tokens when they have a task. The better model: you have tokens, find the best task. It changes everything."
 pubDatetime: 2026-03-18T14:15:00.000Z
 tags: ["ai-workflow", "automation", "agentic-ai", "compound-engineering"]
-draft: true
+draft: false
 ---
 
 Most people run AI the same way they run a dishwasher. Dirty dishes pile up, you load them in, you press start.
