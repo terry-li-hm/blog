@@ -22,7 +22,7 @@ The Claude Code context system has several distinct mechanisms, and each is desi
 
 The temptation to blur these boundaries is real. Content feels important, so you want it always loaded. Context budgets are finite, so you want everything available at once. But the mechanisms aren't interchangeable, and using them interchangeably has costs beyond messiness.
 
-The deeper reason is that the platform has been trained on its own mechanisms. Claude Code learns from how these tools are used, and that training assumes they're used as intended. Path-scoped rules carry an implicit signal: this knowledge matters here, in this context, not everywhere. When you strip the path-scoping, you break that signal — the model is receiving contextual knowledge without the context that gives it meaning. You're not just fighting the design; you're fighting the training.
+The deeper reason is that the design assumes these mechanisms are used as intended. Path-scoped rules carry an implicit signal: this knowledge matters here, in this context, not everywhere. When you strip the path-scoping, you break that signal — the model receives contextual knowledge without the context that gives it meaning. The information is present but the framing is lost. You're not just working around the design; you're degrading the signal the design was built to carry.
 
 The fix is straightforward to state and genuinely hard to do: ask what each mechanism is designed for, and use it for that.
 
@@ -38,4 +38,4 @@ When I consolidated the always-loaded content back into CLAUDE.md and restored p
 
 There's a broader principle hiding in this. Every platform has a design philosophy encoded in its mechanisms. The mechanisms aren't arbitrary — they reflect how the designers think about information, context, and attention. Abusing a mechanism means you've found a workaround to a constraint the designers put there intentionally. Sometimes constraints are wrong and should be pushed against. But "I ran out of space" is not a reason the constraint was wrong. It's a reason to write tighter content.
 
-The phrase I keep coming back to is playing within the design. Not because creativity is bad or rules shouldn't be questioned, but because the design is itself a form of training — both for the model and for the person building with it. Fighting the design means you're learning to work around the system rather than with it. And that's a much harder thing to unlearn.
+The phrase I keep coming back to is playing within the design. Not because creativity is bad or rules shouldn't be questioned, but because the design encodes assumptions about how information flows — both to the model and to the person building with it. Fighting the design means you're learning to work around the system rather than with it. And that's a much harder thing to unlearn.
