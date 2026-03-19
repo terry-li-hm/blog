@@ -28,6 +28,8 @@ This window has maybe two or three years. After that, the infrastructure for enc
 
 Everything else in this stack is a solved problem on a long enough timeline. Faster models, better orchestration, cheaper inference, more capable tool use — all of it converges. The thing that doesn't converge is the quality of the question you ask before any of that machinery starts running.
 
+In finance they call it alpha — the returns that survive after you strip out every explainable factor. Quants have spent forty years encoding alpha into algorithms. They keep succeeding partially, each factor captured and commoditized, and yet the residual persists. Taste is the unexplainable alpha of knowledge work. It shrinks as you encode more, but it never hits zero, because the world keeps generating situations your rules haven't seen.
+
 Taste is the last moat because it's the one thing that has to be earned.
 
 ---
