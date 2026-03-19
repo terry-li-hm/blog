@@ -1,5 +1,5 @@
 ---
-title: "Taste Is the Last Moat"
+title: "The Unexplainable Alpha"
 pubDatetime: 2026-03-19T20:00:00+08:00
 description: "In AI agent systems, execution commoditizes. Research commoditizes. Coordination commoditizes. Taste — the ability to forecast what will matter — is the bottleneck that doesn't automate away."
 tags: [ai-agents, taste, strategy, automation]
