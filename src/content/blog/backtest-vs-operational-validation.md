@@ -18,9 +18,9 @@ It is not uncommon for a model control to be presented in a governance review �
 
 The control is real. The logic is sound. The backtest shows it working correctly on historical data. What the backtest cannot show — what no backtest can show — is whether the control works in the operational environment it was actually deployed into. Because the operational environment is different from the historical data in ways that matter.
 
-A common pattern: a suppression or reactivation mechanism designed for a population that enters some trigger state — risk escalation, threshold breach, score degradation. On historical data, the mechanism triggers reliably. In production, the population it was designed to protect may not have entered that state during the deployment window. The control has never been exercised. Its logic remains untested by anything other than simulation.
+A common pattern: a model control — anomaly detection, a fallback trigger, an override mechanism — is designed for conditions that characterise stress or failure. On historical data, the control activates reliably because the historical data includes examples of those conditions. In production, the system operates in a period of relative stability. The trigger condition never occurs. The control has never been exercised. Its logic remains untested by anything other than simulation.
 
-When a governance review probes operational latency — how long from trigger condition to actual response — the answer exists in design documentation but not in the operational record. That gap is invisible until someone asks.
+When a governance review probes whether a control has actually fired — and how long the end-to-end response takes in the operational environment — the answer often exists in design documentation but not in the operational record. That gap is invisible until someone asks.
 
 This gap between "validated by backtest" and "validated in production" is common, underappreciated, and matters specifically in the contexts where controls are most critical. Model monitoring, anomaly detection, circuit breakers, fallback logic, suppression mechanisms — all of these tend to be designed for failure conditions that, in a healthy system, don't occur during the validation window. You're building controls for the situation you're not in. The backtest validates the logic on data where the situation has occurred. The production system operates, undisturbed, in conditions where the control has never fired.
 
@@ -36,4 +36,4 @@ The question regulators are increasingly asking — and that model risk committe
 
 ---
 
-P.S. The hardest part of this problem isn't the testing itself — it's the organizational willingness to create conditions where controls fire in production. In a well-functioning system, nothing goes wrong, and controls never trigger. Deliberately triggering them feels like creating a problem. But a control that's never been exercised in production is a theoretical protection, not a real one.
+P.S. The hardest part of this problem isn't the testing methodology — it's the organizational willingness to deliberately exercise controls that are designed never to be needed. Stress-testing a control requires creating the condition it was built to handle, which feels counterintuitive in a healthy system. But the willingness to induce that condition in a controlled way is exactly what separates a validated control from a theoretical one.
