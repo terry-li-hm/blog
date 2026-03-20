@@ -2,6 +2,8 @@
 title: "Stop Theorizing About Your Prompts"
 description: "LLMs are the cheapest experimental subjects in history. Why aren't you testing?"
 pubDatetime: 2026-03-20T02:52:38.000Z
+modDatetime: 2026-03-20T03:07:58.000Z
+revisionNote: "Added v2 and v3 experiment results — floor effect, seductive near-miss mechanism"
 draft: false
 tags: [ai, experimentation, llm, practice]
 ---
@@ -37,5 +39,15 @@ The barrier isn't technical. You don't need a lab, a framework, or a PhD in expe
 There's a deeper principle here that goes beyond AI. Experimentation is calibration to reality. Each trial updates your mental model. The first few trials are the most valuable — they produce the biggest shifts in understanding. Repeated identical experiments hit diminishing returns fast, not because reality changes, but because your model of it converges. The art is knowing when to stop replicating and start redesigning — when to ask a different question rather than seek more precision on the current one.
 
 My fifty-cent pilot taught me this: the ceiling effect wasn't a failure. It was the most informative possible result. It told me my question was wrong, which is worth more than a precise answer to the right question. It redirected the entire line of inquiry in five minutes, for less than the cost of a vending machine coffee.
+
+So I redesigned again. The second experiment removed the explicit instruction entirely — did the model spontaneously use the technique without being told? Zero out of six. Clean floor. The instruction was the active ingredient, not the context density. Two experiments, two clear results, total cost under a dollar: the instruction works when present, doesn't happen when absent, and the amount of surrounding context doesn't matter.
+
+But the third experiment — that's where it got genuinely interesting. I made the task ambiguous. Instead of a problem that obviously matched one instruction, I chose one that could plausibly match several. Both conditions had the right instruction available. The question was whether the model would *select* it when other reasonable options competed for attention.
+
+The lean condition picked the right instruction 75% of the time. The fat condition picked it 50%. Small sample, not conclusive — but the mechanism it revealed was worth more than the numbers. In the fat condition, the model kept grabbing a "seductive near-miss" — an instruction that sort of fit the task, that caught its attention first because there were so many options to scan. Think of it like a crowded toolbox: you need a screwdriver, but a wrench catches your eye first because it's right on top and it kind of works. So you use the wrench. You never even look for the screwdriver.
+
+In the lean condition, something different happened. The model would pick up one instruction, realize it wasn't quite right, and that *led* it to the correct one. With fewer tools, it composed them into a sequence rather than grabbing the first plausible match. Fewer options produced better navigation, not because there was less noise, but because there were fewer seductive dead ends.
+
+Three experiments, three different results, one morning, less than two dollars. Each one taught me something no amount of theorizing would have: the ceiling told me my design was wrong, the floor told me the mechanism was the instruction itself, and the ambiguous task told me the real problem isn't noise — it's competition between plausible-but-suboptimal options.
 
 If you work with LLMs and you're not running experiments, you're leaving the cheapest insights in history on the table. Stop theorizing. Start testing. The model is right there.

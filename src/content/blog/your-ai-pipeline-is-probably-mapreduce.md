@@ -61,7 +61,7 @@ Three reasons, none of them technical:
 
 ## The cathedral and the chapel, again
 
-I've [written before](/posts/cathedral-vs-chapel) about the cathedral-vs-chapel distinction in enterprise AI. This is the same pattern at the infrastructure layer.
+The cathedral-vs-chapel distinction applies here too. This is the same pattern at the infrastructure layer.
 
 LangGraph is a cathedral. It handles concurrent agents with shared mutable state, human-in-the-loop interrupts, checkpoint persistence across days, audit trails for regulators. When you need that — and some problems genuinely do — it's the right tool and it's battle-tested.
 
