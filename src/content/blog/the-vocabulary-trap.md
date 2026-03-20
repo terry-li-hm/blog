@@ -2,6 +2,8 @@
 title: "The Vocabulary Trap"
 description: "Frameworks give you nouns for free. The nouns start thinking for you within a week."
 pubDatetime: 2026-03-21T02:00:00.000Z
+modDatetime: 2026-03-20T23:18:20.000Z
+revisionNote: "Added CC agents-as-verbs example — the vocabulary trap applied to the tool that revealed it"
 draft: false
 tags: [design, thinking, frameworks]
 ---
@@ -27,5 +29,7 @@ Even natural language does this, arguably. The Sapir-Whorf hypothesis -- the ide
 To be clear: the problem is not frameworks. Frameworks encode hard-won patterns and save enormous amounts of time. The practitioners who are most effective with a framework are usually the ones who understand its categories deeply. But they understand the categories as *containers* -- as an implementation layer -- not as the design itself. They are bilingual. They think in the problem's language and translate to the framework's language, and they know the translation is lossy. The translation step is where design actually happens. Skip it, and the framework designs your system for you.
 
 This is, in the end, a specific case of a principle so well-known it's almost not worth stating: your tools shape your perception. Maslow's hammer. The map is not the territory. When you have Kubernetes, everything looks decomposable into services. When you have React, everything looks like a component tree. When you have an agent framework, everything looks like a multi-agent system.
+
+The irony is not lost on me that I discovered this while using a tool that calls its features "agents." Look past the name and the design is already verb-first: the "Explore agent" is really "search codebase" with read-only tools. The "Plan agent" is "design implementation" with no edit permissions. The "code reviewer" is "review code" with constrained access. The designers built actions. The marketing department named them agents. We spent a session confused about whether our concepts were agents or skills, when they were neither -- they were verbs that needed containers, and the containers were right there the whole time, hiding behind nouns.
 
 Knowing this doesn't prevent it. That's the uncomfortable part. Awareness buys you maybe a half-second delay before the vocabulary takes hold -- enough time to catch yourself, if you're paying attention. The discipline isn't in knowing the trap exists. It's in the habit of pausing, every time you reach for a framework noun, and asking: is this my word, or theirs?
