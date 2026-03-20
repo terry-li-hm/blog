@@ -44,3 +44,5 @@ If you're building systems where AI agents manage their own resources — and in
 The answer from biology, refined over four billion years: the agent never modifies its own selection criteria. Full stop. Sensing is fine. Reporting is fine. Recommending is fine. Adjusting the parameters that determine its own survival? That's where you need a human in the loop — not because the AI will necessarily do something wrong, but because removing that constraint is the first step toward a system optimising for itself rather than for you.
 
 Three steps from a fuel gauge to self-preservation instinct. The gap between them is governance.
+
+**Related:** [The Immune System Pattern](The Immune System Pattern) · [Human-in-the-Loop Is an Architecture Decision](Human-in-the-Loop Is an Architecture Decision) · [Progressive Trust: How to Give AI Agents Autonomy Without Gambling](Progressive Trust: How to Give AI Agents Autonomy Without Gambling) · [Human Oversight Doesn't Scale](Human Oversight Doesn't Scale) · [Programs Over Prompts](Programs Over Prompts)

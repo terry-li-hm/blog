@@ -31,3 +31,5 @@ The signs:
 The healthy response isn't to migrate — nothing else is ready. It's to **thin from inside**. Many of my 150 skills are procedural wrappers that duplicate what `--help` output already says. The skills that earn their keep encode *judgment* (when to do X instead of Y), not *procedure* (the flags for command Z).
 
 The meta-lesson: the highest-leverage move for any personal system isn't adding capability. It's removing complexity that exists only to manage other complexity. Your system should be getting simpler over time, not more elaborate. If it's getting more elaborate, you're building the wrong thing.
+
+**Related:** [The Accidental Life OS](The Accidental Life OS) · [I Made AI Remember to Remember](I Made AI Remember to Remember) · [Match Form to Access Pattern](Match Form to Access Pattern) · [Systematise Decisions, Not Actions](Systematise Decisions, Not Actions) · [The Personalised System Era](The Personalised System Era)

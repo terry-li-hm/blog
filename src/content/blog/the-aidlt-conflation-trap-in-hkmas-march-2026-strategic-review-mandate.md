@@ -36,3 +36,5 @@ The supervisory-defensible response is two parallel workstreams with distinct ow
 Both get presented to the board as supervisor-required deliverables. But they are owned by different teams, measured by different metrics, and examined by different supervisory functions.
 
 The strategic review mandate is an opportunity. But only for banks that read it carefully enough to notice what it is conflating.
+
+**Related:** [Three APAC Regulators Are Converging on AI Governance](Three APAC Regulators Are Converging on AI Governance) · [Model Risk Management Was Not Built for This](Model Risk Management Was Not Built for This) · [Your AI Risk Tier Is Probably Wrong](Your AI Risk Tier Is Probably Wrong) · [AI Governance: Routing vs Compliance](AI Governance: Routing vs Compliance) · [The Agent Governance Gap Is Already Here](The Agent Governance Gap Is Already Here)

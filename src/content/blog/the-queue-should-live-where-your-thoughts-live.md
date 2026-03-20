@@ -22,3 +22,5 @@ None of this is technically difficult. Which raises the question of why the cate
 The question worth sitting with is what else changes when you take these three principles seriously — not just in personal tooling but in how AI capabilities get delivered at scale. The overnight runner and the enterprise AI platform have the same structural problem: results accumulate somewhere, humans remember to look, most of the value leaks out in the gap between completion and action. The feedback loop is the product. Everything else is infrastructure for it.
 
 I don't have a clean ending for this. It feels like a principle still being worked out, which is why I'm writing it down now rather than after it's fully formed.
+
+**Related:** [The Loop Is the Product](The Loop Is the Product) · [Eliminate the Reminder, Don't Schedule It](Eliminate the Reminder, Don't Schedule It) · [I Made AI Remember to Remember](I Made AI Remember to Remember) · [The Accidental Life OS](The Accidental Life OS) · [Hooks Are Life Infrastructure](Hooks Are Life Infrastructure)

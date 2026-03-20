@@ -24,3 +24,5 @@ Most AI teams in regulated industries haven't caught up to this yet. Data scienc
 The gap is the opportunity. An eval framework for an LLM system in a regulated context looks less like a machine learning experiment and more like an audit protocol: defined criteria, documented test cases, reproducible scoring, and a clear chain from results to deployment decision. That framing is legible to risk functions. It satisfies the spirit of model governance requirements even when the letter was written for a different kind of model. And it can be built, maintained, and interrogated by people who understand the domain, not just the technology.
 
 The statistical era of AI evals isn't over — it's just no longer the whole story.
+
+**Related:** [AI Evals: Metrics Before Diagnosis](AI Evals: Metrics Before Diagnosis) · [The Eval Gap](The Eval Gap) · [Don't Ask Your AI to Find Problems](Don't Ask Your AI to Find Problems) · [The Maker-Checker Trap](The Maker-Checker Trap) · [Backtest vs Operational Validation](Backtest vs Operational Validation)

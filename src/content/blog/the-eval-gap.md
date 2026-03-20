@@ -43,3 +43,5 @@ The bank is asking: "If we deploy this and it gets something wrong, will we know
 If you can show you run this flywheel on your own tools — with receipts — that's credibility that can't be faked.
 
 The eval gap is the consulting gap.
+
+**Related:** [AI Evals: Metrics Before Diagnosis](AI Evals: Metrics Before Diagnosis) · [LLM Evals Aren't Data Science](LLM Evals Aren't Data Science) · [Don't Ask Your AI to Find Problems](Don't Ask Your AI to Find Problems) · [The Loop Is the Product](The Loop Is the Product) · [What Makes a Great AI Consultant](What Makes a Great AI Consultant)

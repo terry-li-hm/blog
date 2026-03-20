@@ -34,3 +34,5 @@ Resolve the ambiguity in the contract. Don't defer it to the sprint review.
 ---
 
 P.S. The most useful question at the start of any AI project, asked before any design work begins: "If we completed everything we planned, how would we know it worked?" The answer to that question is the contract. If the question can't be answered precisely, the project isn't ready to start.
+
+**Related:** [Guardrails Beat Guidance](Guardrails Beat Guidance) · [Programs Over Prompts](Programs Over Prompts) · [Human-in-the-Loop Is an Architecture Decision](Human-in-the-Loop Is an Architecture Decision) · [AI Evals: Metrics Before Diagnosis](AI Evals: Metrics Before Diagnosis) · [The Production Gap: Why AI Pilots Fail](The Production Gap: Why AI Pilots Fail)

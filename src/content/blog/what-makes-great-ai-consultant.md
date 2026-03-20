@@ -31,6 +31,8 @@ These questions produce answers that don't fit neatly into a discovery report. B
 
 Technical knowledge gets you in the room. Organisational intelligence determines whether the work lands.
 
+**Related:** [Consulting Is Mostly About Reducing Uncertainty](Consulting Is Mostly About Reducing Uncertainty) · [The Production Gap: Why AI Pilots Fail](The Production Gap: Why AI Pilots Fail) · [The Eval Gap](The Eval Gap) · [Governance Is a Tax](Governance Is a Tax) · [Don't Optimise for the Proxy](Don't Optimise for the Proxy)
+
 ---
 
 P.S. The most useful question I've found for calibrating an organisation's AI readiness has nothing to do with AI: "Walk me through what happened to the last major initiative that didn't go as planned." The answer tells you more about how the organisation will behave under pressure than any maturity assessment.

@@ -28,3 +28,5 @@ Tools solve problems. Infrastructure disappears. The coding tool, it turns out, 
 ---
 
 *P.S. The one thing genuinely missing: passive capture. ScreenPipe — open source, local-only, MCP-integrated — fills exactly this gap and plugs directly into Claude Code. I haven't added it yet, which means I'm still the manual layer between experience and memory. The stack is good. It's not finished.*
+
+**Related:** [When Your Life OS Becomes the Life](When Your Life OS Becomes the Life) · [The Personalised System Era](The Personalised System Era) · [I Made AI Remember to Remember](I Made AI Remember to Remember) · [The Queue Should Live Where Your Thoughts Live](The Queue Should Live Where Your Thoughts Live) · [Match Form to Access Pattern](Match Form to Access Pattern)

@@ -38,3 +38,5 @@ There's a cultural resistance to this in the AI tooling world. Making things pro
 The diagnostic I use now: if I can write a unit test for the behaviour, it should be code. If the "test" is really "read the output and see if it feels right," that's where the model belongs.
 
 Programs are guarantees. Prompts are suggestions. Build your agent systems accordingly.
+
+**Related:** [Guardrails Beat Guidance](Guardrails Beat Guidance) · [The Reliability Hierarchy: Hooks, Rules, Skills](The Reliability Hierarchy: Hooks, Rules, Skills) · [Skills as Prototype, MCP as Production](Skills as Prototype, MCP as Production) · [The Contract Pattern: Hard Gates for AI Agents](The Contract Pattern: Hard Gates for AI Agents) · [Rules Decay, Hooks Don't](Rules Decay, Hooks Don't)

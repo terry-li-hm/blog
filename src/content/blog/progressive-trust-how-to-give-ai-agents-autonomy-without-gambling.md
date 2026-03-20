@@ -29,3 +29,5 @@ The thing that makes this safe isn't the guardrails. It's the **trace capture**.
 This is how trust works between humans too. You don't give a new analyst full autonomy on day one. You give them a clear process, watch how they exercise judgment within it, and gradually expand their remit based on evidence. The difference with AI agents is that the "evidence" is machine-readable — you can systematically review every decision the model made.
 
 The guardrails debate frames constraints as static. They're not. They're a dial, and the trace log is what tells you which way to turn it.
+
+**Related:** [Human-in-the-Loop Is an Architecture Decision](Human-in-the-Loop Is an Architecture Decision) · [The Immune System of AI Autonomy](The Immune System of AI Autonomy) · [Guardrails Beat Guidance](Guardrails Beat Guidance) · [Traces Are the New Debugger](Traces Are the New Debugger) · [The Contract Pattern: Hard Gates for AI Agents](The Contract Pattern: Hard Gates for AI Agents)

@@ -33,3 +33,5 @@ The point is that the failure mode of directive prompting is specific, predictab
 ---
 
 P.S. The most practically useful question before any AI-assisted review deployment: "If this system found nothing, would we believe it?" If the honest answer is no — if the institutional expectation is that findings will be generated — then the system is being asked to perform rigor rather than exercise it. That's a design problem, not a model problem.
+
+**Related:** [AI Evals: Metrics Before Diagnosis](AI Evals: Metrics Before Diagnosis) · [LLM Evals Aren't Data Science](LLM Evals Aren't Data Science) · [The Maker-Checker Trap](The Maker-Checker Trap) · [Backtest vs Operational Validation](Backtest vs Operational Validation) · [Three Things AML AI Gets Wrong](Three Things AML AI Gets Wrong)

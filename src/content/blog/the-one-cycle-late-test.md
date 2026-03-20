@@ -25,3 +25,5 @@ Two refinements that fell out of applying this:
 Five daily rituals became four cadences. The daily one runs on the bus home — inbox, messages, tomorrow prep. The weekly one runs Sunday afternoon — plan the week, quick backward glance. Monthly is maintenance. Quarterly is direction. Nothing at bedtime. Nothing before work. Nothing that requires willpower to start.
 
 The system catches everything at the right frequency. I just live my life.
+
+**Related:** [Systematise Decisions, Not Actions](Systematise Decisions, Not Actions) · [Eliminate the Reminder, Don't Schedule It](Eliminate the Reminder, Don't Schedule It) · [Hooks Are Life Infrastructure](Hooks Are Life Infrastructure) · [When Your Life OS Becomes the Life](When Your Life OS Becomes the Life)

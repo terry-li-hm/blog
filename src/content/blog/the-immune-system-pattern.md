@@ -31,3 +31,5 @@ The design pressure should always be downward. Every human-only process should b
 The most counterintuitive part is that failures make the system *more valuable*, not less. Each missed pattern becomes a new trigger. Each false alarm tightens the matching criteria. The system after a hundred failures is categorically different from the system at launch — not because someone redesigned it, but because running it changed it. That's the flywheel. That's what separates a cron job from a living system.
 
 What biology figured out over four billion years of evolution, we're rediscovering in software: the best systems don't just survive their failures. They metabolise them.
+
+**Related:** [The Immune System of AI Autonomy](The Immune System of AI Autonomy) · [The Loop Is the Product](The Loop Is the Product) · [Progressive Trust: How to Give AI Agents Autonomy Without Gambling](Progressive Trust: How to Give AI Agents Autonomy Without Gambling) · [Not Every Cron Job Is a Feedback Loop](Not Every Cron Job Is a Feedback Loop) · [Systematise Decisions, Not Actions](Systematise Decisions, Not Actions)

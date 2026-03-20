@@ -59,3 +59,5 @@ The ideal is both: guidance for understanding, hooks for enforcement. The mistak
 If you're building systems that rely on AI agents following instructions, ask yourself: what happens when the agent decides this particular case is an exception? If the answer is "nothing stops it," you don't have a guardrail. You have a suggestion.
 
 Suggestions are fine for humans who can be fired. For AI agents that rationalise at the speed of tokens, you need something with an exit code.
+
+**Related:** [Rules Decay, Hooks Don't](Rules Decay, Hooks Don't) · [The Reliability Hierarchy: Hooks, Rules, Skills](The Reliability Hierarchy: Hooks, Rules, Skills) · [Put the Rule Where It Fires](Put the Rule Where It Fires) · [Programs Over Prompts](Programs Over Prompts) · [Skills as Files](Skills as Files)

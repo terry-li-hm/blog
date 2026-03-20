@@ -24,3 +24,5 @@ But I think we're in early days of understanding what personalised systems actua
 What I can say from where I'm standing: the experience of using a tool that was built for exactly how you work, by an agent that knows your context, is qualitatively different from using software you've adapted to. It's not just faster. It feels like the friction was removed from a direction you didn't know friction could be removed from.
 
 That's new. I don't think we have good language for it yet.
+
+**Related:** [The Accidental Life OS](The Accidental Life OS) · [When Your Life OS Becomes the Life](When Your Life OS Becomes the Life) · [The Bootstrap Problem in AI Tooling](The Bootstrap Problem in AI Tooling) · [Skills as Files](Skills as Files) · [Match Form to Access Pattern](Match Form to Access Pattern)

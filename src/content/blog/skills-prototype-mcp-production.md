@@ -39,3 +39,5 @@ Stage-awareness is the discipline. Build at the stage the tool is actually at. P
 ---
 
 P.S. The five-minute skill prototype isn't a throwaway — it's evidence. If you build the skill, run it a dozen times, and find yourself never needing to edit it, that's the most useful data point for whether an MCP implementation is worth the investment. The skill tells you whether the thing is worth building properly.
+
+**Related:** [Skills as Files](Skills as Files) · [The Reliability Hierarchy: Hooks, Rules, Skills](The Reliability Hierarchy: Hooks, Rules, Skills) · [Programs Over Prompts](Programs Over Prompts) · [The Bootstrap Problem in AI Tooling](The Bootstrap Problem in AI Tooling) · [Match Form to Access Pattern](Match Form to Access Pattern)

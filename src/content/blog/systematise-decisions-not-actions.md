@@ -43,3 +43,5 @@ If no, it's either a one-off (learn and move on) or an action (make it consisten
 The instinct to build systems is correct. The instinct about *what* to build them around is usually wrong. We systematise the mechanical parts because they're visible. The judgment calls that actually compound stay invisible — made on gut feel, reinforced by habit, never reviewed.
 
 Actions are cheap to redo. Decisions compound. Systematise accordingly.
+
+**Related:** [Put the Rule Where It Fires](Put the Rule Where It Fires) · [The One-Cycle-Late Test](The One-Cycle-Late Test) · [Eliminate the Reminder, Don't Schedule It](Eliminate the Reminder, Don't Schedule It) · [When Your Life OS Becomes the Life](When Your Life OS Becomes the Life) · [Match Form to Access Pattern](Match Form to Access Pattern)

@@ -20,3 +20,5 @@ This is the same principle behind every good operational system: **anxiety shoul
 The pattern generalises. Any recurring concern that follows "when [context], I should [action]" is a hook candidate. Not every hook needs to be code — some are calendar events, some are checklists. But when you already live inside a tool that supports event-driven triggers, you might as well wire them up.
 
 The cost of a hook is fifteen minutes and fifteen lines. The cost of the thing it prevents is unbounded.
+
+**Related:** [Rules Decay, Hooks Don't](Rules Decay, Hooks Don't) · [The Reliability Hierarchy: Hooks, Rules, Skills](The Reliability Hierarchy: Hooks, Rules, Skills) · [Put the Rule Where It Fires](Put the Rule Where It Fires) · [Eliminate the Reminder, Don't Schedule It](Eliminate the Reminder, Don't Schedule It) · [I Made AI Remember to Remember](I Made AI Remember to Remember)

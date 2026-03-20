@@ -50,3 +50,5 @@ Three properties make this disproportionately useful:
 Every personal productivity system eventually reinvents prospective memory. GTD's "waiting for" list. Trigger-based reminders. "If I'm at the store, buy milk." The insight isn't that this is novel — it's that AI agent architectures systematically neglect it.
 
 The industry conversation about AI memory is stuck on "how do we remember more?" The more interesting question is: how do we remember *at the right moment* and then *stop remembering*?
+
+**Related:** [The Accidental Life OS](The Accidental Life OS) · [When Your Life OS Becomes the Life](When Your Life OS Becomes the Life) · [Hooks Are Life Infrastructure](Hooks Are Life Infrastructure) · [Eliminate the Reminder, Don't Schedule It](Eliminate the Reminder, Don't Schedule It) · [AI Agents Need Notebooks, Not Just Memories](AI Agents Need Notebooks, Not Just Memories)

@@ -48,6 +48,8 @@ If the answer is "automatically, at the moment of decision" — that's a full lo
 
 Documentation is where rules go to be forgotten. Triggers are where they go to work.
 
+**Related:** [Rules Decay, Hooks Don't](Rules Decay, Hooks Don't) · [The Reliability Hierarchy: Hooks, Rules, Skills](The Reliability Hierarchy: Hooks, Rules, Skills) · [Guardrails Beat Guidance](Guardrails Beat Guidance) · [Hooks Are Life Infrastructure](Hooks Are Life Infrastructure) · [Systematise Decisions, Not Actions](Systematise Decisions, Not Actions)
+
 ## The Cost of the Wrong Layer
 
 Every rule in the wrong layer has two costs:

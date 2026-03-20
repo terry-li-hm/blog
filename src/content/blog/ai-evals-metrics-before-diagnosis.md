@@ -35,3 +35,5 @@ None of this makes AI evaluation frameworks unnecessary. Systematic measurement 
 ---
 
 P.S. The fastest shortcut to better evals: spend two hours reading raw traces before building anything. The failure categories that emerge from that reading will be more useful than anything a generic evaluation framework can provide. The discipline is to do this before building the dashboard, not after.
+
+**Related:** [The Eval Gap](The Eval Gap) · [LLM Evals Aren't Data Science](LLM Evals Aren't Data Science) · [Don't Ask Your AI to Find Problems](Don't Ask Your AI to Find Problems) · [Backtest vs Operational Validation](Backtest vs Operational Validation) · [Traces Are the New Debugger](Traces Are the New Debugger)

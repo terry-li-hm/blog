@@ -37,3 +37,5 @@ The selling environment has caught up to this. "Strategy" alone is not what clie
 The 62% graveyard isn't a technology failure rate. It's a delivery discipline failure rate. The technology almost always works. The question is whether the people responsible for getting it across the line have thought carefully about the six things that will kill it before it gets there.
 
 Most haven't. That's the gap.
+
+**Related:** [What Makes a Great AI Consultant](What Makes a Great AI Consultant) · [Human-in-the-Loop Is an Architecture Decision](Human-in-the-Loop Is an Architecture Decision) · [LLM Evals Aren't Data Science](LLM Evals Aren't Data Science) · [Governance Is a Tax](Governance Is a Tax) · [The Eval Gap](The Eval Gap)
