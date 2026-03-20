@@ -31,3 +31,5 @@ The institutions that get this right tend to discover it accidentally. An analys
 Rules-based automation does not have this property. When you override a rule, you manually update the rule. There is no compounding learning loop. The maker-checker feedback mechanism is specific to ML and GenAI systems, and it is one of their genuine structural advantages over rules-based approaches. But only if the capture mechanism is designed for it. Most are not.
 
 The question to ask of any maker-checker deployment: six months from now, will the checker's workload be lower because the system learned, or the same because it did not? If the answer is "the same," the checker is not checking — they are subsidising a system that refuses to improve.
+
+**Related:** [Human-in-the-Loop Is an Architecture Decision](Human-in-the-Loop Is an Architecture Decision) · [Human Oversight Doesn't Scale](Human Oversight Doesn't Scale) · [Three Things AML AI Gets Wrong](Three Things AML AI Gets Wrong) · [LLM Evals Aren't Data Science](LLM Evals Aren't Data Science) · [AI Evals: Metrics Before Diagnosis](AI Evals: Metrics Before Diagnosis)

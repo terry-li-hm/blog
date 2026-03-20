@@ -34,6 +34,8 @@ The practical minimum is documentation of what "operational validation" means fo
 
 The question regulators are increasingly asking — and that model risk committees should ask before regulators do — is not "did you validate the model?" but "which controls have you actually tested in the operational environment, and how?" The gap between those two questions is where most model risk frameworks are currently under-prepared.
 
+**Related:** [Model Risk Management Was Not Built for This](Model Risk Management Was Not Built for This) · [Every Control Has an Attention Budget](Every Control Has an Attention Budget) · [Three Things AML AI Gets Wrong](Three Things AML AI Gets Wrong) · [AI Evals: Metrics Before Diagnosis](AI Evals: Metrics Before Diagnosis) · [Don't Ask Your AI to Find Problems](Don't Ask Your AI to Find Problems)
+
 ---
 
 P.S. The hardest part of this problem isn't the testing methodology — it's the organizational willingness to deliberately exercise controls that are designed never to be needed. Stress-testing a control requires creating the condition it was built to handle, which feels counterintuitive in a healthy system. But the willingness to induce that condition in a controlled way is exactly what separates a validated control from a theoretical one.

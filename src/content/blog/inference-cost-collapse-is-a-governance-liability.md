@@ -33,3 +33,5 @@ The first banks to build execution-tier controls — access scope, output review
 The practical implication for bank AI programs is concrete: before any agentic system reaches production, the governance question is not "does this model perform acceptably?" It is "can we actually oversee the volume of decisions this agent will make at near-zero cost?"
 
 At current deployment trajectories, most banks cannot. The work is to build the capacity before the regulator asks the question.
+
+**Related:** [Human Oversight Doesn't Scale](Human Oversight Doesn't Scale) · [Model Risk Management Was Not Built for This](Model Risk Management Was Not Built for This) · [The Agent Governance Gap Is Already Here](The Agent Governance Gap Is Already Here) · [Your AI Risk Tier Is Probably Wrong](Your AI Risk Tier Is Probably Wrong) · [Three APAC Regulators Are Converging on AI Governance](Three APAC Regulators Are Converging on AI Governance)

@@ -34,6 +34,8 @@ The governance architecture that actually works separates the questions. How muc
 
 Building this is not dramatically more expensive than the single-framework approach. Maintaining the fiction that one framework is doing both jobs is, ultimately, much more expensive.
 
+**Related:** [Governance Is a Tax](Governance Is a Tax) · [Your AI Risk Tier Is Probably Wrong](Your AI Risk Tier Is Probably Wrong) · [The AI Risk Tiering Gap in Banking](The AI Risk Tiering Gap in Banking) · [Model Risk Management Was Not Built for This](Model Risk Management Was Not Built for This) · [The Regulator Knows](The Regulator Knows)
+
 ---
 
 P.S. The clearest signal that a firm has conflated the two: ask what happens to a Tier 1 model that happens to use customer data in a context that triggers Consumer Duty obligations. If the answer is "Tier 1 doesn't require the full review," the gap is there. If the answer is "Tier 1 determines the internal review level, but Consumer Duty obligations apply independently," the architecture is sound.

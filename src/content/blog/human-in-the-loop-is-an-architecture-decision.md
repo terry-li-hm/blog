@@ -27,3 +27,5 @@ There's also a practical problem with treating HITL as a policy statement: it cr
 The pitch frame I've started using with clients is blunt: it's not enough to say humans are in the loop. You need to show the loop is in the system. Not in the policy, not in the diagram, not in the committee minutes. In the system, where it can be demonstrated, audited, and evidenced.
 
 If you can't demo the checkpoint, you don't have a human-in-the-loop system. You have a human-in-the-loop slide.
+
+**Related:** [Human Oversight Doesn't Scale](Human Oversight Doesn't Scale) · [The Maker-Checker Trap](The Maker-Checker Trap) · [Progressive Trust: How to Give AI Agents Autonomy Without Gambling](Progressive Trust: How to Give AI Agents Autonomy Without Gambling) · [Model Risk Management Was Not Built for This](Model Risk Management Was Not Built for This) · [The Immune System of AI Autonomy](The Immune System of AI Autonomy)

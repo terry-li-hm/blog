@@ -35,3 +35,5 @@ The framing that I keep coming back to is this: AML AI is not primarily a modell
 ---
 
 P.S. The question I'd ask any vendor selling AML AI to a bank: "Show me your feedback loop architecture." Not the model card. The feedback loop. How do investigation outcomes flow back to model improvement? If the answer is vague, the model will be less accurate in two years than it is today, regardless of its performance at launch.
+
+**Related:** [Model Risk Management Was Not Built for This](Model Risk Management Was Not Built for This) · [Backtest vs Operational Validation](Backtest vs Operational Validation) · [The Maker-Checker Trap](The Maker-Checker Trap) · [Don't Ask Your AI to Find Problems](Don't Ask Your AI to Find Problems) · [Every Control Has an Attention Budget](Every Control Has an Attention Budget)

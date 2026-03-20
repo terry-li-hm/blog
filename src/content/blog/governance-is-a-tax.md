@@ -53,3 +53,5 @@ The best governance does both. But when they diverge — and they do, more often
 The tax metaphor helps here too. There's tax compliance (filing correctly) and tax efficiency (structuring intelligently). Most governance programs are stuck at compliance. The interesting work is in efficiency — minimum viable governance that actually manages risk.
 
 That's where the consulting value is. Not in building bigger frameworks, but in making governance as light as possible while keeping the bank safe. Minimum effective dose. Everything else is overhead.
+
+**Related:** [AI Governance: Routing vs Compliance](AI Governance: Routing vs Compliance) · [Your AI Risk Tier Is Probably Wrong](Your AI Risk Tier Is Probably Wrong) · [The AI Risk Tiering Gap in Banking](The AI Risk Tiering Gap in Banking) · [Human Oversight Doesn't Scale](Human Oversight Doesn't Scale) · [Every Control Has an Attention Budget](Every Control Has an Attention Budget)
