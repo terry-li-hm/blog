@@ -38,7 +38,7 @@ The company metaphor imports three assumptions that don't apply to AI agents:
 
 **Motivation management.** Half of what a manager does is motivation: inspiring, coaching, preventing burnout, handling interpersonal conflicts, aligning individual goals with team goals. AI agents don't have motivation. They don't slack off, get bored, play politics, or quiet quit. The entire motivational layer of management is waste when applied to agents.
 
-**Information hoarding.** In companies, information flows through hierarchy. The manager knows things the team doesn't, and vice versa. Meetings exist to synchronise information across humans who can't share memory. AI agents can read the same files. There's no information asymmetry to manage — give every agent access to the shared state and let them coordinate through artifacts, not meetings.
+**Information hoarding.** In companies, information flows through hierarchy. The manager knows things the team doesn't, and vice versa. Meetings exist to synchronise information across humans who can't share memory. AI agents can read the same files. Information asymmetry between agents is a design choice, not a social emergence — give every agent access to the shared state and let them coordinate through artifacts, not meetings. The asymmetry you do introduce (scoped context, role-specific prompts) is intentional, not political.
 
 **Career development.** Managers invest in growing their reports. AI agents don't develop careers. They're instantiated, they execute, they terminate. The "team" isn't a persistent social unit — it's a pattern of execution that recurs.
 
@@ -48,7 +48,7 @@ The company metaphor imports three assumptions that don't apply to AI agents:
 
 **Stigmergy.** Ants coordinate through environmental traces — pheromone trails left by previous ants. AI agents coordinate through artifacts — manifests, vault files, TODO lists. Each wave reads what previous waves produced and builds on it. No direct communication between waves needed.
 
-**Graceful degradation.** Kill half the ants and the colony still functions. Kill a work wave mid-execution and the system continues from the manifest. There's no single point of failure because there's no manager holding critical context.
+**Graceful degradation.** Kill half the ants and the colony still functions. Kill a work wave mid-execution and the system continues from the manifest. There's no manager holding critical context in memory — state lives in artifacts, so any wave can pick up where the last one stopped.
 
 **Self-regulation.** Colonies regulate resource allocation through feedback loops, not management decisions. Hegemon regulates budget allocation the same way — not through planning ("allocate 20% to research") but through feedback ("budget climbing fast → stop dispatching").
 
@@ -56,7 +56,7 @@ The company metaphor imports three assumptions that don't apply to AI agents:
 
 Every analogy is a loan. The interest rate is the failure at the boundary.
 
-The colony metaphor breaks on diversity of capability. Ants are interchangeable — any worker ant can do any worker task. AI agents from different model families have genuinely different capabilities: one is better at research, another at code, another at judgment. The dispatch layer needs to route by capability, not just availability. This is closer to a differentiated workforce than a colony of identical workers.
+The colony metaphor breaks on the nature of specialisation. Ant castes are morphologically fixed — a soldier ant is structurally incapable of doing nurse work, and that role is determined at birth, not by runtime routing. AI agents from different model families have genuinely different capabilities — one is better at research, another at code, another at judgment — but the dispatch layer can route by capability dynamically, matching task to model at call time. Ant colonies can't do that. The colony form still applies to coordination style, but the dispatch layer needs capability-aware routing that ants don't require.
 
 The practical architecture is probably a hybrid: colony-style coordination (signals, not management) with capability-aware routing (right model for the right task). Not ants — more like a coral reef, where different organisms with different capabilities coexist in a shared environment, each responding to the same environmental signals but contributing different functions.
 
