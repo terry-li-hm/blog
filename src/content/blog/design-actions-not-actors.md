@@ -25,3 +25,5 @@ Continuous actions exist too. "Monitor system health" is a verb — it just does
 The practical methodology is five questions: What's the verb? What tools does it need? What context? Where does the LLM reason? What does it return? Answer those and you have a complete design. Everything the word "agent" adds on top — identity, memory, persona, autonomy — is either unnecessary or should be a deliberate choice, not a default that came with the noun.
 
 P.S. "Agent" is exciting, and the excitement is where the wrong thinking starts.
+
+*See also: [The Vocabulary Trap](/posts/the-vocabulary-trap) — how framework categories colonise your design thinking.*
