@@ -5,7 +5,7 @@ description: >-
   hypothesis. The gap between backtest and operational validation is invisible
   until someone asks.
 pubDatetime: 2026-03-06T19:30:00.000Z
-modDatetime: 2026-03-18T12:30:00.000Z
+modDatetime: 2026-03-20T10:00:00.000Z
 tags:
   - model-risk
   - banking
@@ -14,13 +14,13 @@ tags:
   - production
 ---
 
-I've seen cases where a model control was presented to a regulator — and it had never actually fired in production.
+It is not uncommon for a model control to be presented in a governance review — complete with backtest evidence — and for no one in the room to have asked whether it had ever actually fired in production.
 
-The control was real. The logic was sound. The backtest showed it working correctly on historical data. What the backtest couldn't show — what no backtest can show — is whether the control works in the operational environment it was actually deployed into. Because the operational environment is different from the historical data in ways that matter.
+The control is real. The logic is sound. The backtest shows it working correctly on historical data. What the backtest cannot show — what no backtest can show — is whether the control works in the operational environment it was actually deployed into. Because the operational environment is different from the historical data in ways that matter.
 
-A common pattern: a suppression or reactivation mechanism designed for a population that enters some trigger state — dormancy, risk escalation, threshold breach. On historical data, the mechanism triggers reliably. In production, the population it was designed to protect may not have entered that state during the deployment window. The control has never been exercised. Its logic remains untested by anything other than simulation.
+A common pattern: a suppression or reactivation mechanism designed for a population that enters some trigger state — risk escalation, threshold breach, score degradation. On historical data, the mechanism triggers reliably. In production, the population it was designed to protect may not have entered that state during the deployment window. The control has never been exercised. Its logic remains untested by anything other than simulation.
 
-When someone asks about operational latency — how long from trigger condition to actual response — the answer exists in design documentation but not in the operational record. That gap is invisible until someone asks.
+When a governance review probes operational latency — how long from trigger condition to actual response — the answer exists in design documentation but not in the operational record. That gap is invisible until someone asks.
 
 This gap between "validated by backtest" and "validated in production" is common, underappreciated, and matters specifically in the contexts where controls are most critical. Model monitoring, anomaly detection, circuit breakers, fallback logic, suppression mechanisms — all of these tend to be designed for failure conditions that, in a healthy system, don't occur during the validation window. You're building controls for the situation you're not in. The backtest validates the logic on data where the situation has occurred. The production system operates, undisturbed, in conditions where the control has never fired.
 
