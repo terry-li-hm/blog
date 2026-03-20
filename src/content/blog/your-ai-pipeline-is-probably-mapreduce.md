@@ -1,4 +1,5 @@
 ---
+aliases: ["Your AI Pipeline Is Probably MapReduce"]
 title: "Your AI Pipeline Is Probably MapReduce"
 description: "Most AI workflows are parallel-then-aggregate, not agent graphs. Knowing the difference saves you from framework theatre."
 pubDatetime: 2026-03-14T16:00:00.000Z

@@ -1,4 +1,5 @@
 ---
+aliases: ["The Lethal Trifecta"]
 title: "The Lethal Trifecta: What OpenClaw's Security Crisis Teaches About AI Agent Architecture"
 description: "OpenClaw's 245 CVEs weren't caused by malice — they were caused by a missing circuit breaker. The pattern applies to every AI agent you'll ever evaluate."
 pubDatetime: 2026-03-18T07:57:27.000Z

@@ -1,4 +1,5 @@
 ---
+aliases: ["Your Agent Pays the Cold-Start Tax Every Morning"]
 title: "Your Agent Pays the Cold-Start Tax Every Morning"
 description: "Agent memory isn't knowledge management. It's performance infrastructure — and the gap between a stateless agent and one that accumulates context is measurable."
 pubDatetime: 2026-03-14T08:47:32.000Z

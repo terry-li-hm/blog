@@ -1,4 +1,5 @@
 ---
+aliases: ["The Expert Illusion"]
 title: "The Expert Illusion"
 description: "Why 'you are an expert' is the most popular and least useful prompt engineering technique"
 pubDatetime: 2026-03-14T15:00:00.000Z

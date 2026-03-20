@@ -1,4 +1,5 @@
 ---
+aliases: ["When to Think and When to Count"]
 title: "When to Think and When to Count"
 description: "Machine learning says let the model find the signal. Heuristics research says use one variable and ignore the rest. They're both right — the dividing line is how much data you have."
 pubDatetime: 2026-03-17T02:55:00.000Z

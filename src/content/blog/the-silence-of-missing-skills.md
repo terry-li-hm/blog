@@ -1,4 +1,5 @@
 ---
+aliases: ["The Silence of Missing Skills"]
 title: "The Silence of Missing Skills"
 description: "The most dangerous failures in AI scaffolding are the ones that look like nothing happened."
 pubDatetime: 2026-03-18T10:32:46.000Z

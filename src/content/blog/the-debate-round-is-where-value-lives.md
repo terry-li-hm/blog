@@ -1,4 +1,5 @@
 ---
+aliases: ["The Debate Round Is Where Value Lives"]
 title: "The Debate Round Is Where Value Lives"
 description: "Independent parallel reviews produce overlapping findings. The cross-critique round produces resolution. That's where multi-agent value actually emerges."
 pubDatetime: 2026-03-15T14:16:44.000Z

@@ -1,4 +1,5 @@
 ---
+aliases: ["Taste Is the Bottleneck"]
 title: "Taste Is the Bottleneck"
 description: "When you can run 60 agents overnight, knowing what to build matters more than building it."
 pubDatetime: 2026-03-18T22:53:02.000Z

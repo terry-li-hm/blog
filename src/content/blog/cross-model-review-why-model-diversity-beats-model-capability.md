@@ -1,4 +1,5 @@
 ---
+aliases: ["Cross-Model Review: Why Model Diversity Beats Model Capability"]
 title: "Cross-Model Review: Why Model Diversity Beats Model Capability"
 description: "When AI models review each other's work, independence matters more than intelligence. The same principle that makes external audit valuable makes cross-model review sharper than same-family review."
 pubDatetime: 2026-03-20T04:47:27.000Z

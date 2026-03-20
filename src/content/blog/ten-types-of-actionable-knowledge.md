@@ -1,4 +1,5 @@
 ---
+aliases: ["Ten Types of Actionable Knowledge"]
 title: "Ten Types of Actionable Knowledge"
 description: "Not all knowledge works the same way. A taxonomy for what you're actually capturing when you write down what you've learned."
 pubDatetime: 2026-03-17T03:51:30.000Z

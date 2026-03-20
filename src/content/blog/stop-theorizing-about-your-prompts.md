@@ -1,4 +1,5 @@
 ---
+aliases: ["Stop Theorizing About Your Prompts"]
 title: "Stop Theorizing About Your Prompts"
 description: "LLMs are the cheapest experimental subjects in history. Why aren't you testing?"
 pubDatetime: 2026-03-20T02:52:38.000Z

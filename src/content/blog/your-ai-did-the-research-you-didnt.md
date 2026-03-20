@@ -1,4 +1,5 @@
 ---
+aliases: ["Your AI Did the Research. You Didn't."]
 title: "Your AI Did the Research. You Didn't."
 description: >-
   AI-prepared domain research creates false readiness. The vault says you know

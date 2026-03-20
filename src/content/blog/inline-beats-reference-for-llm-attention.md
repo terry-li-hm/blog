@@ -1,4 +1,5 @@
 ---
+aliases: ["Inline Beats Reference for LLM Attention"]
 title: "Inline Beats Reference for LLM Attention"
 description: "When building AI scaffolding, put the knowledge where the decision happens — not in a reference the model is supposed to consult."
 pubDatetime: 2026-03-18T10:33:10.000Z

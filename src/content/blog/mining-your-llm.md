@@ -1,4 +1,5 @@
 ---
+aliases: ["Mining Your LLM"]
 title: "Mining Your LLM"
 description: "Your AI already knows things that would make it better at helping you. The trick is extracting that knowledge and making it permanent."
 pubDatetime: 2026-03-15T15:36:23.000Z

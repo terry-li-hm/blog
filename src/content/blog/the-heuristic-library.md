@@ -1,4 +1,5 @@
 ---
+aliases: ["The Heuristic Library"]
 title: "The Heuristic Library"
 description: "Experts don't make more decisions — they make fewer, by having better defaults. The real meta-skill is accumulating simple rules and knowing when to stop reasoning."
 pubDatetime: 2026-03-17T02:38:00.000Z

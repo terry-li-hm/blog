@@ -1,4 +1,5 @@
 ---
+aliases: ["The MTEB Leader Barely Beats a Free Model on Agent Memory"]
 title: "The MTEB Leader Barely Beats a Free Model on Agent Memory"
 description: "I benchmarked 10 memory backends and multiple embedding models on actual agent memory retrieval. The results challenge common assumptions about what matters."
 pubDatetime: 2026-03-14T10:43:26.000Z

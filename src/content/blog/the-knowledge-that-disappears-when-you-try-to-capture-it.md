@@ -1,4 +1,5 @@
 ---
+aliases: ["The Knowledge That Disappears When You Try to Capture It"]
 title: "The Knowledge That Disappears When You Try to Capture It"
 description: "Enterprise AI keeps promising to capture institutional knowledge. The most valuable kind resists capture by design."
 pubDatetime: 2026-03-14T08:47:31.000Z

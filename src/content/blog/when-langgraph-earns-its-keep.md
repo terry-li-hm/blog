@@ -1,4 +1,5 @@
 ---
+aliases: ["When LangGraph Earns Its Keep"]
 title: "When LangGraph Earns Its Keep"
 description: "LangGraph is the SAP of agent orchestration — powerful at scale, overkill for most. Here's the line."
 pubDatetime: 2026-03-14T17:00:00.000Z

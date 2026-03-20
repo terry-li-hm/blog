@@ -1,4 +1,5 @@
 ---
+aliases: ["What LLMs Don't Volunteer"]
 title: "What LLMs Don't Volunteer"
 description: "When you mine knowledge from an LLM, certain types come easily. Others are systematically absent. A taxonomy reveals the blind spots."
 pubDatetime: 2026-03-17T03:58:28.000Z
