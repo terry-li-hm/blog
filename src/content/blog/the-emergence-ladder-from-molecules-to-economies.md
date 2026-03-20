@@ -2,7 +2,7 @@
 title: "The Emergence Ladder: From Molecules to Economies"
 description: "The larger the system, the less it can be managed and the more it must be emerged. This pattern — from water to ant colonies to AI agents to economies — reveals the design principle for scaling autonomous systems."
 pubDatetime: 2026-03-20T06:27:40.000Z
-draft: false
+draft: true
 tags: [emergence, systems, ai, agents, complexity]
 ---
 

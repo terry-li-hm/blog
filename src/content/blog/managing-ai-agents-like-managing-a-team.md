@@ -2,7 +2,7 @@
 title: "Managing AI Agents Like Managing a Team"
 description: "The governance patterns for autonomous AI agents are the same ones good managers already use: cadence reviews for normal flow, escalation channels for urgent anomalies, and human judgment only where it has maximum information value."
 pubDatetime: 2026-03-20T06:21:39.000Z
-draft: false
+draft: true
 tags: [ai, governance, agents, management, consulting]
 ---
 
