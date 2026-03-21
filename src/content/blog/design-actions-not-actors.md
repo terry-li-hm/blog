@@ -2,6 +2,8 @@
 title: "Design Actions, Not Actors"
 description: "The word 'agent' makes us think in nouns. The better designs start with verbs."
 pubDatetime: 2026-03-21T01:00:00.000Z
+modDatetime: 2026-03-21T00:16:40.000Z
+revisionNote: "Added cell biology analogy for action sizing and lifecycle"
 draft: false
 tags: [ai, agents, design]
 ---
@@ -23,6 +25,8 @@ One action, one invocation, one result. The action runs and dies. It doesn't per
 Continuous actions exist too. "Monitor system health" is a verb — it just doesn't stop. "Assist with coding" is a verb in the continuous tense. The design principle holds: start with what it does, not what it is.
 
 The practical methodology is five questions: What's the verb? What tools does it need? What context? Where does the LLM reason? What does it return? Answer those and you have a complete design. Everything the word "agent" adds on top — identity, memory, persona, autonomy — is either unnecessary or should be a deliberate choice, not a default that came with the noun.
+
+The closest analogy I have found is the biological cell. Each action is self-contained, bounded by a membrane of one verb and one reasoning point. When an action grows too complex, it splits -- the way a cell divides when its surface-area-to-volume ratio can no longer sustain it. When an action is no longer invoked, it dies -- apoptosis, not tragedy. Actions compose into larger workflows the way cells compose into tissues and organs. The analogy even covers reuse: when the same sub-action appears inside multiple workflows, it earns extraction, the way stem cells differentiate into specialised types. The unit of design is small, self-contained, and disposable. That is the point.
 
 P.S. "Agent" is exciting, and the excitement is where the wrong thinking starts.
 
