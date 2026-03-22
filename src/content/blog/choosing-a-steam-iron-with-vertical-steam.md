@@ -45,18 +45,22 @@ Not Consumer Council tested, but Braun's higher-end TexStyle 9 (SI9682, 3200W, 6
 
 ## Where to buy (March 2026 prices)
 
-| Retailer | [DST8050](https://www.yohohongkong.com/en-us/product/65994-Philips-DST805026-Steam-Iron) | [DST7020](https://www.hktvmall.com/hktv/en/main/Galaxy-Digital/s/H5239001/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/Home-Appliances/Other-Small-Home-Appliances-&-Accessories/Iron-&-Garment-Steamer/Iron/DST7020/20-Azur-Steam-Iron-7000-Series-Two-Year-Warranty/p/H5239001_S_Philips_DST7020_20_Iron) | [Braun SI5078](https://www.hktvmall.com/hktv/en/main/De'longhi-Group/s/H0762004/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/Other-Small-Home-Appliances-&-Accessories/Iron-&-Garment-Steamer/Iron/TexStyle-5-Steam-Iron-SI5078GY/p/H0762004_S_H04580) |
+| Retailer | Philips DST8050 | Philips DST7020 | Braun SI5078 |
 |---|---|---|---|
-| **[HKTVmall](https://www.hktvmall.com/)** | — | **HK$545** | HK$788 |
-| **[YOHO](https://www.yohohongkong.com/)** | **HK$988** | HK$557 | HK$708 |
-| **[Fortress](https://www.fortress.com.hk/)** | HK$1,116–1,189 | HK$748 | **HK$688** |
-| **[ElecBoy](https://www.elecboy.com.hk/)** | HK$1,698 | HK$748 | HK$858 |
-| **[Wing On](https://www.wingon.hk/)** | HK$1,198 | — | — |
-| **[Philips official](https://www.philips.com.hk/en/c-m-ho/ironing/steam-iron/latest)** | HK$1,398 | HK$748 | — |
+| HKTVmall | — | **HK$545** | HK$788 |
+| YOHO | **HK$988** | HK$557 | HK$708 |
+| Fortress | HK$1,116–1,189 | HK$748 | **HK$688** |
+| ElecBoy | HK$1,698 | HK$748 | HK$858 |
+| Wing On | HK$1,198 | — | — |
+| Philips official | HK$1,398 | HK$748 | — |
 
-Best price in **bold**. Column headers link to product pages with photos. Prices fluctuate — check before ordering.
+Best price in **bold**. Prices fluctuate — check before ordering. Broadway is under the same group as Fortress; expect similar pricing in-store.
 
-Broadway is under the same group as Fortress; expect similar pricing in-store.
+**Product pages** (with photos):
+- [Philips DST8050 on YOHO](https://www.yohohongkong.com/en-us/product/65994-Philips-DST805026-Steam-Iron)
+- [Philips DST7020 on HKTVmall](https://www.hktvmall.com/hktv/en/main/Galaxy-Digital/s/H5239001/Home-Appliances/Other-Small-Home-Appliances-and-Accessories/Iron-and-Garment-Steamer/Iron/DST702020-Azur-Steam-Iron-7000-Series-Two-Year-Warranty/p/H5239001_S_Philips_DST7020_20_Iron)
+- [Braun SI5078 on HKTVmall](https://www.hktvmall.com/hktv/en/main/De-longhi-Group/s/H0762004/Home-Appliances/Other-Small-Home-Appliances-and-Accessories/Iron-and-Garment-Steamer/Iron/TexStyle-5-Steam-Iron-SI5078GY/p/H0762004_S_H04580)
+- [All Philips irons on Philips HK](https://www.philips.com.hk/en/c-m-ho/ironing/steam-iron/latest)
 
 ## Also considered
 
