@@ -1,6 +1,6 @@
 ---
 title: "Choosing a Steam Iron with Vertical Steam"
-description: "A practical guide to picking a steam iron that does double duty — crisp creases on a board and vertical steaming for hanging clothes. Based on Hong Kong Consumer Council testing, current 2026 pricing, and the latest models."
+description: "A practical guide to picking a steam iron that does double duty — crisp creases on a board and vertical steaming for hanging clothes. Based on Hong Kong Consumer Council testing, current 2026 pricing, and the latest models from Philips, Tefal, and Braun."
 pubDatetime: 2026-03-22T01:30:54.000Z
 draft: true
 tags:
@@ -9,98 +9,103 @@ tags:
 
 We needed a new iron. The brief: something that presses proper creases into cotton shirts on a board, but can also steam hanging clothes and curtains vertically — no second appliance, no fuss.
 
-After digging into the [Consumer Council (消委會) 2024 test results](https://www.consumer.org.hk/) — where they put 24 steam irons and garment steamers through 252 hours of simulated use each — and cross-referencing the latest models and prices across Fortress, YOHO, HKTVmall, and ElecBoy in March 2026, four models stood out.
+After digging into the [Consumer Council (消委會) 2024 test results](https://www.consumer.org.hk/) — where they evaluated 24 steam irons and garment steamers against international standard IEC 60311, simulating 252 hours of use per unit — and cross-referencing the latest models and prices across Fortress, YOHO, HKTVmall, and ElecBoy in March 2026, three recommendations emerged.
 
 ## Why not just a garment steamer?
 
-Steamers relax fabric. They're wonderful for delicates, quick touch-ups, and curtains. But they can't *press* — there's no flat surface pushing heat into the cloth. If you want a crease line down a trouser leg or a properly flat collar, you need a soleplate and a board. Physics, not marketing.
+Steamers relax fabric. They're wonderful for delicates, quick touch-ups, and curtains. But they can't *press* — there's no flat surface pushing heat into the cloth. If you want a crease line down a trouser leg or a properly flat collar, you need a soleplate and a board. The Consumer Council confirmed this: handheld steamers scored just 2 out of 5 for crease performance in their testing.
 
-The compromise: a steam iron with a good **vertical steam mode**. Iron on the board when you need creases. Hold it upright and steam hanging garments when you don't.
+The solution: a steam iron with a good **vertical steam mode**. Iron on the board when you need creases. Hold it upright and steam hanging garments when you don't.
 
-## The picks
+## The top three
 
-### Philips DST8050 (Azur 8000 Series) — the new flagship
+### 1. Philips DST8050 (Azur 8000 Series) — best overall
 
-Philips' latest, released in late 2024. This is a step up from everything below. The headline number is **85 g/min continuous steam** — nearly double the older DST7020 — with a 260 g/min turbo burst. Vertical steam is strong enough for curtains and coats.
+Philips' latest flagship, released late 2024. The headline: **85 g/min continuous steam** — nearly double the next iron on this list — with a 260 g/min turbo burst. For vertical steaming, that kind of output makes a real difference on thick curtains and coats.
 
-The killer feature is **OptimalTEMP**: one temperature setting that works on all ironable fabrics, from silk to denim, with a no-burn guarantee. No sorting laundry by fabric type, no fiddling with dials. The DynamiQ motion sensor automatically releases steam when you move the iron and stops when you pause.
+The standout feature is **OptimalTEMP**: one temperature setting for all ironable fabrics, from silk to denim, with a no-burn guarantee. No sorting laundry, no fiddling with dials. A motion sensor (DynamiQ) releases steam automatically when you move the iron and pauses when you stop.
 
-3000W, 350ml tank (larger than most), SteamGlide Elite soleplate with a copper-toned finish, Quick Calc Release for descaling, 3m cord. It's a proper premium iron.
+3000W power. 350ml tank — larger than most, fewer refills. SteamGlide Elite soleplate. Quick Calc Release for easy descaling. 3m cord. It wasn't in the Consumer Council's 2024 test (released after the testing period), but it's a clear spec upgrade over every iron that was.
 
 **Price in Hong Kong (March 2026):**
 - [YOHO](https://www.yohohongkong.com/) — ~HK$988 (best price found)
 - [Wing On](https://www.wingon.hk/) — ~HK$1,198
 - [Philips official](https://www.philips.com.hk/) — HK$1,398
-- [ElecBoy](https://www.elecboy.com.hk/) — HK$1,698
 
-### Philips DST7020 (7000 Series) — the tested favourite
+### 2. Philips DST7020 (7000 Series) — best tested value
 
-The Consumer Council gave this 3.5 out of 4 stars in their 2024 testing — the joint-highest score for a traditional steam iron. It puts out 50 g/min of continuous steam and a 250 g/min burst. The SteamGlide Plus soleplate is scratch-resistant and glides well. Quick Calc Release for descaling.
+The Consumer Council rated this **3.5 out of 4 stars** — the joint-highest score for any traditional steam iron in their 2024 test. It delivers 50 g/min continuous steam and a 250 g/min burst. The SteamGlide Plus soleplate is scratch-resistant with a smooth glide.
 
-At 2800W it heats fast. The 300ml tank is enough for a few shirts before refilling. It lacks the OptimalTEMP auto-temperature of the 8000 Series, so you'll need to adjust the dial for different fabrics.
+At 2800W it heats fast. 300ml tank. Quick Calc Release for descaling. The trade-off versus the 8000 Series: you'll need to adjust the temperature dial for different fabrics — no auto-temperature here.
+
+This is the safe, verified choice.
 
 **Price in Hong Kong (March 2026):**
 - [HKTVmall](https://www.hktvmall.com/) — ~HK$545 (best price found)
 - [YOHO](https://www.yohohongkong.com/) — ~HK$557
-- [ElecBoy](https://www.elecboy.com.hk/) — ~HK$748
 - [Philips official](https://www.philips.com.hk/) — HK$748
 
-### Tefal FV5696 TurboPro Anti-Calc — the powerhouse
+### 3. Braun TexStyle 5 SI5078 — the non-Philips pick
 
-Also 3.5 stars from the Consumer Council. 3000W with 50 g/min continuous and up to 270 g/min burst. The Durilium Airglide soleplate is Tefal's premium coating — smooth and durable. The removable anti-calc collector is a nice design: pull it out, rinse it, done.
+If you'd rather not go Philips, the Braun TexStyle 5 is the strongest alternative at a similar price point. 2800W, **50 g/min continuous steam**, 210 g/min burst, vertical steam confirmed. The FreeGlide 3D soleplate is designed for 360° movement — it glides over buttons and zippers without snagging, and the precision tip helps with seams and collars.
 
-Heavier than the Philips models, which is actually an advantage on a board (more pressure = less effort) but a disadvantage when holding it vertically. Something to feel in-store.
+Braun's irons have a loyal following for build quality and ergonomics. The handle design tends to be more comfortable for extended sessions.
 
-Tefal also has a newer **Ultimate Pure line (FV9845)** — 3000W, 60 g/min continuous, 260 g/min burst, Micro-Calc Filter, made in France, around HK$1,050–1,298. Worth a look if you want to stay in the Tefal ecosystem, though it wasn't part of the Consumer Council test.
-
-**Price in Hong Kong (March 2026):**
-- [Price.com.hk vendors](https://www.price.com.hk/) — ~HK$830–870 (FV5696)
-- [YOHO](https://www.yohohongkong.com/) — ~HK$863 (FV5696, after FPS discount)
-- [Fortress](https://www.fortress.com.hk/) — ~HK$1,298 (FV9845, Ultimate Pure)
-
-### Philips DST3020 (3000 Series) — the budget pick
-
-If you want vertical steam without spending much, this is the one. 2200W, 35 g/min continuous steam, 160 g/min burst, ceramic soleplate. The vertical steam mode works, the reviews are solid ("awesome little iron... 10 out of 10" from a verified purchaser), and at this price there's very little to lose.
-
-It won't match the bigger models' raw steam power, but for lighter fabrics and occasional vertical use, it's perfectly fine.
+Not Consumer Council tested, but Braun's higher-end TexStyle 9 (SI9682, 3200W, 60 g/min, HK$1,370) scored well in European reviews if you want to step up within the brand.
 
 **Price in Hong Kong (March 2026):**
-- [YOHO](https://www.yohohongkong.com/) — ~HK$250
-- AEON City — ~HK$250
+- [Fortress](https://www.fortress.com.hk/) — ~HK$688
+- [HKTVmall](https://www.hktvmall.com/) — check for current pricing
+
+## Also considered
+
+**Tefal FV5696 TurboPro Anti-Calc** — Consumer Council 3.5 stars, 3000W, 50 g/min continuous, 270 g/min burst. Excellent iron with a removable anti-calc collector. Heavier than the Philips and Braun, which helps on a board but makes vertical steaming more tiring. ~HK$830–870 on [Price.com.hk](https://www.price.com.hk/). Tefal's newer **Ultimate Pure FV9845** (60 g/min, made in France, ~HK$1,050–1,298 at [Fortress](https://www.fortress.com.hk/)) is worth a look too.
+
+**Philips DST3020 (3000 Series)** — the budget option at ~HK$250 on [YOHO](https://www.yohohongkong.com/). 2200W, 35 g/min steam, ceramic soleplate, vertical steam works. Good if you just need something basic.
+
+**Toshiba, German Pool, Panasonic handhelds** — we looked at these. They're either mini-steamers with tiny tanks (55–90ml) or lack the power for proper creasing. Fine for travel, not for a household iron.
 
 ## What the Consumer Council found
 
-The [Consumer Council's 2024 test](https://www.consumer.org.hk/) covered traditional steam irons, pressure stations, upright steamers, and handheld steamers — 24 models total, evaluated against international standard IEC 60311. Key takeaways:
+The [Consumer Council's 2024 test](https://www.consumer.org.hk/) (published in《選擇》月刊) is the most rigorous local evaluation available. Highlights:
 
-- **Pressure-type steam stations** scored highest overall (four models got 4 stars), but they cost HK$2,000–10,000 and take up more space.
-- **Traditional steam irons** topped out at 3.5 stars. The Tefal FV5696 and Philips DST7020 were the best performers in this category.
-- **Handheld steamers** scored lowest for wrinkle removal — most got only 2 out of 5 for crease performance. Steamers alone don't press.
-- **Durability matters.** Five models failed the 252-hour endurance test (simulating 5 years of use), including a Thomson and a Goodmans. Established brands held up.
-- **Steam output claims can be misleading.** Actual tested output often fell short of manufacturer claims, particularly for handheld steamers.
+- **Pressure-type steam stations** scored highest (four models got 4 stars, including the Braun IS7286BK), but they cost HK$2,000–10,000 and take up counter space.
+- **Traditional steam irons** topped out at 3.5 stars. The Tefal FV5696 and Philips DST7020 were the best in this category.
+- **Five models failed durability testing** (simulating 5 years of use), including a Thomson and a Goodmans. The established brands — Philips, Tefal, Braun — all held up.
+- **Manufacturer steam claims can be misleading.** Actual tested output sometimes fell short, especially on handheld steamers.
+
+## Tips for vertical steaming
+
+Vertical steam mode is useful but has a common gotcha: **water spitting**. Every brand can do it. A few things help:
+
+- **Let the iron heat fully** before going vertical. If it's not hot enough, water comes out as liquid instead of steam.
+- **Don't overfill the tank.** Fill to the MAX line, not above.
+- **Pause between bursts** — rapid-firing the steam button can overwhelm the heating element.
+- **Descale regularly.** Hong Kong's water isn't the hardest, but mineral buildup clogs steam vents over time. Use the iron's self-clean or anti-calc system monthly.
+- **Empty the tank after each use.** Standing water accelerates scale.
 
 ## Quick comparison
 
-| | DST8050 | DST7020 | FV5696 | DST3020 |
+| | Philips DST8050 | Philips DST7020 | Braun TexStyle 5 | Tefal FV5696 |
 |---|---|---|---|---|
-| Power | 3000W | 2800W | 3000W | 2200W |
-| Continuous steam | 85 g/min | 50 g/min | 50 g/min | 35 g/min |
-| Steam burst | 260 g/min | 250 g/min | 270 g/min | 160 g/min |
+| Power | 3000W | 2800W | 2800W | 3000W |
+| Continuous steam | **85 g/min** | 50 g/min | 50 g/min | 50 g/min |
+| Steam burst | 260 g/min | 250 g/min | 210 g/min | 270 g/min |
 | Vertical steam | Yes | Yes | Yes | Yes |
-| Auto-temperature | OptimalTEMP | Manual dial | Manual dial | Manual dial |
-| Anti-calc | Quick Calc Release | Quick Calc Release | Removable collector | Self-clean |
-| Soleplate | SteamGlide Elite | SteamGlide Plus | Durilium Airglide | Ceramic |
-| Tank | 350ml | 300ml | — | 300ml |
-| Consumer Council | Not tested (newer) | 3.5★ | 3.5★ | Not tested |
-| Best HK price | ~HK$988 | ~HK$545 | ~HK$830 | ~HK$250 |
+| Auto-temperature | OptimalTEMP | Manual | Manual | Manual |
+| Soleplate | SteamGlide Elite | SteamGlide Plus | FreeGlide 3D | Durilium Airglide |
+| Tank | 350ml | 300ml | 300ml | — |
+| Consumer Council | Not tested | **3.5★** | Not tested | **3.5★** |
+| Best HK price | ~HK$988 | **~HK$545** | ~HK$688 | ~HK$830 |
 
-## My recommendation
+## The recommendation
 
-**If you want the best iron available right now**, the **Philips DST8050** at ~HK$988 on YOHO is the one. The 85 g/min continuous steam is in a different league, OptimalTEMP means zero fuss with fabric settings, and the motion-sensing auto-steam is genuinely clever. It wasn't in the Consumer Council's 2024 test (it released after), but spec-for-spec it's a clear upgrade over every iron that was tested.
+**For most people:** the **Philips DST7020** at ~HK$545 on HKTVmall. Consumer Council tested, strong vertical steam, proven reliability. Hard to go wrong.
 
-**If you want the best *tested* value**, the **Philips DST7020** at ~HK$545 on HKTVmall is hard to argue with. Consumer Council verified, strong vertical steam, and under HK$560.
+**If you want the best and don't mind spending more:** the **Philips DST8050** at ~HK$988 on YOHO. The 85 g/min steam is in a different league, and OptimalTEMP means you never think about fabric settings. The spec jump from the 7000 to 8000 series is genuine, not just marketing.
 
-**If you just need something that works**, the **DST3020** at HK$250 is solid.
+**If you prefer Braun:** the **TexStyle 5** at ~HK$688 from Fortress. Comparable steam to the DST7020, nicer soleplate geometry, good build quality.
 
-Either way — try holding them in-store at Fortress or Broadway before buying online. Weight matters more than specs when you're steaming curtains overhead.
+One more thing: try holding them in-store at Fortress or Broadway before buying online. Weight and balance matter more than specs when you're steaming curtains overhead with one hand.
 
-*Prices checked March 2026 across YOHO, HKTVmall, ElecBoy, Wing On, Price.com.hk, and brand official sites. Consumer Council data from their 2024 steam iron and garment steamer test (《選擇》月刊).*
+*Prices checked March 2026 across YOHO, HKTVmall, ElecBoy, Wing On, Fortress, Price.com.hk, and brand official sites. Consumer Council data from their 2024 steam iron and garment steamer test (《選擇》月刊, IEC 60311 standard, 24 models tested). Braun specs from official product pages and retailer listings.*
