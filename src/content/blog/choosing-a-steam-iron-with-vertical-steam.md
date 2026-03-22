@@ -2,7 +2,7 @@
 title: "Choosing a Steam Iron with Vertical Steam"
 description: "A practical guide to picking a steam iron that does double duty — crisp creases on a board and vertical steaming for hanging clothes. Based on Hong Kong Consumer Council testing, current 2026 pricing, and the latest models from Philips, Tefal, and Braun."
 pubDatetime: 2026-03-22T01:30:54.000Z
-draft: true
+draft: false
 tags:
   - home
 ---
