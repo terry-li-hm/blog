@@ -27,12 +27,6 @@ The standout feature is **OptimalTEMP**: one temperature setting for all ironabl
 
 3000W power. 350ml tank — larger than most, fewer refills. SteamGlide Elite soleplate. Quick Calc Release for easy descaling. 3m cord. It wasn't in the Consumer Council's 2024 test (released after the testing period), but it's a clear spec upgrade over every iron that was.
 
-**Price in Hong Kong (March 2026):**
-- [YOHO — HK$988](https://www.yohohongkong.com/en-us/product/65994-Philips-DST805026-Steam-Iron) (best price found)
-- Fortress — HK$1,116–1,189 (online exclusive / net store price)
-- [Wing On](https://www.wingon.hk/) — ~HK$1,198
-- [Philips official](https://www.philips.com.hk/en/c-m-ho/ironing/steam-iron/latest) — HK$1,398
-
 ### 2. Philips DST7020 (7000 Series) — best tested value
 
 The Consumer Council rated this **3.5 out of 4 stars** — the joint-highest score for any traditional steam iron in their 2024 test. It delivers 50 g/min continuous steam and a 250 g/min burst. The SteamGlide Plus soleplate is scratch-resistant with a smooth glide.
@@ -40,12 +34,6 @@ The Consumer Council rated this **3.5 out of 4 stars** — the joint-highest sco
 At 2800W it heats fast. 300ml tank. Quick Calc Release for descaling. The trade-off versus the 8000 Series: you'll need to adjust the temperature dial for different fabrics — no auto-temperature here.
 
 This is the safe, verified choice.
-
-**Price in Hong Kong (March 2026):**
-- [HKTVmall — HK$545](https://www.hktvmall.com/hktv/en/main/Galaxy-Digital/s/H5239001/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/Home-Appliances/Other-Small-Home-Appliances-&-Accessories/Iron-&-Garment-Steamer/Iron/DST7020/20-Azur-Steam-Iron-7000-Series-Two-Year-Warranty/p/H5239001_S_Philips_DST7020_20_Iron) (best price found)
-- [YOHO](https://www.yohohongkong.com/) — ~HK$557
-- Fortress — HK$748 (low stock)
-- [Philips official](https://www.philips.com.hk/en/c-m-ho/ironing/steam-iron/latest) — HK$748
 
 ### 3. Braun TexStyle 5 SI5078 — the non-Philips pick
 
@@ -55,9 +43,20 @@ Braun's irons have a loyal following for build quality and ergonomics. The handl
 
 Not Consumer Council tested, but Braun's higher-end TexStyle 9 (SI9682, 3200W, 60 g/min, HK$1,370) scored well in European reviews if you want to step up within the brand.
 
-**Price in Hong Kong (March 2026):**
-- Fortress — HK$688 (best price found, down from RRP $858)
-- [HKTVmall — from HK$788](https://www.hktvmall.com/hktv/en/main/De'longhi-Group/s/H0762004/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/Other-Small-Home-Appliances-&-Accessories/Iron-&-Garment-Steamer/Iron/TexStyle-5-Steam-Iron-SI5078GY/p/H0762004_S_H04580)
+## Where to buy (March 2026 prices)
+
+| Retailer | [DST8050](https://www.yohohongkong.com/en-us/product/65994-Philips-DST805026-Steam-Iron) | [DST7020](https://www.hktvmall.com/hktv/en/main/Galaxy-Digital/s/H5239001/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/Home-Appliances/Other-Small-Home-Appliances-&-Accessories/Iron-&-Garment-Steamer/Iron/DST7020/20-Azur-Steam-Iron-7000-Series-Two-Year-Warranty/p/H5239001_S_Philips_DST7020_20_Iron) | [Braun SI5078](https://www.hktvmall.com/hktv/en/main/De'longhi-Group/s/H0762004/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/Other-Small-Home-Appliances-&-Accessories/Iron-&-Garment-Steamer/Iron/TexStyle-5-Steam-Iron-SI5078GY/p/H0762004_S_H04580) |
+|---|---|---|---|
+| **[HKTVmall](https://www.hktvmall.com/)** | — | **HK$545** | HK$788 |
+| **[YOHO](https://www.yohohongkong.com/)** | **HK$988** | HK$557 | HK$708 |
+| **[Fortress](https://www.fortress.com.hk/)** | HK$1,116–1,189 | HK$748 | **HK$688** |
+| **[ElecBoy](https://www.elecboy.com.hk/)** | HK$1,698 | HK$748 | HK$858 |
+| **[Wing On](https://www.wingon.hk/)** | HK$1,198 | — | — |
+| **[Philips official](https://www.philips.com.hk/en/c-m-ho/ironing/steam-iron/latest)** | HK$1,398 | HK$748 | — |
+
+Best price in **bold**. Column headers link to product pages with photos. Prices fluctuate — check before ordering.
+
+Broadway is under the same group as Fortress; expect similar pricing in-store.
 
 ## Also considered
 
@@ -98,7 +97,6 @@ Vertical steam mode is useful but has a common gotcha: **water spitting**. Every
 | Soleplate | SteamGlide Elite | SteamGlide Plus | FreeGlide 3D | Durilium Airglide |
 | Tank | 350ml | 300ml | 300ml | — |
 | Consumer Council | Not tested | **3.5★** | Not tested | **3.5★** |
-| Best HK price | ~HK$988 | **~HK$545** | ~HK$688 | ~HK$830 |
 
 ## The recommendation
 
