@@ -52,13 +52,20 @@
     }
 
     table {
+      @apply block w-full overflow-x-auto;
+
       th,
       td {
-        @apply border border-border p-2;
+        @apply border border-border p-2 whitespace-nowrap;
       }
 
       th {
         @apply py-1.5;
+      }
+
+      td:first-child,
+      th:first-child {
+        @apply whitespace-normal;
       }
 
       code {
