@@ -52,7 +52,7 @@
     }
 
     table {
-      @apply block w-full overflow-x-auto;
+      @apply block w-full overflow-x-auto border-collapse;
 
       th,
       td {
@@ -60,7 +60,7 @@
       }
 
       th {
-        @apply py-1.5;
+        @apply py-1.5 bg-[rgba(127,127,127,0.1)] font-semibold;
       }
 
       td:first-child,
