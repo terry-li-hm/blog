@@ -29,6 +29,7 @@ The standout feature is **OptimalTEMP**: one temperature setting for all ironabl
 
 **Price in Hong Kong (March 2026):**
 - [YOHO — HK$988](https://www.yohohongkong.com/en-us/product/65994-Philips-DST805026-Steam-Iron) (best price found)
+- Fortress — HK$1,116–1,189 (online exclusive / net store price)
 - [Wing On](https://www.wingon.hk/) — ~HK$1,198
 - [Philips official](https://www.philips.com.hk/en/c-m-ho/ironing/steam-iron/latest) — HK$1,398
 
@@ -43,6 +44,7 @@ This is the safe, verified choice.
 **Price in Hong Kong (March 2026):**
 - [HKTVmall — HK$545](https://www.hktvmall.com/hktv/en/main/Galaxy-Digital/s/H5239001/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/Home-Appliances/Other-Small-Home-Appliances-&-Accessories/Iron-&-Garment-Steamer/Iron/DST7020/20-Azur-Steam-Iron-7000-Series-Two-Year-Warranty/p/H5239001_S_Philips_DST7020_20_Iron) (best price found)
 - [YOHO](https://www.yohohongkong.com/) — ~HK$557
+- Fortress — HK$748 (low stock)
 - [Philips official](https://www.philips.com.hk/en/c-m-ho/ironing/steam-iron/latest) — HK$748
 
 ### 3. Braun TexStyle 5 SI5078 — the non-Philips pick
@@ -54,7 +56,7 @@ Braun's irons have a loyal following for build quality and ergonomics. The handl
 Not Consumer Council tested, but Braun's higher-end TexStyle 9 (SI9682, 3200W, 60 g/min, HK$1,370) scored well in European reviews if you want to step up within the brand.
 
 **Price in Hong Kong (March 2026):**
-- [Fortress](https://www.fortress.com.hk/) — ~HK$688
+- Fortress — HK$688 (best price found, down from RRP $858)
 - [HKTVmall — from HK$788](https://www.hktvmall.com/hktv/en/main/De'longhi-Group/s/H0762004/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/Other-Small-Home-Appliances-&-Accessories/Iron-&-Garment-Steamer/Iron/TexStyle-5-Steam-Iron-SI5078GY/p/H0762004_S_H04580)
 
 ## Also considered
