@@ -1,4 +1,3 @@
-I will activate the `sarcio` skill to understand the specific workflow and directory structure for publishing a post to the `terryli.hm` garden.
 ---
 title: "Conversation Is Metabolism"
 description: "When epistemic trust runs dry, generative synthesis regresses into mechanical synchronization and eventual structural dissolution."

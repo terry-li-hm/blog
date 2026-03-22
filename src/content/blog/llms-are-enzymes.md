@@ -1,8 +1,3 @@
-I will begin by activating the `sarcio` skill to understand the required workflow for creating garden posts and then research the `vivesca` project's metabolism implementation to ensure the post is grounded in the project's technical architecture.
-I'll read the `sarcio` skill documentation directly to understand the post creation workflow.
-I'll start by reading the design document and the latest metabolism plan to understand the technical nuances of the project's regulatory mechanisms.
-The core insight of Vivesca—that LLMs are not actors but catalysts, and that credits are not just a bill but the primary regulatory signal of a living system—provides the foundation for this post. I will now compose the garden post, "LLMs Are Enzymes," focusing on the metabolic shift triggered by credit scarcity and the concept of informational autophagy.
-
 ---
 title: "LLMs Are Enzymes"
 description: "Why we should stop treating AI as a chatbot and start treating it as a metabolic organism governed by credit scarcity."

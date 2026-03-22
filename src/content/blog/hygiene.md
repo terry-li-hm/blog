@@ -1,5 +1,3 @@
-I will activate the `sarcio` skill to understand the correct workflow and directory structure for creating this garden post.
-I will activate the `sarcio` skill to retrieve the expert guidance and resources required for creating and managing garden posts for terryli.hm.
 ---
 title: "hygiene"
 description: "On the metabolic necessity of pruning agentic context to survive the entropic heat death of the credit balance."
