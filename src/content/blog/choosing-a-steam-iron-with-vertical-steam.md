@@ -21,16 +21,16 @@ The solution: a steam iron with a good **vertical steam mode**. Iron on the boar
 
 ### 1. Philips DST8050 (Azur 8000 Series) — best overall
 
-Philips' latest flagship, released late 2024. The headline: **85 g/min continuous steam** — nearly double the next iron on this list — with a 260 g/min turbo burst. For vertical steaming, that kind of output makes a real difference on thick curtains and coats.
+Philips' latest flagship, released late 2024. The headline: **up to 100 g/min continuous steam** (Philips HK official spec) — double the next iron on this list — with a 260 g/min turbo burst. For vertical steaming, that kind of output makes a real difference on thick curtains and coats.
 
 The standout feature is **OptimalTEMP**: one temperature setting for all ironable fabrics, from silk to denim, with a no-burn guarantee. No sorting laundry, no fiddling with dials. A motion sensor (DynamiQ) releases steam automatically when you move the iron and pauses when you stop.
 
 3000W power. 350ml tank — larger than most, fewer refills. SteamGlide Elite soleplate. Quick Calc Release for easy descaling. 3m cord. It wasn't in the Consumer Council's 2024 test (released after the testing period), but it's a clear spec upgrade over every iron that was.
 
 **Price in Hong Kong (March 2026):**
-- [YOHO](https://www.yohohongkong.com/) — ~HK$988 (best price found)
+- [YOHO — HK$988](https://www.yohohongkong.com/en-us/product/65994-Philips-DST805026-Steam-Iron) (best price found)
 - [Wing On](https://www.wingon.hk/) — ~HK$1,198
-- [Philips official](https://www.philips.com.hk/) — HK$1,398
+- [Philips official](https://www.philips.com.hk/en/c-m-ho/ironing/steam-iron/latest) — HK$1,398
 
 ### 2. Philips DST7020 (7000 Series) — best tested value
 
@@ -41,9 +41,9 @@ At 2800W it heats fast. 300ml tank. Quick Calc Release for descaling. The trade-
 This is the safe, verified choice.
 
 **Price in Hong Kong (March 2026):**
-- [HKTVmall](https://www.hktvmall.com/) — ~HK$545 (best price found)
+- [HKTVmall — HK$545](https://www.hktvmall.com/hktv/en/main/Galaxy-Digital/s/H5239001/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/Home-Appliances/Other-Small-Home-Appliances-&-Accessories/Iron-&-Garment-Steamer/Iron/DST7020/20-Azur-Steam-Iron-7000-Series-Two-Year-Warranty/p/H5239001_S_Philips_DST7020_20_Iron) (best price found)
 - [YOHO](https://www.yohohongkong.com/) — ~HK$557
-- [Philips official](https://www.philips.com.hk/) — HK$748
+- [Philips official](https://www.philips.com.hk/en/c-m-ho/ironing/steam-iron/latest) — HK$748
 
 ### 3. Braun TexStyle 5 SI5078 — the non-Philips pick
 
@@ -55,7 +55,7 @@ Not Consumer Council tested, but Braun's higher-end TexStyle 9 (SI9682, 3200W, 6
 
 **Price in Hong Kong (March 2026):**
 - [Fortress](https://www.fortress.com.hk/) — ~HK$688
-- [HKTVmall](https://www.hktvmall.com/) — check for current pricing
+- [HKTVmall — from HK$788](https://www.hktvmall.com/hktv/en/main/De'longhi-Group/s/H0762004/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/%E5%AE%B6%E5%B1%85%E9%9B%BB%E5%99%A8/Other-Small-Home-Appliances-&-Accessories/Iron-&-Garment-Steamer/Iron/TexStyle-5-Steam-Iron-SI5078GY/p/H0762004_S_H04580)
 
 ## Also considered
 
@@ -89,7 +89,7 @@ Vertical steam mode is useful but has a common gotcha: **water spitting**. Every
 | | Philips DST8050 | Philips DST7020 | Braun TexStyle 5 | Tefal FV5696 |
 |---|---|---|---|---|
 | Power | 3000W | 2800W | 2800W | 3000W |
-| Continuous steam | **85 g/min** | 50 g/min | 50 g/min | 50 g/min |
+| Continuous steam | **up to 100 g/min** | 50 g/min | 50 g/min | 50 g/min |
 | Steam burst | 260 g/min | 250 g/min | 210 g/min | 270 g/min |
 | Vertical steam | Yes | Yes | Yes | Yes |
 | Auto-temperature | OptimalTEMP | Manual | Manual | Manual |
@@ -102,7 +102,7 @@ Vertical steam mode is useful but has a common gotcha: **water spitting**. Every
 
 **For most people:** the **Philips DST7020** at ~HK$545 on HKTVmall. Consumer Council tested, strong vertical steam, proven reliability. Hard to go wrong.
 
-**If you want the best and don't mind spending more:** the **Philips DST8050** at ~HK$988 on YOHO. The 85 g/min steam is in a different league, and OptimalTEMP means you never think about fabric settings. The spec jump from the 7000 to 8000 series is genuine, not just marketing.
+**If you want the best and don't mind spending more:** the **Philips DST8050** at ~HK$988 on YOHO. The up-to-100 g/min steam is in a different league, and OptimalTEMP means you never think about fabric settings. The spec jump from the 7000 to 8000 series is genuine, not just marketing.
 
 **If you prefer Braun:** the **TexStyle 5** at ~HK$688 from Fortress. Comparable steam to the DST7020, nicer soleplate geometry, good build quality.
 
