@@ -1,4 +1,8 @@
 {
+  "redirects": [
+    { "source": "/posts/claude-code-book-my-flight/", "destination": "/posts/claude-code-analyze-my-spending/", "permanent": true },
+    { "source": "/posts/taste-is-the-last-moat/", "destination": "/posts/the-unexplainable-alpha/", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",
