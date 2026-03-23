@@ -23,4 +23,4 @@ Three observations from operating a role-based agent team overnight:
 
 **3. Management theory applies literally.** Grove's separation of routing and quality authority. Drucker's last responsible moment. Weinberg's spec validation by parallel inference. These aren't metaphors for agent orchestration — they're direct implementation patterns. The overnight sprint converged on them independently before I noticed the mapping.
 
-The takeaway isn't "AI agents are powerful" — everyone knows that. It's that **the leverage point in an agent-rich world is the quality of the task list, not the quality of execution.** Build a better TODO.md and the agents take care of the rest.
+The takeaway isn't "AI agents are powerful" — everyone knows that. It's that **the leverage point in an agent-rich world is the quality of the task list, not the quality of execution.** Build a better Praxis.md and the agents take care of the rest.

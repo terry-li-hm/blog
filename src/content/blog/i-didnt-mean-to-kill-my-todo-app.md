@@ -15,7 +15,7 @@ Things 3 never did that. It couldn't. It only knew my tasks.
 
 Three apps died quietly over the following month.
 
-Things 3 first: six years of repeating templates — weekly reviews, recurring reminders, project checklists — migrated to a plain TODO.md file. The agent reads it, reasons across it, and connects it to everything else it knows about my situation. Things 3 had beautiful design and zero context.
+Things 3 first: six years of repeating templates — weekly reviews, recurring reminders, project checklists — migrated to a plain Praxis.md file. The agent reads it, reasons across it, and connects it to everything else it knows about my situation. Things 3 had beautiful design and zero context.
 
 Readwise Reader went next: articles used to travel the familiar route of save → inbox → read later → never read. Now they go URL to extracted insights to vault note. The "save for later" pattern collapses when the agent can process something right now.
 
