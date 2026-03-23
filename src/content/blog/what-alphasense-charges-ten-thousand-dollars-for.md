@@ -12,7 +12,7 @@ I built something that does 80% of what matters to me for zero marginal cost. He
 
 ## What the pipeline does
 
-It runs every night. Lustro (my RSS aggregator) fetches articles from ~150 sources — analyst blogs, Chinese tech press, HKMA circulars, AI research labs. Then theoria (the pipeline) processes them:
+It runs every night. Lustro (my RSS aggregator) fetches articles from ~150 sources — analyst blogs, Chinese tech press, HKMA circulars, AI research labs. Then thalamus (the pipeline) processes them:
 
 1. **Extract** — Sonnet reads each article and produces a structured card: title, headline, "so what for banks," regulatory exposure, vendor lock-in assessment, China angle, governance action required, and how a consultant would use it (steering committee slide vs coffee conversation vs background reading).
 
@@ -24,7 +24,7 @@ It runs every night. Lustro (my RSS aggregator) fetches articles from ~150 sourc
 
 5. **Synthesise** — a weekly briefing with opinionated positions, source URLs on every claim, and a "Pattern Watch" section that tracks which themes are accelerating, emerging, or fading.
 
-6. **Track source quality** — DuckDB logs every extraction. After a month, `theoria --stats` shows which RSS feeds actually produce actionable insights and which are noise.
+6. **Track source quality** — DuckDB logs every extraction. After a month, `thalamus --stats` shows which RSS feeds actually produce actionable insights and which are noise.
 
 ## What it costs
 
