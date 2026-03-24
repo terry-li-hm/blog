@@ -2,8 +2,8 @@
 title: "Tools Are Skills With Null LLM"
 description: "The tool/skill/agent distinction is an implementation boundary, not a conceptual one. The real variable is how much judgment a callable needs."
 pubDatetime: 2026-03-24T10:00:00.000Z
-modDatetime: 2026-03-24T00:59:40.000Z
-revisionNote: "Add description-as-manual refinement — null LLM is never truly null"
+modDatetime: 2026-03-24T01:02:17.000Z
+revisionNote: "Sharpen ending: tools and skills are the same thing, difference is compression ratio"
 draft: false
 tags: ["ai", "systems", "tools"]
 ---
@@ -32,6 +32,8 @@ This matters for system design. Every tool can become a skill if you wrap it in 
 
 The naming convention follows from this. If tools are instruments and not actions, they should be named like instruments. `interoception` not `read_internal_state`. `chemotaxis` not `search_web`. The noun names the faculty; the LLM exercises it.
 
-What I hadn't noticed until recently: this spectrum already has a name in systems design. It's just the determinism axis. Fully deterministic computations are tools. Computations that require judgment are skills. The "LLM as argument" framing just makes the variable explicit instead of hiding it in architectural labels.
+Follow the thread far enough and the spectrum collapses. A tool's description is a compressed manual — eighty characters of knowledge, always loaded. A skill is an expanded manual — thousands of tokens, loaded on demand. Same knowledge, different compression ratio. The only reason we call them different things is that context windows have budgets. If prompts were infinite, every tool would just be a skill with its full manual inlined.
 
-The field keeps reinventing this distinction — functions vs. agents, tools vs. plugins, retrieval vs. generation. Same axis, new vocabulary. The underlying question doesn't change: at each decision point, is a program sufficient, or do you need judgment?
+Tools and skills are the same thing. The field just hasn't named it yet.
+
+The distinction we actually care about isn't tool-versus-skill. It's always-loaded-versus-on-demand. That's a deployment decision, not a conceptual category. And deployment decisions shouldn't shape how we think about what we're building — only how we ship it.
