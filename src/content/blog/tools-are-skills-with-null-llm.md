@@ -1,5 +1,5 @@
 ---
-title: "Tools Are Skills With Null LLM"
+title: "Tools and Skills Are the Same Thing"
 description: "The tool/skill/agent distinction is an implementation boundary, not a conceptual one. The real variable is how much judgment a callable needs."
 pubDatetime: 2026-03-24T10:00:00.000Z
 modDatetime: 2026-03-24T01:02:17.000Z
