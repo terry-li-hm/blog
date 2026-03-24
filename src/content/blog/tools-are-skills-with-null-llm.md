@@ -1,9 +1,9 @@
 ---
-title: "Tools and Skills Are the Same Thing"
-description: "The tool/skill/agent distinction is an implementation boundary, not a conceptual one. The real variable is how much judgment a callable needs."
+title: "Tools Are Instruments, Skills Are Recipes"
+description: "The tool/skill/agent distinction isn't just compression ratio — tools are instruments, skills compose them with judgment. Same thing only at the leaf."
 pubDatetime: 2026-03-24T10:00:00.000Z
-modDatetime: 2026-03-24T01:02:17.000Z
-revisionNote: "Sharpen ending: tools and skills are the same thing, difference is compression ratio"
+modDatetime: 2026-03-24T01:16:02.000Z
+revisionNote: "Correct overclaim: tools=instruments, skills=recipes, same only at leaf"
 draft: false
 tags: ["ai", "systems", "tools"]
 ---
@@ -26,14 +26,16 @@ no LLM needed          LLM is the work
 
 And then the obvious extension: a subagent is just a callable where the LLM is passed as an argument. Same spectrum, fresh context window, isolated judgment. Tool, skill, and agent aren't three separate concepts — they're three points on one axis. The variable is how much judgment the callable needs.
 
-Except "null" is a lie. A tool without a description is undiscoverable — the model can't use what it doesn't know exists. Every tool ships with a manual: a short description that tells the model what it does and when to call it. That description is knowledge. It's the minimum viable skill, compressed to fit in every prompt. A skill is just a richer manual, loaded on demand instead of always-on. The spectrum isn't really about LLM presence — it's about how much knowledge is embedded, and at what compression ratio.
+Except "null" is a lie. A tool without a description is undiscoverable — the model can't use what it doesn't know exists. Every tool ships with a manual: a short description that tells the model what it does and when to call it. That description is knowledge. It's the minimum viable skill, compressed to fit in every prompt. A skill is just a richer manual, loaded on demand instead of always-on.
 
-This matters for system design. Every tool can become a skill if you wrap it in a prompt. Every skill can become a tool if you remove enough judgment. The question to ask isn't "is this a tool or a skill?" but "how much LLM does this need?" If the answer is zero, it should be a tool. If the LLM's contribution is just "call this function and return the result," you're burning tokens to do nothing. Push everything as far toward the tool end as it can honestly go.
+I almost stopped here and wrote "tools and skills are the same thing." It felt clean. The spectrum, the compression ratio, the deployment-decision framing — it all pointed that way. But examples break it.
 
-The naming convention follows from this. If tools are instruments and not actions, they should be named like instruments. `interoception` not `read_internal_state`. `chemotaxis` not `search_web`. The noun names the faculty; the LLM exercises it.
+A skill like "structured development onboarding" uses Read, Write, Edit, Bash, Agent, Grep. A skill like "evening routine" uses Gmail, calendar, Telegram, and vault tools. Meanwhile, Read is used by nearly every skill. The relationship is many-to-many.
 
-Follow the thread far enough and the spectrum collapses. A tool's description is a compressed manual — eighty characters of knowledge, always loaded. A skill is an expanded manual — thousands of tokens, loaded on demand. Same knowledge, different compression ratio. The only reason we call them different things is that context windows have budgets. If prompts were infinite, every tool would just be a skill with its full manual inlined.
+Tools are instruments. Skills are recipes that compose instruments with judgment about sequencing and decisions. You can't compress a recipe into a tool description because the composition IS the value. A recipe that says "use a knife" is not the same thing as a knife.
 
-Tools and skills are the same thing. The field just hasn't named it yet.
+Where the spectrum holds is at the leaf level — a single capability that does one thing. "Sense the organism's internal state" works as either an eighty-character tool description or a full manual. Same thing, different compression. But the moment you compose multiple tools with judgment about when and how to combine them, you've crossed into something genuinely different. That's a skill, and it's not reducible to a compressed tool.
 
-The distinction we actually care about isn't tool-versus-skill. It's always-loaded-versus-on-demand. That's a deployment decision, not a conceptual category. And deployment decisions shouldn't shape how we think about what we're building — only how we ship it.
+The naming convention still follows: tools are instruments (nouns, not verbs). Skills are recipes (process nouns — the action of combining). The LLM is the cook who reads the recipe and wields the instruments. Three roles, not one spectrum.
+
+What the field keeps reinventing isn't one distinction — it's two. First: tools should be named as instruments, not actions. Second: composition with judgment is categorically different from execution without it. Functions versus agents, tools versus plugins, retrieval versus generation — each rediscovery conflates these two insights, and each new framework has to separate them again.
