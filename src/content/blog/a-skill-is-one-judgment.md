@@ -14,17 +14,23 @@ The audit was useful. But the real insight came from pushing on what "judgment" 
 
 ## Judgment is a moving boundary
 
-A judgment is whatever deterministic code can't automate yet.
+A judgment is whatever can't be reduced to a predictable transformation yet.
 
-Today, "categorize this inbox" requires an LLM. Tomorrow a fine-tuned classifier handles it. The skill dies. A tool replaces it.
+The key word is "predictable," not "deterministic." An LLM can be a tool. Computer vision used to require specialized CNNs trained on labeled datasets. Now a vision-language model does it better, cheaper, with a prompt. The VLM is the tool -- it performs a predictable transformation. The implementation happens to be an LLM, but the operation is still tool-shaped: input goes in, predictable output comes out.
+
+The distinction isn't "uses LLM" vs "doesn't use LLM." It's "predictable transformation" vs "novel reasoning." Structured extraction, classification, format conversion -- these are tools even when an LLM performs them. The LLM is just a cheaper, more flexible runtime than custom code.
+
+Judgment is whatever remains after you've identified all the predictable parts. And that remainder keeps shrinking.
+
+Today, "categorize this inbox" might require genuine judgment -- the categories are fuzzy, context-dependent, evolving. Tomorrow the patterns stabilize and an LLM-as-tool handles it with a fixed prompt. Or a fine-tuned classifier. The implementation doesn't matter. What matters is that the transformation became predictable.
 
 This means every skill is temporary by design. Skills have a lifecycle:
 
-1. A judgment is discovered (something needs interpretation)
-2. A skill wraps it (LLM applies reasoning)
+1. A judgment is discovered (something needs novel reasoning)
+2. A skill wraps it (LLM applies open-ended reasoning)
 3. Patterns emerge (the LLM keeps making the same calls)
-4. Rules get encoded (patterns become deterministic logic)
-5. A tool replaces the skill (no LLM needed)
+4. The transformation becomes predictable (fixed prompt, classifier, rule)
+5. A tool replaces the skill (LLM or otherwise)
 6. The skill dies
 
 The bias is always toward demotion. When I audited my 38 skills, four had already completed this lifecycle without anyone noticing. The LLM was running commands and formatting output -- zero judgment, pure plumbing. They should have been tools months ago.
@@ -47,9 +53,9 @@ The skill's entire value was the judgment in the middle. Everything else was a t
 
 This gives you four clean categories:
 
-- **Tool** -- deterministic, no LLM needed
-- **Skill** -- one judgment per LLM call, bracketed by tools
-- **Pipeline** -- multiple skills chained by deterministic tools
+- **Tool** -- predictable transformation (code, LLM, classifier -- implementation irrelevant)
+- **Skill** -- one judgment call (novel reasoning that can't yet be made predictable)
+- **Pipeline** -- multiple skills chained by tools
 - **Conversation** -- pipeline where the human provides intermediate data
 
 A conversation isn't an exception. Each turn is one judgment. The human's response between turns is just another "tool" providing data. The principle holds universally.
@@ -67,8 +73,8 @@ Forcing one judgment per skill also makes each step independently testable. You 
 For any piece of AI automation, ask two questions:
 
 1. What's the one judgment here?
-2. Is it still a judgment, or has it become a pattern?
+2. Has the output become predictable?
 
-If you can't name the judgment, it's a tool. If the judgment has become predictable, it's ready to become a tool. Skills exist in the gap between -- and the gap is always shrinking.
+If you can't name the judgment, it's a tool. If the judgment has become predictable -- whether you automate it with code, a fixed prompt, or a fine-tuned model -- it's ready to become a tool. Skills exist in the gap between what's predictable and what isn't. That gap is always shrinking.
 
 I extracted 22 tools from what used to be monolithic skills. The skills got thinner and sharper. But more importantly, I now have a framework for knowing when a skill has outlived its purpose. The goal isn't to build more skills. It's to build skills that make themselves unnecessary.
