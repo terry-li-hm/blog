@@ -33,4 +33,4 @@ For any toolstack where you're making routing decisions by intuition, a structur
 
 ---
 
-*Experiment log: `~/notes/Experiments/peira-2026-03-10-indago-benchmark/`*
+*Experiment log: `~/code/vivesca-terry/chromatin/Experiments/peira-2026-03-10-indago-benchmark/`*

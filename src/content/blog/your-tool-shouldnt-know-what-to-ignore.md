@@ -16,7 +16,7 @@ But one directory — `dedao-courses` — contained 6,471 Chinese course transcr
 My first fix: pass the right `--exclude` flags every time.
 
 ```bash
-nexis ~/notes \
+nexis ~/code/vivesca-terry/chromatin \
   --exclude Archive \
   --exclude Daily \
   --exclude dedao-courses \
@@ -47,7 +47,7 @@ Readwise
 Waking Up
 ```
 
-Now `nexis ~/notes` just works. Real orphan count: 161.
+Now `nexis ~/code/vivesca-terry/chromatin` just works. Real orphan count: 161.
 
 ---
 
