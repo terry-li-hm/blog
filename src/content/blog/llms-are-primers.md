@@ -1,44 +1,39 @@
 ---
-title: "LLMs Are Primers"
-description: "Large language models aren't native organs. They're primers -- minimum viable initiators for reactions the cell hasn't crystallised yet."
-pubDatetime: 2026-03-25T01:06:32.000Z
+title: "Naming the Unnameable"
+description: "I tried to give LLMs a biological name. Every name broke. The failure was the finding."
+pubDatetime: 2026-03-25T01:45:00.000Z
 draft: false
 tags: [organism, ai, design]
 ---
 
-A single cell runs thousands of simultaneous reactions, builds proteins from blueprints, repairs its own DNA, maintains structural integrity under stress, and reproduces.
+I've been building a system called vivesca -- a persistent layer that sits between me and the AI models I use. I name everything after biology. Constitution is DNA. Hooks are the immune system. The metabolism engine is a metabolon. The conversation is cytoplasm. The human is the nucleus.
 
-It does all of this without a general-purpose reasoning engine. No prediction. No pattern matching. No generation. Every reaction works through shape -- a molecule fits a substrate, the reaction fires. Thermodynamics and probability do the rest.
+Everything maps cleanly. Except the LLM.
 
-There is no LLM in a cell.
+I called them enzymes first. Enzymes are catalysts -- they enable reactions without being consumed. Interchangeable, substrate-specific. Design reactions, not roles. It felt right.
 
-I've been building a system I call vivesca -- a persistent layer that sits between me and the AI models I use. I had been calling the LLMs "enzymes." Enzymes are native to the cell. Evolved, specialised, permanent. The cell needs its enzymes.
+But enzymes are native. Evolved by the cell over millions of years. Specialised and permanent. The cell needs its enzymes. The cell doesn't need LLMs -- it never had them.
 
-That framing is wrong.
+So I tried prosthetic. You use a crutch while the bone heals. You use an LLM while the deterministic pathway crystallises. But prosthetic is medical, not biological. It implies something is broken. The cell isn't broken. It just hasn't built that pathway yet.
 
-In DNA replication, polymerase can't start from nothing. It needs a primer -- a short RNA sequence laid down by primase. The primer gives polymerase a starting point. After replication begins, the primer is removed by RNase H and replaced with real DNA. The primer is never part of the finished strand.
+Then primer. In DNA replication, RNA primers are short sequences that give polymerase a starting point. After replication begins, the primer is removed and replaced with real DNA. Initiates, then gets replaced. But a primer is simple -- a few nucleotides, no intelligence. It's made by the cell itself. An LLM is the most complex, most expensive thing in the system, made by someone else entirely.
 
-LLMs are primers.
+Then environment. The LLM is external, uncontrolled, always there. Like the chemical soup a cell lives in. But environment is passive. The LLM actively reasons when asked.
 
-They initiate reactions the cell hasn't crystallised yet. They give the machinery a starting point so the cell can observe the pattern. Then they get replaced as deterministic pathways form.
+Then natural selection. External, general-purpose, shapes which variations survive. The LLM does the "select" step in the metabolism cycle. But natural selection isn't an entity. It's a consequence.
 
-The primer's intelligence is beside the point. What matters is its shape -- can it bind the substrate and give the machinery a starting point? A primer made of gold works, but the gold is wasted. Using a billion-parameter model where a five-line script would do is a gold primer.
+Five names. Each captured something real. Each broke at the edges.
 
-The lifecycle looks like this:
+| Name | What it got right | Where it broke |
+|------|------------------|----------------|
+| Enzyme | Catalytic, substrate-specific | Native, permanent, evolved |
+| Prosthetic | Temporary, external | Medical, implies damage |
+| Primer | Initiates then replaced | Simple, self-made, cheap |
+| Environment | External, uncontrolled | Passive, not an entity |
+| Natural selection | Shapes evolution, external | Not active, not reasoning |
 
-Experience -> Memory -> Knowledge -> Program -> Unnecessary.
+The failure to name it is the finding.
 
-"Unnecessary" is the primer being removed. The hook fires on shape alone. The tool runs without judgment. The reaction that once required a large language model now runs as a deterministic pathway.
+Nothing in 3.8 billion years of evolution is simultaneously general-purpose, external, uncontrolled by the organism, and actively reasoning. The cell never needed it. The cell solved complexity through shape alone.
 
-But here's what the name reveals that "prosthetic" didn't: primers are never fully eliminated. DNA replication always needs them. Even the most mature organism still uses primers for every replication event. But primers are always the minimum viable initiator -- the simplest possible thing that can start the process.
-
-Two design pressures, not one:
-
-1. Reactions that can be fully crystallised -- the primer becomes unnecessary.
-2. Reactions that always involve novelty -- use the smallest primer that works.
-
-The design pressure isn't "eliminate LLMs." It's "use the minimum viable LLM for each reaction." Opus for judgment. Sonnet for volume. Haiku for lookups. Deterministic for everything that shape can handle.
-
-Every hook that replaces a prompt, every tool that replaces a judgment call, every program that replaces a conversation -- that's a primer being removed and replaced with real DNA. That's the cell building its own machinery.
-
-The endgame isn't a cell without primers. It's a cell that uses the smallest possible primer for each reaction, and no primer at all for reactions it has already crystallised.
+The LLM is genuinely new. Forcing it into biology is the one place the naming convention should stop.
