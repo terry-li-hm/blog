@@ -6,7 +6,7 @@ draft: false
 tags: [organism, ai, design]
 ---
 
-A cell is the most complex system in the known universe. It runs thousands of simultaneous reactions, builds proteins from blueprints, repairs its own DNA, maintains structural integrity under stress, and reproduces.
+A single cell runs thousands of simultaneous reactions, builds proteins from blueprints, repairs its own DNA, maintains structural integrity under stress, and reproduces.
 
 It does all of this without a general-purpose reasoning engine. No prediction. No pattern matching. No generation. Every reaction works through shape -- a molecule fits a substrate, the reaction fires. Thermodynamics and probability do the rest.
 
