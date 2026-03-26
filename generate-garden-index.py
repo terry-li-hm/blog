@@ -10,8 +10,8 @@ import re
 from datetime import datetime
 from pathlib import Path
 
-PUBLISHED_DIR = Path.home() / "notes/Writing/Blog/Published"
-OUTPUT_NOTE = Path.home() / "notes/terryli.hm.md"
+PUBLISHED_DIR = Path.home() / "epigenome/chromatin/Garden Posts"
+OUTPUT_NOTE = Path.home() / "epigenome/chromatin/terryli.hm.md"
 BASE_URL = "https://terryli.hm/posts"
 
 
