@@ -56,9 +56,9 @@ You don't want a name that fits perfectly on the first try. That probably means 
 
 ## The renames, and what they revealed
 
-**`~/notes` → chromatin → epigenome**
+**`~/epigenome/chromatin` → chromatin → epigenome**
 
-Notes seemed obvious: it's information storage. Chromatin is the correct cell biology term for that — DNA wound around histones, densely packed, accessible only when uncoiled. Renaming to chromatin was fine. But then: chromatin isn't a standalone organelle. It lives inside the nucleus. The nucleus in vivesca is the epigenome (the directory holding the organism's long-term encoded state). So `~/notes` got absorbed. It doesn't exist as a separate place anymore. The information lives where information is supposed to live.
+Notes seemed obvious: it's information storage. Chromatin is the correct cell biology term for that — DNA wound around histones, densely packed, accessible only when uncoiled. Renaming to chromatin was fine. But then: chromatin isn't a standalone organelle. It lives inside the nucleus. The nucleus in vivesca is the epigenome (the directory holding the organism's long-term encoded state). So `~/epigenome/chromatin` got absorbed. It doesn't exist as a separate place anymore. The information lives where information is supposed to live.
 
 The design question it generated: why did I have a top-level "notes" directory at all? Because I was thinking like a file system, not an organism.
 
