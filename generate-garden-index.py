@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Generate ~/notes/terryli.hm.md — a navigable vault index of all garden posts.
-Wikilinks to ~/notes/Writing/Blog/Published/*.md so they're clickable in Obsidian.
+Generate ~/epigenome/chromatin/terryli.hm.md — a navigable vault index of all garden posts.
+Wikilinks to Garden posts so they're clickable in Obsidian.
 Run standalone or called from sync-from-vault.sh.
 """
 
@@ -10,7 +10,7 @@ import re
 from datetime import datetime
 from pathlib import Path
 
-PUBLISHED_DIR = Path.home() / "epigenome/chromatin/Garden Posts"
+PUBLISHED_DIR = Path.home() / "epigenome/chromatin/cytoplasm/Garden/Garden Posts"
 OUTPUT_NOTE = Path.home() / "epigenome/chromatin/terryli.hm.md"
 BASE_URL = "https://terryli.hm/posts"
 
@@ -85,7 +85,7 @@ def render(posts: list[dict]) -> str:
     for post in posts:
         date_fmt = post["date"].strftime("%Y-%m-%d") if post["date"] != datetime.min else "—"
         tag_str = ", ".join(f"`{t}`" for t in post["tags"][:3]) if post["tags"] else ""
-        wikilink = f"[[Writing/Blog/Published/{post['slug']}|{post['title']}]]"
+        wikilink = f"[[cytoplasm/Garden/Garden Posts/{post['slug']}|{post['title']}]]"
         lines.append(f"- {date_fmt} — {wikilink}  {tag_str}")
 
     lines += ["", "## By topic", ""]
@@ -93,7 +93,7 @@ def render(posts: list[dict]) -> str:
     for tag, tag_posts in groups.items():
         lines.append(f"### {tag}")
         for post in sorted(tag_posts, key=lambda p: p["date"], reverse=True):
-            wikilink = f"[[Writing/Blog/Published/{post['slug']}|{post['title']}]]"
+            wikilink = f"[[cytoplasm/Garden/Garden Posts/{post['slug']}|{post['title']}]]"
             lines.append(f"- {wikilink}")
         lines.append("")
 

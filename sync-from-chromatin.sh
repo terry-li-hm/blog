@@ -1,11 +1,11 @@
 #!/bin/bash
 # Sync blog posts from Obsidian vault to blog repository
-# Source: ~/notes/Writing/Blog/Published/
-# Runs via LaunchAgent (com.terry.blog-sync) every 5 minutes
+# Source: ~/epigenome/chromatin/cytoplasm/Garden/Garden Posts/
+# Runs via LaunchAgent (com.vivesca.blog-sync) every 5 minutes
 
 set -e
 
-VAULT_BLOG_DIR="/Users/terry/epigenome/chromatin/Garden Posts"
+VAULT_BLOG_DIR="/Users/terry/epigenome/chromatin/cytoplasm/Garden/Garden Posts"
 BLOG_PATH="/Users/terry/code/blog"
 BLOG_CONTENT_DIR="$BLOG_PATH/src/content/blog"
 SKIPPED_FILE=$(mktemp)
