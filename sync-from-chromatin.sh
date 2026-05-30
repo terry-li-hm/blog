@@ -5,7 +5,7 @@
 
 set -e
 
-VAULT_BLOG_DIR="/Users/terry/epigenome/chromatin/cytoplasm/Garden/Garden Posts"
+VAULT_BLOG_DIR="/Users/terry/chromatin/cytoplasm/Garden/Garden Posts"
 BLOG_PATH="/Users/terry/code/blog"
 BLOG_CONTENT_DIR="$BLOG_PATH/src/content/blog"
 SKIPPED_FILE=$(mktemp)
