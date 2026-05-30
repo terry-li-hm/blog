@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate ~/epigenome/chromatin/terryli.hm.md — a navigable vault index of all garden posts.
+Generate ~/chromatin/terryli.hm.md — a navigable vault index of all garden posts.
 Wikilinks to Garden posts so they're clickable in Obsidian.
 Run standalone or called from sync-from-vault.sh.
 """
@@ -10,8 +10,8 @@ import re
 from datetime import datetime
 from pathlib import Path
 
-PUBLISHED_DIR = Path.home() / "epigenome/chromatin/cytoplasm/Garden/Garden Posts"
-OUTPUT_NOTE = Path.home() / "epigenome/chromatin/terryli.hm.md"
+PUBLISHED_DIR = Path.home() / "chromatin/cytoplasm/Garden/Garden Posts"
+OUTPUT_NOTE = Path.home() / "chromatin/terryli.hm.md"
 BASE_URL = "https://terryli.hm/posts"
 
 
