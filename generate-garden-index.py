@@ -5,7 +5,6 @@ Wikilinks to Garden posts so they're clickable in Obsidian.
 Run standalone or called from sync-from-vault.sh.
 """
 
-import os
 import re
 from datetime import datetime
 from pathlib import Path
@@ -13,6 +12,10 @@ from pathlib import Path
 PUBLISHED_DIR = Path.home() / "chromatin/cytoplasm/Garden/Garden Posts"
 OUTPUT_NOTE = Path.home() / "chromatin/terryli.hm.md"
 BASE_URL = "https://terryli.hm/posts"
+GENERATED_TIMESTAMP_LINE = re.compile(
+    r"^(updated: ).*$|^\*Auto-generated .* — do not edit manually\.\*$",
+    re.MULTILINE,
+)
 
 
 def parse_frontmatter(content: str) -> dict:
@@ -24,7 +27,11 @@ def parse_frontmatter(content: str) -> dict:
         if ": " in line and not line.startswith(" "):
             key, _, val = line.partition(": ")
             fm[key.strip()] = val.strip().strip('"')
-        elif line.startswith("  - ") and "tags" in fm and isinstance(fm.get("tags"), list):
+        elif (
+            line.startswith("  - ")
+            and "tags" in fm
+            and isinstance(fm.get("tags"), list)
+        ):
             fm["tags"].append(line.strip().lstrip("- "))
         elif line.strip() == "tags:":
             fm["tags"] = []
@@ -47,13 +54,15 @@ def collect_posts() -> list[dict]:
         except Exception:
             date = datetime.min
         tags = fm.get("tags", []) if isinstance(fm.get("tags"), list) else []
-        posts.append({
-            "slug": slug,
-            "title": title,
-            "date": date,
-            "tags": tags,
-            "url": f"{BASE_URL}/{slug}/",
-        })
+        posts.append(
+            {
+                "slug": slug,
+                "title": title,
+                "date": date,
+                "tags": tags,
+                "url": f"{BASE_URL}/{slug}/",
+            }
+        )
     return sorted(posts, key=lambda p: p["date"], reverse=True)
 
 
@@ -83,7 +92,9 @@ def render(posts: list[dict]) -> str:
     ]
 
     for post in posts:
-        date_fmt = post["date"].strftime("%Y-%m-%d") if post["date"] != datetime.min else "—"
+        date_fmt = (
+            post["date"].strftime("%Y-%m-%d") if post["date"] != datetime.min else "—"
+        )
         tag_str = ", ".join(f"`{t}`" for t in post["tags"][:3]) if post["tags"] else ""
         wikilink = f"[[cytoplasm/Garden/Garden Posts/{post['slug']}|{post['title']}]]"
         lines.append(f"- {date_fmt} — {wikilink}  {tag_str}")
@@ -93,15 +104,30 @@ def render(posts: list[dict]) -> str:
     for tag, tag_posts in groups.items():
         lines.append(f"### {tag}")
         for post in sorted(tag_posts, key=lambda p: p["date"], reverse=True):
-            wikilink = f"[[cytoplasm/Garden/Garden Posts/{post['slug']}|{post['title']}]]"
+            wikilink = (
+                f"[[cytoplasm/Garden/Garden Posts/{post['slug']}|{post['title']}]]"
+            )
             lines.append(f"- {wikilink}")
         lines.append("")
 
     return "\n".join(lines)
 
 
+def without_generated_timestamp(content: str) -> str:
+    return GENERATED_TIMESTAMP_LINE.sub("", content)
+
+
+def write_if_substantive_change(path: Path, content: str) -> bool:
+    if path.exists() and without_generated_timestamp(
+        path.read_text()
+    ) == without_generated_timestamp(content):
+        return False
+    path.write_text(content)
+    return True
+
+
 if __name__ == "__main__":
     posts = collect_posts()
     content = render(posts)
-    OUTPUT_NOTE.write_text(content)
+    write_if_substantive_change(OUTPUT_NOTE, content)
     print(f"Generated {OUTPUT_NOTE} — {len(posts)} posts indexed")
