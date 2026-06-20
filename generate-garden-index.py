@@ -38,10 +38,13 @@ def parse_frontmatter(content: str) -> dict:
                     val = val[1:-1]
                 fm[key] = val
         elif (
-            line.startswith("  - ")
+            line.lstrip().startswith("- ")
             and "tags" in fm
             and isinstance(fm.get("tags"), list)
         ):
+            # Block sequence item under tags:. YAML allows the item to be
+            # flush with the key (no extra indent) or indented, so match
+            # both rather than assuming a fixed two-space indent.
             fm["tags"].append(line.strip().lstrip("- "))
         elif line.strip() == "tags:":
             fm["tags"] = []

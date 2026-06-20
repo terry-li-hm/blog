@@ -33,6 +33,14 @@ def test_block_tags():
     assert fm["tags"] == ["governance", "banking"], fm["tags"]
 
 
+def test_flush_left_block_tags():
+    # YAML allows a block sequence flush with the key (zero extra indent).
+    # Astro parses this as a list; the index generator must too, or the post
+    # silently drops out of the "By topic" grouping.
+    fm = _fm("title: X\ntags:\n- agents\n- design\n- vivesca")
+    assert fm["tags"] == ["agents", "design", "vivesca"], fm["tags"]
+
+
 def test_quoted_scalar_not_treated_as_list():
     fm = _fm('title: X\ndescription: "hello world"')
     assert fm["description"] == "hello world", fm["description"]
