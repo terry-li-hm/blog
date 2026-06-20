@@ -26,7 +26,13 @@ def parse_frontmatter(content: str) -> dict:
     for line in match.group(1).splitlines():
         if ": " in line and not line.startswith(" "):
             key, _, val = line.partition(": ")
-            fm[key.strip()] = val.strip().strip('"')
+            key, val = key.strip(), val.strip()
+            if val.startswith("[") and val.endswith("]"):
+                # Inline YAML list, e.g. tags: [ai, engineering]
+                items = (v.strip().strip('"').strip("'") for v in val[1:-1].split(","))
+                fm[key] = [v for v in items if v]
+            else:
+                fm[key] = val.strip('"')
         elif (
             line.startswith("  - ")
             and "tags" in fm

@@ -27,3 +27,6 @@ pnpm-debug.log*
 
 public/pagefind
 .vercel
+
+# python
+__pycache__/
