@@ -32,7 +32,11 @@ def parse_frontmatter(content: str) -> dict:
                 items = (v.strip().strip('"').strip("'") for v in val[1:-1].split(","))
                 fm[key] = [v for v in items if v]
             else:
-                fm[key] = val.strip('"')
+                # Strip matching paired quotes (single or double), as YAML
+                # scalars may be quoted either way.
+                if len(val) >= 2 and val[0] == val[-1] and val[0] in "\"'":
+                    val = val[1:-1]
+                fm[key] = val
         elif (
             line.startswith("  - ")
             and "tags" in fm

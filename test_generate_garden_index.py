@@ -38,6 +38,27 @@ def test_quoted_scalar_not_treated_as_list():
     assert fm["description"] == "hello world", fm["description"]
 
 
+def test_single_quoted_scalar_is_unquoted():
+    fm = _fm("title: X\ndescription: 'hello world'")
+    assert fm["description"] == "hello world", repr(fm["description"])
+
+
+def test_single_quoted_pubdatetime_parses_as_date():
+    # A single-quoted pubDatetime must round-trip through date parsing rather
+    # than retaining literal quotes and silently sorting to datetime.min.
+    from datetime import datetime
+
+    fm = _fm("title: X\npubDatetime: '2026-03-31T22:32:18.000Z'")
+    ds = fm["pubDatetime"]
+    dt = datetime.fromisoformat(ds.replace("Z", "+00:00"))
+    assert dt.year == 2026 and dt.month == 3 and dt.day == 31, ds
+
+
+def test_mismatched_quotes_left_intact():
+    fm = _fm("title: X\ndescription: \"it's fine\"")
+    assert fm["description"] == "it's fine", repr(fm["description"])
+
+
 def test_group_by_tag_picks_up_inline_tags():
     fm = _fm("title: X\ntags: [a, b]")
     tags = fm.get("tags", []) if isinstance(fm.get("tags"), list) else []
