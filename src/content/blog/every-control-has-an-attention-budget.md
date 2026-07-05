@@ -30,4 +30,4 @@ The uncomfortable implication: the most valuable governance work isn't adding co
 
 Any consultant can recommend more monitoring. The one who walks into a committee and says "these three matter, these seven cost you attention without reducing risk, here's why" — that person is actually improving governance. Everyone else is just making the PDF longer.
 
-**Related:** [The Regulator Knows](The Regulator Knows) · [Governance Is a Tax](Governance Is a Tax) · [Human Oversight Doesn't Scale](Human Oversight Doesn't Scale) · [Backtest vs Operational Validation](Backtest vs Operational Validation)
+**Related:** [The Regulator Knows](the-regulator-knows) · [Governance Is a Tax](Governance Is a Tax) · [Human Oversight Doesn't Scale](human-oversight-doesnt-scale) · [Backtest vs Operational Validation](Backtest vs Operational Validation)
