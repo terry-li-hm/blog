@@ -23,7 +23,7 @@ rsync -a \
 # Filter and transform staged files
 find "$TEMP_DIR" -name "*.md" -type f | while read -r file; do
   # Skip stubs
-  if grep -q "^status: stub" "$file"; then
+  if grep -qE "^status: (stub|draft)" "$file"; then
     rm "$file"
     continue
   fi
